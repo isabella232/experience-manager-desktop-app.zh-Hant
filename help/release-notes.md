@@ -1,17 +1,15 @@
 ---
 title: AEM案頭應用程式版本注意事項
-seo-title: AEM案頭應用程式版本注意事項
-description: AEM案頭應用程式v1.x的發行詳細資訊、增強功能、新功能、相容性和下載連結。
-seo-description: AEM案頭應用程式v1.x的發行詳細資訊、增強功能、新功能、相容性和下載連結。
+description: AEM案頭應用程式的發行詳細資訊、增強功能、新功能、相容性和下載連結。
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b74a3ff5c9a25ee1433dd661a1bce677271a5ebe
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
