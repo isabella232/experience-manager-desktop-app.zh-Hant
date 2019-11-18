@@ -1,17 +1,15 @@
 ---
 title: 安裝及設定AEM案頭應用程式
-seo-title: 安裝及設定AEM案頭應用程式
 description: 安裝並設定AEM案頭應用程式以搭配AEM Assets伺服器運作，並下載您本機檔案系統上的資產。
-seo-description: 安裝並設定AEM案頭應用程式以搭配AEM Assets伺服器運作，並下載您本機檔案系統上的資產。
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f6365302-1690-4719-9b8c-035719422740
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a46660a3d56100e0d767e7f2b54656782bb5e7a7
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
