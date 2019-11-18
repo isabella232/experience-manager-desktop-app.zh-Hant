@@ -1,16 +1,12 @@
 ---
 title: AEM案頭應用程式簡介
-seo-title: Adobe Experience Manager案頭應用程式技術檔案與自助
-description: 技術檔案和自助說明，以瞭解當直接從案頭使用企業資產時，AEM案頭應用程式如何最佳化創意使用者的工作流程。
-seo-description: 瞭解AEM案頭應用程式如何在直接從案頭使用企業資產時，最佳化創意使用者的工作流程。
-contentOwner: asgupta
+description: 瞭解如何使用AEM案頭應用程式，在直接從案頭使用AEM Assets時，為創意使用者最佳化資產管理工作流程。
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
-index: y
-internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b74a3ff5c9a25ee1433dd661a1bce677271a5ebe
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
