@@ -1,17 +1,15 @@
 ---
 title: AEM案頭應用程式1.x版最佳實務
-seo-title: AEM案頭應用程式1.x版最佳實務
 description: Adobe Experience manager案頭應用程式1.x版的主要功能和建議使用。
-seo-description: Adobe Experience manager案頭應用程式1.x版的主要功能和建議使用。
 uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 946b853d740444853525e540ff7af1cbc46f9998
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
@@ -36,7 +34,7 @@ AEM案頭應用程式使用WebDAV(Windows)或SMB(Mac)網路共用來載入網路
 
 ![AEM案頭應用程式架構](assets/chlimage_1.png)
 
-儲存檔案時的額外寫入快取會先將檔案儲存在本機（以免使用者等待網路傳輸）。 然後，在預先定義的延遲（30秒）後，檔案會在背景上傳至AEM，然後資產會上傳至AEM。 AEM案頭應用程式提供UI，用於監控背景檔案上傳的狀態。
+儲存檔案時的額外寫入快取會先將檔案儲存在本機（以免使用者等待網路傳輸）。 然後，在預先定義的延遲(30s)檔案會在背景上傳至AEM，然後資產會上傳至AEM。 AEM案頭應用程式提供UI，用於監控背景檔案上傳的狀態。
 
 ## 建議使用AEM案頭應用程式 {#recommended-use-of-aem-desktop-app}
 
@@ -77,8 +75,8 @@ AEM案頭應用程式提供對整個DAM存放庫的虛擬存取權——而且�
 
 要搜索要在案頭上開啟的檔案：
 
-* 使用AEM Assets網頁UI來尋找資產。 AEM Assets中的搜尋功能不僅強大（搜尋Facet、儲存的搜尋），還提供其他功能以尋找正確的資產。 這些功能包括其他篩選器，例如根據狀態（核准、到期）、系列、工作、通知，以及與其他使用者／群組共用資料夾／系列的能力來搜尋資產。
-* 找到資產後，請使用AEM UI中的「案頭動作」來存取案頭上的資產。
+* 使用AEM Assets網頁UI來尋找資產。 不僅如此  is search in AEM Assets wather(search facets, saved searches), it also provides aditional capabilities to find the right asset. 這些功能包括其他篩選器，例如根據狀態（核准、到期）、系列、工作、通知，以及與其他使用者／群組共用資料夾／系列的能力來搜尋資產。
+* 找到資產後，請使用AEM UI中的「案頭動作」來存取  案頭版。
 
 ### 更新使用AEM案頭應用程式開啟的資產 {#updating-assets-opened-using-aem-desktop-app}
 
