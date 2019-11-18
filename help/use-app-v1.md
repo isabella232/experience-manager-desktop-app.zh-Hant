@@ -1,17 +1,15 @@
 ---
 title: 使用AEM案頭應用程式1.x版
-seo-title: 使用Adobe Experience manager案頭應用程式1.x版
 description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.x版，並最佳化您在案頭上使用資產的工作。
-seo-description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.x版，並透過桌上型電腦和創意工作流程的資產最佳化您的作品。
 uuid: 55057617-89de-43cd-8419-1252a42ab2fb
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c305f57b8ad874bcffc250689d917e31820225e4
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
