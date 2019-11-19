@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 ---
 
@@ -84,7 +84,7 @@ AEM案頭應用程式與下列作業系統相容：
 
 下圖說明資產和檔案從雲端流向本機檔案系統的流程，反之亦然，如使用者動作所啟動。
 
-![透過案頭應用程式將資產從AEM伺服器流向原生案頭應用程式](assets/do-not-localize/da20_flow_diagram.png)
+![透過案頭應用程式將資產從AEM伺服器流向原生案頭應用程式](assets/da20_flow_diagram.png)
 
 ## Known issues {#known-issues-v2}
 
