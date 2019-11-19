@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 ---
 
@@ -47,6 +47,6 @@ Adobe在其解決方案中提供緊密連結的工作流程，讓您的業務線
 
 新應用程式的主要使用案例和增強功能會與客戶歷程對應在下圖中。
 
-![AEM案頭應用程式的新增功能](assets/do-not-localize/whats-new-desktop-app-v2.png)
+![AEM案頭應用程式的新增功能](assets/aem_desktop_app_usecases_v2.png)
 
 案頭應用程式可讓其使用者直接在應用程式內完成上述所有使用案例。 如有需要，您也可以選擇在Web介面中進行資產搜尋，然後將控制項傳遞至應用程式，以開啟和編輯資產。
