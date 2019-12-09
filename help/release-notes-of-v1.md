@@ -9,22 +9,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: 75e7cbaaa23b441b5e3a6e55381cd5f548231537
 
 ---
 
 
 # AEM案頭應用程式v1.x版本注意事項{#aem-desktop-app-release-notes}
 
-## 發行資訊 {#release-information}
+對於案頭應用程式v1.x版本，以下是下載連結和AEM相容性資訊。
 
-| 產品 | Adobe Experience Manager(AEM)案頭應用程式 |
+| 產品 | Adobe Experience Manager (AEM) 桌面應用程式 |
 |---------------|--------------------------------------------------------------------|
 | 版本 | 1.10（Mac和Windows上為1.10.0.3） |
 | 類型 | 次要版本 |
 | 日期 | 2018年8月31日 |
-| 下載URL | [Mac OS X 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); [Windows 32位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
-| 相容性 | AEM 6.4 SP1;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
+| 下載 URL | [Mac OS X 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); [Windows 32位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
+| 相容性 | AEM 6.5.x;AEM 6.4.x;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
 >
@@ -34,16 +34,16 @@ source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 AEM Desktop與下列作業系統相容：
 
-* Mac OS X 10.10或更新版本，以及最新的錯誤修正。
-* Windows 7和Windows 10含有最新的Service pack和錯誤修正。
+* Mac OS X 10.10 或更新版本，提供最新的錯誤修正。
+* Windows 7 和 Windows 10，提供最新的服務套件和錯誤修正。
 
-Adobe強烈建議使用最新版AEM Desktop來使用最新功能、最新的錯誤修正以及最佳效能。
+Adobe強烈建議使用最新版AEM案頭應用程式，以取得最新功能、最新錯誤修正以及最佳效能。
 
-您打算安裝在本機電腦上的AEM Destkop應用程式版本需要特定的AEM伺服器版本／其他伺服器端元件（服務套件、修補程式或功能套件）。 在您第一次連線至AEM伺服器之前，請確定AEM伺服器已正確設定。 如果您需要協助，請連絡您的AEM管理員。
+您打算安裝在本機電腦上的AEM案頭應用程式版本需要特定的AEM伺服器版本／其他伺服器端元件（服務套件、Hotfix或功能套件）。 在您第一次連線至AEM伺服器之前，請確定AEM伺服器已正確設定。 如果您需要協助，請連絡您的AEM管理員。
 
-請參 [閱本檔案結尾的詳細相容性表](#compatibilitymatrix) ，以評估您設定的必要條件。
+請參 [閱本檔案結尾的](#compatibilitymatrix) 「詳細相容性矩陣」，以評估您設定的先決條件。
 
-## AEM案頭應用程式1.10的新增功能 {#what-s-new-in-aem-desktop-app}
+## What's New in AEM desktop app 1.10 {#what-s-new-in-aem-desktop-app}
 
 AEM案頭應用程式1.10著重在改善大型上傳的使用者體驗、背景作業的相關資訊，以及在使用連結檔案（例如InDesign）開啟資產時的最佳化體驗。
 
@@ -55,7 +55,7 @@ AEM案頭應用程式1.10著重在改善大型上傳的使用者體驗、背景�
 
 **更新衝突通知**:當應用程式在嘗試更新資產時偵測到衝突時，會顯示通知，讓使用者不必監視狀態視窗即可檢視。 當應用程式啟動時，會檢查所有衝突，讓使用者可以解決這些衝突。
 
-**更好地處理連接損失**:如果連線中斷，則會暫停大量上傳，而使用者稍後將可繼續。 「重試」按鈕可用於重試單個檔案的上載失敗。
+**更好地處理連接損失**:如果連線中斷，則會暫停大量上傳，而使用者稍後將可繼續。 「重試」按鈕可用於重試個別檔案的上傳失敗。
 
 ## 安裝指示 {#installation-instructions}
 
@@ -112,7 +112,7 @@ AEM案頭應用程式1.9著重於改善大型上傳的使用者體驗、背景�
 
 **指示背景操作狀態的表徵圖**&#x200B;應用程式表徵圖將指示背景操作的狀態，以便為用戶提供更好的視覺提示。 例如，當應用程式未連線至AEM時，圖示將會變灰，當有作用中的上傳時，它會顯示「同步」覆蓋等。
 
-**預取連結資產**：為改善使用者在處理包含儲存在AEM中之連結資產的InDesign檔案時的體驗，案頭應用程式會先嘗試將這些連結檔案預取至本機快取，然後再下載並開啟InDesign檔案。 如此，使用者就可在本機取得連結的檔案，而且在InDesign（在「連結」面板中）中存取這些檔案時，不需要等待更久。
+**預取連結資產**：為改善使用包含儲存在AEM中之連結資產的InDesign檔案時的使用體驗，案頭應用程式會先嘗試將這些連結檔案預取至本機快取，然後再下載並開啟InDesign檔案。 如此，使用者就可在本機取得連結的檔案，而且在InDesign（在「連結」面板中）中存取這些檔案時，不需要等待更久。
 請注意，預取只有在AEM識別伺服器端的連結時才能運作。 具有已辨識連結的資產會在InDesign資產的「屬性」檢視中列出「參考」清單。
 
 ### 自AEM案頭應用程式1.8.x以來提供的增強功能{#enhancements-available-since-aem-desktop-app-18x}
@@ -130,7 +130,7 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
    * (Mac)新增支援，透過使用。pac proxy組態連線至AEM(CQ-4233430)
    * (Win)修正「進階——登入URL」對話方塊的問題(CQ-4236061)
 * 錯誤修正：
-   * 「更多資產資訊」對話方塊*有時無法顯示動作列(CQ-4208540)
+   * 更多資產資訊對話方塊：有時動作列不可見(CQ-4208540)
    * (Win)檔案現在可在從AEM Assets UI回復為舊版後同步化(CQ-4216411)
 
 ### 自AEM案頭應用程式1.7以來的增強功能{#Enhancements-Available-Since-AEM-Desktop-App-17}
@@ -290,9 +290,9 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
 
 **連線至新的AEM伺服器時清除快取。** 如果案頭應用程式連線至另一個具有相同URL的AEM伺服器，則不會自動清除快取。 手動清除快取，以確保正確運作。 請注意，在測試中通常會發生這種情況，因為在相同URL上執行時，AEM安裝可能會被取代(CQ-4216982)
 
-**使用CA簽署的SSL憑證。** 請注意，當透過HTTPS安全連線連線連線至AEM時，AEM案頭應用程式不支援自簽名的SSL憑證。 伺服器上需要CA簽署的憑證才能進行此類連線。 (CQ-87941)
+**使用CA簽署的SSL憑證。** 請注意，當透過HTTPS安全連線連線連線至AEM時，AEM案頭應用程式不支援自簽名SSL憑證。 伺服器上需要CA簽署的憑證才能進行此類連線。 (CQ-87941)
 
-## Known issues {#known-issues}
+## 已知問題 {#known-issues}
 
 * 一般:
    * 伺服器URL必須指向伺服器，而無路徑(例如 `http://server`、 `https://server`、 `http://server:port`或 `https://server:port`)。 不支援/content/dam以外的上下文路徑和子資料夾(CQ-89343、CQ-87272)
@@ -300,9 +300,9 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
    * 未正確處理具有保留字元的檔案和檔案夾名稱。 請確定使用符合AEM需求的檔案和檔案夾名稱(CQ-93361、CQ-93308、CQ-89276、CQ-4217183)
    * 有些應用程式（例如Adobe Illustrator）可能會建立名稱在AEM中不受支援的檔案。 例如，在轉 `Converted` 換檔案後新增，如此就無法上傳檔案(CQ-4216985)
    * 具有國際名稱的資產可能每隔幾秒鐘就會出現並消失
-* 簽入／簽出：
+* 登入和登出：
    * 某位使用者簽出的資產無法透過Touch UI的「開啟」動作或直接在案頭上為另一位使用者開啟。 有些應用程式可能會報告為已鎖定，但在嘗試開啟時也會損毀甚至掛起。 (CQ-4199234)
-   * 多個使用者同時變更檔案可能會造成部分修改遺失。 因應措施是使用登入／結帳功能，防止多位使用者變更相同的檔案(CQ-97035)
+   * 多個使用者同時變更檔案可能會造成部分修改遺失。 因應措施是使用登入和登出功能，防止多位使用者變更相同的檔案(CQ-97035)
    * 某些應用程式不正確支援唯讀標幟，這可讓使用者儲存已由其他使用者簽出的檔案。 在其他用戶簽入檔案之前，不會傳輸修改的檔案。 這兩項修改皆可在AEM中以資產的不同版本取得(CQ-89551、CQ-87572、CQ-89615)
    * Finder會獨立報告已檢出和只讀狀態。 這會在使用者簽出資產時產生2個鎖定圖示(CQ-89507)
 * Finder整合：
@@ -323,13 +323,13 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
 * [使用AEM案頭應用程式v1.x](use-app-v1.md)
 * [AEM案頭應用程式v1.x最佳實務](best-practices-for-v1.md)
 
-## 相容性矩陣和預設集 {#compatibilitymatrix}
+## 相容性矩陣和先決條件 {#compatibilitymatrix}
 
 AEM案頭應用程式可搭配各種AEM版本運作。 請參閱支援版本的相容性矩陣。
 
 | 版本 | 修訂版 | 發行日期 | 相容性 |
 |---------|------------------------|--------------|-------------------------------------------------------------|
-| 1.10 | 1.10.0.3（Mac和Win） | 2018年8月31日 | AEM 6.4 SP1;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
+| 1.10 | 1.10.0.3（Mac和Win） | 2018年8月31日 | AEM 6.5;AEM 6.4 SP1;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 | 1.9 | 1.9.1.1（Mac和Win） | 2018年6月21日 | AEM 6.4;AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 | 1.8 | 1.8.1.0（Mac和Win） | 2018年3月28日 | AEM 6.4;AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 | 1.7 | 1.7.0.3（Mac和Win） | 2018年1月10日 | AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
