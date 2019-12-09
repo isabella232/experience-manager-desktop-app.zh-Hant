@@ -9,24 +9,24 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
 
-# 疑難排解AEM案頭應用程式 {#troubleshoot-v2}
+# Troubleshoot AEM desktop app {#troubleshoot-v2}
 
 Adobe Experience Manager(AEM)案頭應用程式會連接至遠端AEM部署的數位資產管理(DAM)儲存庫。 應用程式會擷取儲存庫資訊並在您的電腦上搜尋結果、下載和上傳檔案和檔案夾，並包含與AEM Assets使用者介面衝突的管理功能。
 
 閱讀以疑難排解應用程式、瞭解最佳實務，並瞭解限制。
 
-## 最佳實務 {#best-practices-to-prevent-troubles}
+## Best practices {#best-practices-to-prevent-troubles}
 
 遵守下列最佳實務，以防止出現一些常見問題和疑難排解。
 
 * **瞭解案頭應用程式的運作方式**:開始使用應用程式之前，請花幾分鐘的時間瞭解應用程式的運作方式。 瞭解Web UI與案頭之間的連結、儲存庫對應、資產快取、本機儲存以及在背景上傳。 了 [解運作方式](release-notes.md#how-app-works)。
 
-* **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱「在AEM Assets中建立 [檔案夾」中的字元清單](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)。 某些AEM使用案例可能會受到檔案夾名稱中不支援的字元影響。
+* **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空白字元和無效字元。 請參閱「在AEM Assets中建立 [檔案夾」中的字元清單](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)。 某些AEM使用案例可能會受到檔案夾名稱中不支援的字元影響。
 
 * **避免衝突的最佳實務**:若要避免在協作多個資產時產生潛在衝突，請參 [閱避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
