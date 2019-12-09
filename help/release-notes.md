@@ -1,5 +1,5 @@
 ---
-title: AEM案頭應用程式版本注意事項
+title: AEM 桌面應用程式發行說明
 description: AEM案頭應用程式的發行詳細資訊、增強功能、新功能、相容性和下載連結。
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
@@ -9,105 +9,105 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
 
-# AEM案頭應用程式版本注意事項 {#release-notes-v2}
+# AEM 桌面應用程式發行說明 {#release-notes-v2}
 
-| 產品 | Adobe Experience Manager(AEM)案頭應用程式 |
+| 產品 | Adobe Experience Manager (AEM) 桌面應用程式 |
 |---------------|--------------------------------------------------------------------|
 | 應用程式版本（修訂版） | 2.0 (2.0.0.4) |
-| 支援的AEM版本 | AEM 6.5、AEM 6.4、AEM 6.3（含相容性套件） |
+| 支援的 AEM 版本 | AEM 6.5、AEM 6.4、AEM 6.3（含相容性套件） |
 | 類型 | 主要版本 |
-| 發行日期 | 2019年8月30日(Mac)、2019年9月9日(Win) |
-| 下載URL | [MacOS 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.0.4.dmg); [Windows 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.0.4.exe); [Windows 32位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.0.4.exe) |
+| 發行日期 | 2019 年 8 月 30 日 (Mac)、2019 年 9 月 9 日 (Win) |
+| 下載 URL | [MacOS 64 位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.0.4.dmg)；[Windows 64 位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.0.4.exe)；[Windows 32 位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.0.4.exe) |
 
 ## 系統需求和先決條件 {#system-requirements-and-prerequisites-v2}
 
-AEM案頭應用程式與下列作業系統相容：
+AEM 桌面應用程式與下列作業系統相容：
 
-* Mac OS X 10.10或更新版本，以及最新的錯誤修正。
-* Windows 7和Windows 10含有最新的Service pack和錯誤修正。
+* Mac OS X 10.10 或更新版本，提供最新的錯誤修正。
+* Windows 7 和 Windows 10，提供最新的服務套件和錯誤修正。
 
-此應用程式可與下列AEM版本搭配使用，不論部署在內部部署或部署在Adobe Managed Services(AMS)上：
+此應用程式可與下列的 AEM 版本搭配使用，不論是於內部部署或部署在 Adobe Managed Services (AMS) 上：
 
-* [AEM 6.5.0或更新版本](https://helpx.adobe.com/experience-manager/6-5/release-notes.html)
-* [AEM 6.4.4或更新版本](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
-* AEM 6.4.0 - 6.4.3與相容套 [件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
-* AEM 6.3.3.1及更新版本及相容 [套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
-* 對於AEM 6.3，不計 [划任何Service Pack](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)。 Adobe建議升級至更新的AEM版本。
+* [AEM 6.5.0 或更新版本](https://helpx.adobe.com/experience-manager/6-5/release-notes.html)
+* [AEM 6.4.4 或更新版本](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
+* AEM 6.4.0 版本至 AEM 6.4.3 版本，搭配[相容性套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
+* AEM 6.3.3.1 及更新版本，搭配[相容性套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
+* 目前並[無計畫提供 AEM 6.3 版本的服務套件](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)。Adobe 建議升級至更新的 AEM 版本。
 
-您打算在本機電腦上安裝的應用程式版本需要特定的Adobe Experience Manager伺服器版本／其他伺服器端元件（服務套件、修補程式或功能套件）。 請連絡您的AEM管理員以取得協助。
+您打算在本機電腦上安裝的應用程式版本，需要搭配特定的 Adobe Experience Manager 伺服器版本／其他伺服器端元件（服務套件、修補程式或功能套件）。請連絡您的 AEM 管理員以取得協助。
 
 ### 支援不同的資產和檔案類型 {#support-for-file-types}
 
-應用程式支援儲存在AEM中的資產，這些資產代表其基本作業的二進位檔案。 在原生案頭應用程式中開啟檔案時，作業系統會依賴特定檔案類型（例如PNG或JPG）與特定應用程式（例如Mac Preview或Adobe Photoshop）的關聯。
+應用程式支援儲存在 AEM 中、透過二進位檔進行基本運算的資產。在原生桌面應用程式中開啟檔案時，需透過作業系統內的特定應用程式（例如 Mac Preview 或 Adobe Photoshop），以特定檔案類型（例如 PNG 或 JPG）開啟。
 
-有幾種檔案類型支援將連結資產放入二進位檔。 當使用案頭應用程式開啟這類二進位檔案時，如果資產存在於AEM儲存庫中，應用程式會預先下載連結的資產。 目前支援的檔案類型包括：
+部分檔案類型支援將連結的資產放入二進位檔。使用桌面應用程式開啟此類型的二進位檔案時，若資產存在於 AEM 的資料庫中，應用程式會預先下載連結的資產。目前支援的檔案類型包括：
 
-* Adobe inDesign檔案（INDD格式）
-* Adobe Illustrator檔案（AI格式）
-* Adobe Photoshop檔案（PS格式）
+* Adobe inDesign 檔案（INDD格式）
+* Adobe Illustrator 檔案（AI格式）
+* Adobe Photoshop 檔案（PS格式）
 
-上述應用程式的Adobe Creative Cloud 2018和Creative Cloud 2019版本都支援此功能。 應用程式會使用啟發式、最佳比對方法，將連結資產的本機案頭路徑對應至AEM伺服器上的URL。 它依賴一些假設：
+上述應用程式的 Adobe Creative Cloud 2018 和 Creative Cloud 2019 版本都支援此功能。應用程式會透過啟發式、最佳比對方法，將連結資產的本機桌面路徑對應至 AEM 伺服器上的 URL。依賴的假設如下：
 
-* 原生應用程式中置入檔案的路徑使用全域案頭路徑（從本機網路共用置入檔案，顯示「顯示」選項）
-* 路徑會由原生應用程式儲存在檔案的XMP記錄中
-* AEM已擷取XMP記錄，其路徑是資產的中繼資料記錄
-* 路徑可以與AEM中的資產相符（也就是說，置入的檔案也位於AEM中的符合路徑下）
+* 原生應用程式中，置入檔案的路徑使用全域桌面路徑（從顯示出「顯示」選項的區域網路共享置入檔案）
+* 透過原生應用程式，將路徑儲存在檔案的 XMP 記錄中
+* AEM 已擷取含有資產中繼資料記錄的 XMP 記錄
+* 路徑與 AEM 中的資產路徑相符（代表置入的檔案也位於 AEM 中的相符路徑下）
 
-## 新功能和增強功能 {#whats-new-added}
+## 新增功能和功能改善 {#whats-new-added}
 
-如需詳細資訊，請參 [閱「應用程式的新增功能」](introduction.md#whats-new-v2)。
+如需詳細資訊，請參閱[「應用程式的新增功能」](introduction.md#whats-new-v2)。
 
 ## 安裝指示 {#installation-instructions-v2}
 
-若要瞭解如何安裝和設定應用程式，請參閱「安 [裝AEM案頭應用程式」](install-upgrade.md)。
+若要瞭解如何安裝和設定應用程式，請參閱[「安裝 AEM 桌面應用程式」](install-upgrade.md)。
 
-如果您要從舊版AEM案頭應用程式升級，您必須依照下列最佳實務進行轉換，這些最佳實務是從舊版 [升級時列出的](install-upgrade.md#upgrade-from-previous-version)。
+如果您要從舊版 AEM 桌面應用程式進行升級，您必須遵循列於[從舊版進行升級](install-upgrade.md#upgrade-from-previous-version)的最佳作法進行轉換。
 
 ## 應用程式運作方式的重要附註 {#how-app-works}
 
-請務必瞭解以下應用程式及其運作方式。
+請務必瞭解以下關於應用程式及其運作方式的資訊。
 
-* 應用程式可完整控制從AEM到AEM（開啟、編輯、上傳變更和上傳資產）的資產二進位檔完整傳輸作業。
-   * 如果您想要在案頭上使用資產，則需要明確地「開啟」、「編輯」或「下載」至案頭，不論是個別、在檔案夾中，或是透過多選項。
-   * 如果您想要將資產的本機變更上傳至AEM，您必須個別選 [!UICONTROL Upload Changes]取或透過多選取。
-   * 應用程式不是同步案頭和AEM上資產的「同步用戶端」。
-   * 應用程式不提供將AEM存放庫對應為虛擬資料夾結構的網路共用。
-* 應用程式顯示的資產清單是以AEM Assets存放庫的狀態為基礎。 應用程式不會顯示或管理本機下載並重新命名於本機檔案或快取檔案夾中的任何檔案。
+* 透過應用程式，您可以完整控制在 AEM 間進行之資產二進位檔的傳輸作業（開啟、編輯、上傳變更和上傳資產）。
+   * 如果想要在桌面使用資產，您需要明確地「開啟」、「編輯」或「下載」資產至桌面，並可使用個別檔案、資料夾或多個檔案選取的方式進行上述操作。
+   * 如果您想要將資產的本機變更內容上傳至 AEM，您需要以個別或多個檔案的方式選取 [!UICONTROL Upload Changes]。
+   * 此應用程式不是將資產從桌面同步到 AEM 上的「同步用戶端」。
+   * 應用程式不提供將 AEM 資料庫作為虛擬資料夾結構的網路共享。
+* 應用程式顯示的資產清單內容是根據 AEM 的資產資料庫。應用程式不會顯示或管理從本機下載、並在本機檔案或快取資料夾中重新命名的任何檔案。
 * 如果應用程式未顯示預期的結果，請按一下頂端列中的重新整理圖示。
-* 本地網路共用（在您使用操作時顯示） [!UICONTROL Reveal File] 僅顯示本地可用的檔案（和資料夾）。 [!UICONTROL Reveal File] 並預 [!UICONTROL Reveal Folder] 先下載資產，協助取得顯示在本機網路共用中的適當資產。
-* 當Adobe Creative cloud應用程式讀取連結／置入Creative cloud應用程式原生檔案中的資產檔案時，會使用SMB(Mac)/WebDAV(Win)本機網路共用。
+* 區域網路共享（在您進行 [!UICONTROL Reveal File] 動作時顯示）只會顯示本機可用的檔案（和資料夾）。[!UICONTROL Reveal File] 和 [!UICONTROL Reveal Folder] 會預先下載資產，協助您取得顯示在區域網路共享中的正確資產。
+* 當 Adobe Creative cloud 應用程式讀取連結／置於 Creative Cloud 應用程式原生檔案中的資產檔案時，會使用 SMB (Mac)／WebDAV(Win) 區域網路共享。
 
-下圖說明資產和檔案從雲端流向本機檔案系統的流程，反之亦然，如使用者動作所啟動。
+下圖說明當使用者執行動作時，資產和檔案如何從雲端移動至本機檔案系統（反向移動亦適用）。
 
-![透過案頭應用程式將資產從AEM伺服器流向原生案頭應用程式](assets/da20_flow_diagram.png)
+![透過桌面應用程式，資產從 AEM 伺服器移動至原生桌面應用程式](assets/da20_flow_diagram.png)
 
-## Known issues {#known-issues-v2}
+## 已知問題 {#known-issues-v2}
 
 **使用者介面問題：**
-* 有時，案頭應用程式的介面可能會變成空白。 按一下滑鼠右鍵，然 [!UICONTROL Refresh] 後按一下以再次載入應用程式。 此重新整理會重設應用程式的狀態，而您會從DAM儲存庫根目錄的歡迎畫面開始。 <!-- CQ-4270267 -->
-* 在沒有軌跡板或滑鼠滾輪的情況下，很難導覽資料夾／搜尋結果。 沒有滑鼠滾輪的滑鼠裝置可能無法顯示捲軸。 <!-- CQ-4269947 -->
-* 上傳資產變更時，進度列不常正確顯示。
-* 套用和移除篩選器以尋找所有本機編輯的資產後，應用程式不會將使用者帶至使用者開始使用的搜尋結果或資料夾檢視。 應用程式會顯示DAM儲存庫的根資料夾。
-* 當您連線至未執行AEM伺服器的URL時，連線畫面會停止回應。 退出應用程式並重新啟動。
+* 有時，案頭應用程式的介面會變成空白。 Right-click and click [!UICONTROL Refresh] to re-load the application. 進行此類刷新後，您將從DAM儲存庫的根目錄開始。 資產的更新或狀態會保留。 <!-- CQ-4270267 -->
+* 在沒有追蹤板或滑鼠指標的情況下，很難導覽資料夾／搜尋結果。 The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
+* 少數情況下，當上傳的資產變更時，進度列可能無法顯示正確的進度。
+* 在您套用、移除篩選器以尋找所有在本機編輯的資產後，應用程式不會將使用者引導至剛開始的搜尋結果或資料夾檢視。應用程式會顯示 DAM 資料庫的根資料夾。
+* 某些時候，當您連線至未執行 AEM 伺服器的 URL 時，連線畫面會停止回應。請退出應用程式並重新啟動。
 
-**CRUD（建立、讀取、更新和刪除）問題：**
-* 應用程式會嘗試上傳包含無效字元的檔案，這可能會導致伺服器端上傳失敗。 <!-- CQ-4273652 -->
-* 當上傳含有註解的變更至資產時，註解會與AEM中的資產一起儲存，但是無法顯示為版本修訂註解（在AEM 6.4.5、6.5.1中解決）。 <!-- CQ-4268990 -->
-* 使用者無法取消資產轉讓。 如果您觸發了非預期的大型轉移，請退出應用程式並重新啟動。 <!-- CQ-4278940 -->
+**CRUD（建立、讀取、更新和刪除）相關問題：**
+* 若應用程式嘗試上傳包含無效字元的檔案，可能會導致伺服器端上傳失敗。<!-- CQ-4273652 -->
+* 當上傳含有注釋的變更至資產時，這些注釋會與資產一起儲存在AEM中，但不會顯示為版本修訂注釋。 此問題已在AEM 6.4.5和AEM 6.5.1中解決。Adobe強烈建議安裝最新的Service Pack。 <!-- CQ-4268990 -->
+* 使用者無法取消資產傳輸。如果您不小心觸發了非預期的大量傳輸，請退出應用程式並重新啟動。<!-- CQ-4278940 -->
 
 **平台問題：**
-* 有時，在Windows上，資產的狀態可能會在開啟後立即變 [!UICONTROL Edited Locally] 更為，即使您可能尚未編輯資產。 按一 [!UICONTROL Refresh] 下以更新。
+* 某些時候，即使您可能尚未編輯資產，Windows 上的資產狀態可能會在開啟後立即變更為 [!UICONTROL Edited Locally]。按一下 [!UICONTROL Refresh] 以更新。
 
 >[!MORELIKETHIS]
 >
->* [AEM 6.5檔案](https://helpx.adobe.com/support/experience-manager/6-5.html)
->* [AEM Assets 6.5檔案](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)
->* [使用AEM案頭應用程式](using.md)
->* [安裝和升級案頭應用程式](install-upgrade.md)
->* [最佳實務與疑難排解提示](troubleshoot.md)
+>* [AEM 6.5 檔案](https://helpx.adobe.com/support/experience-manager/6-5.html)
+>* [AEM Assets 6.5 檔案](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)
+>* [使用 AEM 桌面應用程式](using.md)
+>* [安裝和升級桌面應用程式](install-upgrade.md)
+>* [最佳作法與疑難排解提示](troubleshoot.md)
 
