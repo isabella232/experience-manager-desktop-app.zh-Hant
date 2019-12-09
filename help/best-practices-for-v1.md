@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -28,13 +28,13 @@ AEM案頭應用程式讓您不必在AEM中更新不正確的本機副本或更�
 >
 >在閱讀本檔案之前，您可以先閱讀整體 [AEM和Creative cloud整合的最佳實務](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html) ，以取得主題的更高階概觀。
 
-## AEM案頭應用程式架構 {#aem-desktop-app-architecture}
+## AEM desktop app architecture {#aem-desktop-app-architecture}
 
 AEM案頭應用程式使用WebDAV(Windows)或SMB(Mac)網路共用來載入網路共用。 掛載的網路共用僅為本地共用。 AEM案頭應用程式會截取呼叫（開啟、讀取、寫入），並提供其他本機快取。 它可將遠端呼叫轉譯至AEM Assets伺服器，以最佳化AEM HTTP請求。 下圖說明AEM案頭應用程式架構。
 
 ![AEM案頭應用程式架構](assets/chlimage_1.png)
 
-儲存檔案時的額外寫入快取會先將檔案儲存在本機（以免使用者等待網路傳輸）。 然後，在預先定義的延遲(30s)檔案會在背景上傳至AEM，然後資產會上傳至AEM。 AEM案頭應用程式提供UI，用於監控背景檔案上傳的狀態。
+儲存檔案時的額外寫入快取會先將檔案儲存在本機（以免使用者等待網路傳輸）。 然後，在預先定義的延遲（30秒）後，檔案會在背景上傳至AEM，然後資產會上傳至AEM。 AEM案頭應用程式提供UI，用於監控背景檔案上傳的狀態。
 
 ## 建議使用AEM案頭應用程式 {#recommended-use-of-aem-desktop-app}
 
@@ -64,7 +64,7 @@ AEM案頭應用程式的主要功能包括：
 
 AEM案頭應用程式提供對整個DAM存放庫的虛擬存取權——而且案頭上的創意使用者在案頭上尋找並存取適當資產可能會很複雜。 使用這些最佳實務來簡化這些作業。
 
-* 使用AEM Assets Web UI中的協作功能，讓創意使用者更直接地存取適當的資產。 其中包括共用資料夾或系列、提供智慧型系列（儲存的搜尋），或傳送通知及指向適當資產。 創意使用者可在網頁UI中使用案頭動作，快速存取其案頭上的這些資產。
+* 使用AEM Assets Web UI中的協作功能，讓創意使用者更直接地存取適當的資產。 其中包括共用資料夾或系列、提供智慧型系列（儲存的搜尋），或傳送通知及指向適當資產。 然後，創意使用者就可以在網頁UI中使用案頭動作，快速存取案頭上的這些資產。
 * 考慮資產的適當權限（存取控制），以簡化創意使用者在DAM儲存庫中檢視的作業，基本上限制他們僅能存取所需／感興趣的資產：
 
    * 某些與創意使用者無關的區域，可能會因為使用者群組而遭拒，以便從其檢視中移除，桌上型電腦也會拒絕
@@ -75,8 +75,8 @@ AEM案頭應用程式提供對整個DAM存放庫的虛擬存取權——而且�
 
 要搜索要在案頭上開啟的檔案：
 
-* 使用AEM Assets網頁UI來尋找資產。 不僅如此  is search in AEM Assets wather(search facets, saved searches), it also provides aditional capabilities to find the right asset. 這些功能包括其他篩選器，例如根據狀態（核准、到期）、系列、工作、通知，以及與其他使用者／群組共用資料夾／系列的能力來搜尋資產。
-* 找到資產後，請使用AEM UI中的「案頭動作」來存取  案頭版。
+* 使用AEM Assets網頁UI來尋找資產。 AEM Assets中的搜尋功能不僅強大（搜尋Facet、儲存的搜尋），還提供其他功能以尋找正確的資產。 這些功能包括其他篩選器，例如根據狀態（核准、到期）、系列、工作、通知，以及與其他使用者／群組共用資料夾／系列的能力來搜尋資產。
+* 找到資產後，請使用AEM UI中的「案頭動作」來存取案頭上的資產。
 
 ### 更新使用AEM案頭應用程式開啟的資產 {#updating-assets-opened-using-aem-desktop-app}
 
@@ -107,9 +107,11 @@ AEM案頭應用程式提供對整個DAM存放庫的虛擬存取權——而且�
 
 * **** 使用正確配置的Dispatcher :使用AEM Dispatcher以取得其他安全性，並確保已針對 [AEM案頭應用程式連線設定此AEM案頭應用程式，以便在Dispatcher後方進行AEM](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#ConnectingtoAEMBehindaDispatcher)
 
-* **** 節省頻寬：在Mac上的Finder中關閉圖示預覽——使用Finder瀏覽已掛載的儲存庫時，請考慮。 Finder會要求每個檔案產生預覽，並導致案頭應用程式在本機下載及快取資產。 請注意，在節省頻寬的同時，它也會降低案頭用戶的用戶體驗，因此在使用具有大資產和／或有限頻寬的儲存庫時應該這樣做。
+* **** 節省頻寬：在Mac上的Finder中關閉圖示預覽——使用Finder瀏覽已掛載的儲存庫時，請考慮。 Finder會要求每個檔案產生預覽，並導致案頭應用程式在本機下載及快取資產。 請注意，在節省頻寬的同時，它也會降低案頭用戶的使用體驗，因此在使用具有大資產和／或有限頻寬的儲存庫時，應該這樣做。
 
-**** 注意：若要關閉圖示預覽，請在Finder中移至「檢視」，選取「檢視選項」，然後取消勾選「顯示圖示預覽」選項。 這隻適用於目前的資料夾——若要將它設為預設值，請按一下同一視窗中的「使用為預設值」按鈕。
+>[!NOTE]
+>
+>若要關閉圖示預覽，請在Finder中移至「檢視」，選取「檢視選項」，然後取消勾選「顯示圖示預覽」選項。 這隻適用於目前的資料夾——若要將它設為預設值，請按一下同一視窗中的「使用為預設值」按鈕。
 
 ### 最佳化伺服器效能 {#optimizing-server-performance}
 
