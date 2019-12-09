@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -59,13 +59,13 @@ AEM案頭應用程式使用系統的預先定義代理，透過HTTPS連線至網
 
 ## 連線至Dispatcher後方的AEM例項 {#connect-to-an-aem-instance-behind-a-dispatcher}
 
-Assets API中的「複製」和「移動」方法需要將下列其他標題傳遞至AEM:
+Assets API中的複製和移動方法需要將下列其他標題傳遞至AEM:
 
 * X目標
 * X-深度
 * X覆寫
 
-AEM Desktop會使用包含預設連接埠的URL連線至AEM。 因此，分 *發器配置中* ，虛擬主機設定應包含預設埠號。 有關虛擬主機配置的詳細資訊，請參 [閱標識虛擬主機](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
+AEM Desktop會使用包含預設連接埠的URL連線至AEM。 因此，分 `virtualhosts` 發程式配置中的設定應包括預設埠號。 有關配置的詳 `virtualhosts` 細資訊，請 [參閱標識虛擬主機](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
 
 有關配置調度程式以傳遞這些附加標頭的其他資訊，請參 [閱指定HTTP標頭](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)。
 
@@ -116,8 +116,8 @@ AEM案頭應用程式的快取預設位置為：
 
 ## 其他資源 {#additional-resources}
 
-* [AEM案頭應用程式簡介](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
-* [使用AEM案頭應用程式](use-app-v1.md)
+* [AEM 桌面應用程式簡介](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
+* [使用 AEM 桌面應用程式](use-app-v1.md)
 
 * [瞭解AEM案頭應用程式的登入／登出](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
 * [搭配AEM Assets使用案頭應用程式](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
