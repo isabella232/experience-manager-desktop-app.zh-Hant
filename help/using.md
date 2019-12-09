@@ -1,5 +1,5 @@
 ---
-title: 使用AEM案頭應用程式
+title: 使用 AEM 桌面應用程式
 description: 瞭解如何安裝和使用Adobe Experience Manager案頭應用程式，直接從Win或Mac案頭處理AEM資產。 瞭解最佳實務和疑難排解資訊。
 uuid: 55057617-89de-43cd-8419-1252a42ab2fb
 contentOwner: AG
@@ -7,12 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
 
-# 使用AEM案頭應用程式 {#use-aem-desktop-app-v2}
+# 使用 AEM 桌面應用程式 {#use-aem-desktop-app-v2}
 
 使用Adobe Experience Manager(AEM)案頭應用程式，輕鬆存取您本機案頭上的AEM資產，並在任何案頭應用程式中使用這些資產。 您可以在案頭應用程式中開啟資產並在本機編輯資產——透過版本控制將變更上傳回AEM，以便與其他使用者共用更新。 您也可以將新檔案和檔案夾階層上傳至AEM、建立檔案夾，以及從AEM刪除資產或檔案夾。
 
@@ -40,9 +40,9 @@ source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 * 檔案狀態 **[!UICONTROL Modified remotely]**&#x200B;為：應用程式會指出您已下載的資產是否在AEM伺服器上變更。 應用程式也提供下載最新版本和更新本機副本的選項。 瞭解 [如何避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* **結帳**:如果您正在編輯檔案或打算編輯檔案，則可切換狀態以簽出。 它會在應用程式和AEM網頁介面中的資產上新增鎖定圖示。 鎖定圖示會指示其他使用者避免同時編輯相同的資產，因為這會導致編輯衝突。
+* **[!UICONTROL Check-out]**:如果您正在編輯檔案或打算編輯檔案，則可切換狀態以簽出。 它會在應用程式和AEM網頁介面中的資產上新增鎖定圖示。 鎖定圖示會指示其他使用者避免同時編輯相同的資產，因為這會導致編輯衝突。
 
-* **登入**:將資產標示為安全，讓其他使用者可進行編輯，而不會造成編輯衝突。 當您上傳變更時，鎖定圖示會自動移除。 切換登入狀態也會移除鎖定圖示，不過建議不要手動登入而不上傳變更。 如果您捨棄變更，請手動切換登入。
+* **[!UICONTROL Check-in]**:將資產標示為安全，讓其他使用者可進行編輯，而不會造成編輯衝突。 當您上傳變更時，鎖定圖示會自動移除。 切換登入狀態也會移除鎖定圖示，不過建議不要手動登入而不上傳變更。 如果您捨棄變更，請手動切換登入。
 
 * **[!UICONTROL Open]** 動作：只要開啟資產，即可在原生應用程式中預覽。 不建議您使用此動作來編輯資產，因為它不會簽出資產，而其他使用者可以進行編輯，進而導致編輯衝突。
 
@@ -124,7 +124,7 @@ source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 >
 >如果預期的變更未反映在應用程式中，請按一下重新整理圖示 ![「重新整理」圖示](assets/do-not-localize/refresh.png) ，或在應用程式介面中按一下滑鼠右鍵，然後按一下 **[!UICONTROL Refresh]**。 當較大的下載或上傳正在進行時，無法使用這些動作。
 
-若要開啟資產的本機下載檔案夾，請按一下「更多 ![動作」圖示](assets/do-not-localize/more2_da2.png) ，然後按一 ![下「顯現」圖示](assets/do-not-localize/reveal_action2_da2.png)**[!UICONTROL Reveal File]** 動作。
+若要開啟資產的本機下載檔案夾，請按一下「更多 ![動作」圖示](assets/do-not-localize/more2_da2.png) ，然後按 ![一下「顯現圖示](assets/do-not-localize/reveal_action2_da2.png)**[!UICONTROL Reveal File]** 」動作。
 
 ## 使用資產或將資產置入原生檔案 {#place-assets-in-native-documents}
 
@@ -218,7 +218,7 @@ source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 ### 大量上傳資產 {#bulk-upload-assets}
 
-使用者或組織（例如攝影師或創意廣告公司）可以在情境中建立許多本機資產，例如像片拍攝、潤飾或從AEM以外的較大集合中選取。 他們可以直接從案頭應用程式將這些大型的本機資料夾上傳至AEM Assets。 資料夾階層會保留，而且會上傳所有巢狀子檔案夾和包含的資產。 上傳的資產也可立即供相同伺服器的其他使用者使用。 資產會在背景上傳，因此作業不會系結至網頁瀏覽器作業。
+使用者或組織（例如攝影師或創意廣告公司）可以在情境中建立許多本機資產，例如像片拍攝、潤飾或從AEM以外的較大集合中選取。 他們可以直接從案頭應用程式將這些大型的本機資料夾上傳至AEM Assets。 資料夾階層會保留，並上傳所有巢狀子資料夾和包含的資產。 上傳的資產也可立即供相同伺服器的其他使用者使用。 資產會在背景上傳，因此作業不會系結至網頁瀏覽器作業。
 
 ![從案頭大量上傳多個本機檔案夾至](assets/upload_local_folders_da2.png "AEMulk從案頭上傳多個本機檔案夾至AEM")
 
