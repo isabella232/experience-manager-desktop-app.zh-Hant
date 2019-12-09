@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -24,11 +24,11 @@ Adobe Experience Manager(AEM)案頭應用程式包含公用程式，可協助您
 
 使用此架構，案頭應用程式會截取檔案系統呼叫（開啟、關閉、讀取、寫入等）至已載入的網路共用，並將它們轉譯為AEM伺服器的原生AEM HTTP呼叫。 檔案會快取至本機。 如需詳細資訊，請 [參閱「使用AEM案頭應用程式v1.x](use-app-v1.md)」。
 
-## 案頭應用程式元件概觀 {#desktop-nbsp-app-component-overview}
+## AEM desktop app component overview {#desktop-app-component-overview}
 
 案頭應用程式包含下列元件：
 
-* **案頭應用程式**:將DAM裝載／卸載為遠端檔案系統，並在本機載入的網路共用與它所連接的遠端AEM例項之間轉換檔案系統呼叫。
+* **案頭應用程式**:應用程式會將DAM安裝或解除安裝為遠端檔案系統，並在本機載入的網路共用與它所連接的遠端AEM例項之間轉換檔案系統呼叫。
 * **作業系統WebDAV/SMB客戶端**:處理Windows檔案總管/Finder和案頭應用程式之間的通訊。 如果擷取、建立、修改、刪除、移動或複製檔案，作業系統(OS)WebDAV/SMB用戶端會將此作業傳送至案頭應用程式。 在收到通訊後，案頭應用程式會將它轉譯為原生AEM遠端API呼叫。 例如，如果用戶在掛載的目錄中建立檔案，WebDAV/SMB客戶端將啟動請求，案頭應用程式將其轉換為在DAM中建立檔案的HTTP請求。 WebDAV/SMB客戶端是作業系統的內置元件。 它不會以任何方式與案頭應用程式、AEM或Adobe附屬。
 * **Adobe Experience manager實例**:提供對儲存在AEM Assets DAM儲存庫中的資產的存取權。 此外，它會代表與掛載的網路共用互動的本機案頭應用程式，執行案頭應用程式要求的動作。 目標AEM例項應執行AEM 6.1版或更新版本。 執行舊版AEM的AEM例項可能需要安裝額外的功能套件和Hotfix，才能完全發揮功能。
 
@@ -87,7 +87,7 @@ AEM案頭應用程式提供內部快取和背景上傳功能，以改善使用�
 
 ## 個別作業 {#individual-operations}
 
-在針對個別使用者進行次最佳化效能疑難排解時，請先檢閱 [限制](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations)。 後續章節包含改善個別使用者效能的建議。
+在針對個別使用者疑難排解未最佳化效能時，請先檢閱 [限制](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations)。 後續章節包含改善個別使用者效能的建議。
 
 ## 頻寬建議 {#bandwidth-recommendations}
 
@@ -155,7 +155,7 @@ Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，�
 
 ### 一般 {#general}
 
-當寫入已簽出的檔案時，鎖定只會在AEM的WebDAV實作中強制執行。 因此，鎖定僅由使用WebDAV（如案頭應用程式）的用戶端執行。 此鎖定不會透過AEM的網頁介面執行。 AEM介面只會在已簽出的資產的卡片檢視中顯示鎖定圖示。 圖示為修飾，對AEM的行為無影響。
+當寫入已簽出的檔案時，鎖定只會在AEM webDAV實作中強制執行。 因此，鎖定僅由使用WebDAV（如案頭應用程式）的用戶端執行。 此鎖定不會透過AEM網頁介面執行。 AEM介面只會在已簽出的資產的卡片檢視中顯示鎖定圖示。 圖示為修飾，對AEM的行為無影響。
 
 一般而言，WebDAV用戶端的行為並不總是如預期般。 可能還有其他問題。 不過，在AEM中重新整理或檢查資產是驗證資產是否未修改的良好方式。 這是OS webDAV用戶端的典型行為，不受Adobe控制。
 
