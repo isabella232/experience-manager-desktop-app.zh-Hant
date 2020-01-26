@@ -9,14 +9,18 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
 
 ---
 
 
 # 安裝及設定AEM案頭應用程式v1.x {#install-and-configure-aem-desktop-app}
 
-安裝並設定AEM案頭應用程式以搭配AEM Assets伺服器運作，並將資產下載至您的本機檔案系統。 若要使用AEM案頭應用程式，
+使用AEM案頭應用程式，AEM中的資產可輕鬆在您的本機案頭上存取，並可用於任何案頭應用程式。 您可在Mac finder或Windows檔案總管中輕鬆顯示資產、在案頭應用程式中開啟並在本機變更——當您上傳時，變更會儲存回AEM，並在儲存庫中建立新版本。
+
+此類整合可讓組織中的不同角色集中管理AEM Assets中的資產，並在Creative cloud和其他應用程式中存取資產，同時讓您輕鬆符合各種標準，包括品牌。
+
+若要使用AEM案頭應用程式，
 
 * 確定AEM案頭應用程式支援您的AEM伺服器版本。 請參閱相 [容性矩陣](release-notes-of-v1.md#compatibilitymatrix)。
 * 下載並安裝應用程式。
@@ -38,7 +42,7 @@ source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 AEM案頭應用程式使用系統的預先定義代理，透過HTTPS連線至網際網路。 應用程式只能使用不需要額外驗證的網路代理進行連線。
 
-如果您設定或修改Windows的Proxy伺服器設定（「網際網路選項&gt; LAN設定」），請重新啟動AEM案頭應用程式，讓變更生效。
+如果您設定或修改Windows的Proxy伺服器設定（「網際網路選項> LAN設定」），請重新啟動AEM案頭應用程式，讓變更生效。
 
 如果您的Proxy需要驗證，IT團隊可以在Proxy伺服器設定中將AEM Assets URL加入白名單，以允許應用程式流量傳遞。
 
@@ -86,7 +90,7 @@ AEM Desktop會使用包含預設連接埠的URL連線至AEM。 因此，分 `vir
 
 ### 管理快取的應用程式內選項 {#in-app-option-to-manage-cache}
 
-您可以控制可用於本地快取的磁碟空間量。 來自AEM Assets伺服器的物件會在本機快取，以提供更順暢的體驗。 您可以變更預設值以符合您的需求。 此外，您也可以清除快取，重新擷取所有資產。 若要設定所要的選項，請按一下應用程式的圖示，然後按一下 **[!UICONTROL Advanced]** &gt; **[!UICONTROL Manage Cache]**。****
+您可以控制可用於本地快取的磁碟空間量。 來自AEM Assets伺服器的物件會在本機快取，以提供更順暢的體驗。 您可以變更預設值以符合您的需求。 此外，您也可以清除快取，重新擷取所有資產。 若要設定所要的選項，請按一下應用程式的圖示，然後按一下 **[!UICONTROL Advanced]**>**[!UICONTROL Manage Cache]**。****
 
 >[!NOTE]
 >
@@ -108,11 +112,11 @@ AEM案頭應用程式的快取預設位置為：
 
    要保存對此檔案所做的更改，需要管理員權限。
 
-1. 搜尋字串"ProxyCacheRoot"。 您會看到其值已設為快取位置「%LocalAppData%\Adobe\AssetsCompanion\Cache」。 只要將此值變更為任何有效路徑即可。
+1. 搜尋字串&quot;ProxyCacheRoot&quot;。 您會看到其值已設為快取位置「%LocalAppData%\Adobe\AssetsCompanion\Cache」。 只要將此值變更為任何有效路徑即可。
 
    >[!NOTE]
    >
-   >應用程式會自動建立 *&lt;Encoded AEM Endpoint&gt;子目錄* ;此行為無法設定。
+   >應用程式會自動建立 *&lt;Encoded AEM Endpoint>子目錄* ;此行為無法設定。
 
 ## 其他資源 {#additional-resources}
 
