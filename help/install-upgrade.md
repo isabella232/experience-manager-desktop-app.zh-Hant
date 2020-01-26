@@ -9,14 +9,24 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
 
 ---
 
 
 # 安裝AEM案頭應用程式 {#install-app-v2}
 
-## 系統需求 {#tech-specs-v2}
+使用AEM案頭應用程式，AEM中的資產可輕鬆在您的本機案頭上存取，並可用於任何案頭應用程式。 您可在Mac finder或Windows檔案總管中輕鬆顯示資產、在案頭應用程式中開啟並在本機變更——當您上傳時，變更會儲存回AEM，並在儲存庫中建立新版本。
+
+此類整合可讓組織中的不同角色集中管理AEM Assets中的資產，並在Creative cloud和其他應用程式中存取資產，同時讓您輕鬆符合各種標準，包括品牌。
+
+若要使用AEM案頭應用程式，
+
+* 確定AEM案頭應用程式支援您的AEM伺服器版本。 請參閱相 [容性矩陣](release-notes-of-v1.md#compatibilitymatrix)。
+* 下載並安裝應用程式。
+* 使用幾個資產測試連線。 請參 [閱存取和開啟案頭上的資產](use-app-v1.md#openondesktop)。
+
+## 系統需求先決條件和下載連結 {#tech-specs-v2}
 
 如需詳細資訊，請參閱 [AEM案頭應用程式版本注意事項](release-notes.md)。
 
@@ -44,7 +54,7 @@ source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 1. 執行安裝程式二進位檔，並依照螢幕上的指示進行安裝。
 1. 在Windows上，安裝程式可能會提示安裝 `Visual Studio C++ Redistributable 2015`。 依照螢幕上的指示進行安裝。 如果安裝失敗，則手動安裝。 從這裡下載安裝 [程式](https://www.microsoft.com/en-us/download/details.aspx?id=52685) ，並同時安裝 `vc_redist.x64.exe` 和檔 `vc_redist.x86.exe` 案。 重新執行AEM案頭應用程式安裝程式。
 1. 根據提示重新啟動電腦。 啟動案頭應用程式以進行設定。
-1. 若要將應用程式與AEM儲存庫連接，請按一下托盤中的應用程式圖示以啟動應用程式。 提供AEM例項的位址。 按一下 **[!UICONTROL Connect]** 並提供憑據。
+1. 若要將應用程式與AEM儲存庫連接，請按一下托盤中的應用程式圖示以啟動應用程式。 提供AEM例項的位址。 按一下 **[!UICONTROL Connect]**並提供憑據。
 
    ![案頭應用程式的連線畫面與輸入伺服器位](assets/connect_da2.png "址連線畫面與輸入伺服器位址")
 
@@ -62,12 +72,12 @@ source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ## 設定首選項 {#set-preferences}
 
-要更改首選項，請按一下「更 ![多選項」表徵圖](assets/do-not-localize/more_options_da2.png) ，並 **[!UICONTROL Preference]** 按一下「首 ![選項」表徵圖](assets/do-not-localize/preferences_icon_da2.png)。 在窗口 **[!UICONTROL Preferences]** 中，調整以下值：
+要更改首選項，請按一下「更 ![多選項」表徵圖](assets/do-not-localize/more_options_da2.png) ，並 **[!UICONTROL Preference]**按一下「首![選項」表徵圖](assets/do-not-localize/preferences_icon_da2.png)。 在窗口**[!UICONTROL Preferences]** 中，調整以下值：
 
 * [!UICONTROL Launch application on login].
 * [!UICONTROL Show window when application starts].
 * **[!UICONTROL Cache Directory]**:應用程式的本機快取位置（包含本機下載的資產）。
-* **[!UICONTROL Network Drive Letter]**:用來對應至AEM DAM的磁碟機號碼。 如果您不確定，請勿變更此項。 應用程式可以對應至Windows上的任何驅動器號。 如果兩個使用者放置不同磁碟機號碼的資產，他們就看不到彼此放置的資產。 資產的路徑會變更。 資產會保留在二進位檔案中（例如INDD），不會移除。 應用程式會列出所有可用的磁碟機盤符，並依預設會使用最後可用的盤符 `Z`。
+* **[!UICONTROL Network Drive Letter]**:用來對應至AEM DAM的磁碟機號碼。 如果您不確定，請勿變更此項。 應用程式可以對應至Windows上的任何驅動器號。 如果兩個使用者放置不同磁碟機號碼的資產，他們就看不到彼此放置的資產。 資產的路徑會變更。 資產會保留在二進位檔案中（例如INDD），不會移除。 應用程式會列出所有可用的磁碟機盤符，並依預設會使用最後可用的盤符`Z`。
 * **[!UICONTROL Maximum Cache Size]**:允許在硬碟上以GB為單位快取，以儲存本機下載的資產。
 * **[!UICONTROL Current cache size]**:本機下載資產的儲存大小。 只有在使用應用程式下載資產後，才會顯示資訊。
 * **[!UICONTROL Automatically download linked assets]**:如果您下載原始檔案，則會自動擷取置於支援原生Creative cloud應用程式中的資產。
