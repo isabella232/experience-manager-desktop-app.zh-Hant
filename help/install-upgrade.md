@@ -1,6 +1,6 @@
 ---
-title: 安裝及設定AEM案頭應用程式
-description: 安裝並設定AEM案頭應用程式以搭配AEM Assets伺服器運作，並下載您本機檔案系統上的資產。
+title: 安裝和設定Adobe Experience manager案頭應用程式
+description: 安裝並設定Adobe Experience Manager案頭應用程式，以便與Adobe Experience Manager Assets伺服器搭配運作，並下載您本機檔案系統上的資產。
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,26 +9,26 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# 安裝AEM案頭應用程式 {#install-app-v2}
+# Install Adobe Experience Manager desktop app {#install-app-v2}
 
-使用AEM案頭應用程式，AEM中的資產可輕鬆在您的本機案頭上存取，並可用於任何案頭應用程式。 您可在Mac finder或Windows檔案總管中輕鬆顯示資產、在案頭應用程式中開啟並在本機變更——當您上傳時，變更會儲存回AEM，並在儲存庫中建立新版本。
+使用Adobe Experience manager案頭應用程式，Experience manager中的資產可輕鬆從您的本機案頭存取，並可用於任何案頭應用程式。 資產可在Mac Finder或Windows檔案總管中輕鬆顯示、在案頭應用程式中開啟並在本機變更——當您上傳時，變更會儲存回Experience Manager，並在儲存庫中建立新版本。
 
-此類整合可讓組織中的不同角色集中管理AEM Assets中的資產，並在Creative cloud和其他應用程式中存取資產，同時讓您輕鬆符合各種標準，包括品牌。
+此類整合可讓組織中的不同角色集中管理Adobe Experience Manager Assets中的資產，並在Creative cloud和其他應用程式中存取資產，同時讓您輕鬆符合包括品牌在內的各種標準。
 
-若要使用AEM案頭應用程式，
+若要使用Experience manager案頭應用程式，
 
-* 確定AEM案頭應用程式支援您的AEM伺服器版本。 請參閱相 [容性矩陣](release-notes-of-v1.md#compatibilitymatrix)。
+* 確保Experience manager案頭應用程式支援您的Experience Manager伺服器版本。 請參閱相 [容性矩陣](release-notes-of-v1.md#compatibilitymatrix)。
 * 下載並安裝應用程式。
 * 使用幾個資產測試連線。 請參 [閱存取和開啟案頭上的資產](use-app-v1.md#openondesktop)。
 
 ## 系統需求先決條件和下載連結 {#tech-specs-v2}
 
-如需詳細資訊，請參閱 [AEM案頭應用程式版本注意事項](release-notes.md)。
+如需詳細資訊，請參閱 [Experience manager案頭應用程式版本注意事項](release-notes.md)。
 
 ## 從應用程式v1.x升級至應用程式v2 {#upgrade-from-previous-version}
 
@@ -72,7 +72,7 @@ source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
 
 ## 設定首選項 {#set-preferences}
 
-要更改首選項，請按一下「更 ![多選項」表徵圖](assets/do-not-localize/more_options_da2.png) ，並 **[!UICONTROL Preference]**&#x200B;按一下「首![選項」表徵圖](assets/do-not-localize/preferences_icon_da2.png)。 在窗口**[!UICONTROL Preferences]** 中，調整以下值：
+要更改首選項，請按一下「更 ![多選項」表徵圖](assets/do-not-localize/more_options_da2.png) ，並 **[!UICONTROL Preference]**按一下「首![選項」表徵圖](assets/do-not-localize/preferences_icon_da2.png)。 在窗口**[!UICONTROL Preferences]** 中，調整以下值：
 
 * [!UICONTROL Launch application on login].
 * [!UICONTROL Show window when application starts].
