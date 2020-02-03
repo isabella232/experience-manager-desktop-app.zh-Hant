@@ -1,52 +1,52 @@
 ---
-title: AEM案頭應用程式簡介
-description: 瞭解如何使用AEM案頭應用程式，在直接從案頭使用AEM Assets時，為創意使用者最佳化資產管理工作流程。
+title: Adobe Experience manager案頭應用程式簡介
+description: 瞭解如何使用Adobe Experience Manager案頭應用程式，直接從案頭使用Adobe Experience Manager Assets時，為創意使用者最佳化資產管理工作流程。
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# AEM案頭應用程式總覽 {#overview-v2}
+# Adobe Experience Manager desktop app overview {#overview-v2}
 
-Adobe在其解決方案中提供緊密連結的工作流程，讓您的業務線使用者和創意專業人員擁有更高的生產力。 Adobe Experience manager案頭應用程式可連接資料庫和案頭應用程式，包括Adobe和協力廠商應用程式，讓您更快速地存取資源並簡化工作流程。 如此節省時間並減少工作量，可提高使用者的效率，讓他們在案頭工作流程中使用Adobe Experience Manager的資產。
+Adobe 在解決方案中提供緊密相連的工作流程，讓您的業務線使用者和創意內容專業人員擁有更高的生產力。Adobe Experience manager 桌面應用程式可連接資料庫和桌面應用程式，包括 Adobe 和協力廠商應用程式，讓您更快速地存取資源並簡化工作流程。如此一來，透過桌面工作流程運用 Adobe Experience Manager 資產的使用者不僅節省時間，且事半功倍。
 
-使用應用程式，AEM Assets中的資產可輕鬆在您的本機案頭上存取，並可用於任何案頭應用程式。 您可以在您選擇的案頭應用程式中開啟和編輯資產。 只有當您選擇上傳變更時，本機編輯才會在AEM中以新版資產的形式提供，這可讓您在案頭上以有效率的方式處理進行中的資產編輯。 應用程式支援將資產和巢狀資料夾上傳至AEM，簡化新增內容至儲存庫的程式。
+使用應用程式，Adobe Experience Manager Assets中的資產可輕鬆在您的本機案頭上存取，並可用於任何案頭應用程式。 您可以在自己選擇的桌面應用程式中開啟和編輯資產。只有當您選擇上傳變更時，Adobe Experience manager才會將本機編輯作為資產的新版本提供，如此，您才能在案頭上有效率地處理進行中的資產編輯。 應用程式支援將資產和巢狀資料夾上傳至Experience Manager，以簡化將新內容新增至儲存庫的程式。
 
-此類整合可讓組織中的各種角色集中管理AEM Assets中的資產。 行銷人員和商業使用者可確保符合各種標準，包括品牌推廣和授權。 創意使用者也擁有專用的 [Adobe Asset Link](https://www.adobe.com/marketing/experience-manager-assets/adobe-asset-link.html) （Adobe Photoshop、Illustrator和InDesign中的資產）工具，也可以在Creative cloud和其他原生應用程式中存取案頭上的資產。
+此類整合可讓組織中的不同角色在Experience Manager Assets中集中管理資產。 行銷人員和商務使用者可確保是否符合各類型的標準，包括品牌推廣和授權等標準在內。創意內容使用者也擁有專用的 [Adobe Asset Link](https://www.adobe.com/marketing/experience-manager-assets/adobe-asset-link.html) 工具，可使用 Adobe Photoshop、Illustrator 和 InDesign 中的資產，亦可在 Creative cloud 和其他原生應用程式中存取桌面上的資產。
 
 >[!NOTE]
 >
->Adobe Experience Manager案頭應用程式已在AEM 6.1版本中推出，先前稱為AEM Assets Companion App。 如需應用程式1.x版的說明，請參閱左側邊欄中的目錄。 Adobe建議升級至最新版本2。
+>Adobe Experience Manager案頭應用程式是在Adobe Experience Manager 6.1版本中推出的，之前稱為Adobe Experience Manager Assets配套應用程式。 如需應用程式 1.x 版的說明，請參閱左側邊欄中的 TOC。Adobe 建議您升級至最新版本 2。
 
-案頭應用程式檔案包含下列角色和使用案例的資訊。
+桌面應用程式的檔案包括下列使用者角色和使用案例的資訊。
 
 | 所需資訊 | 說明內容 |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| 想要快速一窺最新版本的新功能和增強功能嗎？ | [應用程式的新增功能](#whats-new-v2) |
-| 想要瞭解先決條件和技術規格嗎？ 想要下載連結嗎？ | [發行說明](release-notes.md) |
-| 不是案頭應用程式的新手嗎？ 升級並想要順利轉換？ | [從舊版升級](install-upgrade.md#upgrade-from-previous-version) |
-| 開始並執行。 想要調整預設偏好設定？ | [安裝及設定應用程式](install-upgrade.md) |
-| 瞭解如何使用來瀏覽、發現、編輯、上傳、解決衝突、執行大量作業等。 | [使用AEM案頭應用程式](using.md) |
-| 遇到問題了嗎？ 需要協助進行疑難排解嗎？ | [疑難排解AEM案頭應用程式](troubleshoot.md) |
+| 想要一窺最新版本的新功能和性能提升嗎？ | [應用程式的新增功能](#whats-new-v2) |
+| 想要瞭解先決條件和技術規格嗎？想要下載連結嗎？ | [發行說明](release-notes.md) |
+| 不是桌面應用程式的新手嗎？升級並想要順利轉換？ | [從舊版升級](install-upgrade.md#upgrade-from-previous-version) |
+| 開始並執行。想要調整預設偏好設定？ | [安裝及設定應用程式](install-upgrade.md) |
+| 瞭解如何瀏覽、探索、編輯、上傳、解決衝突、執行大量作業等。 | [使用Experience manager案頭應用程式](using.md) |
+| 遇到問題了嗎？需要協助進行疑難排解嗎？ | [疑難排解Experience manager案頭應用程式](troubleshoot.md) |
 
 ## 應用程式的新增功能 {#whats-new-v2}
 
-應用程式2.0版是從原點建立，提供比舊版更多改良功能。 此新應用程式更方便使用，並提供專屬的案頭使用體驗，以及全新的應用程式UI。 使用者可以透過搜尋或瀏覽、開啟、編輯和上傳變更來發現資產，以及上傳新資產——而不需要使用者使用AEM介面。 此版本也支援從AEM介面開啟檔案。
+應用程式 2.0 版從原點出發，提供比舊版更多改良功能。新版應用程式更容易上手，並提供專屬的桌面使用體驗，以及全新的應用程式使用者介面。使用者可以透過搜尋或瀏覽、開啟、編輯和上傳變更來發現資產，以及上傳新資產——而不需要使用者使用Experience Manager介面。 此版本也支援從Experience manager介面開啟檔案。
 
-此新應用程式可大幅改善使用者體驗，並符合與以往相同的使用案例。 以下是頂層的改進。
+新版應用程式大幅改善了使用者體驗，並保留以往的使用案例。以下是重點改善內容。
 
-* 使用者可在內建瀏覽器中瀏覽和搜尋應用程式，以發現資產，而不需依賴Mac Finder或Windows檔案總管來顯示虛擬網路共用。
-* 明確指引使用者可採取的動作。
-* 降低頻寬使用量，可改善效能。 原始的二進位檔案只會在需要時下載。 若要瀏覽和搜尋資產，只會傳輸小型縮圖。
-* 已針對大量作業最佳化，例如大量上傳。
+* 使用者可在內建瀏覽器中瀏覽和搜尋應用程式，盡情探索資產，而不需依賴 Mac Finder 或 Windows Explorer 來顯示虛擬網路分享。
+* 針對使用者可採取的動作，提供清楚的指引。
+* 降低頻寬使用量，進而改善效能。只會在需要時下載原始的二進位檔案。瀏覽和搜尋資產時，只會傳輸小型縮圖。
+* 針對大量作業進行最佳化，例如大量上傳。
 
-新應用程式的主要使用案例和增強功能會與客戶歷程對應在下圖中。
+下圖呈現新版應用程式的主要使用案例和性能提升，並搭配客戶歷程顯示。
 
-![AEM案頭應用程式的新增功能](assets/aem_desktop_app_usecases_v2.png)
+![Experience manager案頭應用程式的新增功能](assets/aem_desktop_app_usecases_v2.png)
 
-案頭應用程式可讓其使用者直接在應用程式內完成上述所有使用案例。 如有需要，您也可以選擇在Web介面中進行資產搜尋，然後將控制項傳遞至應用程式，以開啟和編輯資產。
+透過桌面應用程式，使用者可直接在應用程式內完成上述所有使用案例。如有需要，您也可以選擇在 Web 介面中探索資產，然後將控制項傳遞至應用程式，即可開啟和編輯資產。
