@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 75e7cbaaa23b441b5e3a6e55381cd5f548231537
+source-git-commit: f69ccbf7acaa277a7f4d07fabba2094459e4ea23
 
 ---
 
@@ -20,10 +20,10 @@ source-git-commit: 75e7cbaaa23b441b5e3a6e55381cd5f548231537
 
 | 產品 | Adobe Experience Manager (AEM) 桌面應用程式 |
 |---------------|--------------------------------------------------------------------|
-| 版本 | 1.10（Mac和Windows上為1.10.0.3） |
+| 版本 | 1.10（Mac為1.10.0.6,Windows為1.10.0.3） |
 | 類型 | 次要版本 |
-| 日期 | 2018年8月31日 |
-| 下載 URL | [Mac OS X 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); [Windows 32位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
+| 日期 | 1.10.0.6(Mac):2020年4月15日；1.10.0.3(Win):2018年8月31日 |
+| 下載 URL | [Mac OS X 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.6.dmg); [Windows 32位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
 | 相容性 | AEM 6.5.x;AEM 6.4.x;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
@@ -41,11 +41,15 @@ Adobe強烈建議使用最新版AEM案頭應用程式，以取得最新功能、
 
 您打算安裝在本機電腦上的AEM案頭應用程式版本需要特定的AEM伺服器版本／其他伺服器端元件（服務套件、Hotfix或功能套件）。 在您第一次連線至AEM伺服器之前，請確定AEM伺服器已正確設定。 如果您需要協助，請連絡您的AEM管理員。
 
-請參 [閱本檔案結尾的](#compatibilitymatrix) 「詳細相容性矩陣」，以評估您設定的先決條件。
+請參 [閱本檔案結尾的詳細相容性表](#compatibilitymatrix) ，以評估您設定的必要條件。
 
-## What's New in AEM desktop app 1.10 {#what-s-new-in-aem-desktop-app}
+## What&#39;s New in AEM desktop app 1.10 {#what-s-new-in-aem-desktop-app}
 
 AEM案頭應用程式1.10著重在改善大型上傳的使用者體驗、背景作業的相關資訊，以及在使用連結檔案（例如InDesign）開啟資產時的最佳化體驗。
+
+>[!NOTE]
+>
+>如果您使用macOS 10.15.4或更新版本，請至少使用應用程式1.10.0.6版。 此修補程式發行符合 [Apple公證要求](https://developer.apple.com/news/?id=04102019a)。
 
 **本機編輯／結帳**:自動上傳儲存至資產的變更可在狀態視窗中停用。 如此，使用者就可繼續處理檔案並儲存變更，然後當變更準備就緒時，決定上傳所有變更。
 
@@ -63,7 +67,7 @@ AEM案頭應用程式1.10著重在改善大型上傳的使用者體驗、背景�
 
 ## 舊版的增強功能 {#enhancements-in-the-previous-versions}
 
-此版本可延伸並取代舊版Experience manager案頭應用程式，後者提供下列主要增強功能：
+此版本可延伸並取代舊版Experience Manager案頭應用程式，後者提供下列主要增強功能：
 
 * **1.9/1.9.1版**:可恢復的上傳、改良的狀態視窗、指示應用程式／連線狀態的應用程式圖示、預取InDesign檔案的連結資產
 * **1.8版**:更好地控制使用者的快取大小、改善Windows上SAML/SSO的登入體驗、支援Mac上的。pac網路proxy，以及客戶回報的問題。
@@ -71,11 +75,11 @@ AEM案頭應用程式1.10著重在改善大型上傳的使用者體驗、背景�
 * **1.6版**:針對各種AEM安全性組態和應用程式穩定性與效能的登入程式改進。
 * **1.5版**:應用程式穩定性和針對各種網路問題的恢復能力，以及更好的支援性。
 * **1.4版**:能夠使用進度監控在後台上載分層資料夾。
-* **1.3版**:存取檔案和儲存AEM變更的效能增強與穩定性，尤其是從Creative cloud案頭應用程式（例如InDesign、Illustrator或Photoshop）儲存變更。 它旨在在處理檔案時，為使用者提供更本端的案頭樣式體驗，同時在背景處理網路資料傳輸作業。
+* **1.3版**:存取檔案和儲存AEM變更的效能增強與穩定性，尤其是從Creative Cloud案頭應用程式（例如InDesign、Illustrator或Photoshop）儲存變更。 它旨在在處理檔案時，為使用者提供更本端的案頭樣式體驗，同時在背景處理網路資料傳輸作業。
 
 ### 自AEM案頭應用程式1.9以來的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
-Adobe Experience Manager(AEM)案頭應用程式1.9.1是一個修補程式版本，可解決有關資產結帳和將檔案從網路共用複製到本機目錄的幾項重要客戶問題。
+Adobe Experience Manager(AEM)案頭應用程式1.9.1是一個修補程式版本，可解決有關資產結帳和從網路共用檔案複製至本機目錄的幾項重要客戶問題。
 
 * 一個使用者簽出的資產不應可供其他使用者修改(CQ-4246009)
 * 當使用者資料夾位於個別磁碟分區時，支援將資料夾從映射資料夾複製到本機資料夾(CQ-4243978)
@@ -92,7 +96,7 @@ AEM案頭應用程式1.9著重於改善大型上傳的使用者體驗、背景�
 * 失敗3次的上傳會顯示錯誤訊息
 * 使用使用者可點按的圖示顯示的檔案衝突。 按一下圖示會顯示對話方塊，其中包含說明和兩個選項：
    * 「保留我的」:立即將檔案上傳至伺服器
-   * "覆寫我的":立即刪除本機檔案，並從伺服器下載新副本
+   * &quot;覆寫我的&quot;:立即刪除本機檔案，並從伺服器下載新副本
 
 下載
 
@@ -100,17 +104,17 @@ AEM案頭應用程式1.9著重於改善大型上傳的使用者體驗、背景�
 * 已完成的下載會顯示總傳輸量、最終速率，以及在點按時開啟檔案的圖示（僅適用於單一檔案）
 * 失敗的下載顯示錯誤訊息，並傳輸資訊（如果有的話）
 * 頁尾顯示下載的檔案總數和平均傳輸率。
-* 如果使用者選擇從AEM Assets Web UI開啟或編輯多個檔案，這些檔案會分組在一起，例如"myasset.jpeg和4個以上檔案"
+* 如果使用者選擇從AEM Assets Web UI開啟或編輯多個檔案，這些檔案會分組在一起，例如&quot;myasset.jpeg和4個以上檔案&quot;
 * 當下載InDesign檔案（包括儲存在AEM Assets中的連結資產）時，案頭應用程式會先下載所有連結的資產，然後再開啟InDesign檔案並指出連結資產的下載，例如（共24人中有5人）
 
-大量上傳：透過「建立&gt;在AEM網頁UI中上傳檔案夾」上傳大型檔案夾階層，或在案頭應用程式內容選單中複製並選取「Finder/Explorer中的「貼上資產」，將會觸發此對話方塊的使用：
+大量上傳：透過「建立>在AEM網頁UI中上傳檔案夾」上傳大型檔案夾階層，或在案頭應用程式內容選單中複製並選取「Finder/Explorer中的「貼上資產」，將會觸發此對話方塊的使用：
 
 * 顯示進行中的上載，包括進度列和當前正在傳輸的檔案名
 * 進行中的上載包含一個圖示，在點按時會取消上載。 傳輸將在當前傳輸檔案完成後停止
 * 失敗的傳輸進程將顯示為錯誤消息（僅當整個傳輸失敗時）
 * 如果個別檔案無法傳輸，則會在標籤上顯示為錯誤。 否則，標籤*上不會只顯示整個上載的單一項目。
 
-**指示背景操作狀態的表徵圖**&#x200B;應用程式表徵圖將指示背景操作的狀態，以便為用戶提供更好的視覺提示。 例如，當應用程式未連線至AEM時，圖示將會變灰，當有作用中的上傳時，它會顯示「同步」覆蓋等。
+**用於指示後台操作狀態的圖**&#x200B;標應用程式表徵圖將指示後台操作的狀態，以便為用戶提供更好的視覺提示。 例如，當應用程式未連線至AEM時，圖示將會變灰，當有作用中的上傳時，它會顯示「同步」覆蓋等。
 
 **預取連結資產**：為改善使用包含儲存在AEM中之連結資產的InDesign檔案時的使用體驗，案頭應用程式會先嘗試將這些連結檔案預取至本機快取，然後再下載並開啟InDesign檔案。 如此，使用者就可在本機取得連結的檔案，而且在InDesign（在「連結」面板中）中存取這些檔案時，不需要等待更久。
 請注意，預取只有在AEM識別伺服器端的連結時才能運作。 具有已辨識連結的資產會在InDesign資產的「屬性」檢視中列出「參考」清單。
@@ -173,13 +177,13 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
    * 案頭應用程式1.5會隨著時間推移而減慢桌上型電腦的速度(CQ-4209159)。
    * 顯示佇列狀態功能僅適用於安裝應用程式的使用者(CQ-4212199)。
    * (Windows)請確定32位元安裝程式不包含64位元程式碼(CQ-4217406)。
-* 在 1.6 Beta 版中發現並修正的選定問題: 
+* 在 1.6 Beta 版中發現並修正的選定問題：
    * 高CPU使用量(CQ-4218070)。
    * 上傳至AEM時拖放檔案產生錯誤(CQ-4217006)。
 
 ### 自AEM案頭應用程式1.5以來提供的增強功能{#Enhancements-Available-Since-AEM-Desktop-App-15}
 
-**** Mac OS x版本1.5.1.5:1.5.1.5版提供下列優點：
+**Mac OS X版本1.5.1.5:** 1.5.1.5版提供下列優點：
 
 * 新功能和增強功能：將「複製／貼上」功能新增至Finder整合，以允許從案頭直接傳輸至AEM(CQ-4208158)
 * 錯誤修正：
@@ -189,10 +193,10 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
    * 案頭應用程式裝載點現在是/Volumes/DAM，因此對所有使用者而言都是一致的(CQ-4208159)
    * 首次將檔案放入InDesign時會發出更新警告(CQ-4207454)
 
-連結警告注意事項：Creative cloud應用程式（例如InDesign）會拍攝項目放置時上次修改時間的「快照」。 如果日期稍後變更，Adobe Creative cloud應用程式會報告連結已過時。 以下幾種方式報告了此問題：
+連結警告注意事項：Creative Cloud應用程式（例如InDesign）會拍攝項目放置時上次修改時間的「快照」。 如果日期稍後變更，Adobe Creative Cloud應用程式會報告連結已過時。 以下幾種方式報告了此問題：
 
-* 當Adobe Creative cloud應用程式啟動時，會顯示對話方塊，通知使用者連結的資產已過時，並提示使用者採取動作。
-* 如果Adobe Creative cloud應用程式已在執行中，則會在連結的資產上顯示黃色的三角形警告圖示。
+* 當Adobe Creative Cloud應用程式啟動時，會顯示對話方塊，通知使用者連結的資產已過時，並提示使用者採取動作。
+* 如果Adobe Creative Cloud應用程式已在執行中，則會在連結的資產上顯示黃色的三角形警告圖示。
 
 本端磁碟上的資產和AEM Desktop掛載目錄中的資產的行為相同，但有下列例外：
 
@@ -201,15 +205,15 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
 
 這兩種情況都符合預期，是AEM Desktop「延遲同步」架構的副作用。
 
-**** Mac OS x和Windows 1.5.0.x版：此版AEM案頭應用程式提供下列優點：
+**Mac OS X和Windows 1.5.0.x版：** 此版AEM案頭應用程式提供下列優點：
 
 * 針對網路問題提供更好的穩定性和恢復能力
    * 更穩定的AEM Assets檔案夾對應(CQ-103276、CQ-4204669、CQ-4203957)
    * 更妥善處理快取檔案(CQ-4204336、CQ-4206263)
    * 已改善下載／上傳大小超過2 GB之大型檔案的處理(CQ-4206438)
    * 修正在Finder中移動或重新命名大量檔案時的「錯誤36」(CQ-4204640)
-* 使用AEM server進行網路通訊的最佳化(CQ-4204974、CQ-100903)
-* 已改善在Creative cloud應用程式中開啟、放置和儲存AEM資產的可靠性(CQ-4203968、CQ-4205511、CQ-103543、CQ-4207141、CQ-90980)
+* 使用AEM Server進行網路通訊的最佳化(CQ-4204974、CQ-100903)
+* 已改善在Creative Cloud應用程式中開啟、放置和儲存AEM資產的可靠性(CQ-4203968、CQ-4205511、CQ-103543、CQ-4207141、CQ-90980)
 * 增強的支援性：清除快取的選項(CQ-4202541)、輕鬆存取記錄檔(CQ-4202340、CQ-4204673)
 * 其他修正：
    * 更支援名稱／非英文語言設定中具有日文字元的資產和檔案夾(CQ-4195433、CQ-4205793、CQ-4199446)
@@ -220,7 +224,7 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
 
 ### 自AEM案頭應用程式1.4起提供的增強功能{#Enhancements-Available-Since-AEM-Desktop-App-14}
 
-* 透過Touch UI中的「建立&gt;上傳檔案夾」新動作，簡化階層式檔案夾的上傳
+* 透過Touch UI中的「建立>上傳檔案夾」新動作，簡化階層式檔案夾的上傳
    * 動作會啟動案頭應用程式執行的資料夾上傳作業
    * 案頭應用程式會在背景中遍歷案頭上的指定檔案夾階層，並將檔案上傳至AEM Assets
    * 用戶可以在新的「上載隊列狀態」窗口中監視正在進行的操作的進度，該窗口具有進度條
@@ -255,7 +259,7 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
 ### 通訊協定變更（自v1.3起） {#protocol-change-since}
 
 * Mac OS X:
-   * OS x案頭整合的本地網路驅動器協定從WebDAV更改為SMB1。
+   * OS X案頭整合的本地網路驅動器協定從WebDAV更改為SMB1。
    * 隨案頭應用程式載入的AEM存放庫在Finder中會顯示為「smb」網路磁碟機，而非WebDAV磁碟機。
 * Windows:
    * Windows案頭整合的本端網路驅動器通訊協定仍維持；AEM將會以WebDAV共用方式載入。
@@ -264,7 +268,7 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
 
 >[!NOTE]
 >
->在Mac OS x上，本地網路驅動器協定從WebDAV更改為SMB1會導致儲存庫中同一資產的本地路徑不同。 這可能會影響透過「置入」命令置入Adobe Creative cloud應用程式的檔案連結。 如需詳細 [資訊，請參閱「使用AEM案頭應用程式](use-app-v1.md) 」。
+>在Mac OS X上，本地網路驅動器協定從WebDAV更改為SMB1會導致儲存庫中同一資產的本地路徑不同。 這可能會影響透過「置入」命令置入Adobe Creative Cloud應用程式的檔案連結。 如需詳細 [資訊，請參閱「使用AEM案頭應用程式](use-app-v1.md) 」。
 
 ### 檔案處理（自1.3起） {#file-handling-since}
 
@@ -319,7 +323,7 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
 
 ## 實用資源 {#helpful-resources}
 
-* [AEM檔案](https://helpx.adobe.com/support/experience-manager/6-4.html)
+* [AEM檔案](https://helpx.adobe.com/tw/support/experience-manager/6-4.html)
 * [使用AEM案頭應用程式v1.x](use-app-v1.md)
 * [AEM案頭應用程式v1.x最佳實務](best-practices-for-v1.md)
 
