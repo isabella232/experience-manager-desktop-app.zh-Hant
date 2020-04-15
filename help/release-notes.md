@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience manager案頭應用程式版本注意事項
+title: Adobe Experience Manager案頭應用程式版本注意事項
 description: Adobe Experience Manager案頭應用程式的發行詳細資訊、增強功能、新功能、相容性和下載連結。
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
@@ -10,20 +10,20 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
+source-git-commit: aca68b0c2eb363e33c8a6edec2370758124a4b9e
 
 ---
 
 
-# Adobe Experience manager案頭應用程式版本注意事項 {#release-notes-v2}
+# Adobe Experience Manager案頭應用程式版本注意事項 {#release-notes-v2}
 
-| 產品 | Adobe Experience Manager (AEM) 桌面應用程式 |
-|---------------|--------------------------------------------------------------------|
-| 應用程式版本（修訂版） | 2.0 (2.0.1.1) |
-| 支援的 AEM 版本 | AEM 6.5、AEM 6.4、AEM 6.3（含相容性套件） |
+| 產品 | Adobe Experience manager 桌面應用程式 |
+|----|----|
+| 應用程式版本（修訂版） | 2.0 (2.0.2.0) |
+| 支援的 AEM 版本 | AEM即雲端服務；AEM 6.5;AEM 6.4;AEM 6.3（含相容性套件） |
 | 類型 | 次要版本 |
-| 發行日期 | 2019年12月12日（Mac和Win） |
-| 下載 URL | [MacOS 64 位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.1.1.dmg)；[Windows 64 位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.1.1.exe)；[Windows 32 位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.1.1.exe) |
+| 發行日期 | 2020年4月15日（Mac和Win） |
+| 下載 URL | [macOS 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows 32位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
 
 ## 系統需求和先決條件 {#system-requirements-and-prerequisites-v2}
 
@@ -32,24 +32,25 @@ Adobe Experience Manager案頭應用程式與下列作業系統相容：
 * Mac OS X 10.10 或更新版本，提供最新的錯誤修正。
 * Windows 7 和 Windows 10，提供最新的服務套件和錯誤修正。
 
-此應用程式可與下列Experience manager版本搭配使用，不論部署在內部部署或部署在Adobe Managed Services(AMS)上：
+此應用程式可與下列Experience Manager版本搭配使用，不論部署為雲端服務、部署在Adobe Managed Services(AMS)或內部部署：
 
-* [Experience Manager 6.5.0或更新版本](https://helpx.adobe.com/experience-manager/6-5/release-notes.html)
-* [Experience Manager 6.4.4或更新版本](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
-* Experience Manager 6.4.0 - 6.4.3及相容 [套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
+* [Experience Manager 雲端服務](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/release-notes/home.html)
+* [Experience Manager 6.5.0+](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) 或更新版本
+* [Experience Manager 6.4.4+](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) 或更新版本
+* Experience Manager 6.4.0 - 6.4.3及相容性套 [件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
 >
 >Experience Manager 6.3案頭應用程式支援已過時。 Adobe建議升級至較新且支援的Adobe Experience Manager版本。
->安裝相容性套件後，Experience Manager 6.3.3.1或更新版本可與案頭應用程 [式搭配使用](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。 Experience Manager 6.3沒有此類套件，因為計畫中 [沒有Service Pack](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)。
+>安裝相容性套件後，Experience Manager 6.3.3.1或更新版本可與案頭應用程 [式搭配使用](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。 Experience Manager 6.3沒有此類套件，因為計畫中 [沒有Service Pack](https://helpx.adobe.com/tw/experience-manager/maintenance-releases-roadmap.html)。
 
-您打算在本機電腦上安裝的應用程式版本，需要搭配特定的 Adobe Experience Manager 伺服器版本／其他伺服器端元件（服務套件、修補程式或功能套件）。請連絡您的Adobe Experience manager管理員以取得協助。
+您打算在本機電腦上安裝的應用程式版本，需要搭配特定的 Adobe Experience Manager 伺服器版本／其他伺服器端元件（服務套件、修補程式或功能套件）。請連絡您的Adobe Experience Manager管理員以取得協助。
 
 ### Support for different assets and file types {#support-for-file-types}
 
 應用程式支援儲存在Adobe Experience Manager中的資產，這些資產代表二進位檔案的基本作業。 在原生桌面應用程式中開啟檔案時，需透過作業系統內的特定應用程式（例如 Mac Preview 或 Adobe Photoshop），以特定檔案類型（例如 PNG 或 JPG）開啟。
 
-部分檔案類型支援將連結的資產放入二進位檔。當使用案頭應用程式開啟這類二進位檔案時，如果資產存在於Experience manager儲存庫中，應用程式會預先下載連結的資產。 目前支援的檔案類型包括：
+部分檔案類型支援將連結的資產放入二進位檔。當使用案頭應用程式開啟這類二進位檔案時，如果資產存在於Experience Manager儲存庫中，應用程式會預先下載連結的資產。 目前支援的檔案類型包括：
 
 * Adobe inDesign 檔案（INDD格式）
 * Adobe Illustrator 檔案（AI格式）
@@ -59,14 +60,26 @@ Adobe Experience Manager案頭應用程式與下列作業系統相容：
 
 * Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
 * 透過原生應用程式，將路徑儲存在檔案的 XMP 記錄中.
-* Experience manager已擷取XMP記錄，並包含資產中繼資料記錄的路徑。
-* 路徑可以與Experience Manager中的資產相符，即置入的檔案也位於Experience manager中的相符路徑下)。
+* Experience Manager已擷取XMP記錄，並包含資產中繼資料記錄的路徑。
+* 路徑可以與Experience Manager中的資產相符，即置入的檔案也位於Experience Manager中，路徑相符。
 
 ## 新增功能和功能改善 {#whats-new-added}
 
 To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
-2.0.1版中的錯誤修正和更新包括：
+**應用程式2.0.2版中的更新**
+
+錯誤修正和更新包括：
+
+* 若要改善上傳效能，請在中增加上傳加速 [!UICONTROL Preferences]。 當此設定開啟時，應用程式會使用更多本機CPU執行緒，並且耗用更多資源。
+* 修正檔案名稱或路徑包含特定GB18030字元時，資產上傳的問題。 <!-- CQ-4283494 -->
+* 切換至搜尋結果中的其他排序類型後，即可使用依關聯性排序選項。 <!-- CQ-4286874 -->
+* 案頭應用程式現在會列出子資料夾，而不需要明確重新整理。 <!-- CQ-4285711 -->
+* (Windows)已修正某些Windows電腦上罕見的無法使用應用程式介面問題。 使用者無法按一下應用程式介面，因為介面元素的點按區域會「偏移」，所以顯示失真。 <!-- CQ-4280785 -->
+
+**應用程式2.0.1版中的更新**
+
+錯誤修正和更新包括：
 
 * 允許選項配置目 `%Temp%` 錄以匹配路 `%APPDATA%` 徑。 <!-- CQ-4282665 -->
 * 允許使用者透過Okta SAML驗證登入AEM作者。 <!-- CQ-4278134 -->
@@ -117,9 +130,9 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 >[!MORELIKETHIS]
 >
->* [AEM 6.5 檔案](https://helpx.adobe.com/support/experience-manager/6-5.html)
->* [AEM Assets 6.5 檔案](https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html)
->* [如何使用Experience manager案頭應用程式](using.md)
+>* [AEM as a Cloud Service檔案](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+>* [AEM as a Cloud Service Assets檔案](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/assets/home.html)
+>* [如何使用Experience Manager案頭應用程式](using.md)
 >* [安裝和升級桌面應用程式](install-upgrade.md)
 >* [最佳作法與疑難排解提示](troubleshoot.md)
 
