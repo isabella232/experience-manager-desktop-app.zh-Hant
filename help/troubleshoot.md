@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience manager案頭應用程式的最佳實務和疑難排解
+title: Adobe Experience Manager案頭應用程式的最佳實務和疑難排解
 description: 遵循最佳實務並進行疑難排解，以解決與安裝、升級、設定等相關的偶發問題。
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
@@ -26,11 +26,11 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 * **瞭解案頭應用程式的運作方式**:開始使用應用程式之前，請花幾分鐘的時間瞭解應用程式的運作方式。 瞭解Web UI與案頭之間的連結、儲存庫對應、資產快取、本機儲存以及在背景上傳。 了 [解運作方式](release-notes.md#how-app-works)。
 
-* **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱Experience Manager Assets中建立 [資料夾的字元清單](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)。 有些Adobe Experience manager使用案例可能會受到檔案夾名稱中不支援的字元影響。
+* **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空白字元和無效字元。 請參閱Experience Manager Assets中建立 [資料夾的字元清單](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)。 有些Adobe Experience Manager使用案例可能會受到檔案夾名稱中不支援的字元影響。
 
 * **避免衝突的最佳實務**:若要避免在協作多個資產時產生潛在衝突，請參 [閱避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* **對大型、階層式資料夾使用資料夾上傳**:使用Experience manager案頭應用程式來上傳大型資料夾，而不是使用「資產」網頁介面或其他方法。 應用程式會透過記錄和監控在背景上傳資產。 請參閱 [大量上傳資產](using.md#bulk-upload-assets)。
+* **對大型、階層式資料夾使用資料夾上傳**:使用Experience Manager案頭應用程式來上傳大型資料夾，而不是使用「資產」網頁介面或其他方法。 應用程式會透過記錄和監控在背景上傳資產。 請參閱 [大量上傳資產](using.md#bulk-upload-assets)。
 
 * **使用最新版本**:使用最新的應用程式版本，在安裝新應用程式版本或升級至較新的Adobe Experience Manager版本之前，請務必先檢查相容性。 請參閱 [發行說明](release-notes.md)。
 
@@ -38,9 +38,9 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 * **注意網路**:網路效能是Experience Manager案頭應用程式效能的關鍵。 如果您遇到檔案傳輸或大量作業的回應速度變慢，請關閉可能導致大量網路流量的功能或應用程式。
 
-* **案頭應用程式不支援的使用案例**:請勿將應用程式用於資產移轉（它需要規劃和其他工具）;執行繁重的DAM作業（例如移動大型資料夾、大型上傳、使用進階中繼資料搜尋尋找檔案）;同步用戶端(設計原則和使用模式與同步用戶端（例如Microsoft oneDrive或Adobe Creative cloud案頭同步）不同。
+* **案頭應用程式不支援的使用案例**:請勿將應用程式用於資產移轉（它需要規劃和其他工具）;執行繁重的DAM作業（例如移動大型資料夾、大型上傳、使用進階中繼資料搜尋尋找檔案）;同步用戶端(設計原則和使用模式與同步用戶端（例如Microsoft OneDrive或Adobe Creative Cloud案頭同步）不同。
 
-* **逾時**:目前，案頭應用程式沒有可設定的逾時值，此值會在固定時間間隔後中斷Experience manager伺服器與案頭應用程式之間的連線。 上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，重新嘗試上傳資產幾次。 不建議使用任何方法來變更預設逾時設定。
+* **逾時**:目前，案頭應用程式沒有可設定的逾時值，此值會在固定時間間隔後中斷Experience Manager伺服器與案頭應用程式之間的連線。 上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，重新嘗試上傳資產幾次。 不建議使用任何方法來變更預設逾時設定。
 
 ## 如何疑難排解 {#troubleshooting-prep}
 
@@ -56,15 +56,15 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 ### 日誌檔案的位置 {#check-log-files-v2}
 
-您可以在下列位置找到AEM案頭應用程式的記錄檔。 上傳許多資產時，如果有些檔案無法上傳，請參 `backend.log` 閱上述位置的檔案，以識別失敗的上傳。
+您可以在下列位置找到AEM案頭應用程式的記錄檔。 上傳許多資產時，如果有些檔案無法上傳，請參 `backend.log` 閱檔案以識別失敗的上傳。
 
-* 在Windows上： `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+* Windows上的路徑： `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
-* 在Mac上： `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+* Mac上的路徑： `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
 
 >[!NOTE]
 >
->在支援要求／票證上與Adobe客戶服務合作時，可能會要求您共用記錄檔，以協助支援團隊瞭解問題。 封存整個資 `Logs` 料夾，並與客戶服務共用。
+>在支援要求／票證上與Adobe客戶服務合作時，可能會要求您共用記錄檔，以協助客戶服務團隊瞭解問題。 封存整個資 `Logs` 料夾，並與您的客戶服務聯絡人共用。
 
 ### 清除快取 {#clear-cache-v2}
 
@@ -82,7 +82,7 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 ### 瞭解AEM案頭應用程式版本 {#know-app-version-v2}
 
-按一 ![下「應用程式選單](assets/do-not-localize/more_options_da2.png) 」以開啟應用程式的選單，然後按一下 **[!UICONTROL Help]**>**[!UICONTROL About]**。
+按一 ![下「應用程式選單](assets/do-not-localize/more_options_da2.png) 」以開啟應用程式的選單，然後按一下 **[!UICONTROL Help]** > **[!UICONTROL About]**。
 
 ## 看不到置入的資產 {#placed-assets-missing}
 
