@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e706fe5fe148deff519cadc72b724572f11ddf3c
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
@@ -183,6 +183,8 @@ source-git-commit: e706fe5fe148deff519cadc72b724572f11ddf3c
 若要檢視指定作業中傳輸的資產清單，請按一下 **[!UICONTROL View]** > **[!UICONTROL Assets transfers]**。 該清單允許您查看並快速驗證當前會話的檔案傳輸。
 
 ![特定會話中的已轉讓資產清](assets/assets_transfered_da2.png "單特定會話中已轉讓資產清單")
+
+您可以在>設定中控制上傳並行(加 **[!UICONTROL Preferences]** 速) **[!UICONTROL Upload acceleration]** 。 並行性更強通常可加快上傳速度，但會耗費大量資源，耗用本機電腦的處理能力。 如果您遇到系統速度緩慢，請使用較低的並行值重新嘗試上載。
 
 >[!NOTE]
 >
