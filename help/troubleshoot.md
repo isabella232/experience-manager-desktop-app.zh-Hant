@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: 9ae1580475569538838c58f642a7df43f2526d16
 
 ---
 
@@ -48,11 +48,25 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 ### 啟用除錯模式 {#enable-debug-mode}
 
-若要疑難排解，您可以啟用除錯模式，並在記錄檔中取得更多資訊。 若要在除錯模式中執行應用程式，請在終端機或在命令提示符下使用下列命令列選項。
+若要疑難排解，您可以啟用除錯模式，並在記錄檔中取得更多資訊。 若要在Mac的除錯模式中使用應用程式，請在終端機或命令提示符下使用下列命令列選項： `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`。
 
-* 在Windows上： `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
+要在Windows上啟用調試模式，請執行以下步驟：
 
-* 在Mac上： `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`
+1. 在案頭 `Adobe Experience Manager Desktop.exe.config` 應用程式安裝資料夾中尋找檔案。 依預設，資料夾為 `C:\Program Files\Adobe\Adobe Experience Manager Desktop`。 儲存並關閉檔案。
+
+1. 找 `<level value="INFO"/>` 到檔案結尾處。 將值更 `DEBUG`改為，即 `<level value="DEBUG"/>`。
+
+1. 在案頭 `logging.json` 應用程式安裝資料夾中尋找檔案。 依預設，資料夾為 `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`。
+
+1. 在文 `logging.json` 件中，找到參數的所有實 `level` 例。 將值從更改 `info` 為 `debug`。 儲存並關閉檔案。
+
+1. 清除在應用程式偏好設定中設定位置的快取目錄。
+
+1. 重新啟動案頭應用程式。
+
+<!-- The Windows command doesn't work for now.
+* On Windows: `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
+-->
 
 ### 日誌檔案的位置 {#check-log-files-v2}
 
