@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: 0301538b5cc00a187709b484bed8f0ca7b799f03
 
 ---
 
@@ -33,26 +33,28 @@ source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 如需詳細資訊，請參閱 [Experience Manager案頭應用程式版本注意事項](release-notes.md)。
 
-## 從應用程式v1.x升級至應用程式v2 {#upgrade-from-previous-version}
+## Upgrade from a previous version {#upgrade-from-previous-version}
 
-如果您是應用程式的現有使用者，請瞭解應用程式的舊版與最新版本之間的差異與相似性。 此外，請依照這些准則，從v1.x轉換至最新版本。
+如果您是v1.x案頭應用程式的使用者，請瞭解該應用程式先前和最新版本之間的差異和相似性。 查看 [案頭應用程式的新增功能](introduction.md#whats-new-v2) ，以 [及應用程式的運作方式](release-notes.md#how-app-works)
 
 >[!NOTE]
 >
->案頭應用程式v1.x和v2無法在機器上共存。 在安裝版本之前，請先解除安裝其他版本。
+>電腦上無法共存兩個版本的案頭應用程式。 在安裝版本之前，請先解除安裝其他版本。
 
-若要從v1.x升級至最新版的應用程式，請依照下列指示進行：
+若要從舊版應用程式升級，請依照下列指示進行：
 
-1. 在升級之前，請同步您的所有資產。 使用應用程式v1.x上傳所有變更。這是為了避免在解除安裝應用程式v1.x時遺失任何變更。
-1. 解除安裝應用程式v1.x。卸載v1.x時，請清除快取。
+1. 在升級之前，請同步您的所有資產，並將變更上傳至Experience Manager。 這是為了避免在解除安裝應用程式時遺失任何編輯。
+1. 解除安裝舊版應用程式。 卸載時，選擇清除快取的選項。
 1. 重新啟動您的電腦。
-1. 下載並安裝最新的應用程式。 請依照下列指示進行。
+1. [下載](release-notes.md) ，並 [安裝](#install-v2) 最新的應用程式。 請依照下列指示進行。
 
 ## 安裝 {#install-v2}
 
 若要安裝案頭應用程式，請依照下列步驟進行。 在安裝最新應用程式之前，請先解除安裝任何現有的Adobe Experience Manager案頭應用程式v1.x。 如需詳細資訊，請參閱上文。
 
+1. 從版本注意事項頁面下載最 [新的安裝程](release-notes.md) 式。
 1. 讓Experience Manager部署的URL和認證隨時隨手可得。
+1. 如果您是從應用程式的其他版本升級，請參閱升級 [案頭應用程式](#upgrade-from-previous-version)。
 1. 如果您使用Experience Manager做為Cloud服務、Experience Manager 6.4.4或更新版本，或Experience Manager 6.5.0或更新版本，請略過此步驟。 確保Experience Manager設定符合發行說明中提及的相容 [性要求](release-notes.md)。 如有必要，請下載適 [用的相容性套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) ，並使用Experience Manager Package Manager作為Experience Manager管理員進行安裝。 要安裝軟體包，請參 [閱How to with Packages](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html)。
 1. 執行安裝程式二進位檔，並依照螢幕上的指示進行安裝。
 1. 在Windows上，安裝程式可能會提示安裝 `Visual Studio C++ Redistributable 2015`。 依照螢幕上的指示進行安裝。 如果安裝失敗，則手動安裝。 從這裡下載安裝 [程式](https://www.microsoft.com/en-us/download/details.aspx?id=52685) ，並同時安裝 `vc_redist.x64.exe` 和檔 `vc_redist.x86.exe` 案。 重新執行AEM案頭應用程式安裝程式。
