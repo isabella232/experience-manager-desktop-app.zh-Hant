@@ -9,16 +9,16 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
 
 # 安裝及設定AEM案頭應用程式v1.x {#install-and-configure-aem-desktop-app}
 
-使用AEM案頭應用程式，AEM中的資產可輕鬆在您的本機案頭上存取，並可用於任何案頭應用程式。 您可在Mac finder或Windows檔案總管中輕鬆顯示資產、在案頭應用程式中開啟並在本機變更——當您上傳時，變更會儲存回AEM，並在儲存庫中建立新版本。
+使用AEM案頭應用程式，AEM中的資產可輕鬆在您的本機案頭上存取，並可用於任何案頭應用程式。 您可在Mac Finder或Windows檔案總管中輕鬆顯示資產、在案頭應用程式中開啟並在本機變更——當您上傳時，變更會儲存回AEM，並在儲存庫中建立新版本。
 
-此類整合可讓組織中的不同角色集中管理AEM Assets中的資產，並在Creative cloud和其他應用程式中存取資產，同時讓您輕鬆符合各種標準，包括品牌。
+此類整合可讓組織中的不同角色集中管理AEM Assets中的資產，並在Creative Cloud和其他應用程式中存取資產，同時讓您輕鬆符合各種標準，包括品牌。
 
 若要使用AEM案頭應用程式，
 
@@ -86,11 +86,11 @@ AEM Desktop會使用包含預設連接埠的URL連線至AEM。 因此，分 `vir
 
 在Windows上，快取位於 `%LOCALAPPDATA%\Adobe\AssetsCompanion\Cache\`，其中是案頭應用程式中設定之AEM主機的編碼版本。 例如，顯 `http://localhost:4502` 示為 `http%3A%2F%2Flocalhost%3A4502%2F`。
 
-在Mac OS x上，類似的目錄位於 `~/Library/Group Containers/group.com.adobe.aem.desktop/cache`。
+在Mac OS X上，類似的目錄位於 `~/Library/Group Containers/group.com.adobe.aem.desktop/cache`。
 
 ### 管理快取的應用程式內選項 {#in-app-option-to-manage-cache}
 
-您可以控制可用於本地快取的磁碟空間量。 來自AEM Assets伺服器的物件會在本機快取，以提供更順暢的體驗。 您可以變更預設值以符合您的需求。 此外，您也可以清除快取，重新擷取所有資產。 若要設定所要的選項，請按一下應用程式的圖示，然後按一下 **[!UICONTROL Advanced]**>**[!UICONTROL Manage Cache]**。****
+您可以控制可用於本端快取的磁碟空間量。 來自AEM Assets伺服器的物件會在本機快取，以提供更順暢的體驗。 您可以變更預設值以符合您的需求。 此外，您也可以清除快取，重新擷取所有資產。 若要設定所要的選項，請按一下應用程式的圖示，然後按一下 **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**。****
 
 >[!NOTE]
 >
@@ -120,9 +120,9 @@ AEM案頭應用程式的快取預設位置為：
 
 ## 其他資源 {#additional-resources}
 
-* [AEM 桌面應用程式簡介](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
+* [AEM 桌面應用程式簡介](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [使用 AEM 桌面應用程式](use-app-v1.md)
 
-* [瞭解AEM案頭應用程式的登入／登出](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
-* [搭配AEM Assets使用案頭應用程式](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
+* [瞭解AEM案頭應用程式的登入／登出](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+* [搭配AEM Assets使用案頭應用程式](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [疑難排解AEM案頭應用程式](troubleshoot-app-v1.md)
