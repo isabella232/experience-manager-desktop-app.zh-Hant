@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -146,7 +146,7 @@ source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ## 編輯資產並將更新的資產上傳至AEM {#edit-assets-upload-updated-assets}
 
-當您想要進行變更並將更新的資產上傳至AEM伺服器時，請開啟資產以進行編輯。 若要避免與其他使用者的編輯衝突，請使用應用程式來啟動編輯工作階段。 開始編輯之前，請確定資產上沒有鎖定圖示，亦即，其他使用者未編輯資產。
+當您想要進行變更並將更新的資產上傳至AEM伺服器時，請開啟資產以供編輯。 若要避免與其他使用者的編輯衝突，請使用應用程式來啟動編輯工作階段。 開始編輯之前，請確定資產上沒有鎖定圖示，亦即，其他使用者未編輯資產。
 
 若要編輯資產，請搜尋資產或瀏覽至資產的位置。 按一 ![下「更多」圖示](assets/do-not-localize/more2_da2.png) ，然後按一 **[!UICONTROL Edit]**&#x200B;下。
 
@@ -155,7 +155,7 @@ source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 * 您已開始編輯資產，但未先勾選（例如只開啟資產）。
 * 您打算很快開始編輯資產，而不希望其他人編輯。
 
-完成編輯後，應用程式會顯示已變 **[!UICONTROL Edited Locally]** 更資產的狀態。 所有儲存至資產的變更都僅限本機，直到您將變更上傳至AEM為止。 若要逐一上傳個別或少數資產，請從資產 **[!UICONTROL Upload Changes]** 的選項按一下。 它會在AEM中建立資產版本。 使用AEM Assets的Web介面，您可以在時間軸檢視中查看資 [產歷史記錄](https://helpx.adobe.com/experience-manager/6-5/assets/using/activity-stream.html)。
+完成編輯後，應用程式會顯示已變 **[!UICONTROL Edited Locally]** 更資產的狀態。 所有儲存至資產的變更都僅限本機，直到您將變更上傳至AEM為止。 若要逐一上傳個別或少數資產，請從資產 **[!UICONTROL Upload Changes]** 的選項按一下。 它會在AEM中建立資產版本。 使用AEM Assets的Web介面，您可以在時間軸檢視中查看資 [產歷史記錄](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html)。
 
 ![應用程式中的上傳變更選](assets/upload_changes_single1_da2.png "項應用程式中的上傳變更選項")
 
@@ -173,7 +173,7 @@ source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ## 上傳並新增資產至AEM {#upload-and-add-new-assets-to-aem}
 
-使用者可以新增資產至DAM儲存庫。 例如，您可能是廣告公司的攝影師或承包商，想要將大量像片從像片拍攝新增至AEM存放庫。 若要新增新內容至AEM，請按一 ![下應用程式頂端列中的](assets/do-not-localize/upload_to_cloud_da2.png) 「上傳至雲端」圖示。 瀏覽至本機檔案系統中的資產檔案，然後按一下 **[!UICONTROL Select]**。 應用程式會開始上傳資產，如果資產上傳的時間較長，就會在底部顯示進度列。 建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱「在AEM Assets中建立 [檔案夾」中的字元清單](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)。
+使用者可以新增資產至DAM儲存庫。 例如，您可能是廣告公司的攝影師或承包商，想要將大量像片從像片拍攝新增至AEM存放庫。 若要新增新內容至AEM，請按一 ![下應用程式頂端列中的](assets/do-not-localize/upload_to_cloud_da2.png) 「上傳至雲端」圖示。 瀏覽至本機檔案系統中的資產檔案，然後按一下 **[!UICONTROL Select]**。 應用程式會開始上傳資產，如果資產上傳的時間較長，就會在底部顯示進度列。 建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱「在AEM Assets中建立 [檔案夾」中的字元清單](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)。
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -228,7 +228,7 @@ source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 >[!NOTE]
 >
->請勿使用上傳功能來跨兩個AEM部署移轉資產。 請參閱移轉 [指南](https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-migration-guide.html)。
+>請勿使用上傳功能來跨兩個AEM部署移轉資產。 請參閱移轉 [指南](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html)。
 
 ### 轉讓資產清單 {#list-of-transferred-assets}
 
