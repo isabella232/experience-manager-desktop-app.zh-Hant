@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 52f70e5b95318d8b3b3930be1233cc51aa997914
 
 ---
 
@@ -65,7 +65,7 @@ AEM案頭應用程式的主要功能包括：
 AEM案頭應用程式提供對整個DAM存放庫的虛擬存取權——而且案頭上的創意使用者在案頭上尋找並存取適當資產可能會很複雜。 使用這些最佳實務來簡化這些作業。
 
 * 使用AEM Assets Web UI中的協作功能，讓創意使用者更直接地存取適當的資產。 其中包括共用資料夾或系列、提供智慧型系列（儲存的搜尋），或傳送通知及指向適當資產。 然後，創意使用者就可以在網頁UI中使用案頭動作，快速存取案頭上的這些資產。
-* 考慮資產的適當權限（存取控制），以簡化創意使用者在DAM儲存庫中檢視的作業，基本上限制他們僅能存取所需／有興趣的資產：
+* 考慮資產的適當權限（存取控制），以簡化創意使用者在DAM儲存庫中檢視的作業，基本上限制他們僅存取所需／有興趣的資產：
 
    * 某些與創意使用者無關的區域，可能會因為使用者群組而遭拒，以便從其檢視中移除，桌上型電腦也會拒絕
    * DAM中的大部分資產都是最終資產，不是為了變更——這些資產應為創意使用者唯讀
@@ -105,7 +105,7 @@ AEM案頭應用程式提供對整個DAM存放庫的虛擬存取權——而且�
 
 若要瞭解有關AEM Assets網路設定的最佳實務，請參閱 [AEM Assets網路考量事項檔案](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) 。 協助使用者最佳化AEM案頭應用程式體驗的一些重要方面包括：
 
-* **使用正確配置的Dispatcher :** 使用AEM Dispatcher以取得其他安全性，並確保已針對 [AEM案頭應用程式連線設定此AEM案頭應用程式，以便在Dispatcher後方進行AEM](using.md)
+* **使用正確配置的Dispatcher :** 使用AEM Dispatcher以取得其他安全性，並確保已針對 [AEM案頭應用程式連線設定此AEM案頭應用程式，以便在Dispatcher後方進行AEM](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
 * **節省頻寬：** 在Mac上的Finder中關閉圖示預覽——使用Finder瀏覽已掛載的儲存庫時，請考慮。 Finder會要求每個檔案產生預覽，並導致案頭應用程式在本機下載及快取資產。 請注意，在節省頻寬的同時，它也會降低案頭用戶的使用體驗，因此在使用具有大資產和／或有限頻寬的儲存庫時，應該這樣做。
 
@@ -115,7 +115,7 @@ AEM案頭應用程式提供對整個DAM存放庫的虛擬存取權——而且�
 
 ### 最佳化伺服器效能 {#optimizing-server-performance}
 
-若要瞭解AEM Assets伺服器如何最佳化以獲得效能，請參閱 [AEM Assets效能調整指南](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)。 AEM案頭應用程式伺服器效能的一些重要方面是最佳化工作流程設定，以便在資產上傳時發揮良好效能：
+若要瞭解AEM Assets伺服器如何最佳化以獲得效能，請參閱 [AEM Assets Performance Tuning Guide](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)。 AEM案頭應用程式伺服器效能的一些重要方面是最佳化工作流程設定，以便在資產上傳時發揮良好效能：
 
 * **更具效能的資產上傳：** 將「 [AEM資產更新」工作流程模型設定為「暫時」](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows)。
 
