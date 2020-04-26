@@ -9,12 +9,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f1ea381cc88b5382288b2479d26e976dc7289b88
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
 
-# AEM案頭應用程式v1.x版本注意事項{#aem-desktop-app-release-notes}
+# AEM案頭應用程式v1.x版本注意事項 {#aem-desktop-app-release-notes}
 
 對於案頭應用程式v1.x版本，以下是下載連結和AEM相容性資訊。
 
@@ -119,7 +119,7 @@ AEM案頭應用程式1.9著重於改善大型上傳的使用者體驗、背景�
 **預取連結資產**：為改善使用包含儲存在AEM中之連結資產的InDesign檔案時的使用體驗，案頭應用程式會先嘗試將這些連結檔案預取至本機快取，然後再下載並開啟InDesign檔案。 如此，使用者就可在本機取得連結的檔案，而且在InDesign（在「連結」面板中）中存取這些檔案時，不需要等待更久。
 請注意，預取只有在AEM識別伺服器端的連結時才能運作。 具有已辨識連結的資產會在InDesign資產的「屬性」檢視中列出「參考」清單。
 
-### 自AEM案頭應用程式1.8.x以來提供的增強功能{#enhancements-available-since-aem-desktop-app-18x}
+### 自AEM案頭應用程式1.8.x以來提供的增強功能 {#enhancements-available-since-aem-desktop-app-18x}
 
 AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個檔案至1.8版本的改良功能(CQ-4237747、CQ-4238780)。 AEM案頭應用程式1.8的增強功能包括：
 
@@ -133,11 +133,11 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
    * 當AEM作業過期時，使用者現在會收到通知，並可以按一下通知以再次登入(CQ-4202028)
    * (Mac)新增支援，透過使用。pac proxy組態連線至AEM(CQ-4233430)
    * (Win)修正「進階——登入URL」對話方塊的問題(CQ-4236061)
-* 錯誤修正：
+* 錯誤修正:
    * 更多資產資訊對話方塊：有時動作列不可見(CQ-4208540)
    * (Win)檔案現在可在從AEM Assets UI回復為舊版後同步化(CQ-4216411)
 
-### 自AEM案頭應用程式1.7以來的增強功能{#Enhancements-Available-Since-AEM-Desktop-App-17}
+### 自AEM案頭應用程式1.7以來的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
 * 穩定性：
    * 已改善AEM案頭應用程式連線至多載AEM伺服器時的穩定性(CQ-4224803)
@@ -157,7 +157,7 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
 >
 >在AEM案頭應用程式1.7測試版載入中發現的問題（1.6版本中未出現的問題，在版本注意事項中未報告）。
 
-### 自AEM案頭應用程式1.6以來提供的增強功能{#Enhancements-Available-Since-AEM-Desktop-App-16}
+### 自AEM案頭應用程式1.6以來提供的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
 * 檔案：v1.x [應用程式檔案的新最佳實務](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html) 。
 * 已改善AEM的登入程式：
@@ -181,7 +181,7 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
    * 高CPU使用量(CQ-4218070)。
    * 上傳至AEM時拖放檔案產生錯誤(CQ-4217006)。
 
-### 自AEM案頭應用程式1.5以來提供的增強功能{#Enhancements-Available-Since-AEM-Desktop-App-15}
+### 自AEM案頭應用程式1.5以來提供的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-15}
 
 **Mac OS X版本1.5.1.5:** 1.5.1.5版提供下列優點：
 
@@ -222,7 +222,7 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
    * 穩定性的各種改進(CQ-4207539、CQ-4200378)
    * 在偏好設定中更妥善處理AEM資產URL(CQ-97388)
 
-### 自AEM案頭應用程式1.4起提供的增強功能{#Enhancements-Available-Since-AEM-Desktop-App-14}
+### 自AEM案頭應用程式1.4起提供的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
 * 透過Touch UI中的「建立>上傳檔案夾」新動作，簡化階層式檔案夾的上傳
    * 動作會啟動案頭應用程式執行的資料夾上傳作業
@@ -234,7 +234,7 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
 * 已改善與最新作業系統版本的相容性
 * 客戶回報的修正
 
-### 自AEM案頭應用程式1.3以來提供的增強功能{#Enhancements-Available-Since-AEM-Desktop-App-13}
+### 自AEM案頭應用程式1.3以來提供的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-13}
 
 * 提高效率。 用戶在等待網路操作完成時所花費的時間更少。
 * 改善的Finder整合，提供更穩定性和功能存取權，例如縮圖。
