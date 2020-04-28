@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
+source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 ---
 
@@ -38,14 +38,6 @@ source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
 >
 >一次只能安裝一個AEM案頭應用程式執行個體並啟用。
 
-## Proxy支援 {#proxy-support}
-
-AEM案頭應用程式使用系統的預先定義代理，透過HTTPS連線至網際網路。 應用程式只能使用不需要額外驗證的網路代理進行連線。
-
-如果您設定或修改Windows的Proxy伺服器設定（「網際網路選項> LAN設定」），請重新啟動AEM案頭應用程式，讓變更生效。
-
-如果您的Proxy需要驗證，IT團隊可以在Proxy伺服器設定中將AEM Assets URL加入白名單，以允許應用程式流量傳遞。
-
 ## 檔案處理 {#file-handling}
 
 當從案頭應用程式載入的網路共用位置變更檔案時，檔案會分兩個階段儲存至該位置。 在第一階段，檔案會儲存在本機。 使用者可儲存檔案並繼續處理檔案，而不需等待傳輸完成。
@@ -69,9 +61,21 @@ Assets API中的複製和移動方法需要將下列其他標題傳遞至AEM:
 * X-深度
 * X覆寫
 
-AEM Desktop會使用包含預設連接埠的URL連線至AEM。 因此，分 `virtualhosts` 發程式配置中的設定應包括預設埠號。 有關配置的詳 `virtualhosts` 細資訊，請 [參閱標識虛擬主機](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
+AEM案頭會使用包含預設連接埠的URL連線至AEM。 因此，分 `virtualhosts` 發程式配置中的設定應包括預設埠號。 有關配置的詳細信 `virtualhosts` 息，請參 [閱標識虛擬主機](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
 
 有關配置調度程式以傳遞這些附加標頭的其他資訊，請參 [閱指定HTTP標頭](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)。
+
+### Proxy支援 {#proxy-support}
+
+AEM案頭應用程式使用系統的預先定義代理，透過HTTPS連線至網際網路。 應用程式只能使用不需要額外驗證的網路代理進行連線。
+
+如果您設定或修改Windows的Proxy伺服器設定（「網際網路選項> LAN設定」），請重新啟動AEM案頭應用程式，讓變更生效。
+
+>[!NOTE]
+>
+>只有在啟動案頭應用程式時，才會套用Proxy設定。 關閉並重新啟動應用程式，讓任何變更生效。
+
+如果您的Proxy需要驗證，IT團隊可以在Proxy伺服器設定中將AEM Assets URL加入白名單，以允許應用程式流量傳遞。
 
 ## 自訂資產資訊對話方塊 {#customize-the-asset-info-dialog}
 
