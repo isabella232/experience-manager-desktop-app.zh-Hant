@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: a18aa9c3dad8802c3de929ba4ebb1a1583b47165
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 遵守下列最佳實務，以防止出現一些常見問題和疑難排解。
 
-* **瞭解案頭應用程式的運作方式**:開始使用應用程式之前，請花幾分鐘的時間瞭解應用程式的運作方式。 瞭解Web UI與案頭之間的連結、儲存庫對應、資產快取、本機儲存以及在背景上傳。 了 [解運作方式](release-notes.md#how-app-works)。
+* **瞭解案頭應用程式的運作方式**:在開始使用應用程式之前，請花些時間瞭解應用程式的運作方式。 瞭解Experience Manager網頁介面與案頭之間的連結、儲存庫對應、資產快取、本機儲存及在背景上傳。 了 [解運作方式](release-notes.md#how-app-works)。
 
 * **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空白字元和無效字元。 請參閱Experience Manager Assets中建立 [資料夾的字元清單](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)。 有些Adobe Experience Manager使用案例可能會受到檔案夾名稱中不支援的字元影響。
 
@@ -134,8 +134,8 @@ AEM案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有
 
 應用程式很少會停止回應、只顯示白色畫面，或在介面底部顯示錯誤，而介面上沒有任何選項。 請依順序嘗試下列項目：
 
-1. 在應用程式介面上按一下滑鼠右鍵，然後按一下 **[!UICONTROL Refresh]**。
-1. 退出應用程式並重新啟動它。
+* 在應用程式介面上按一下滑鼠右鍵，然後按一下 **[!UICONTROL Refresh]**。
+* 退出應用程式並再次開啟。
 
 在這兩種方法中，應用程式都會從根DAM檔案夾開始。
 
