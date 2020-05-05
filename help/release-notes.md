@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: aca68b0c2eb363e33c8a6edec2370758124a4b9e
+source-git-commit: 63cb82b6bdafeb87d296a895d68cb3912045839a
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: aca68b0c2eb363e33c8a6edec2370758124a4b9e
 | 產品 | Adobe Experience manager 桌面應用程式 |
 |----|----|
 | 應用程式版本（修訂版） | 2.0 (2.0.2.0) |
-| 支援的 AEM 版本 | AEM即雲端服務；AEM 6.5;AEM 6.4;AEM 6.3（含相容性套件） |
+| 支援的 AEM 版本 | AEM即雲端服務； AEM 6.5; AEM 6.4; AEM 6.3（含相容性套件） |
 | 類型 | 次要版本 |
 | 發行日期 | 2020年4月15日（Mac和Win） |
 | 下載 URL | [macOS 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows 32位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
@@ -75,7 +75,7 @@ To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 * 修正檔案名稱或路徑包含特定GB18030字元時，資產上傳的問題。 <!-- CQ-4283494 -->
 * 切換至搜尋結果中的其他排序類型後，即可使用依關聯性排序選項。 <!-- CQ-4286874 -->
 * 案頭應用程式現在會列出子資料夾，而不需要明確重新整理。 <!-- CQ-4285711 -->
-* (Windows)已修正某些Windows電腦上罕見的無法使用應用程式介面問題。 使用者無法按一下應用程式介面，因為介面元素的點按區域會「偏移」，所以顯示失真。 <!-- CQ-4280785 -->
+* (Windows)已修正某些Windows電腦上罕見的無法使用應用程式介面問題。 使用者無法按一下應用程式介面，因為當介面元素的點按區域出現扭曲時，會側移。 <!-- CQ-4280785 -->
 
 **應用程式2.0.1版中的更新**
 
@@ -121,7 +121,7 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 **CRUD（建立、讀取、更新和刪除）相關問題：**
 
 * 若應用程式嘗試上傳包含無效字元的檔案，可能會導致伺服器端上傳失敗。<!-- CQ-4273652 -->
-* 當上傳含有注釋的變更至資產時，這些注釋會與資產一起儲存在AEM中，但不會顯示為版本修訂注釋。 此問題已在AEM 6.4.5和AEM 6.5.1中解決。Adobe強烈建議安裝最新的Service Pack。 <!-- CQ-4268990 -->
+* 當上傳含有注釋的變更至資產時，這些注釋會與資產一起儲存在AEM中，但不會顯示為版本修訂注釋。 此問題已在AEM 6.4.5和AEM 6.5.1中解決。 Adobe強烈建議安裝最新的Service Pack。 <!-- CQ-4268990 -->
 * 使用者無法取消資產傳輸。如果您不小心觸發了非預期的大量傳輸，請退出應用程式並重新啟動。<!-- CQ-4278940 -->
 
 **平台問題：**
