@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2e634c13ef1bcb0cd1868100f5a2d7cb20c189be
+source-git-commit: a7a803edce0b6300b4a4142dcdc2f61d8347acea
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 51%
+source-wordcount: '1319'
+ht-degree: 50%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 51%
 
 Adobe Experience Manager案頭應用程式與下列作業系統相容：
 
-* Mac OS X 10.10 或更新版本，提供最新的錯誤修正。
+* Mac OS X 10.14或更新版本，以及最新的錯誤修正。
 * Windows 7 和 Windows 10，提供最新的服務套件和錯誤修正。
 
 此應用程式可與下列Experience Manager版本搭配使用，不論部署為雲端服務、部署在Adobe Managed Services(AMS)或內部部署：
