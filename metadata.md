@@ -8,10 +8,13 @@ getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
 tutorials-title: 教學課程
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 1
-git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-desktop-app.zh-Hant
 index: y
 translation-type: tm+mt
-source-git-commit: e5e7f60d97bfb24bb4c668cd074430218a657db4
+source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 6%
 
 ---
 
