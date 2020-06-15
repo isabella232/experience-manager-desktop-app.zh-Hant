@@ -9,7 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
+source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
@@ -75,7 +78,7 @@ AEM案頭應用程式使用系統的預先定義代理，透過HTTPS連線至網
 >
 >只有在啟動案頭應用程式時，才會套用Proxy設定。 關閉並重新啟動應用程式，讓任何變更生效。
 
-如果您的Proxy需要驗證，IT團隊可以在Proxy伺服器設定中將AEM Assets URL加入白名單，以允許應用程式流量傳遞。
+如果您的代理需要驗證，IT團隊可以允許代理伺服器設定中的Experience Manager Assets URL，以允許應用程式流量傳遞。
 
 ## 自訂資產資訊對話方塊 {#customize-the-asset-info-dialog}
 
@@ -94,7 +97,7 @@ AEM案頭應用程式使用系統的預先定義代理，透過HTTPS連線至網
 
 ### 管理快取的應用程式內選項 {#in-app-option-to-manage-cache}
 
-您可以控制可用於本端快取的磁碟空間量。 來自AEM Assets伺服器的物件會在本機快取，以提供更順暢的體驗。 您可以變更預設值以符合您的需求。 此外，您也可以清除快取，重新擷取所有資產。 若要設定所要的選項，請按一下應用程式的圖示，然後按一下 **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**。****
+您可以控制可用於本端快取的磁碟空間量。 來自AEM Assets伺服器的物件會在本機快取，以提供更順暢的體驗。 您可以變更預設值以符合您的需求。 此外，您也可以清除快取，重新擷取所有資產。 若要設定所要的選項，請按一下應用程式的圖示，然後按一下 **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**。 ****
 
 >[!NOTE]
 >
@@ -120,7 +123,7 @@ AEM案頭應用程式的快取預設位置為：
 
    >[!NOTE]
    >
-   >應用程式會自動建立 *&lt;Encoded AEM Endpoint>子目錄* ;此行為無法設定。
+   >應用程式會自動建立 *&lt;Encoded AEM Endpoint>子目錄* ; 此行為無法設定。
 
 >[!MORELIKETHIS]
 * [AEM 桌面應用程式簡介](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
