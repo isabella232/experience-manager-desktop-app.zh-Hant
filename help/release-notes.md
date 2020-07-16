@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7a803edce0b6300b4a4142dcdc2f61d8347acea
+source-git-commit: eda366b969edb3c266ae8a5900ea7c0409846db0
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 50%
+source-wordcount: '1326'
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Experience Manager案頭應用程式與下列作業系統相容：
 * [Experience Manager 雲端服務](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/release-notes/home.html)
 * [Experience Manager 6.5.0或更新版本](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) ,
 * [Experience Manager 6.4.4或更新版本](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html)
-* Experience Manager 6.4.0 - 6.4.3及相容性套 [件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
+* Experience Manager 6.4.0 - 6.4.3及相容性套 [件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
 >
