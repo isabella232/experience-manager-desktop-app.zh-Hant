@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4e2926adfe46265c78f85b63696c98859f895134
+source-git-commit: 9954d0b290c4e1071a6068be4f858b29d26dc712
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 1. 在案頭 `logging.json` 應用程式安裝資料夾中尋找檔案。 依預設，資料夾為 `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`。
 
-1. 在文 `logging.json` 件中，找到的所有實例 `"level": "info"`。 將值從更改 `info` 為 `debug`。 儲存並關閉檔案。
+1. 在文 `logging.json` 件中，找到的所有實例 `"level": "info"`。 將值從 `info` 變 `debug`更為 `"level": "debug"`。 儲存並關閉檔案。
 
 1. 清除位於應用程式首選項中設定位置的快取目 [錄](/help/install-upgrade.md#set-preferences)。
 
