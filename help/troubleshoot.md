@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+source-git-commit: 4e2926adfe46265c78f85b63696c98859f895134
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%
@@ -55,15 +55,15 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 要在Windows上啟用調試模式，請執行以下步驟：
 
-1. 在案頭 `Adobe Experience Manager Desktop.exe.config` 應用程式安裝資料夾中尋找檔案。 依預設，資料夾為 `C:\Program Files\Adobe\Adobe Experience Manager Desktop`。 儲存並關閉檔案。
+1. 在案頭 `Adobe Experience Manager Desktop.exe.config` 應用程式安裝資料夾中尋找檔案。 依預設，資料夾為 `C:\Program Files\Adobe\Adobe Experience Manager Desktop`。
 
-1. 找 `<level value="INFO"/>` 到檔案結尾處。 將值更 `DEBUG`改為，即 `<level value="DEBUG"/>`。
+1. 找 `<level value="INFO"/>` 到檔案結尾處。 將值從 `INFO` 更改 `DEBUG`為，即 `<level value="DEBUG"/>`。 儲存並關閉檔案。
 
 1. 在案頭 `logging.json` 應用程式安裝資料夾中尋找檔案。 依預設，資料夾為 `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`。
 
-1. 在文 `logging.json` 件中，找到參數的所有實 `level` 例。 將值從更改 `info` 為 `debug`。 儲存並關閉檔案。
+1. 在文 `logging.json` 件中，找到的所有實例 `"level": "info"`。 將值從更改 `info` 為 `debug`。 儲存並關閉檔案。
 
-1. 清除在應用程式偏好設定中設定位置的快取目錄。
+1. 清除位於應用程式首選項中設定位置的快取目 [錄](/help/install-upgrade.md#set-preferences)。
 
 1. 重新啟動案頭應用程式。
 
