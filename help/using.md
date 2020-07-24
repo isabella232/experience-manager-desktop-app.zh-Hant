@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 27cc0ba26622016ce82b758fb0607652176f6992
+workflow-type: tm+mt
+source-wordcount: '3995'
+ht-degree: 0%
 
 ---
 
@@ -22,41 +25,41 @@ source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 您使用Experience Manager案頭應用程式所做的主要工作包括：
 
-![使用Experience Manager案頭應用程式可完成的工作流程和工作](assets/aem_desktop_app_usecases_v2.png "工作流程和使用Adobe Experience Manager案頭應用程式可完成的工作")下 [載此](assets/aem_desktop_app_usecases_print.pdf) 可立即列印的PDF檔案。
+![使用案頭應用程式可完成的工作流程 [!DNL Experience Manager] 和工](assets/aem_desktop_app_usecases_v2.png "作流程使用Adobe Experience Manager案頭應用程式可完成的工作")下 [載此](assets/aem_desktop_app_usecases_print.pdf) 可列印的PDF檔案。
 
 ## 案頭應用程式的運作方式 {#how-app-works2}
 
 在您開始使用應用程式之前，請先了 [解應用程式的運作方式](release-notes.md#how-app-works)。 此外，請熟悉下列詞語：
 
-* **[!UICONTROL Desktop Actions]**:從「資產」網頁介面，在瀏覽器中，您可以探索資產位置或結帳並開啟資產，以便在原生案頭應用程式中進行編輯。 這些動作可從網頁介面使用，並使用案頭應用程式功能。 瞭解 [如何啟用案頭動作](using.md#desktopactions-v2)。
+* **[!UICONTROL Desktop Actions]**: 從「資產」網頁介面，在瀏覽器中，您可以探索資產位置或結帳並開啟資產，以便在原生案頭應用程式中進行編輯。 這些動作可從網頁介面使用，並使用案頭應用程式功能。 瞭解 [如何啟用案頭動作](using.md#desktopactions-v2)。
 
-* 檔案狀態 **[!UICONTROL Cloud Only]**&#x200B;為：此類資產不會下載至本機電腦，且僅能在Experience Manager伺服器上使用。
+* 檔案狀態 **[!UICONTROL Cloud Only]**&#x200B;為： 此類資產不會下載至本機電腦，且僅能在Experience Manager伺服器上使用。
 
-* 檔案狀態 **[!UICONTROL Available locally]**&#x200B;為：資產會依原樣下載並在本機電腦上使用。 資產不會變更。
+* 檔案狀態 **[!UICONTROL Available locally]**&#x200B;為： 資產會依原樣下載並在本機電腦上使用。 資產不會變更。
 
-* 檔案狀態 **[!UICONTROL Edited locally]**&#x200B;為：這些資產會在本機進行修改，而變更會保留至上傳至Experience Manager伺服器。 上傳後，狀態會變更為 [!UICONTROL Available locally]。 請參閱 [編輯資產](using.md#edit-assets-upload-updated-assets)。
+* 檔案狀態 **[!UICONTROL Edited locally]**&#x200B;為： 這些資產會在本機進行修改，而變更會保留至上傳至Experience Manager伺服器。 上傳後，狀態會變更為 [!UICONTROL Available locally]。 請參閱 [編輯資產](using.md#edit-assets-upload-updated-assets)。
 
-* 檔案狀態 **[!UICONTROL Editing conflict]**&#x200B;為：如果您和其他使用者同時修改資產，應用程式會指出發生編輯衝突。 應用程式也提供保留或放棄變更的選項。 瞭解 [如何避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
+* 檔案狀態 **[!UICONTROL Editing conflict]**&#x200B;為： 如果您和其他使用者同時修改資產，應用程式會指出發生編輯衝突。 應用程式也提供保留或放棄變更的選項。 瞭解 [如何避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* 檔案狀態 **[!UICONTROL Modified remotely]**&#x200B;為：應用程式會指出您下載的資產是否在Experience Manager伺服器上變更。 應用程式也提供下載最新版本和更新本機副本的選項。 瞭解 [如何避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
+* 檔案狀態 **[!UICONTROL Modified remotely]**&#x200B;為： 應用程式會指出您下載的資產是否在Experience Manager伺服器上變更。 應用程式也提供下載最新版本和更新本機副本的選項。 瞭解 [如何避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* **[!UICONTROL Check-out]**:如果正在編輯檔案或打算編輯檔案，則切換狀態以簽出。 它會在應用程式和AEM網頁介面中的資產上新增鎖定圖示。 鎖定圖示會指示其他使用者避免同時編輯相同的資產，因為這會導致編輯衝突。
+* **[!UICONTROL Check-out]**: 如果正在編輯檔案或打算編輯檔案，則切換狀態以簽出。 它會在應用程式和AEM網頁介面中的資產上新增鎖定圖示。 鎖定圖示會指示其他使用者避免同時編輯相同的資產，因為這會導致編輯衝突。
 
-* **[!UICONTROL Check-in]**:將資產標示為安全，讓其他使用者可進行編輯，而不會造成編輯衝突。 當您上傳變更時，鎖定圖示會自動移除。 切換登入狀態也會移除鎖定圖示，不過建議不要手動登入而不上傳變更。 如果您捨棄變更，請手動切換登入。
+* **[!UICONTROL Check-in]**: 將資產標示為安全，讓其他使用者可進行編輯，而不會造成編輯衝突。 當您上傳變更時，鎖定圖示會自動移除。 切換登入狀態也會移除鎖定圖示，不過建議不要手動登入而不上傳變更。 如果您捨棄變更，請手動切換登入。
 
-* **[!UICONTROL Open]** 動作：只要開啟資產，即可在原生應用程式中預覽。 不建議您使用此動作來編輯資產，因為它不會簽出資產，而其他使用者可以進行編輯，進而導致編輯衝突。
+* **[!UICONTROL Open]** 動作： 只要開啟資產，即可在原生應用程式中預覽。 不建議您使用此動作來編輯資產，因為它不會簽出資產，而其他使用者可以進行編輯，進而導致編輯衝突。
 
-* **[!UICONTROL Edit]** 動作：使用動作修改影像。 按一 [!UICONTROL Edit] 下動作會自動取出資產，並在資產上新增鎖定圖示。 按一下「編輯」後，如果您不想編輯資產，請按一下 [!UICONTROL Toggle check-in]。 若要刪除、重新命名或移動AEM DAM檔案夾階層中的資產，請使用AEM網頁介面動作，而非編輯動作。
+* **[!UICONTROL Edit]** 動作： 使用動作修改影像。 按一 [!UICONTROL Edit] 下動作會自動取出資產，並在資產上新增鎖定圖示。 按一下「編輯」後，如果您不想編輯資產，請按一下 [!UICONTROL Toggle check-in]。 若要刪除、重新命名或移動AEM DAM檔案夾階層中的資產，請使用AEM網頁介面動作，而非編輯動作。
 
-* **[!UICONTROL Download]** 動作：將資產下載至您的本機電腦。 您現在可以下載資產，稍後再進行編輯；離線工作，稍後再上傳變更。 資產會下載在檔案系統的快取資料夾中。
+* **[!UICONTROL Download]** 動作： 將資產下載至您的本機電腦。 您現在可以下載資產，稍後再進行編輯； 離線工作，稍後再上傳變更。 資產會下載在檔案系統的快取資料夾中。
 
-* **[!UICONTROL Reveal File]** 或 **[!UICONTROL Reveal Folder]** 動作：當資產下載至本機快取檔案夾時，應用程式會模擬本機網路磁碟機，並為每個資產提供本機路徑。 若要瞭解此路徑，請在應用程式中使用適當的顯現選項。 在Creative Cloud應用程式中放置資產時，需要顯示動作。 請參 [閱置入資產](using.md#place-assets-in-native-documents)。
+* **[!UICONTROL Reveal File]** 或 **[!UICONTROL Reveal Folder]** 動作： 當資產下載至本機快取檔案夾時，應用程式會模擬本機網路磁碟機，並為每個資產提供本機路徑。 若要瞭解此路徑，請在應用程式中使用適當的顯現選項。 在Creative Cloud應用程式中放置資產時，需要顯示動作。 請參 [閱置入資產](using.md#place-assets-in-native-documents)。
 
-* **[!UICONTROL Open In Web]** 動作：若要在AEM網頁介面中檢視資產，請在網頁中開啟它。 您可以從AEM介面啟動更多工作流程，例如更新中繼資料或資產搜尋。
+* **[!UICONTROL Open In Web]** 動作： 若要在AEM網頁介面中檢視資產，請在網頁中開啟它。 您可以從AEM介面啟動更多工作流程，例如更新中繼資料或資產搜尋。
 
-* **[!UICONTROL Delete]** 動作：從AEM DAM儲存庫刪除資產。 此動作會刪除AEM伺服器上資產的原始復本。 如果您只想放棄對本機資產的修改，請參閱捨 [棄變更](using.md#edit-assets-upload-updated-assets)。
+* **[!UICONTROL Delete]** 動作： 從AEM DAM儲存庫刪除資產。 此動作會刪除AEM伺服器上資產的原始復本。 如果您只想放棄對本機資產的修改，請參閱捨 [棄變更](using.md#edit-assets-upload-updated-assets)。
 
-* **[!UICONTROL Upload Changes]**:案頭應用程式只會在您明確上傳至AEM伺服器時，才上傳更新的資產。 當您儲存編輯時，變更只會儲存在本機電腦上。 上傳時，資產會自動登入，並移除鎖定圖示。 請參閱 [編輯資產](using.md#edit-assets-upload-updated-assets)。
+* **[!UICONTROL Upload Changes]**: 案頭應用程式只會在您明確上傳至AEM伺服器時，才上傳更新的資產。 當您儲存編輯時，變更只會儲存在本機電腦上。 上傳時，資產會自動登入，並移除鎖定圖示。 請參閱 [編輯資產](using.md#edit-assets-upload-updated-assets)。
 
 ## 在AEM網頁介面中啟用案頭動作 {#desktopactions-v2}
 
@@ -142,11 +145,11 @@ source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 >[!CAUTION]
 >
->請勿使用選 **[!UICONTROL Reveal File]** 項來編輯原生應用程式中的資產。 請改用動 **[!UICONTROL Edit]** 作。 如需詳細資訊，請參閱「進階 [工作流程」:在相同檔案上進行協作，避免編輯衝突](#adv-workflow-collaborate-avoid-conflicts)。
+>請勿使用選 **[!UICONTROL Reveal File]** 項來編輯原生應用程式中的資產。 請改用動 **[!UICONTROL Edit]** 作。 如需詳細資訊，請參閱「進階 [工作流程」: 在相同檔案上進行協作，避免編輯衝突](#adv-workflow-collaborate-avoid-conflicts)。
 
 ## 編輯資產並將更新的資產上傳至AEM {#edit-assets-upload-updated-assets}
 
-當您想要進行變更並將更新的資產上傳至AEM伺服器時，請開啟資產以供編輯。 若要避免與其他使用者的編輯衝突，請使用應用程式來啟動編輯工作階段。 開始編輯之前，請確定資產上沒有鎖定圖示，亦即，其他使用者未編輯資產。
+當您想要進行變更並將更新的資產上傳至AEM伺服器時，請開啟資產以進行編輯。 若要避免與其他使用者的編輯衝突，請使用應用程式來啟動編輯工作階段。 開始編輯之前，請確定資產上沒有鎖定圖示，亦即，其他使用者未編輯資產。
 
 若要編輯資產，請搜尋資產或瀏覽至資產的位置。 按一 ![下「更多」圖示](assets/do-not-localize/more2_da2.png) ，然後按一 **[!UICONTROL Edit]**&#x200B;下。
 
@@ -161,7 +164,7 @@ source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ![檢視資產大型預覽時上傳變更選](assets/upload_changes_single2_da2.png "項檢視資產大型預覽時上傳變更選項")
 
-如需協作編輯的最佳實務，請參閱進 [階工作流程：在相同檔案上進行協作，避免編輯衝突](#adv-workflow-collaborate-avoid-conflicts)。
+如需協作編輯的最佳實務，請參閱進 [階工作流程： 在相同檔案上進行協作，避免編輯衝突](#adv-workflow-collaborate-avoid-conflicts)。
 
 在下列情況下，您可能會想要放棄對本機資產所做的變更和編輯。 按一下 **[!UICONTROL Discard Changes]**.
 
@@ -234,7 +237,7 @@ source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 若要檢視指定作業中傳輸的資產清單，請參閱「 [上傳資產至AEM](#upload-and-add-new-assets-to-aem)」。
 
-## 進階工作流程：從AEM Assets網頁介面開始 {#adv-workflow-start-from-aem-ui}
+## 進階工作流程： 從AEM Assets網頁介面開始 {#adv-workflow-start-from-aem-ui}
 
 如有必要，從AEM Assets網頁介面開始您的工作流程。 案頭應用程式已與AEM整合，以便在使用Desktop Actions提出要求時接管。
 
@@ -263,7 +266,7 @@ source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 相反地，您可以從案頭應用程式開始，使用動作，在網頁介面中開啟資 **[!UICONTROL Open In Web]** 產。
 
-## 進階工作流程：在相同的檔案上進行協作，避免編輯衝突 {#adv-workflow-collaborate-avoid-conflicts}
+## 進階工作流程： 在相同的檔案上進行協作，避免編輯衝突 {#adv-workflow-collaborate-avoid-conflicts}
 
 在協作環境中，多位使用者可能會使用同一組資產，而這些資產可能會導致版本修訂衝突。 為防止衝突，請遵循以下最佳做法：
 
@@ -283,7 +286,7 @@ source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ![解決編輯衝突的選](assets/editing_conflict_dialog_da2.png "項解決編輯衝突的選項")
 
-## 進階工作流程：置入和連結InDesign檔案中的資產 {#adv-workflow-place-assets-indesign}
+## 進階工作流程： 置入和連結InDesign檔案中的資產 {#adv-workflow-place-assets-indesign}
 
 當您使用AEM案頭應用程式開啟包含連結資產的檔案時，資產會預先下載並顯示在原生應用程式中。 若要讓此工作流程運作，您的原生應用程式必須支援放置本機資產的連結，而AEM必須支援解析二進位檔案中的這些連結至伺服器端參照。
 
@@ -304,7 +307,7 @@ AEM案頭應用程式支援此工作流程，只需使用幾種精選的Adobe Cr
 1. 將顯示的資產放入InDesign檔案中。 這會在文檔中建立連結。
 1. 在InDesign檔案中完成編輯後，請儲存並使用案頭應用程式上傳至AEM。
 
-## 進階工作流程：本機下載資產 {#adv-workflow-download-assets-locally}
+## 進階工作流程： 本機下載資產 {#adv-workflow-download-assets-locally}
 
 應用程式會在許多情況下，從您檔案系統的本機AEM伺服器下載資產。 下載會佔用頻寬和磁碟空間。 瞭解這些案例有助於您最佳化等待下載完成的時間。
 
