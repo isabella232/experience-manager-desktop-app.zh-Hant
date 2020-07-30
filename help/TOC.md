@@ -10,7 +10,7 @@ getting-started-url: https://docs.adobe.com/content/help/zh-Hant/experience-mana
 tutorials-title: AEM 教學課程
 tutorials-url: Https://helpx.adobe.com/tw/experience-manager/kt/index/aem-tutorials.html
 translation-type: tm+mt
-source-git-commit: 0ec8430e53800eedffa86099e1f6c6782b2b27a4
+source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 100%
@@ -31,3 +31,4 @@ ht-degree: 100%
    + [使用應用程式 v1](use-app-v1.md)
    + [最佳做法 v1](best-practices-for-v1.md)
    + [疑難排解 v1](troubleshoot-app-v1.md)
+
