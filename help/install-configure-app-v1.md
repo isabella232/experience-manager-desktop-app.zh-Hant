@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 1%
+source-wordcount: '997'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,9 @@ ht-degree: 1%
 若要使用AEM案頭應用程式，
 
 * 確定AEM案頭應用程式支援您的AEM伺服器版本。 請參閱相 [容性矩陣](release-notes-of-v1.md#compatibilitymatrix)。
+
 * 下載並安裝應用程式。
+
 * 使用幾個資產測試連線。 請參 [閱存取和開啟案頭上的資產](use-app-v1.md#openondesktop)。
 
 ## 系統需求、必要條件和下載連結 {#system-requirements-prerequisites-and-download-links}
@@ -48,8 +50,11 @@ ht-degree: 1%
 在第二階段，案頭應用程式會在預先定義的延遲（例如30秒）後，將更新的檔案上傳至AEM伺服器。 此操作在後台進行。 使用「查看資產狀態」選項可查看上載操作的狀態。
 
 1. 將資產上傳至AEM Assets。
+
 1. 從工具列按一下／點選AEM案頭應用程式圖示。
+
 1. 從菜單中，選擇「查看資產狀態」選項。
+
 1. 從對話方塊中，檢視上傳作業的狀態。
 
 >[!NOTE]
@@ -84,10 +89,11 @@ AEM案頭應用程式使用系統的預先定義代理，透過HTTPS連線至網
 
 您可以通過覆蓋下列其中一個或兩個元件來自定義「資產資訊」對話框：
 
-* Granite使用者介面頁面位於 `/libs/dam/gui/content/assets/moreinfo`
-* HTL元 `/css/javascript` 件位於 `/libs/dam/gui/components/admin/moreinfo`
+* 位於的Granite使用者介面頁 `/libs/dam/gui/content/assets/moreinfo`面。
 
-哪個元件是重疊的，取決於自訂的性質。 若要變更在「資產資訊」對話方塊中顯示的元件，請覆蓋「花崗岩」使用者介面頁面。 若要變更對話方塊的HTML/CSS/Javascript內容，請覆蓋HTL元件。
+* HTL元 `/css/javascript` 件位於 `/libs/dam/gui/components/admin/moreinfo`。
+
+哪個元件是重疊的，取決於自訂的性質。 若要變更在「資產資訊」對話方塊中顯示的元件，請覆蓋「花崗岩」使用者介面頁面。 若要變更對話方塊的HTML、CSS或Javascript內容，請覆蓋HTL元件。
 
 ## 管理快取 {#manage-cache}
 
@@ -105,16 +111,18 @@ AEM案頭應用程式使用系統的預先定義代理，透過HTTPS連線至網
 
 ### 在Windows上更改快取位置 {#change-location-of-cache-on-windows}
 
-AEM案頭應用程式的快取預設位置為：
+AEM案頭應用程式的快取預設位置如下：
 
-* Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\EncodedAEMEndpoint`
-* Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/EncodedAEMEndpoint`
+* 在Windows中 `%LocalAppData%\Adobe\AssetsCompanion\Cache\EncodedAEMEndpoint`。
+
+* 在Mac中 `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/EncodedAEMEndpoint`。
 
 `EncodedAEMEndpoint` is AEM案頭應用程式的已設定AEM端點URL。 此值是AEM伺服器的目標URL編碼版本。 例如，如果應用程式正在定位， `http://localhost:4502`則目錄名稱為 `http%3A%2F%2Flocalhost%3A4502`。 此示例中快取目錄的Windows路徑為%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502。
 
 要將應用程式指向不同的資料夾或驅動器，請編輯應用程式的配置檔案。
 
 1. 導覽至應用程式的安裝目錄。 Windows上的預設位置為 `C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop`。
+
 1. 使用文字編輯器編輯Adobe Experience Manager Desktop.exe.config檔案。
 
    要保存對此檔案所做的更改，需要管理員權限。
@@ -123,7 +131,7 @@ AEM案頭應用程式的快取預設位置為：
 
    >[!NOTE]
    >
-   >應用程式會自動建立 *&lt;Encoded AEM Endpoint>子目錄* ; 此行為無法設定。
+   >應用程式會自動建立 *&lt;Encoded AEM Endpoint>子目錄* 。 此行為不可配置。
 
 >[!MORELIKETHIS]
 * [AEM 桌面應用程式簡介](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
