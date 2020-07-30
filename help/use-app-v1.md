@@ -3,7 +3,7 @@ title: 使用AEM案頭應用程式1.x版。
 description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.x版，並最佳化您在案頭上使用資產的工作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1bd50a439059ac66e0368eeefc6af67ff160d9b
+source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
 workflow-type: tm+mt
 source-wordcount: '2516'
 ht-degree: 0%
@@ -113,7 +113,7 @@ AEM案頭應用程式使用HTTPS連線來連線至AEM伺服器，以強穩且安
 
 當您按一下「 **開啟** 」以在本機電腦上開啟資產時，應用程式會將資產下載至其內部快取。 應用程式會啟動與已下載資產的檔案類型相關聯的原生案頭應用程式。
 
-在Mac上，從內容選 **單選取** 「開啟」，以透過AEM案頭應用程式開啟資產。 在Windows上，從上下文選單選擇「在Web上開啟」以開啟資產。 在「資產狀態」視窗中，按一下／點選「在桌 ![面上開啟」圖示](assets/aemassets_icon_openondesktop.png) ，以開啟資產。
+在Mac上，從內容選 **單選取** 「開啟」，以透過AEM案頭應用程式開啟資產。 在Windows上，從上下文選單選擇「在Web上開啟」以開啟資產。 在「資產狀態」視窗中，按一下／點選「在桌 ![面上開啟」圖示](assets/do-not-localize/aemassets_icon_openondesktop.png) ，以開啟資產。
 
 若是Adobe InDesign(INDD)檔案，請從內容選 **[!UICONTROL Open]** 單中選取。 當您按一下此選項時，應用程式會將連結的資產下載到您的本機檔案系統，然後在Adobe InDesign中開啟INDD檔案。 此方法可確保在編輯INDD檔案時，必要的資產可在本機使用。
 
@@ -141,19 +141,19 @@ AEM案頭應用程式使用HTTPS連線來連線至AEM伺服器，以強穩且安
 
    當您在選取資產後，或從資產頁面的工具列按一下工具列中的「案頭動作 **** 」圖示時，這些案頭動作也可供使用。
 
-1. 若要在案頭應用程式中開啟與特定副檔名相關聯的資產，請按一下／點選「在案頭上開啟」快速動作「在案頭上 **開啟」圖示**![](assets/aemassets_icon_openondesktop.png)。
+1. 若要在案頭應用程式中開啟與特定副檔名相關聯的資產，請按一下／點選「在案頭上開啟」快速動作「在案頭上 **開啟」圖示**![](assets/do-not-localize/aemassets_icon_openondesktop.png)。
 
    或者，從工具 **欄的** 「案頭動 **作** 」選單選擇「開啟」。
 
-若要在本機檔案系統上找到特定資產，請按一下「顯 **示** 」快速動 ![作「顯示」圖示](assets/aemassets_reveal_icon.png)。 或者，從工具 **欄的** 「案頭 **操作** 」菜單中選擇「顯示」。
+若要在本機檔案系統上找到特定資產，請按一下「顯 **示** 」快速動 ![作「顯示」圖示](assets/do-not-localize/aemassets_reveal_icon.png)。 或者，從工具 **欄的** 「案頭 **操作** 」菜單中選擇「顯示」。
 
 ## 瞭解資產狀態 {#understand-the-asset-statuses}
 
-| ![Windows預設應用程式圖示](assets/win_default.png) | 應用程式已連線至伺服器，且所有資產都會同步化。 |
-|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Windows停用圖示](assets/win_disabled.png) | 應用程式已啟動，但未與伺服器連線。 某些資產可能是擱置中的同步。 |
-| ![Windows檔案同步表徵圖](assets/win_sync.png) | 資產正在同步化。 正在上傳或下載檔案。 您可以在「資產狀態」窗口中查看確切狀態並暫停轉移。 |
-| ![Windows重新連接表徵圖](assets/win_refresh.png) | 應用程式正在嘗試重新連線。 可能是網路問題導致其斷開連接。 |
+| ![Windows預設應用程式圖示](assets/do-not-localize/win_default.png) | 應用程式已連線至伺服器，且所有資產都會同步化。 |
+--- |--- |
+| ![Windows停用圖示](assets/do-not-localize/win_disabled.png) | 應用程式已啟動，但未與伺服器連線。 某些資產可能是擱置中的同步。 |
+| ![Windows檔案同步表徵圖](assets/do-not-localize/win_sync.png) | 資產正在同步化。 正在上傳或下載檔案。 您可以在「資產狀態」窗口中查看確切狀態並暫停轉移。 |
+| ![Windows重新連接表徵圖](assets/do-not-localize/win_refresh.png) | 應用程式正在嘗試重新連線。 可能是網路問題導致其斷開連接。 |
 
 ## 處理您的資產 {#workonassets}
 
@@ -169,7 +169,7 @@ AEM Assets可讓您取出要編輯的資產，並在完成變更後將其存回�
 
    當您在選取資產後，或從資產頁面的工具列按一下／點選工具列中的「案頭動作」圖示時，也可使用這些案頭動作。
 
-1. 若要開啟資產，請按一下／點選「在案頭上開啟」快速動作「在案頭上 ![開啟」圖示](assets/aemassets_icon_openondesktop.png)。
+1. 若要開啟資產，請按一下／點選「在案頭上開啟」快速動作「在案頭上 ![開啟」圖示](assets/do-not-localize/aemassets_icon_openondesktop.png)。
 
    或者，從工具欄的「案頭操作」菜單中選擇「開啟」。
 
@@ -177,7 +177,7 @@ AEM Assets可讓您取出要編輯的資產，並在完成變更後將其存回�
    >
    >當您編輯剛開啟且未勾選的檔案時，其他使用者無法得知您正在更新資產。
 
-1. 若要在Adobe Creative Cloud應用程式中開啟資產以進行編輯，請按一下／點選「編輯案頭快速動作編輯案頭」 ![圖示](assets/aemassets_icon_editdesktop.png)。 此外，也會檢查資產以進行編輯。 編輯完成後，請簽入資產，以更新AEM Assets中的變更。
+1. 若要在Adobe Creative Cloud應用程式中開啟資產以進行編輯，請按一下／點選「編輯案頭快速動作編輯案頭」 ![圖示](assets/do-not-localize/aemassets_icon_editdesktop.png)。 此外，也會檢查資產以進行編輯。 編輯完成後，請簽入資產，以更新AEM Assets中的變更。
 
    或者，從工具列的「案頭動作」選單中選擇「編輯」。
 
@@ -219,7 +219,7 @@ AEM Assets可讓您取出要編輯的資產，並在完成變更後將其存回�
 
    ![結帳圖示切換](assets/chlimage_1-8.png)
 
-1. 在Explorer中檢閱資產。 資產「資產」鎖定圖示上的 ![鎖定圖示](assets/aemassets_icon_lockcheckout.png) ，表示您已簽出資產。
+1. 在Explorer中檢閱資產。 資產「資產」鎖定圖示上的 ![鎖定圖示](assets/do-not-localize/aemassets_icon_lockcheckout.png) ，表示您已簽出資產。
 
    >[!NOTE]
    >
@@ -231,13 +231,13 @@ AEM Assets可讓您取出要編輯的資產，並在完成變更後將其存回�
 
 編輯完資產後，請將資產儲存在案頭應用程式中。 從上下文選單中，選取「 **更多資產資訊** 」，然後按一下登入。
 
-資產會上傳至AEM伺服器。 （可選）您可以從系統托盤表徵圖中選擇「查看 **資產狀態** 」來檢查上載狀態。 或者，您也可以從AEM網頁介面簽入資產。 按一下已勾選的資產或加以選取。 在工具列中，按一下登入圖示 ![登入圖示](assets/aemassets_icon_checkin.png)。
+資產會上傳至AEM伺服器。 （可選）您可以從系統托盤表徵圖中選擇「查看 **資產狀態** 」來檢查上載狀態。 或者，您也可以從AEM網頁介面簽入資產。 按一下已勾選的資產或加以選取。 在工具列中，按一下登入圖示 ![登入圖示](assets/do-not-localize/aemassets_icon_checkin.png)。
 
 在本機儲存任何變更後，資產就會自動上傳至AEM。 此登入功能可讓其他AEM使用者使用資產進行編輯。
 
 ### 大量上傳資產和資料夾至AEM伺服器 {#bulkupload}
 
-使用AEM Desktop，您可以將包含資產的整個檔案夾從本機檔案目錄上傳至AEM Assets。 如此，資料夾內的所有資產都會大量上傳，而不必一次上傳一個資產。
+使用AEM Desktop，您可以將包含資產的整個檔案夾從本機檔案目錄上傳至AEM Assets。 如此，資料夾內的所有資產都會大量上傳，而不必一次上傳一個。
 
 1. 從「資產」使用者介面，按一下／點選工 **具列中的** 「建立」，然後從功能表 **選擇「上傳資料夾** 」。
 1. 瀏覽至您要上傳的檔案夾，然後加以選取。
