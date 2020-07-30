@@ -9,7 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a18aa9c3dad8802c3de929ba4ebb1a1583b47165
+source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+workflow-type: tm+mt
+source-wordcount: '3374'
+ht-degree: 1%
 
 ---
 
@@ -28,9 +31,9 @@ Adobe Experience Manager(AEM)案頭應用程式包含公用程式，可協助您
 
 案頭應用程式包含下列元件：
 
-* **案頭應用程式**:應用程式會將DAM安裝或解除安裝為遠端檔案系統，並在本機載入的網路共用與它所連接的遠端AEM例項之間轉換檔案系統呼叫。
-* **作業系統WebDAV/SMB客戶端**:處理Windows檔案總管/Finder和案頭應用程式之間的通訊。 如果擷取、建立、修改、刪除、移動或複製檔案，作業系統(OS)WebDAV/SMB用戶端會將此作業傳送至案頭應用程式。 在收到通訊後，案頭應用程式會將它轉譯為原生AEM遠端API呼叫。 例如，如果用戶在掛載的目錄中建立檔案，WebDAV/SMB客戶端將啟動請求，案頭應用程式將其轉換為在DAM中建立檔案的HTTP請求。 WebDAV/SMB客戶端是作業系統的內置元件。 它不會以任何方式與案頭應用程式、AEM或Adobe附屬。
-* **Adobe Experience Manager實例**:提供對儲存在AEM Assets DAM儲存庫中的資產的存取權。 此外，它會代表與掛載的網路共用互動的本機案頭應用程式，執行案頭應用程式要求的動作。 目標AEM例項應執行AEM 6.1版或更新版本。 執行舊版AEM的AEM例項可能需要安裝額外的功能套件和Hotfix，才能完全發揮功能。
+* **案頭應用程式**: 應用程式會將DAM安裝或解除安裝為遠端檔案系統，並在本機載入的網路共用與它所連接的遠端AEM例項之間轉換檔案系統呼叫。
+* **作業系統WebDAV/SMB客戶端**: 處理Windows檔案總管/Finder和案頭應用程式之間的通訊。 如果擷取、建立、修改、刪除、移動或複製檔案，作業系統(OS)WebDAV/SMB用戶端會將此作業傳送至案頭應用程式。 在收到通訊後，案頭應用程式會將它轉譯為原生AEM遠端API呼叫。 例如，如果用戶在掛載的目錄中建立檔案，WebDAV/SMB客戶端將啟動請求，案頭應用程式將其轉換為在DAM中建立檔案的HTTP請求。 WebDAV/SMB客戶端是作業系統的內置元件。 它不會以任何方式與案頭應用程式、AEM或Adobe附屬。
+* **Adobe Experience Manager實例**: 提供對儲存在AEM Assets DAM儲存庫中的資產的存取權。 此外，它會代表與掛載的網路共用互動的本機案頭應用程式，執行案頭應用程式要求的動作。 目標AEM例項應執行AEM 6.1版或更新版本。 執行舊版AEM的AEM例項可能需要安裝額外的功能套件和Hotfix，才能完全發揮功能。
 
 ## AEM案頭應用程式的預期使用案例 {#intended-use-cases-for-aem-desktop-app}
 
@@ -79,7 +82,7 @@ AEM案頭應用程式提供內部快取和背景上傳功能，以改善使用�
 
 >[!CAUTION]
 >
->Adobe建議關閉縮圖產生功能，以加快瀏覽速度。 如果您啟用圖示預覽，應用程式會在您瀏覽已載入的檔案夾時快取數位資產。 應用程式也會下載使用者可能不在乎的資產，這會增加伺服器的負載、耗用使用者的頻寬，並且會佔用使用者的更多磁碟空間。
+>Adobe建議關閉縮圖產生功能，以加快瀏覽速度。 如果您啟用圖示預覽，應用程式會在您瀏覽已載入的檔案夾時快取數位資產。 應用程式也會下載使用者可能不在乎的資產，這會增加伺服器的負載、耗用使用者的頻寬，並且會使用使用者的磁碟空間。
 
 以下是AEM案頭應用程式如何執行快取：
 
@@ -142,7 +145,7 @@ Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，�
 另一個改善AEM效能的方法是為Granite Transient Workflow Queue（Granite暫時工作流程佇列）工作設定最大並行作業的值。 建議的值大約是伺服器可用CPU數的一半。 要調整值，請執行以下步驟：
 
 1. 導覽至 *要設定之AEM例項中的/system/console/configMgr* (例如 <http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr>)。
-1. 搜索 **QueueConfiguration**，然後按一下以開啟每個作業，直到找到 **Granite Transient Workflow Queue** job。 按一下旁邊的「編輯」圖示。
+1. 搜索 **QueueConfiguration**，然後按一下以開啟每個作業，直到找到 **Granite Transient Workflow Queue** job。 按一下旁邊的編輯。
 1. 更改「最 **大並行作業數** 」值，然後按一下「 **保存」**。
 
 ## AWS配置 {#aws-configuration}
@@ -187,7 +190,7 @@ Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，�
 1. 鍵入以下命令，然後按Enter:
 
    ```shell
-   rm -r com.adobe.aem.assetscompanion 
+   rm -r com.adobe.aem.assetscompanion
    ```
 
 1. 鍵入以下命令，然後按Enter:
@@ -218,9 +221,10 @@ AEM Desktop會嘗試同步任何指定檔案三次。 如果檔案在第三次�
 
 清除AEM Desktop的快取是一項初步的疑難排解工作，可解決數個AEM Desktop問題。
 
-通過刪除應用程式的快取目錄（位於以下位置），可以清除快取：Windows:%LocalAppData%\Adobe\AssetsCompanion\Cache\
+通過刪除應用程式在以下位置的快取目錄，可以清除快取。
+在Windows中， `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
-Mac:~/Library/Group/Containers/group.com.adobe.aem.desktop.cache/
+在Mac中， `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
 不過，位置會依AEM Desktop的設定AEM端點而變更。 值是目標URL的編碼版本。 例如，如果應用程式正在定位， `http://localhost:4502`則目錄名稱為 `http%3A%2F%2Flocalhost%3A4502%2F`。
 
