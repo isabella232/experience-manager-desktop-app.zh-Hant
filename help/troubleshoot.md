@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9954d0b290c4e1071a6068be4f858b29d26dc712
+source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 0%
@@ -146,3 +146,4 @@ AEM案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有
 >
 >* [已知問題](release-notes.md#known-issues-v2)
 >* [避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)
+
