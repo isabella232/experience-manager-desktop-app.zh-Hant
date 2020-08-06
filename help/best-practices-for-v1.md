@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 3e10be1fd9dd1ff5293e96b46565825e6be1fc4f
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1705'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ AEM案頭應用程式的主要功能包括：
 
 * 請勿經常使用AEM案頭應用程式網路磁碟機來儲存資產。 所有儲存作業都會傳輸至AEM Assets。 因此，直接在已載入的AEM Assets儲存庫中執行密集編輯作業是不現實的。 直接在掛載的儲存庫中編輯資產時，會使用不相關的版本建立資產的時間軸，並在伺服器上施加額外的開銷。
 
-* 請勿使用AEM案頭應用程式，將大量資料從一個AEM例項移轉至另一個AEM例項。 請參閱遷移指 [南](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) ，以規劃和執行資產遷移。 相反地，案頭應用 [程式支援大量上傳](use-app-v1.md#bulkupload) ，這是第一次大量上傳資產 [!DNL Adobe Experience Manager]。
+* 請勿使用AEM案頭應用程式，將大量資料從一個AEM例項移轉至另一個AEM例項。 請參閱移 [轉指南](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) ，以規劃並執行資產移轉。 相反地，案頭應用 [程式支援大量上傳](use-app-v1.md#bulkupload) ，這是第一次大量上傳資產 [!DNL Adobe Experience Manager]。
 
 ## 針對選定使用案例的建議 {#recommendations-for-selected-use-cases}
 
