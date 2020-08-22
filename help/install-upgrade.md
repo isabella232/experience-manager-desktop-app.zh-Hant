@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1238'
 ht-degree: 1%
 
 ---
@@ -79,9 +79,9 @@ ht-degree: 1%
 
    ![案頭應用程式與輸入伺服器位址的連線畫面](assets/connect_da2.png)
 
-   *圖： 連接至輸入伺服器位址的連線畫面*
+   *圖：連接至輸入伺服器位址的連線畫面*
 
-   >[!C作業]
+   >[!CAUTION]
    >
    >請確定AEM伺服器位址前後沒有前導或尾隨空格。 否則，應用程式無法連線至AEM伺服器。
 
@@ -89,7 +89,7 @@ ht-degree: 1%
 
    ![在登入時，應用程式會顯示DAM內容](assets/firstview_da2.png)
 
-   *圖： 應用程式在登入後會顯示DAM內容*
+   *圖：應用程式在登入後會顯示DAM內容*
 
 1. （Experience Manager 6.5.1或更新版本）如果您正在使用含Experience Manager 6.5.1或更新版本的案頭應用程式，請將S3或Azure連接器升級至1.10.4或更新版本。 請參 [閱Azure連接器](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AzureDataStore) 或 [S3連接器](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AmazonS3DataStore)。
 
@@ -103,25 +103,25 @@ ht-degree: 1%
 
 * [!UICONTROL Show window when application starts]。
 
-* **[!UICONTROL Cache Directory]**: 應用程式的本機快取位置（包含本機下載的資產）。
+* **[!UICONTROL Cache Directory]**:應用程式的本機快取位置（包含本機下載的資產）。
 
-* **[!UICONTROL Network Drive Letter]**: 用來對應至AEM DAM的磁碟機號碼。 如果您不確定，請勿變更此項。 應用程式可以對應至Windows上的任何驅動器號。 如果兩個使用者放置不同磁碟機號碼的資產，他們就看不到彼此放置的資產。 資產的路徑會變更。 資產會保留在二進位檔案中（例如INDD），不會移除。 應用程式會列出所有可用的磁碟機盤符，並依預設會使用最後可用的盤符 `Z`。
+* **[!UICONTROL Network Drive Letter]**:用來對應至AEM DAM的磁碟機號碼。 如果您不確定，請勿變更此項。 應用程式可以對應至Windows上的任何驅動器號。 如果兩個使用者放置不同磁碟機號碼的資產，他們就看不到彼此放置的資產。 資產的路徑會變更。 資產會保留在二進位檔案中（例如INDD），不會移除。 應用程式會列出所有可用的磁碟機盤符，並依預設會使用最後可用的盤符 `Z`。
 
-* **[!UICONTROL Maximum Cache Size]**: 允許在硬碟上以GB為單位快取，以儲存本機下載的資產。
+* **[!UICONTROL Maximum Cache Size]**:允許在硬碟上以GB為單位快取，以儲存本機下載的資產。
 
-* **[!UICONTROL Current cache size]**: 本機下載資產的儲存大小。 只有在使用應用程式下載資產後，才會顯示資訊。
+* **[!UICONTROL Current cache size]**:本機下載資產的儲存大小。 只有在使用應用程式下載資產後，才會顯示資訊。
 
-* **[!UICONTROL Automatically download linked assets]**: 如果您下載原始檔案，則會自動擷取置於支援原生Creative Cloud應用程式中的資產。
+* **[!UICONTROL Automatically download linked assets]**:如果您下載原始檔案，則會自動擷取置於支援原生Creative Cloud應用程式中的資產。
 
-* **[!UICONTROL Maximum number of downloads]**: 首次下載資產時（透過「顯現」、「開啟」、「編輯」、「下載」或類似選項），只有在批次包含的資產少於此數目時，才會下載資產。 預設值為 50。如果您不確定，請勿變更。 增加值可能會延長等候時間，而降低值可能不允許您一次下載必要的資產或檔案夾。
+* **[!UICONTROL Maximum number of downloads]**:首次下載資產時（透過「顯現」、「開啟」、「編輯」、「下載」或類似選項），只有在批次包含的資產少於此數目時，才會下載資產。 預設值為 50。如果您不確定，請勿變更。 增加值可能會延長等候時間，而降低值可能不允許您一次下載必要的資產或檔案夾。
 
-* **[!UICONTROL Upload Acceleration]**: 上傳資產時，應用程式可使用並行上傳來改善上傳速度。 您可以將滑桿向右移動，以增加上傳的並行性。 遠端左側的滑桿表示沒有並行（單執行緒上傳），中間位置對應10個並行執行緒，遠端右側的上限則對應20個並行執行緒。 較高的併發限制要求本機處理器的資源消耗更多。
+* **[!UICONTROL Upload Acceleration]**:上傳資產時，應用程式可使用並行上傳來改善上傳速度。 您可以將滑桿向右移動，以增加上傳的並行性。 遠端左側的滑桿表示沒有並行（單執行緒上傳），中間位置對應10個並行執行緒，遠端右側的上限則對應20個並行執行緒。 較高的併發限制要求本機處理器的資源消耗更多。
 
 若要更新無法使用的偏好設定，請登出AEM伺服器。 更新偏好設定後，按一下「 ![儲存偏好設定](assets/do-not-localize/save_preferences_da2.png) 」以儲存變更。
 
 ![案頭應用程式偏好設定和設定](assets/preferences_da2.png)
 
-*圖： 案頭應用程式偏好設定*
+*圖：案頭應用程式偏好設定*
 
 ## 解除安裝應用程式 {#uninstall-the-app}
 
