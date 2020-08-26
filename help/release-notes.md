@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 519fe85e5642eb88dd45515948e898185e262003
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 48%
+source-wordcount: '1364'
+ht-degree: 46%
 
 ---
 
@@ -22,19 +22,23 @@ ht-degree: 48%
 
 | 產品 | Adobe Experience manager 桌面應用程式 |
 |--- |--- |
-| 應用程式版本（修訂版） | 2.0 (2.0.2.0) |
-| 支援的 AEM 版本 | AEM即雲端服務； AEM 6.5; AEM 6.4; AEM 6.3（含相容性套件） |
+| 應用程式版本（修訂版） | 2.0 (2.0.3.0) |
+| 支援的 AEM 版本 | AEM即雲端服務；AEM 6.5;AEM 6.4;AEM 6.3（含相容性套件） |
 | 類型 | 次要版本 |
-| 發行日期 | 2020年4月15日（Mac和Win） |
-| 下載 URL | [macOS 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows 32位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
+| 發行日期 | 2020年8月27日（Mac和Win） |
+| 下載 URL | [macOS 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.3.2.dmg); [Windows 64位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.3.2.exe); [Windows 32位元](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.3.2.exe) |
 
 ## 系統需求和先決條件 {#system-requirements-and-prerequisites-v2}
 
 Adobe Experience Manager案頭應用程式與下列作業系統相容：
 
-* Mac OS X 10.14或更新版本，以及最新的錯誤修正。
+Mac OS X 10.14或更新版本，以及最新的錯誤修正。
 
-* Windows 7 和 Windows 10，提供最新的服務套件和錯誤修正。
+Windows 10含有最新的Service Pack和錯誤修正。
+
+>[!NOTE]
+>
+>供應商(https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020)不再支援Windows 7。
 
 此應用程式可與下列Experience Manager版本搭配使用，不論部署為雲端服務、部署在Adobe Managed Services(AMS)或內部部署：
 
@@ -77,11 +81,17 @@ Adobe Experience Manager案頭應用程式與下列作業系統相容：
 
 To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
+**應用程式2.0.3版中的更新**
+
+目前版本中修正的錯誤為：
+
+* 修正Windows使用者嘗試使用應用程式存取 [!DNL Adobe Experience Manager] 6.5.5.0例項上的DAM儲存庫時所面臨的登入問題。
+
 **應用程式2.0.2版中的更新**
 
 錯誤修正和更新包括：
 
-* 若要改善上傳效能，請在中增加上傳加速 [!UICONTROL Preferences]。 當此設定開啟時，應用程式會使用更多本機CPU執行緒，並且耗用更多資源。
+* 若要改善上傳效能，請在中增加上傳加速 [!UICONTROL Preferences]。 當此設定開啟時，應用程式會使用更多本機CPU執行緒，而且會耗用更多資源。
 
 * 修正檔案名稱或路徑包含特定GB18030字元時，資產上傳的問題。 <!-- CQ-4283494 -->
 
@@ -135,7 +145,7 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 **使用者介面問題：**
 
-* 有時，案頭應用程式的介面會變成空白。 Right-click and click [!UICONTROL Refresh] to re-load the application. 進行此類刷新後，您將從DAM儲存庫的根目錄開始。 資產的更新或狀態會保留。 <!-- CQ-4270267 -->
+* 有時，案頭應用程式的介面可能會變成空白。 Right-click and click [!UICONTROL Refresh] to re-load the application. 進行此類刷新後，您將從DAM儲存庫的根目錄開始。 資產的更新或狀態會保留。 <!-- CQ-4270267 -->
 
 * 在沒有追蹤板或滑鼠指標的情況下，很難導覽資料夾／搜尋結果。 The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
 
@@ -149,7 +159,7 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 * 若應用程式嘗試上傳包含無效字元的檔案，可能會導致伺服器端上傳失敗。<!-- CQ-4273652 -->
 
-* 當上傳含有注釋的變更至資產時，這些注釋會與資產一起儲存在AEM中，但不會顯示為版本修訂注釋。 此問題已在AEM 6.4.5和AEM 6.5.1中解決。 Adobe強烈建議安裝最新的Service Pack。 <!-- CQ-4268990 -->
+* 當上傳含有注釋的變更至資產時，這些注釋會與資產一起儲存在AEM中，但不會顯示為版本修訂注釋。 此問題已在AEM 6.4.5和AEM 6.5.1中解決。Adobe強烈建議安裝最新的Service Pack。 <!-- CQ-4268990 -->
 
 * 使用者無法取消資產傳輸。如果您不小心觸發了非預期的大量傳輸，請退出應用程式並重新啟動。<!-- CQ-4278940 -->
 
