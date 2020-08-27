@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6763474c278ab8d8f52a0a466657e66a08b0748b
+source-git-commit: 91de08ba317de97a1d1900dc2351efcb4d6cf95f
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 46%
@@ -22,7 +22,7 @@ ht-degree: 46%
 
 | 產品 | Adobe Experience manager 桌面應用程式 |
 |--- |--- |
-| 應用程式版本（修訂版） | 2.0 (2.0.3.0) |
+| 應用程式版本（修訂版） | 2.0 (2.0.3.2) |
 | 支援的 AEM 版本 | AEM即雲端服務；AEM 6.5;AEM 6.4;AEM 6.3（含相容性套件） |
 | 類型 | 次要版本 |
 | 發行日期 | 2020年8月27日（Mac和Win） |
