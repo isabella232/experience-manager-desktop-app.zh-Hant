@@ -2,7 +2,8 @@
 cloud: experience-cloud
 product: Adobe Experience Manager desktop app
 audience: end-user
-user-guide-title: AEM 桌面應用程式說明
+user-guide-title: AEM案頭應用程式指南
+breadcrumb-title: Desktop App Guide
 user-guide-description: Learn to use the AEM desktop app to connect repositories and desktop applications to provide faster access to resources and streamlined workflows.
 solution-title: AEM Assets
 solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html
@@ -10,17 +11,17 @@ getting-started-url: https://docs.adobe.com/content/help/zh-Hant/experience-mana
 tutorials-title: AEM 教學課程
 tutorials-url: Https://helpx.adobe.com/tw/experience-manager/kt/index/aem-tutorials.html
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 7b2f16b35b89707e94c24f9d420080c9f13ea945
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 100%
+source-wordcount: '62'
+ht-degree: 87%
 
 ---
 
 
-# Adobe 桌面應用程式使用手冊 {#using}
+# Adobe desktop app Guide {#using}
 
-+ [綜覽](introduction.md)
++ [概覽](introduction.md)
 + [發行說明](release-notes.md)
 + [安裝或升級](install-upgrade.md)
 + [使用應用程式](using.md)
