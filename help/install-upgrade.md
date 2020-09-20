@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
+source-git-commit: 29bbcc21f01dd0c1338fdbf3e979ef363a93533c
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,9 @@ ht-degree: 1%
 
 1. 根據提示重新啟動電腦。 啟動並設定案頭應用程式。
 
-1. 若要將應用程式與AEM儲存庫連接，請按一下托盤中的應用程式圖示以啟動應用程式。 提供AEM例項的位址。 按一下 **[!UICONTROL Connect]** 並提供憑據。
+1. 若要將應用程式與AEM儲存庫連線，請按一下托盤中的應用程式圖示，然後啟動應用程式。 以格式提供AEM伺服器的位址 `https://[aem-server-url]:[port]/`。
+
+   按一下 **[!UICONTROL Connect]** 並提供憑據。
 
    ![案頭應用程式與輸入伺服器位址的連線畫面](assets/connect_da2.png)
 
