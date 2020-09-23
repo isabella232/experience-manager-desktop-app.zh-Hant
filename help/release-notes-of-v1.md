@@ -3,13 +3,13 @@ title: AEM案頭應用程式1.x版發行說明
 description: AEM案頭應用程式1.x版的發行詳細資訊、增強功能、新功能、相容性和下載連結。
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9de9d086be4c0eccda7a60bd3dcbe68735394fad
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 1%
