@@ -3,13 +3,13 @@ title: Adobe Experience Manager案頭應用程式的最佳實務和疑難排解
 description: 遵循最佳實務並進行疑難排解，以解決與安裝、升級、設定等相關的偶發問題。
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 0%
@@ -27,23 +27,23 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 遵守下列最佳實務，以防止出現一些常見問題和疑難排解。
 
-* **瞭解案頭應用程式的運作方式**: 在開始使用應用程式之前，請花些時間瞭解應用程式的運作方式。 瞭解Experience Manager網頁介面與案頭之間的連結、儲存庫對應、資產快取、本機儲存及在背景上傳。 了 [解運作方式](release-notes.md#how-app-works)。
+* **瞭解案頭應用程式的運作方式**:在開始使用應用程式之前，請花些時間瞭解應用程式的運作方式。 瞭解Experience Manager網頁介面與案頭之間的連結、儲存庫對應、資產快取、本機儲存及在背景上傳。 了 [解運作方式](release-notes.md#how-app-works)。
 
-* **避免資料夾名稱中不支援的字元**: 建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱Experience Manager Assets中建立 [資料夾的字元清單](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)。 有些Adobe Experience Manager使用案例可能會受到檔案夾名稱中不支援的字元影響。
+* **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱Experience Manager Assets中建立 [資料夾的字元清單](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)。 有些Adobe Experience Manager使用案例可能會受到檔案夾名稱中不支援的字元影響。
 
-* **避免衝突的最佳實務**: 若要避免在協作多個資產時產生潛在衝突，請參 [閱避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
+* **避免衝突的最佳實務**:若要避免在協作多個資產時產生潛在衝突，請參 [閱避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* **對大型、階層式資料夾使用資料夾上傳**: 使用Experience Manager案頭應用程式來上傳大型資料夾，而不是使用「資產」網頁介面或其他方法。 應用程式會透過記錄和監控在背景上傳資產。 請參閱 [大量上傳資產](using.md#bulk-upload-assets)。
+* **對大型、階層式資料夾使用資料夾上傳**:使用Experience Manager案頭應用程式來上傳大型資料夾，而不是使用「資產」網頁介面或其他方法。 應用程式會透過記錄和監控在背景上傳資產。 請參閱 [大量上傳資產](using.md#bulk-upload-assets)。
 
-* **使用最新版本**: 使用最新的應用程式版本，在安裝新應用程式版本或升級至較新的Adobe Experience Manager版本之前，請務必先檢查相容性。 請參閱 [發行說明](release-notes.md)。
+* **使用最新版本**:使用最新的應用程式版本，在安裝新應用程式版本或升級至較新的Adobe Experience Manager版本之前，請務必先檢查相容性。 請參閱 [發行說明](release-notes.md)。
 
-* **使用相同的驅動器號**: 在組織內使用相同的驅動器號來對應至Adobe Experience Manager DAM。 若要查看其他使用者置入的資產，路徑必須相同。 使用相同的驅動器盤符可確保DAM資產的常態路徑。 即使不同的用戶使用不同的驅動器號，這些資產仍會保持放置狀態且不會被移除。
+* **使用相同的驅動器號**:在組織內使用相同的驅動器號來對應至Adobe Experience Manager DAM。 若要查看其他使用者置入的資產，路徑必須相同。 使用相同的驅動器盤符可確保DAM資產的常態路徑。 即使不同的用戶使用不同的驅動器號，這些資產仍會保持放置狀態且不會被移除。
 
-* **注意網路**: 網路效能是Experience Manager案頭應用程式效能的關鍵。 如果您遇到檔案傳輸或大量作業的回應速度變慢，請關閉可能導致大量網路流量的功能或應用程式。
+* **注意網路**:網路效能是Experience Manager案頭應用程式效能的關鍵。 如果您遇到檔案傳輸或大量作業的回應速度變慢，請關閉可能導致大量網路流量的功能或應用程式。
 
-* **案頭應用程式不支援的使用案例**: 請勿將應用程式用於資產移轉（它需要規劃和其他工具）; 執行繁重的DAM作業（例如移動大型資料夾、大型上傳、使用進階中繼資料搜尋尋找檔案）; 同步用戶端(設計原則和使用模式與同步用戶端（例如Microsoft OneDrive或Adobe Creative Cloud案頭同步）不同。
+* **案頭應用程式不支援的使用案例**:請勿將應用程式用於資產移轉（它需要規劃和其他工具）;執行繁重的DAM作業（例如移動大型資料夾、大型上傳、使用進階中繼資料搜尋尋找檔案）;同步用戶端(設計原則和使用模式與同步用戶端（例如Microsoft OneDrive或Adobe Creative Cloud案頭同步）不同。
 
-* **逾時**: 目前，案頭應用程式沒有可設定的逾時值，此值會在固定時間間隔後中斷Experience Manager伺服器與案頭應用程式之間的連線。 上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，重新嘗試上傳資產幾次。 不建議使用任何方法來變更預設逾時設定。
+* **逾時**:目前，案頭應用程式沒有可設定的逾時值，此值會在固定時間間隔後中斷Experience Manager伺服器與案頭應用程式之間的連線。 上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，重新嘗試上傳資產幾次。 不建議使用任何方法來變更預設逾時設定。
 
 ## 如何疑難排解 {#troubleshooting-prep}
 
