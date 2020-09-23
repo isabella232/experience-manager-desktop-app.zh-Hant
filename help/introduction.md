@@ -2,11 +2,11 @@
 title: Adobe Experience Manager案頭應用程式簡介
 description: 瞭解如何使用Adobe Experience Manager案頭應用程式，直接從案頭使用Adobe Experience Manager Assets時，為創意使用者最佳化資產管理工作流程。
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 67%
