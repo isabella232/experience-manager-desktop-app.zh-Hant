@@ -3,13 +3,13 @@ title: 疑難排解AEM案頭應用程式1.x版
 description: 疑難排解AEM案頭應用程式1.x版，以解決與安裝、升級、設定等相關的偶發性問題。
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '3374'
 ht-degree: 1%
@@ -31,9 +31,9 @@ Adobe Experience Manager(AEM)案頭應用程式包含公用程式，可協助您
 
 案頭應用程式包含下列元件：
 
-* **案頭應用程式**: 應用程式會將DAM安裝或解除安裝為遠端檔案系統，並在本機載入的網路共用與它所連接的遠端AEM例項之間轉換檔案系統呼叫。
-* **作業系統WebDAV/SMB客戶端**: 處理Windows檔案總管/Finder和案頭應用程式之間的通訊。 如果擷取、建立、修改、刪除、移動或複製檔案，作業系統(OS)WebDAV/SMB用戶端會將此作業傳送至案頭應用程式。 在收到通訊後，案頭應用程式會將它轉譯為原生AEM遠端API呼叫。 例如，如果用戶在掛載的目錄中建立檔案，WebDAV/SMB客戶端將啟動請求，案頭應用程式將其轉換為在DAM中建立檔案的HTTP請求。 WebDAV/SMB客戶端是作業系統的內置元件。 它不會以任何方式與案頭應用程式、AEM或Adobe附屬。
-* **Adobe Experience Manager實例**: 提供對儲存在AEM Assets DAM儲存庫中的資產的存取權。 此外，它會代表與掛載的網路共用互動的本機案頭應用程式，執行案頭應用程式要求的動作。 目標AEM例項應執行AEM 6.1版或更新版本。 執行舊版AEM的AEM例項可能需要安裝額外的功能套件和Hotfix，才能完全發揮功能。
+* **案頭應用程式**:應用程式會將DAM安裝或解除安裝為遠端檔案系統，並在本機載入的網路共用與它所連接的遠端AEM例項之間轉換檔案系統呼叫。
+* **作業系統WebDAV/SMB客戶端**:處理Windows檔案總管/Finder和案頭應用程式之間的通訊。 如果擷取、建立、修改、刪除、移動或複製檔案，作業系統(OS)WebDAV/SMB用戶端會將此作業傳送至案頭應用程式。 在收到通訊後，案頭應用程式會將它轉譯為原生AEM遠端API呼叫。 例如，如果用戶在掛載的目錄中建立檔案，WebDAV/SMB客戶端將啟動請求，案頭應用程式將其轉換為在DAM中建立檔案的HTTP請求。 WebDAV/SMB客戶端是作業系統的內置元件。 它不會以任何方式與案頭應用程式、AEM或Adobe附屬。
+* **Adobe Experience Manager實例**:提供對儲存在AEM Assets DAM儲存庫中的資產的存取權。 此外，它會代表與掛載的網路共用互動的本機案頭應用程式，執行案頭應用程式要求的動作。 目標AEM例項應執行AEM 6.1版或更新版本。 執行舊版AEM的AEM例項可能需要安裝額外的功能套件和Hotfix，才能完全發揮功能。
 
 ## AEM案頭應用程式的預期使用案例 {#intended-use-cases-for-aem-desktop-app}
 
@@ -82,7 +82,7 @@ AEM案頭應用程式提供內部快取和背景上傳功能，以改善使用�
 
 >[!CAUTION]
 >
->Adobe建議關閉縮圖產生功能，以加快瀏覽速度。 如果您啟用圖示預覽，應用程式會在您瀏覽已載入的檔案夾時快取數位資產。 應用程式也會下載使用者可能不在乎的資產，這會增加伺服器的負載、耗用使用者的頻寬，並且會使用使用者的磁碟空間。
+>Adobe建議關閉縮圖產生功能，以加快瀏覽速度。 如果您啟用圖示預覽，應用程式會在您瀏覽已載入的檔案夾時快取數位資產。 應用程式也會下載使用者可能不在乎的資產，這會增加伺服器的負載、耗用使用者的頻寬，並且會佔用使用者的更多磁碟空間。
 
 以下是AEM案頭應用程式如何執行快取：
 
