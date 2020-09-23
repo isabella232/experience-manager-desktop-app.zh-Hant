@@ -3,13 +3,13 @@ title: AEM案頭應用程式1.x版最佳實務
 description: Adobe Experience Manager案頭應用程式1.x版的主要功能和建議使用。
 uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3e10be1fd9dd1ff5293e96b46565825e6be1fc4f
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -37,7 +37,7 @@ AEM案頭應用程式使用WebDAV(Windows)或SMB(Mac)網路共用來載入網路
 
 ![AEM案頭應用程式架構](assets/chlimage_1.png)
 
-*圖： 案頭應用程式架構*
+*圖：案頭應用程式架構*
 
 儲存檔案時的額外寫入快取會先將檔案儲存在本機（以免使用者等待網路傳輸）。 然後，在預先定義的延遲（30秒）後，檔案會在背景上傳至AEM，然後資產會上傳至AEM。 AEM案頭應用程式提供UI，用於監控背景檔案上傳的狀態。
 
@@ -67,7 +67,7 @@ AEM案頭應用程式的主要功能包括：
 
    * AEM案頭應用程 [!UICONTROL Folder Upload] 式，可上傳大型、階層式資料夾。
 
-* 請勿將AEM案頭應用程式視為AEM Assets的「案頭同步」用戶端。 AEM案頭應用程式的主要優點在於，它提供對整個儲存庫的「虛擬」存取權，而案頭同步應用程式通常只同步屬於一位使用者的資產。 AEM案頭應用程式提供一定程度的快取和背景上傳； 不過，它的運作方式與一般的「同步」應用程式（例如Adobe Creative Cloud案頭應用程式或Microsoft OneDrive）非常不同。
+* 請勿將AEM案頭應用程式視為AEM Assets的「案頭同步」用戶端。 AEM案頭應用程式的主要優點在於，它提供對整個儲存庫的「虛擬」存取權，而案頭同步應用程式通常只同步屬於一位使用者的資產。 AEM案頭應用程式提供一定程度的快取和背景上傳；不過，它的運作方式與一般的「同步」應用程式（例如Adobe Creative Cloud案頭應用程式或Microsoft OneDrive）非常不同。
 
 * 請勿經常使用AEM案頭應用程式網路磁碟機來儲存資產。 所有儲存作業都會傳輸至AEM Assets。 因此，直接在已載入的AEM Assets儲存庫中執行密集編輯作業是不現實的。 直接在掛載的儲存庫中編輯資產時，會使用不相關的版本建立資產的時間軸，並在伺服器上施加額外的開銷。
 
