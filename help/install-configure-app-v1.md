@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: ef87dc011297fda181a9a7643a261e8a42e35a8b
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ AEM案頭應用程式的快取預設位置如下：
 
 * 在Mac中 `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/EncodedAEMEndpoint`。
 
-`EncodedAEMEndpoint` is AEM案頭應用程式的已設定AEM端點URL。 此值是AEM伺服器的目標URL編碼版本。 例如，如果應用程式正在定位， `http://localhost:4502`則目錄名稱為 `http%3A%2F%2Flocalhost%3A4502`。 此示例中快取目錄的Windows路徑為%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502。
+`EncodedAEMEndpoint` is AEM案頭應用程式的已設定AEM端點URL。 此值是AEM伺服器的目標URL編碼版本。 例如，如果應用程式正在定位， `http://localhost:4502`則目錄名稱為 `http%3A%2F%2Flocalhost%3A4502`。 此示例中快取目錄的Windows路徑為 `%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502`。
 
 要將應用程式指向不同的資料夾或驅動器，請編輯應用程式的配置檔案。
 
@@ -127,7 +127,7 @@ AEM案頭應用程式的快取預設位置如下：
 
    要保存對此檔案所做的更改，需要管理員權限。
 
-1. 搜尋字串&quot;ProxyCacheRoot&quot;。 您會看到其值已設為快取位置「%LocalAppData%\Adobe\AssetsCompanion\Cache」。 只要將此值變更為任何有效路徑即可。
+1. 搜尋字串&quot;ProxyCacheRoot&quot;。 您會看到其值已設為快取位置 `%LocalAppData%\Adobe\AssetsCompanion\Cache`。 只要將此值變更為任何有效路徑即可。
 
    >[!NOTE]
    >
