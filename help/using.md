@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: f5f65fa8ddceae62f2e046f2d20e853aef572f2c
 workflow-type: tm+mt
-source-wordcount: '3997'
+source-wordcount: '3999'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 此整合可讓組織中的不同角色在Experience Manager Assets中集中管理資產，並在Windows或Mac OS的原生應用程式中存取本機案頭上的資產。
 
-當您登出後或首次開啟應用程式時，請以格式提供Experience Manager伺服器的URL `https://[aem-server-url]:[port]/`。 按一下「連接」。 提供憑證以連接應用程式和伺服器。
+當您登出後或首次開啟應用程式時，請以格式提供Experience Manager伺服器的URL `https://[aem-server-url]:[port]/`。 然後選取 [!UICONTROL Connect] 選項。 提供憑證以連接應用程式和伺服器。
 
 您使用Experience Manager案頭應用程式所做的主要工作包括：
 
