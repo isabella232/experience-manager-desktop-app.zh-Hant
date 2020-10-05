@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 381e586077c7db63dd57a468b1c6abc60c63e34e
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1537'
 ht-degree: 0%
 
 ---
@@ -51,37 +51,41 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 ### 啟用除錯模式 {#enable-debug-mode}
 
-若要疑難排解，您可以啟用除錯模式，並在記錄檔中取得更多資訊。 若要在Mac的除錯模式中使用應用程式，請在終端機或命令提示符下使用下列命令列選項： `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`.
-
-要在Windows上啟用調試模式，請執行以下步驟：
-
-1. 在案頭 `Adobe Experience Manager Desktop.exe.config` 應用程式安裝資料夾中尋找檔案。 依預設，資料夾為 `C:\Program Files\Adobe\Adobe Experience Manager Desktop`。
-
-1. 找 `<level value="INFO"/>` 到檔案結尾處。 將值從 `INFO` 更改 `DEBUG`為，即 `<level value="DEBUG"/>`。 儲存並關閉檔案。
-
-1. 在案頭 `logging.json` 應用程式安裝資料夾中尋找檔案。 依預設，資料夾為 `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`。
-
-1. 在文 `logging.json` 件中，找到的所有實例 `"level": "info"`。 將值從 `info` 變 `debug`更為 `"level": "debug"`。 儲存並關閉檔案。
-
-1. 清除位於應用程式首選項中設定位置的快取目 [錄](/help/install-upgrade.md#set-preferences)。
-
-1. 重新啟動案頭應用程式。
-
-<!-- The Windows command doesn't work for now.
-* On Windows: `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
--->
-
-### 日誌檔案的位置 {#check-log-files-v2}
-
-您可以在下列位置找到AEM案頭應用程式的記錄檔。 上傳許多資產時，如果有些檔案無法上傳，請參 `backend.log` 閱檔案以識別失敗的上傳。
-
-* Windows上的路徑： `%LocalAppData%\Adobe\AssetsCompanion\Logs`
-
-* Mac上的路徑： `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+若要疑難排解，您可以啟用除錯模式，並在記錄檔中取得更多資訊。
 
 >[!NOTE]
 >
->在支援要求／票證上與Adobe客戶服務合作時，可能會要求您共用記錄檔，以協助客戶服務團隊瞭解問題。 封存整個資 `Logs` 料夾，並與您的客戶服務聯絡人共用。
+>有效的日誌級別為DEBUG、INFO、WARN或ERROR。 在DEBUG中，日誌的詳細程度最高，在ERROR中則最低。
+
+若要在Mac的除錯模式中使用應用程式：
+
+1. 開啟終端窗口或命令提示符。
+
+1. 執行下列 [!DNL Experience Manager] 命令以啟動案頭應用程式：
+
+   `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`。
+
+要在Windows上啟用調試模式，請執行以下操作：
+
+1. 開啟命令窗口。
+
+1. 執行 [!DNL Experience Manager] 下列命令以啟動案頭應用程式：
+
+`AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`。
+
+### 日誌檔案的位置 {#check-log-files-v2}
+
+[!DNL Experience Manager] 案頭應用程式會根據作業系統，將其記錄檔儲存在下列位置：
+
+在Windows上： `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+
+在Mac上： `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+
+上傳許多資產時，如果有些檔案無法上傳，請參 `backend.log` 閱檔案以識別失敗的上傳。
+
+>[!NOTE]
+>
+>在支援要求或票證上與Adobe客戶服務合作時，可能會要求您共用記錄檔，以協助客戶服務團隊瞭解問題。 封存整個資 `Logs` 料夾，並與您的客戶服務聯絡人共用。
 
 ### 清除快取 {#clear-cache-v2}
 
@@ -129,7 +133,60 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 如果您正在搭配AEM 6.5.1或更新版本使用案頭應用程式，請將S3或Azure連接器升級至1.10.4或更新版本。 它可解決與 [OAK-8599相關的檔案上傳失敗問題](https://issues.apache.org/jira/browse/OAK-8599)。 請參閱 [安裝指示](install-upgrade.md#install-v2)。
 
-## SSL設定問題 {#ssl-config-v2}
+## [!DNL Experience Manager] 案頭應用程式連線問題 {#connection-issues}
+
+### SAML登入驗證無法運作 {#da-connection-issue-with-saml-aem}
+
+如果 [!DNL Experience Manager] 案頭應用程式未連線至您啟用SSO(SAML)的例項 [!DNL Adobe Experience Manager] ，請閱讀本節以疑難排解。 SSO程式各異，有時複雜，而應用程式的設計則盡量配合這些連線類型。 不過，有些設定需要額外的疑難排解。
+
+有時SAML程式不會重新導向回原本要求的路徑，或最終的重新導向是與案頭應用程式中設定的主機不 [!DNL Adobe Experience Manager] 同。 要確認情況並非如此：
+
+1. 開啟網頁瀏覽器。
+
+1. 在位址列 `<AEM host>/content/dam.json` 中輸入URL。
+
+   例如， `<AEM host>` 以目標 [!DNL Adobe Experience Manager] 實例替換 `http://localhost:4502/content/dam.json`。
+
+1. 登入實 [!DNL Adobe Experience Manager] 例。
+
+1. 登入完成後，請在位址列中查看瀏覽器的目前位址。 它應完全符合最初輸入的URL。
+
+1. 此外，也請確認所有項目 `/content/dam.json` 在符合案頭應 [!DNL Adobe Experience Manager] 用程式設定 [!DNL Adobe Experience Manager] 中設定的目標值之前。
+
+**登入SAML程式可依照上述步驟正常運作，但使用者仍無法登入**
+
+案頭應用 [!DNL Adobe Experience Manager] 程式中顯示登入程式的視窗只是顯示目標執行個體Web使 [!DNL Adobe Experience Manager] 用者介面的網頁瀏覽器：
+
+* Mac版本使用 [WebView](https://developer.apple.com/documentation/webkit/webview)。
+
+* Windows版本使用Chromium架構的 [CefSharp](https://cefsharp.github.io/)。
+
+請確定SAML程式支援這些瀏覽器。
+
+若要進一步疑難排解，可檢視瀏覽器正嘗試載入的確切URL。 要查看此資訊，請執行以下操作：
+
+1. 請遵循在除錯模式中啟動應用程式 [的指示](#enable-debug-mode)。
+
+1. 重制登錄嘗試。
+
+1. 導覽至應 [用程式的記](#check-log-files-v2) 錄目錄
+
+1. 針對Windows:
+
+   1. 開啟「aemcompanionlog.txt」。
+
+   1. 搜尋以「登入瀏覽器位址變更為」開頭的訊息。 這些項目也包含應用程式載入的URL。
+
+   針對Mac:
+
+   1. `com.adobe.aem.desktop-nnnnnnnn-nnnnnn.log`，其中 **n** 由最新檔案名中的數字替換。
+
+   1. 搜尋以「載入影格」開頭的訊息。 這些項目也包含應用程式載入的URL。
+
+
+查看正在載入的URL順序有助於在SAML結尾疑難排解，以判斷出錯之處。
+
+### SSL設定問題 {#ssl-config-v2}
 
 AEM案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有時，連線可能會使用瀏覽器成功，但無法使用AEM案頭應用程式。 若要正確設定SSL，請在Apache中安裝遺失的中間憑證。 請參 [閱如何在Apache中安裝Intemider CA憑證](https://access.redhat.com/solutions/43575)。
 
