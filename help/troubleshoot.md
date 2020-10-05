@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 381e586077c7db63dd57a468b1c6abc60c63e34e
+source-git-commit: b4add64df21991495d5cc01e6250bbc9fc444ff0
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1880'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 按一 ![下「應用程式選單](assets/do-not-localize/more_options_da2.png) 」以開啟應用程式的選單，然後按一下 **[!UICONTROL Help]** > **[!UICONTROL About]**。
 
-## 看不到置入的資產 {#placed-assets-missing}
+### 看不到置入的資產 {#placed-assets-missing}
 
 如果您或其他創意專業人員無法在支援檔案（例如INDD檔案）中看到所放置的資產，請勾選下列項目：
 
@@ -114,7 +114,7 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 * 驅動器號的一致性。 如果您或其他共同作業者在將AEM DAM對應至不同的磁碟盤符時置入資產，則不會顯示置入的資產。
 * 權限. 若要檢查您是否擁有擷取置入資產的權限，請連絡您的AEM管理員。
 
-## 在macOS上升級時的問題 {#issues-when-upgrading-on-macos}
+### 在macOS上升級時的問題 {#issues-when-upgrading-on-macos}
 
 在macOS上升級AEM案頭應用程式時，偶爾會發生問題。 這是由於AEM案頭應用程式的舊系統資料夾導致無法正確載入新版AEM案頭應用程式。 要解決此問題，可以手動刪除以下資料夾和檔案。
 
@@ -129,13 +129,28 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-## 無法上傳檔案 {#upload-fails}
+### 無法上傳檔案 {#upload-fails}
 
 如果您正在搭配AEM 6.5.1或更新版本使用案頭應用程式，請將S3或Azure連接器升級至1.10.4或更新版本。 它可解決與 [OAK-8599相關的檔案上傳失敗問題](https://issues.apache.org/jira/browse/OAK-8599)。 請參閱 [安裝指示](install-upgrade.md#install-v2)。
 
-## [!DNL Experience Manager] 案頭應用程式連線問題 {#connection-issues}
+### [!DNL Experience Manager] 案頭應用程式連線問題 {#connection-issues}
 
-### SAML登入驗證無法運作 {#da-connection-issue-with-saml-aem}
+如果您遇到一般的連線問題，請以下提供一些方式，以取得有關案頭應用程式 [!DNL Experience Manager] 所執行動作的詳細資訊。
+
+**檢查請求記錄**
+
+[!DNL Experience Manager] 案頭應用程式會將其傳送的所有請求，以及每個請求的回應代碼記錄在專用的記錄檔中。
+
+1. 在應 `request.log` 用程式的記錄目錄中開啟，以檢視這些請求。
+
+1. 記錄中的每一行代表請求或回應。 請求後面會 `>` 有一個字元，後面接有請求的URL。 回應後面會 `<` 有一個字元，後面接著回應程式碼和請求的URL。 請求和回應可使用每行的GUID進行比對。
+
+**檢查應用程式的內嵌瀏覽器載入的請求**
+
+大部分應用程式的請求都位於請求記錄中。 不過，如果沒有有用的資訊，則查看應用程式的內嵌瀏覽器所傳送的要求會很有用。
+如需如 [何檢視這些請求的指示](#da-connection-issue-with-saml-aem) ，請參閱SAML區段。
+
+#### SAML登入驗證無法運作 {#da-connection-issue-with-saml-aem}
 
 如果 [!DNL Experience Manager] 案頭應用程式未連線至您啟用SSO(SAML)的例項 [!DNL Adobe Experience Manager] ，請閱讀本節以疑難排解。 SSO程式各異，有時複雜，而應用程式的設計則盡量配合這些連線類型。 不過，有些設定需要額外的疑難排解。
 
@@ -186,11 +201,45 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 查看正在載入的URL順序有助於在SAML結尾疑難排解，以判斷出錯之處。
 
-### SSL設定問題 {#ssl-config-v2}
+#### SSL設定問題 {#ssl-config-v2}
 
 AEM案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有時，連線可能會使用瀏覽器成功，但無法使用AEM案頭應用程式。 若要正確設定SSL，請在Apache中安裝遺失的中間憑證。 請參 [閱如何在Apache中安裝Intemider CA憑證](https://access.redhat.com/solutions/43575)。
 
-## 應用程式沒有回應 {#unresponsive}
+
+AEM Desktop用於HTTP通訊的程式庫都採用嚴格的SSL強制。 因此，有時SSL連線會透過瀏覽器失敗，而案頭應用程式會 [!DNL Adobe Experience Manager] 失敗。 這很好，因為它可促進正確配置SSL並提高安全性，但當應用程式無法連線時，可能會令人沮喪。
+
+在這種情況下，建議的方法是使用工具來分析伺服器的SSL憑證並識別問題，以便加以修正。 有些網站會在提供伺服器URL時檢查伺服器的憑證。
+
+作為一項臨時措施，您可以停用案頭應用程式中嚴格的SSL [!DNL Adobe Experience Manager] 強制執行。 這不是建議的長期解決方案，因為它會隱藏錯誤設定SSL的根本原因，以降低安全性。 要禁用嚴格強制，請執行以下操作：
+
+1. 使用您選擇的編輯器編輯應用程式的JavaScript設定檔案，依預設會在下列位置（視作業系統而定）找到這些檔案：
+
+   在Mac上： `/Applications/Adobe Experience Manager Desktop.app/Contents/Resources/javascript/lib-smb/config.json`
+
+   在Windows上： `C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop\javascript\config.json`
+
+1. 在檔案中找到下列章節：
+
+   ```shell
+   ...
+   "assetRepository": {
+       "options": {
+   ...
+   ```
+
+1. 通過添加以下內容來修改 `"strictSSL": false` 該部分：
+
+   ```shell
+   ...
+   "assetRepository": {
+       "options": {
+           "strictSSL": false,
+   ...
+   ```
+
+1. 儲存檔案並重新啟動案頭應 [!DNL Adobe Experience Manager] 用程式。
+
+### 應用程式沒有回應 {#unresponsive}
 
 應用程式很少會停止回應、只顯示白色畫面，或在介面底部顯示錯誤，而介面上沒有任何選項。 請依順序嘗試下列項目：
 
