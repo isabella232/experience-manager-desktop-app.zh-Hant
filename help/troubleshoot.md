@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a7a334df5eaa2b8a8d0412bff1ed2a47d39ca1a2
+source-git-commit: 540821ad10f14ad855c66a2b93d356ba118515c7
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 0%
@@ -143,7 +143,7 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 要清除快取，請刪除所需的編碼端 [!DNL Adobe Experience Manager] 點目錄。 或者，刪除首選項中指定的整個目錄將清除應用程式已使用的所有實例的快取。
 
-清除 [!DNL Adobe Experience Manager]]案頭應用程式的快取是初步的疑難排解工作，可解決數個問題。 從應用程式偏好設定中清除快取。 請參 [閱設定首選項](install-upgrade.md#set-preferences)。 快取資料夾的預設位置為：
+清除桌 [!DNL Adobe Experience Manager] 面應用程式的快取是一項初步的疑難排解工作，可解決數個問題。 從應用程式偏好設定中清除快取。 請參 [閱設定首選項](install-upgrade.md#set-preferences)。 快取資料夾的預設位置為：
 
 ### 瞭解案頭應 [!DNL Adobe Experience Manager] 用程式版本 {#know-app-version-v2}
 
