@@ -1,9 +1,16 @@
 ---
-source-git-commit: f49a196e59afdafcb49b9c84f82572a0603471e0
+source-git-commit: 241320245b7520016bde22829da9e2ad23bfc79e
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '157'
+ht-degree: 3%
 
 ---
 # Adobe Experience Manager案頭應用程式檔案
+
+| EXL-PR | EXL | 預覽 | 啟動 | 已發佈 | 說明 |
+|--- |--- |--- |--- |--- |--- |
+| [![建置狀態](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-desktop-app.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-desktop-app.en_pr-exl/lastBuild/) | [![建置狀態](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-desktop-app.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-desktop-app.en_exl/lastBuild/lastBuild) | [預覽URL](https://experienceleague.corp.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [即時URL](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) | [Authoring 指南](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 這是Adobe Experience Manager案頭應用程式檔案的儲存庫。
 
