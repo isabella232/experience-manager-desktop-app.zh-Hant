@@ -1,9 +1,9 @@
 ---
 cloud: experience-cloud
-product: Adobe Experience Manager desktop app
+product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 桌面應用程式指南
-breadcrumb-title: Desktop App 指南
+breadcrumb-title: 桌面應用程式指南
 user-guide-description: 了解如何使用 AEM 桌面應用程式來連接儲存機制和桌面應用程式，以更快速地存取資源並簡化工作流程。
 solution-title: AEM Assets
 solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html
@@ -11,7 +11,7 @@ getting-started-url: https://docs.adobe.com/content/help/zh-Hant/experience-mana
 tutorials-title: AEM 教學課程
 tutorials-url: Https://helpx.adobe.com/tw/experience-manager/kt/index/aem-tutorials.html
 translation-type: tm+mt
-source-git-commit: 7b2f16b35b89707e94c24f9d420080c9f13ea945
+source-git-commit: 93ff31a427ec2a19b56e029f7690383fe8ac5eab
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 95%
