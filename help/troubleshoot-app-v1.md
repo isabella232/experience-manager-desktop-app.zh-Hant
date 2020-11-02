@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
 workflow-type: tm+mt
 source-wordcount: '3374'
 ht-degree: 1%
@@ -144,7 +144,7 @@ Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，�
 
 另一個改善AEM效能的方法是為Granite Transient Workflow Queue（Granite暫時工作流程佇列）工作設定最大並行作業的值。 建議的值大約是伺服器可用CPU數的一半。 要調整值，請執行以下步驟：
 
-1. 導覽至 *要設定之AEM例項中的/system/console/configMgr* (例如 <http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr>)。
+1. 導覽至 *要設定之AEM例項中的/system/console/configMgr* (例如 `http://[aem_server]:[port]/system/console/configMgr`)。
 1. 搜索 **QueueConfiguration**，然後按一下以開啟每個作業，直到找到 **Granite Transient Workflow Queue** job。 按一下旁邊的編輯。
 1. 更改「最 **大並行作業數** 」值，然後按一下「 **保存」**。
 
