@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ef87dc011297fda181a9a7643a261e8a42e35a8b
+source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -134,9 +134,7 @@ AEM案頭應用程式的快取預設位置如下：
    >應用程式會自動建立 *&lt;Encoded AEM Endpoint>子目錄* 。 此行為不可配置。
 
 >[!MORELIKETHIS]
-* [AEM 桌面應用程式簡介](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
-* [使用 AEM 桌面應用程式](use-app-v1.md)
-* [瞭解AEM案頭應用程式的登入／登出](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [搭配AEM Assets使用案頭應用程式](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [疑難排解AEM案頭應用程式](troubleshoot-app-v1.md)
+* [AEM 桌面應用程式簡介](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [使用 AEM 桌面應用程式](use-app-v1.md).
+* [疑難排解AEM案頭應用程式](troubleshoot-app-v1.md)。
 
