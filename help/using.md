@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f5f65fa8ddceae62f2e046f2d20e853aef572f2c
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
 source-wordcount: '3999'
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. 按一下／點選 **[!UICONTROL My Preferences]** 以顯示對 **[!UICONTROL Preferences]** 話方塊。
 1. 在「用戶首選項」對話框中，選擇 **[!UICONTROL Show Desktop Actions For Assets]**。 按一下／點選 **[!UICONTROL Accept]**。
 
-   ![勾選「顯示資產的案頭動作」以啟用案頭動作](assets/chlimage_1-3.png)
+   ![勾選「顯示資產的案頭動作」以啟用案頭動作](assets/enable_desktop_actions.png)
 
    選中 [!UICONTROL Show Desktop Actions For Assets] 以啟用案頭動作
 
