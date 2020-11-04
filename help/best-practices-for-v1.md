@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -35,7 +35,7 @@ AEM案頭應用程式讓您不必在AEM中更新不正確的本機副本或更�
 
 AEM案頭應用程式使用WebDAV(Windows)或SMB(Mac)網路共用來載入網路共用。 掛載的網路共用僅為本地共用。 AEM案頭應用程式會截取呼叫（開啟、讀取、寫入），並提供其他本機快取。 它可將遠端呼叫轉譯至AEM Assets伺服器，以最佳化AEM HTTP請求。 下圖說明AEM案頭應用程式架構。
 
-![AEM案頭應用程式架構](assets/chlimage_1.png)
+![AEM案頭應用程式架構](assets/arch_v1.png)
 
 *圖：案頭應用程式架構*
 
