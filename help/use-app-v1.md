@@ -3,9 +3,9 @@ title: 使用AEM案頭應用程式1.x版。
 description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.x版，並最佳化您在案頭上使用資產的工作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
 workflow-type: tm+mt
-source-wordcount: '2500'
+source-wordcount: '2474'
 ht-degree: 0%
 
 ---
@@ -253,7 +253,5 @@ Adobe不建議從本機檔案系統複製貼上或將大量檔案或巢狀檔案
 
 >[!MORELIKETHIS]
 >
->* [AEM 桌面應用程式簡介](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
->* [瞭解AEM案頭應用程式的登入／登出](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 >* [疑難排解AEM案頭應用程式應用程式](troubleshoot-app-v1.md)
 
