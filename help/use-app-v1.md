@@ -3,9 +3,9 @@ title: 使用AEM案頭應用程式1.x版。
 description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.x版，並最佳化您在案頭上使用資產的工作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
-source-wordcount: '2516'
+source-wordcount: '2500'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ AEM案頭應用程式使用HTTPS連線來連線至AEM伺服器，以強穩且安
 
 **檢視資產狀態** ：當變更的資產上傳或新資產新增至AEM Assets存放庫時，應用程式會在背景上傳資產。 背景上傳可讓作業更順暢，您不必等到上傳完成，尤其是大型資產。 您可以將變更儲存在本機，而不必擔心。 應用程式會花一些時間將這些資產傳送至伺服器，視可用頻寬而定。 您可以檢查上傳的狀態，以及一些更基本的資訊。
 
-**選項** ：從AEM Desktop應用程式托盤按一下／點選「選項」，以存取設定，在您的系統啟動時啟動應用程式； 在應用程式啟動時連線至AEM伺服器； 以及，更改安裝後AEM Assets可用的本地驅動器盤符。
+**選項** ：從AEM Desktop應用程式托盤按一下／點選「選項」，以存取設定，在您的系統啟動時啟動應用程式；在應用程式啟動時連線至AEM伺服器；以及，更改安裝後AEM Assets可用的本地驅動器盤符。
 
 **「進階>管理快取** 」您可以控制可用於本機快取的磁碟空間量。 來自AEM Assets伺服器的物件會在本機快取，以提供更順暢的體驗。 您可以變更預設值以符合您的需求。 此外，您也可以清除快取，重新擷取所有資產。 清除快取時，它會保留未儲存的變更。 未簽入AEM伺服器的任何資產都會保留且不會刪除。
 
@@ -92,7 +92,7 @@ AEM案頭應用程式使用HTTPS連線來連線至AEM伺服器，以強穩且安
 
 1. 在登入畫面中，指定您例項的使用者名稱和密碼。 若要指定替代AEM例項，請選取 **[!UICONTROL Alternate Login URL]** 選項。
 
-   ![在AEM Desktop的登入畫面上提供AEM伺服器認證](assets/chlimage_1-2.png)
+   ![在AEM案頭應用程式的登入畫面上提供AEM伺服器認證](assets/login_screen_v1.png)
 
 ### 在AEM網頁介面中啟用案頭動作 {#desktopactions}
 
@@ -105,9 +105,9 @@ AEM案頭應用程式使用HTTPS連線來連線至AEM伺服器，以強穩且安
 
 1. 在「用戶首選項」對話框中，選擇 **[!UICONTROL Show Desktop Actions For Assets]**。 按一下 **[!UICONTROL Accept]**.
 
-   ![勾選「顯示資產的案頭動作」以啟用案頭動作](assets/chlimage_1-3.png)
+   ![選中 [!UICONTROL Show Desktop Actions For Assets] 以啟用案頭動作](assets/enable_desktop_actions.png)
 
-   *圖： 勾選「顯示資產的案頭動作」以啟用案頭動作。*
+   *圖：勾選「顯示資產的案頭動作」以啟用案頭動作。*
 
 ## 在案頭上存取和開啟資產 {#openondesktop}
 
@@ -119,7 +119,7 @@ AEM案頭應用程式使用HTTPS連線來連線至AEM伺服器，以強穩且安
 
 ![使用AEM Desktop應用程式存取和開啟資產的內容選單選項](assets/aem_desktopapp_mac_context_menu.png)
 
-*圖： 使用AEM案頭應用程式存取和開啟資產的內容選單選項。*
+*圖：使用AEM案頭應用程式存取和開啟資產的內容選單選項。*
 
 >[!NOTE]
 >
@@ -135,13 +135,13 @@ AEM案頭應用程式使用HTTPS連線來連線至AEM伺服器，以強穩且安
 
 1. 開啟AEM Assets介面，並將指標暫留在資料夾或資產上，以在「卡片」檢視中將案頭動作顯示為快速動作。
 
-   ![在「資產」UI中，開啟快速動作功能表以檢視案頭動作](assets/chlimage_1-4.png)
+   ![在「資產」UI中，開啟快速動作功能表以檢視案頭動作](assets/desktop_actions_in_card_view.png)
 
-   *圖： 在「資產」UI中，開啟快速動作功能表以檢視案頭動作。*
+   *圖：在「資產」UI中，開啟快速動作功能表以檢視案頭動作。*
 
-   當您在選取資產後，或從資產頁面的工具列按一下工具列中的「案頭動作 **** 」圖示時，這些案頭動作也可供使用。
+   當您在選取資產後，或從資產頁面的工具列按一下工具列中的「案頭動作 **** 」選項時，這些案頭動作也可供使用。
 
-1. 若要在案頭應用程式中開啟與特定副檔名相關聯的資產，請按一下／點選「在案頭上開啟」快速動作「在案頭上 **開啟」圖示**![](assets/do-not-localize/aemassets_icon_openondesktop.png)。
+1. 若要在案頭應用程式中開啟與特定副檔名相關聯的資產，請按一下「在案頭上開啟」快速動作「在案頭上 **開啟」圖示**![](assets/do-not-localize/aemassets_icon_openondesktop.png)。
 
    或者，從工具 **欄的** 「案頭動 **作** 」選單選擇「開啟」。
 
@@ -165,7 +165,7 @@ AEM Assets可讓您取出要編輯的資產，並在完成變更後將其存回�
 
 1. 開啟AEM Assets介面，並將指標暫留在資料夾或資產上，以在「卡片」檢視中將案頭動作顯示為快速動作。
 
-   ![卡片檢視中的屬性選項](assets/chlimage_1-4.png)
+   ![卡片檢視中的屬性選項](assets/desktop_actions_in_card_view.png)
 
    當您在選取資產後，或從資產頁面的工具列按一下／點選工具列中的「案頭動作」圖示時，也可使用這些案頭動作。
 
@@ -195,13 +195,10 @@ AEM Assets可讓您取出要編輯的資產，並在完成變更後將其存回�
    使用AEM Desktop應用程式存取和開啟資產的內容選單選項
 
 1. 定位至要結帳的資產。
-
-   ![在Mac的AEM Assets內容選單中開啟](assets/chlimage_1-5.png)
-
 1. 在資產上按一下滑鼠右鍵，然後從內容選單中選取「更多資產資訊」。
 1. 在「資產資訊」對話方塊中，按一下／點選「結帳」圖示以結帳資產。 按一下／點選「結帳」圖示後，「結帳」圖示會切換為「結帳」圖示。
 
-   ![瀏覽至要結帳的資產](assets/chlimage_1-6.png)
+   ![瀏覽至要結帳的資產](assets/browse_assets_to_checkout.png)
 
 1. 若要簽入資產以便讓其他用戶可以使用，請按一下／點選「資產資訊」對話框中的簽入表徵圖。
 
@@ -211,13 +208,10 @@ AEM Assets可讓您取出要編輯的資產，並在完成變更後將其存回�
 
 1. 從「上下文」菜單中，選擇「瀏覽資產」以開啟「瀏覽器」。
 1. 在瀏覽器中，瀏覽至您要結帳的資產所在的位置。
-
-   ![結帳圖示切換](assets/chlimage_1-7.png)
-
 1. 在資產上按一下滑鼠右鍵，然後從內容選單中選取「在網路上開啟」。
 1. 在「資產資訊」對話方塊中，按一下／點選「結帳」圖示。 「結帳」圖示會切換為「登入」圖示。
 
-   ![結帳圖示切換](assets/chlimage_1-8.png)
+   ![結帳圖示切換](assets/checkout_icon_toggles.png)
 
 1. 在Explorer中檢閱資產。 資產「資產」鎖定圖示上的 ![鎖定圖示](assets/do-not-localize/aemassets_icon_lockcheckout.png) ，表示您已簽出資產。
 
@@ -237,7 +231,7 @@ AEM Assets可讓您取出要編輯的資產，並在完成變更後將其存回�
 
 ### 大量上傳資產和資料夾至AEM伺服器 {#bulkupload}
 
-使用AEM Desktop，您可以將包含資產的整個檔案夾從本機檔案目錄上傳至AEM Assets。 如此，資料夾內的所有資產都會大量上傳，而不必一次上傳一個。
+使用AEM Desktop，您可以將包含資產的整個檔案夾從本機檔案目錄上傳至AEM Assets。 如此，資料夾內的所有資產都會大量上傳，而不必一次上傳一個資產。
 
 1. 從「資產」使用者介面，按一下／點選工 **具列中的** 「建立」，然後從功能表 **選擇「上傳資料夾** 」。
 1. 瀏覽至您要上傳的檔案夾，然後加以選取。
