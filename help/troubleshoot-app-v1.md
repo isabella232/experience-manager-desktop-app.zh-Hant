@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
+source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
 workflow-type: tm+mt
-source-wordcount: '3374'
+source-wordcount: '3379'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，�
 
 如果您在Windows上執行AEM，可以設定Windows以增強WebDAV用戶端的效能。 如需詳細資訊，請前往 [https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570)。
 
-在Windows 7中，修改IE設定可改善WebDAV的效能。 如需詳細資訊，請造 [訪http://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/](http://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/)。
+在Windows 7中，修改IE設定可改善WebDAV的效能。 如需詳細資訊，請參閱如 [何在Windows 7中修正緩慢的WebDAV效能](https://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/)。
 
 ## 併發操作 {#concurrent-operations}
 
