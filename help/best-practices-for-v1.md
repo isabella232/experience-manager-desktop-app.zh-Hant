@@ -1,17 +1,10 @@
 ---
 title: AEM案頭應用程式1.x版最佳實務
 description: Adobe Experience Manager案頭應用程式1.x版的主要功能和建議使用。
-uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -29,7 +22,7 @@ AEM案頭應用程式讓您不必在AEM中更新不正確的本機副本或更�
 
 >[!NOTE]
 >
->在閱讀本檔案之前，您可以先閱讀整體 [AEM和Creative Cloud整合的最佳實務](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html) ，以取得主題的更高階概觀。
+>在閱讀本檔案之前，您可以先閱讀整體 [AEM和Creative Cloud整合的最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html) ，以取得主題的更高階概觀。
 
 ## AEM desktop app architecture {#aem-desktop-app-architecture}
 
@@ -71,7 +64,7 @@ AEM案頭應用程式的主要功能包括：
 
 * 請勿經常使用AEM案頭應用程式網路磁碟機來儲存資產。 所有儲存作業都會傳輸至AEM Assets。 因此，直接在已載入的AEM Assets儲存庫中執行密集編輯作業是不現實的。 直接在掛載的儲存庫中編輯資產時，會使用不相關的版本建立資產的時間軸，並在伺服器上施加額外的開銷。
 
-* 請勿使用AEM案頭應用程式，將大量資料從一個AEM例項移轉至另一個AEM例項。 請參閱移 [轉指南](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) ，以規劃並執行資產移轉。 相反地，案頭應用 [程式支援大量上傳](use-app-v1.md#bulkupload) ，這是第一次大量上傳資產 [!DNL Adobe Experience Manager]。
+* 請勿使用AEM案頭應用程式，將大量資料從一個AEM例項移轉至另一個AEM例項。 請參閱移 [轉指南](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html) ，以規劃並執行資產移轉。 相反地，案頭應用 [程式支援大量上傳](use-app-v1.md#bulkupload) ，這是第一次大量上傳資產 [!DNL Adobe Experience Manager]。
 
 ## 針對選定使用案例的建議 {#recommendations-for-selected-use-cases}
 
@@ -127,7 +120,7 @@ AEM案頭應用程式提供對整個DAM存放庫的虛擬存取權——而且�
 
 ### 網路考量 {#network-considerations}
 
-若要瞭解有關AEM Assets網路設定的最佳實務，請參閱 [AEM Assets網路考量事項檔案](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) 。 協助使用者最佳化AEM案頭應用程式體驗的一些重要方面包括：
+若要瞭解有關AEM Assets網路設定的最佳實務，請參閱 [AEM Assets網路考量事項檔案](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-migration-guide.html) 。 協助使用者最佳化AEM案頭應用程式體驗的一些重要方面包括：
 
 * **使用正確配置的Dispatcher**。 使用AEM Dispatcher以取得其他安全性，並確保已針對 [AEM案頭應用程式連線設定此AEM案頭應用程式，以便在Dispatcher後方進行AEM](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
@@ -139,8 +132,8 @@ AEM案頭應用程式提供對整個DAM存放庫的虛擬存取權——而且�
 
 ### 最佳化伺服器效能 {#optimizing-server-performance}
 
-若要瞭解AEM Assets伺服器如何針對效能最佳化，請參閱 [AEM Assets效能調整指南](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)。 AEM案頭應用程式伺服器效能的一些重要方面是最佳化工作流程設定，以便在資產上傳時發揮良好效能：
+若要瞭解AEM Assets伺服器如何針對效能最佳化，請參閱 [AEM Assets效能調整指南](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html)。 AEM案頭應用程式伺服器效能的一些重要方面是最佳化工作流程設定，以便在資產上傳時發揮良好效能：
 
-* **更具效能的資產上傳**。 將「 [AEM資產更新」工作流程模型設定為「暫時」](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows)。
+* **更具效能的資產上傳**。 將「 [AEM資產更新」工作流程模型設定為「暫時」](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html)。
 
 * **限制上傳的伺服器CPU**。 請確定已正確設定最大並行工作流程工作參數，如此上傳不會耗用所有CPU。
