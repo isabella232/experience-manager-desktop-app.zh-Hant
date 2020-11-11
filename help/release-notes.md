@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 43%
+source-wordcount: '1406'
+ht-degree: 42%
 
 ---
 
@@ -42,11 +42,11 @@ Adobe Experience Manager案頭應用程式與下列作業系統相容：
 
 此應用程式可與下列Experience Manager版本搭配使用，不論部署為雲端服務、部署在Adobe Managed Services(AMS)或內部部署：
 
-* [Experience Manager 雲端服務](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/release-notes/home.html).
+* [Experience Manager即雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
 
-* [Experience Manager 6.5.0或更新版本](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) 。
+* [Experience Manager 6.5.0或更新版本](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) 。
 
-* [Experience Manager 6.4.4或更新版本](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) 。
+* [Experience Manager 6.4.4或更新版本](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) 。
 
 * Experience Manager 6.4.0 - 6.4.3及相容 [套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。
 
@@ -169,8 +169,8 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 >[!MORELIKETHIS]
 >
->* [AEM as a Cloud Service檔案](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
->* [AEM as a Cloud Service Assets檔案](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/assets/home.html)
+>* [AEM as a Cloud Service檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+>* [AEM as a Cloud Service Assets檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
 >* [如何使用Experience Manager案頭應用程式](using.md)
 >* [安裝和升級桌面應用程式](install-upgrade.md)
 >* [最佳作法與疑難排解提示](troubleshoot.md)
