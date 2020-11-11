@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
+source-git-commit: 9c11f0b8ace17e7f596bcfe26e69f4ca649e0126
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -69,9 +69,9 @@ Assets API中的複製和移動方法需要將下列其他標題傳遞至AEM:
 * X-深度
 * X覆寫
 
-AEM案頭會使用包含預設連接埠的URL連線至AEM。 因此，分 `virtualhosts` 發程式配置中的設定應包括預設埠號。 有關配置的詳細信 `virtualhosts` 息，請參 [閱標識虛擬主機](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
+AEM案頭會使用包含預設連接埠的URL連線至AEM。 因此，分 `virtualhosts` 發程式配置中的設定應包括預設埠號。 有關配置的詳細信 `virtualhosts` 息，請參 [閱標識虛擬主機](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
 
-有關配置調度程式以傳遞這些附加標頭的其他資訊，請參 [閱指定HTTP標頭](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)。
+有關配置調度程式以傳遞這些附加標頭的其他資訊，請參 [閱指定HTTP標頭](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)。
 
 ### Proxy支援 {#proxy-support}
 
@@ -134,7 +134,7 @@ AEM案頭應用程式的快取預設位置如下：
    >應用程式會自動建立 *&lt;Encoded AEM Endpoint>子目錄* 。 此行為不可配置。
 
 >[!MORELIKETHIS]
-* [AEM 桌面應用程式簡介](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [AEM 桌面應用程式簡介](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
 * [使用 AEM 桌面應用程式](use-app-v1.md).
 * [疑難排解AEM案頭應用程式](troubleshoot-app-v1.md)。
 
