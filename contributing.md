@@ -1,6 +1,9 @@
 ---
-source-git-commit: 26373450fd36a4d726190c0252f60c4d77bf8b7f
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 # Adobe Experience Manager案頭應用程式檔案
@@ -44,7 +47,7 @@ translation-type: tm+mt
 
 ### 快速簡介影片
 
-請觀看下列影片，以快速概述如何建立問題和提取請求。
+請觀賞下列影片，以快速概述如何建立問題和提取請求。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27069)
 
@@ -56,4 +59,4 @@ translation-type: tm+mt
 
 ## 更多資訊
 
-如需如何 [使用GitHub製作平台的詳細資訊，請參閱](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) 「Adobe Docs投稿人指南」。
+如需如何 [使用GitHub製作平台的詳細資訊，請參閱](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 「Adobe Docs投稿人指南」。
