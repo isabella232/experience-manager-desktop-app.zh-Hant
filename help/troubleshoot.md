@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 540821ad10f14ad855c66a2b93d356ba118515c7
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2228'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 * **瞭解案頭應用程式的運作方式**:在開始使用應用程式之前，請花些時間瞭解應用程式的運作方式。 瞭解Experience Manager網頁介面與案頭之間的連結、儲存庫對應、資產快取、本機儲存及在背景上傳。 了 [解運作方式](release-notes.md#how-app-works)。
 
-* **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱Experience Manager Assets中建立 [資料夾的字元清單](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)。 有些Adobe Experience Manager使用案例可能會受到檔案夾名稱中不支援的字元影響。
+* **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱Experience Manager Assets中建立 [資料夾的字元清單](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)。 有些Adobe Experience Manager使用案例可能會受到檔案夾名稱中不支援的字元影響。
 
 * **避免衝突的最佳實務**:若要避免在協作多個資產時產生潛在衝突，請參 [閱避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
