@@ -3,9 +3,9 @@ title: 使用AEM案頭應用程式1.x版。
 description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.x版，並最佳化您在案頭上使用資產的工作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2472'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ AEM案頭應用程式使用HTTPS連線來連線至AEM伺服器，以強穩且安
 
 AEM Assets可讓您取出要編輯的資產，並在完成變更後將其存回。 結帳資產後，只有您可以編輯、註解、發佈、移動或刪除資產。 取出資產會鎖定資產，並防止其他使用者執行其中任何操作。 若要能夠登出／登入資產，您需要有其「寫入」存取權。
 
-從AEM網頁介面簽出資產有兩種方式。 如需有關第一種方法的詳細資訊，請參 [閱「資產UI」的登入和結帳檔案](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html)。 請依照這些步驟進行，以取得在安裝AEM Desktop應用程式時，要簽出並開啟資產的第二種方法。
+從AEM網頁介面簽出資產有兩種方式。 如需有關第一種方法的詳細資訊，請參 [閱「資產UI」的登入和結帳檔案](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html)。 請依照這些步驟進行，以取得在安裝AEM Desktop應用程式時，要簽出並開啟資產的第二種方法。
 
 1. 開啟AEM Assets介面，並將指標暫留在資料夾或資產上，以在「卡片」檢視中將案頭動作顯示為快速動作。
 
