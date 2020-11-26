@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 42%
+source-wordcount: '1422'
+ht-degree: 33%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 42%
 | 產品 | Adobe Experience manager 桌面應用程式 |
 |--- |--- |
 | 應用程式版本（修訂版） | 2.0 (2.0.3.2) |
-| 支援的 AEM 版本 | AEM即雲端服務；AEM 6.5;AEM 6.4;AEM 6.3（含相容性套件） |
+| 支援的Experience Manager版本 | Experience Manager即雲端服務；Experience Manager 6.5;Experience Manager 6.4;Experience Manager 6.3（含相容性套件） |
 | 類型 | 次要版本 |
 | 發行日期 | 2020年8月27日（Mac和Win） |
 | 下載 URL | [macOS 64位元](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg); [Windows 64位元](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe); [Windows 32位元](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
@@ -107,7 +107,7 @@ To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
 * 允許選項配置目 `%Temp%` 錄以匹配路 `%APPDATA%` 徑。 <!-- CQ-4282665 -->
 
-* 允許使用者透過Okta SAML驗證登入AEM作者。 <!-- CQ-4278134 -->
+* 允許使用者透過Okta SAML驗證登入Experience Manager作者。 <!-- CQ-4278134 -->
 
 ## 安裝指示 {#installation-instructions-v2}
 
@@ -119,17 +119,17 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 請務必瞭解以下關於應用程式及其運作方式的資訊。
 
-* 透過應用程式，您可以完整控制在 AEM 間進行之資產二進位檔的傳輸作業（開啟、編輯、上傳變更和上傳資產）。
+* 應用程式可完全控制從Experience Manager將資產二進位檔案完整傳輸至Experience Manager（開啟、編輯、上傳變更及上傳資產）的作業。
 
    * 如果想要在桌面使用資產，您需要明確地「開啟」、「編輯」或「下載」資產至桌面，並可使用個別檔案、資料夾或多個檔案選取的方式進行上述操作。
 
-   * 如果您想要將資產的本機變更內容上傳至 AEM，您需要以個別或多個檔案的方式選取 [!UICONTROL Upload Changes]。
+   * If you want to get local changes to assets uploaded to Experience Manager, you need to select [!UICONTROL Upload Changes], either individually or via multi-selection.
 
-   * 此應用程式不是將資產從桌面同步到 AEM 上的「同步用戶端」。
+   * 應用程式不是同步案頭和Experience Manager資產的「同步用戶端」。
 
-   * 應用程式不提供將 AEM 資料庫作為虛擬資料夾結構的網路共享。
+   * 應用程式不提供將Experience Manager資料庫對應為虛擬資料夾結構的網路共用。
 
-* 應用程式顯示的資產清單內容是根據 AEM 的資產資料庫。應用程式不會顯示或管理從本機下載、並在本機檔案或快取資料夾中重新命名的任何檔案。
+* 應用程式顯示的資產清單內容是根據 的資產資料庫。應用程式不會顯示或管理從本機下載、並在本機檔案或快取資料夾中重新命名的任何檔案。
 
 * 如果應用程式未顯示預期的結果，請按一下頂端列中的重新整理圖示。
 
@@ -139,7 +139,7 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 下圖說明當使用者執行動作時，資產和檔案如何從雲端移動至本機檔案系統（反向移動亦適用）。
 
-![透過桌面應用程式，資產從 AEM 伺服器移動至原生桌面應用程式](assets/da20_flow_diagram.png)
+![透過案頭應用程式將資產從Experience Manager伺服器流向原生案頭應用程式](assets/da20_flow_diagram.png)
 
 ## 已知問題 {#known-issues-v2}
 
@@ -153,13 +153,13 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 * 在您套用、移除篩選器以尋找所有在本機編輯的資產後，應用程式不會將使用者引導至剛開始的搜尋結果或資料夾檢視。應用程式會顯示 DAM 資料庫的根資料夾。
 
-* 某些時候，當您連線至未執行 AEM 伺服器的 URL 時，連線畫面會停止回應。請退出應用程式並重新啟動。
+* 當您連線至未執行Experience Manager伺服器的URL時，連線畫面會停止回應。 請退出應用程式並重新啟動。
 
 **CRUD（建立、讀取、更新和刪除）相關問題：**
 
 * 若應用程式嘗試上傳包含無效字元的檔案，可能會導致伺服器端上傳失敗。<!-- CQ-4273652 -->
 
-* 當上傳含有注釋的變更至資產時，這些注釋會與資產一起儲存在AEM中，但不會顯示為版本修訂注釋。 此問題已在AEM 6.4.5和AEM 6.5.1中解決。Adobe強烈建議安裝最新的Service Pack。 <!-- CQ-4268990 -->
+* 當上傳含備注的變更至資產時，備注會與資產一起儲存在Experience Manager中，但不會顯示為版本修訂備注。 Experience Manager 6.4.5和Experience Manager 6.5.1已解決此問題。Adobe強烈建議安裝最新的Service Pack。 <!-- CQ-4268990 -->
 
 * 使用者無法取消資產傳輸。如果您不小心觸發了非預期的大量傳輸，請退出應用程式並重新啟動。<!-- CQ-4278940 -->
 
@@ -169,8 +169,8 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 >[!MORELIKETHIS]
 >
->* [AEM as a Cloud Service檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
->* [AEM as a Cloud Service Assets檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
+>* [Experience Manager雲端服務檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+>* [Experience Manager雲端服務資產檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
 >* [如何使用Experience Manager案頭應用程式](using.md)
 >* [安裝和升級桌面應用程式](install-upgrade.md)
 >* [最佳作法與疑難排解提示](troubleshoot.md)
