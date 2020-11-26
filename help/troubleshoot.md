@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
 
-Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Manager部署的數位資產管理(DAM)儲存庫。 應用程式會擷取儲存庫資訊並在您的電腦上搜尋結果、下載和上傳檔案和檔案夾，並包含與AEM Assets使用者介面衝突的管理功能。
+Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager部署的數位資產管理(DAM)儲存庫。 應用程式會擷取儲存庫資訊並在您的電腦上搜尋結果、下載和上傳檔案和檔案夾，並包含管理與「資產」使用者介面衝突的功能。
 
 閱讀以疑難排解應用程式、瞭解最佳實務，並瞭解限制。
 
@@ -119,7 +119,7 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 執行以下步驟：
 
-1. 啟動應用程式並連線AEM例項。
+1. 啟動應用程式並連接Experience Manager例項。
 
 1. 按一下右上角的橢圓並選擇以開啟應用程式的首選項 [!UICONTROL Preferences]。
 
@@ -163,9 +163,9 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 * 檔案大小。 大型資產下載和展示的時間較長。
 
-* 驅動器號的一致性。 如果您或其他共同作業者在將AEM DAM對應至不同的磁碟盤符時置入資產，則不會顯示置入的資產。
+* 驅動器號的一致性。 如果您或其他合作夥伴在將Experience Manager DAM對應至不同的驅動器盤符時置入資產，則不會顯示置入的資產。
 
-* 權限. 若要檢查您是否擁有擷取置入資產的權限，請連絡您的AEM管理員。
+* 權限. 若要檢查您是否擁有擷取已置入資產的權限，請連絡您的Experience Manager管理員。
 
 ### 案頭應用程式使用者介面上的檔案編輯無法立即反映在 [!DNL Adobe Experience Manager] {#changes-on-da-not-visible-on-aem}
 
@@ -173,7 +173,7 @@ Adobe Experience Manager(AEM)案頭應用程式會連接至遠端Experience Mana
 
 ### 在macOS上升級時的問題 {#issues-when-upgrading-on-macos}
 
-在macOS上升級AEM案頭應用程式時，偶爾會發生問題。 這是由於AEM案頭應用程式的舊系統資料夾導致無法正確載入新版AEM案頭應用程式。 要解決此問題，可以手動刪除以下資料夾和檔案。
+在macOS上升級Experience Manager案頭應用程式時，偶爾會發生問題。 這是由於Experience Manager案頭應用程式的舊系統資料夾導致無法正確載入新版Experience Manager案頭應用程式。 要解決此問題，可以手動刪除以下資料夾和檔案。
 
 在執行下列步驟之前，請將應用程 `Adobe Experience Manager Desktop` 式從macOS Applications檔案夾拖曳至「垃圾筒」。 然後開啟終端機，執行下列命令，並在出現提示時提供您的密碼。
 
@@ -188,7 +188,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ### 無法上傳檔案 {#upload-fails}
 
-如果您正在搭配AEM 6.5.1或更新版本使用案頭應用程式，請將S3或Azure連接器升級至1.10.4或更新版本。 它可解決與 [OAK-8599相關的檔案上傳失敗問題](https://issues.apache.org/jira/browse/OAK-8599)。 請參閱 [安裝指示](install-upgrade.md#install-v2)。
+如果您正在搭配Experience Manager 6.5.1或更新版本使用案頭應用程式，請將S3或Azure連接器升級至1.10.4或更新版本。 它可解決與 [OAK-8599相關的檔案上傳失敗問題](https://issues.apache.org/jira/browse/OAK-8599)。 請參閱 [安裝指示](install-upgrade.md#install-v2)。
 
 ### [!DNL Experience Manager] 案頭應用程式連線問題 {#connection-issues}
 
@@ -213,13 +213,9 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 有時SAML程式不會重新導向回原本要求的路徑，或最終的重新導向是與案頭應用程式中設定的主機不 [!DNL Adobe Experience Manager] 同。 要確認情況並非如此：
 
-1. 開啟網頁瀏覽器。
+1. 開啟網頁瀏覽器。 存取 `https://[aem_server]:[port]/content/dam.json` URL。
 
-1. 在位址列 `<AEM host>/content/dam.json` 中輸入URL。
-
-   例如， `<AEM host>` 以目標 [!DNL Adobe Experience Manager] 實例替換 `http://localhost:4502/content/dam.json`。
-
-1. 登入實 [!DNL Adobe Experience Manager] 例。
+1. 登入部 [!DNL Adobe Experience Manager] 署。
 
 1. 登入完成後，請在位址列中查看瀏覽器的目前位址。 它應完全符合最初輸入的URL。
 
@@ -260,10 +256,9 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 #### SSL設定問題 {#ssl-config-v2}
 
-AEM案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有時，連線可能會使用瀏覽器成功，但無法使用AEM案頭應用程式。 若要正確設定SSL，請在Apache中安裝遺失的中間憑證。 請參 [閱如何在Apache中安裝Intemider CA憑證](https://access.redhat.com/solutions/43575)。
+Experience Manager案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有時，連線可能會使用瀏覽器成功，但使用Experience Manager案頭應用程式失敗。 若要正確設定SSL，請在Apache中安裝遺失的中間憑證。 請參 [閱如何在Apache中安裝Intemider CA憑證](https://access.redhat.com/solutions/43575)。
 
-
-AEM Desktop用於HTTP通訊的程式庫都採用嚴格的SSL強制。 因此，有時SSL連線會透過瀏覽器失敗，而案頭應用程式會 [!DNL Adobe Experience Manager] 失敗。 這很好，因為它可促進正確配置SSL並提高安全性，但當應用程式無法連線時，可能會令人沮喪。
+Experience Manager Desktop用於HTTP通訊的程式庫採用嚴格的SSL強制。 因此，有時SSL連線會透過瀏覽器失敗，而案頭應用程式會 [!DNL Adobe Experience Manager] 失敗。 這很好，因為它可促進正確配置SSL並提高安全性，但當應用程式無法連線時，可能會令人沮喪。
 
 在這種情況下，建議的方法是使用工具來分析伺服器的SSL憑證並識別問題，以便加以修正。 有些網站會在提供伺服器URL時檢查伺服器的憑證。
 
@@ -305,21 +300,23 @@ AEM Desktop用於HTTP通訊的程式庫都採用嚴格的SSL強制。 因此，�
 
 在這兩種方法中，應用程式都會從根DAM檔案夾開始。
 
-### 需要案頭應用程式的其 [!DNL Experience Manager] 他協助 {#additional-help}
+<!--
+### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
 
-使用下列資訊建立Jira票證：
+Create Jira ticket with the following information:
 
-* 用 `DAM - Companion App` 作 [!UICONTROL Component]。
+* Use `DAM - Companion App` as the [!UICONTROL Component].
 
-* 在中重制問題的詳細步驟 [!UICONTROL Description]。
+* Detailed steps to reproduce the issue in [!UICONTROL Description].
 
-* 重制問題時擷取的DEBUG層級記錄檔。
+* DEBUG level logs that were captured while reproducing the issue.
 
-* 目標AEM版本。
+* Target Experience Manager version.
 
-* 作業系統版本。
+* Operating system version.
 
-* [!DNL Adobe Experience Manager] 案頭應用程式版本。 若要瞭解您的應用程式版本，請參閱 [尋找案頭應用程式版本](#know-app-version-v2)。
+* [!DNL Adobe Experience Manager] desktop app version. To know your app version, see [finding the desktop app version](#know-app-version-v2).
+-->
 
 >[!MORELIKETHIS]
 >
