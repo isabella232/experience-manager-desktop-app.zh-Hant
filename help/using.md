@@ -1,23 +1,19 @@
 ---
 title: 使用Adobe Experience Manager案頭應用程式
 description: 瞭解如何安裝和使用Adobe Experience Manager案頭應用程式，直接從Win或Mac案頭處理Adobe Experience Manager DAM資產。 瞭解最佳實務和疑難排解資訊。
-uuid: 55057617-89de-43cd-8419-1252a42ab2fb
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '4022'
 ht-degree: 0%
 
 ---
 
 
-# Use Adobe Experience Manager desktop app {#use-aem-desktop-app-v2}
+# Use [!DNL Adobe Experience Manager] desktop app {#use-aem-desktop-app-v2}
 
-使用Adobe Experience Manager(AEM)案頭應用程式，輕鬆存取您本機案頭上的Adobe Experience Manager DAM資產，並在任何案頭應用程式中使用這些資產。 您可以在案頭應用程式中開啟資產並在本機編輯資產——透過版本控制將變更上傳回Experience Manager，以便與其他使用者共用更新。 您也可以將新的檔案和檔案夾階層上傳至Experience Manager、建立檔案夾，以及從Experience Manager DAM刪除資產或檔案夾。
+使用桌 [!DNL Adobe Experience Manager] 面應用程式，輕鬆存取您本機案頭上的Adobe Experience Manager DAM資產，並在任何案頭應用程式中使用這些資產。 您可以在案頭應用程式中開啟資產並在本機編輯資產——透過版本控制將變更上傳回Experience Manager，以便與其他使用者共用更新。 您也可以將新的檔案和檔案夾階層上傳至Experience Manager、建立檔案夾，以及從Experience Manager DAM刪除資產或檔案夾。
 
 此整合可讓組織中的不同角色在Experience Manager Assets中集中管理資產，並在Windows或Mac OS的原生應用程式中存取本機案頭上的資產。
 
@@ -43,25 +39,25 @@ ht-degree: 0%
 
 * 檔案狀態 **[!UICONTROL Modified remotely]**&#x200B;為：應用程式會指出您下載的資產是否在Experience Manager伺服器上變更。 應用程式也提供下載最新版本和更新本機副本的選項。 瞭解 [如何避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* **[!UICONTROL Check-out]**:如果您正在編輯檔案或打算編輯檔案，則可切換狀態以簽出。 它會在應用程式和AEM網頁介面中的資產上新增鎖定圖示。 鎖定圖示會指示其他使用者避免同時編輯相同的資產，因為這會導致編輯衝突。
+* **[!UICONTROL Check-out]**:如果您正在編輯檔案或打算編輯檔案，則可切換狀態以簽出。 它會在應用程式和Experience Manager網頁介面中的資產上新增鎖定圖示。 鎖定圖示會指示其他使用者避免同時編輯相同的資產，因為這會導致編輯衝突。
 
 * **[!UICONTROL Check-in]**:將資產標示為安全，讓其他使用者可進行編輯，而不會造成編輯衝突。 當您上傳變更時，鎖定圖示會自動移除。 切換登入狀態也會移除鎖定圖示，不過建議不要手動登入而不上傳變更。 如果您捨棄變更，請手動切換登入。
 
 * **[!UICONTROL Open]** 動作：只要開啟資產，即可在原生應用程式中預覽。 不建議您使用此動作來編輯資產，因為它不會簽出資產，而其他使用者可以進行編輯，進而導致編輯衝突。
 
-* **[!UICONTROL Edit]** 動作：使用動作修改影像。 按一 [!UICONTROL Edit] 下動作會自動取出資產，並在資產上新增鎖定圖示。 按一下「編輯」後，如果您不想編輯資產，請按一下 [!UICONTROL Toggle check-in]。 若要刪除、重新命名或移動AEM DAM檔案夾階層中的資產，請使用AEM網頁介面動作，而非編輯動作。
+* **[!UICONTROL Edit]** 動作：使用動作修改影像。 按一 [!UICONTROL Edit] 下動作會自動取出資產，並在資產上新增鎖定圖示。 按一下「編輯」後，如果您不想編輯資產，請按一下 [!UICONTROL Toggle check-in]。 若要刪除、重新命名或移動Experience Manager DAM檔案夾階層中的資產，請使用Experience Manager網頁介面動作，而非編輯動作。
 
 * **[!UICONTROL Download]** 動作：將資產下載至您的本機電腦。 您現在可以下載資產，稍後再進行編輯；離線工作，稍後再上傳變更。 資產會下載在檔案系統的快取資料夾中。
 
 * **[!UICONTROL Reveal File]** 或 **[!UICONTROL Reveal Folder]** 動作：當資產下載至本機快取檔案夾時，應用程式會模擬本機網路磁碟機，並為每個資產提供本機路徑。 若要瞭解此路徑，請在應用程式中使用適當的顯現選項。 在Creative Cloud應用程式中放置資產時，需要顯示動作。 請參 [閱置入資產](using.md#place-assets-in-native-documents)。
 
-* **[!UICONTROL Open In Web]** 動作：若要在AEM網頁介面中檢視資產，請在網頁中開啟它。 您可以從AEM介面啟動更多工作流程，例如更新中繼資料或資產搜尋。
+* **[!UICONTROL Open In Web]** 動作：若要在Experience Manager Web介面中檢視資產，請在Web中開啟資產。 您可以從Experience Manager介面啟動更多工作流程，例如更新中繼資料或資產發現。
 
-* **[!UICONTROL Delete]** 動作：從AEM DAM儲存庫刪除資產。 此動作會刪除AEM伺服器上資產的原始復本。 如果您只想放棄對本機資產的修改，請參閱捨 [棄變更](using.md#edit-assets-upload-updated-assets)。
+* **[!UICONTROL Delete]** 動作：從Experience Manager DAM儲存庫刪除資產。 此動作會刪除Experience Manager伺服器上資產的原始副本。 如果您只想放棄對本機資產的修改，請參閱捨 [棄變更](using.md#edit-assets-upload-updated-assets)。
 
-* **[!UICONTROL Upload Changes]**:案頭應用程式只會在您明確上傳至AEM伺服器時，才上傳更新的資產。 當您儲存編輯時，變更只會儲存在本機電腦上。 上傳時，資產會自動登入，並移除鎖定圖示。 請參閱 [編輯資產](using.md#edit-assets-upload-updated-assets)。
+* **[!UICONTROL Upload Changes]**:案頭應用程式只有在您明確上傳至Experience Manager伺服器時，才會上傳更新的資產。 當您儲存編輯時，變更只會儲存在本機電腦上。 上傳時，資產會自動登入，並移除鎖定圖示。 請參閱 [編輯資產](using.md#edit-assets-upload-updated-assets)。
 
-## 在AEM網頁介面中啟用案頭動作 {#desktopactions-v2}
+## 在Experience Manager網頁介面中啟用案頭動作 {#desktopactions-v2}
 
 在瀏覽器的「資產」使用者介面中，您可以探索資產位置或結帳並開啟資產，以便在案頭應用程式中編輯。 這些選項會被呼 [!UICONTROL Desktop Actions] 叫，並且預設不會啟用。 若要啟用它，請依照下列步驟進行。
 
@@ -75,7 +71,7 @@ ht-degree: 0%
 
 ## 瀏覽、搜尋和預覽資產 {#browse-search-preview-assets}
 
-您可以從案頭應用程式中瀏覽、搜尋和預覽AEM儲存庫中的可用資產。 在應用程式中試用下列項目：
+您可以從案頭應用程式中瀏覽、搜尋和預覽Experience Manager儲存庫中的可用資產。 在應用程式中試用下列項目：
 
 1. 瀏覽至資料夾，並查看資料夾中可用資產的一些基本資訊，以及所有資產的小縮圖。
 
@@ -86,7 +82,7 @@ ht-degree: 0%
    ![檢視資產和動作的較大預覽](assets/large_preview_actions_da2.png "檢視資產和動作的較大預覽")
 
 1. 按一 **[!UICONTROL Open]** 下或 **[!UICONTROL Edit]** 以在本機下載檔案，然後只需在原生應用程式中檢視或編輯檔案即可。
-1. 使用關鍵字搜尋，以在AEM儲存庫中尋找相關資產。 使用 `?` 和 `*` 作為通配符。 這些萬用字元會分別取代單一字元或多個字元。 視需要篩選並排序結果。
+1. 使用關鍵字進行搜尋，以在Experience Manager儲存庫中尋找相關資產。 使用 `?` 和 `*` 作為通配符。 這些萬用字元會分別取代單一字元或多個字元。 視需要篩選並排序結果。
 
    ![使用星號通配符的示例搜](assets/search_wildcard_da2.png "索使用星號通配符的示例搜索")
 
@@ -98,7 +94,7 @@ ht-degree: 0%
 
 ## 下載資產 {#download-assets}
 
-您可以下載本機檔案系統上的資產。 應用程式會從AEM伺服器擷取資產，並將相同的副本儲存在您的本機檔案系統上。
+您可以下載本機檔案系統上的資產。 應用程式會從Experience Manager伺服器擷取資產，並將相同的副本儲存在您的本機檔案系統上。
 
 按一 ![下更多選項圖示](assets/do-not-localize/more2_da2.png) ，以取得選項，然後按 ![一下下載圖示](assets/do-not-localize/download_cloud_da2.png) 。
 
@@ -112,7 +108,7 @@ ht-degree: 0%
 
 ![App確認下載相對大量的資](assets/download_confirmation_da2.png "產App確認下載相對大量的資產")
 
-如果已選取並下載檔案夾，應用程式只會下載直接儲存在AEM中檔案夾中的資產。 它不會自動從子資料夾下載資產。
+如果選取並下載檔案夾，應用程式只會下載直接儲存在Experience Manager檔案夾中的資產。 它不會自動從子資料夾下載資產。
 
 ## 在案頭上開啟資產 {#openondesktop-v2}
 
@@ -135,21 +131,21 @@ ht-degree: 0%
 
 ![資產的「顯現檔案」動](assets/revealfile_action_da2.png "作資產的「顯現檔案」動作")
 
-按一 **[!UICONTROL Reveal File]**&#x200B;下或在 **[!UICONTROL Reveal Folder]** 資料夾上，開啟Windows檔案總管或Mac Finder，並在本機電腦上預先選取檔案或資料夾。 這個選項對於將AEM檔案置入支援置入或連結本機檔案的原生應用程式非常有用。 若要瞭解如何在Adobe InDesign中置入檔案，請參閱「置入 [圖形」](https://helpx.adobe.com/indesign/using/placing-graphics.html)。
+按一 **[!UICONTROL Reveal File]**&#x200B;下或在 **[!UICONTROL Reveal Folder]** 資料夾上，開啟Windows檔案總管或Mac Finder，並在本機電腦上預先選取檔案或資料夾。 這個選項對於將Experience Manager檔案置入支援放置或連結本機檔案的原生應用程式非常有用。 若要瞭解如何在Adobe InDesign中置入檔案，請參閱「置入 [圖形」](https://helpx.adobe.com/indesign/using/placing-graphics.html)。
 
-此動 **[!UICONTROL Reveal File]** 作會開啟本機網路共用，僅顯示本機可用的資產——亦即顯示使用應用程式揭露、下載或開啟／編輯的資產。 本機網路共用不會上傳任何變更至AEM。 若要上傳變更，請明確使用 **[!UICONTROL Upload Changes]** 應用 **[!UICONTROL Upload]** 程式中的或動作。
+此動 **[!UICONTROL Reveal File]** 作會開啟本機網路共用，僅顯示本機可用的資產——亦即顯示使用應用程式揭露、下載或開啟／編輯的資產。 本機網路共用不會上傳任何變更至Experience Manager。 若要上傳變更，請明確使用 **[!UICONTROL Upload Changes]** 應用 **[!UICONTROL Upload]** 程式中的或動作。
 
 >[!NOTE]
 >
->為了向後相容於AEM案頭應用程式v1.x，透過本機網路共用來提供顯示的檔案，僅公開本機可用的檔案。 顯示檔案的案頭路徑與應用程式v1.x建立的路徑相同。
+>為了向後相容於Experience Manager案頭應用程式v1.x，揭露的檔案是透過本機網路共用提供，僅公開本機可用的檔案。 顯示檔案的案頭路徑與應用程式v1.x建立的路徑相同。
 
 >[!CAUTION]
 >
 >請勿使用選 **[!UICONTROL Reveal File]** 項來編輯原生應用程式中的資產。 請改用動 **[!UICONTROL Edit]** 作。 如需詳細資訊，請參閱「進階 [工作流程」:在相同檔案上進行協作，避免編輯衝突](#adv-workflow-collaborate-avoid-conflicts)。
 
-## 編輯資產並上傳更新的資產至AEM {#edit-assets-upload-updated-assets}
+## 編輯資產並將更新的資產上傳至Experience Manager {#edit-assets-upload-updated-assets}
 
-當您想要進行變更並將更新的資產上傳至AEM伺服器時，請開啟資產以進行編輯。 若要避免與其他使用者的編輯衝突，請使用應用程式來啟動編輯工作階段。 開始編輯之前，請確定資產上沒有鎖定圖示，亦即，其他使用者未編輯資產。
+當您要進行變更並將更新的資產上傳至AExperience ManagerEM伺服器時，請開啟資產以供編輯。 若要避免與其他使用者的編輯衝突，請使用應用程式來啟動編輯工作階段。 開始編輯之前，請確定資產上沒有鎖定圖示，亦即，其他使用者未編輯資產。
 
 若要編輯資產，請搜尋資產或瀏覽至資產的位置。 按一 ![下「更多」圖示](assets/do-not-localize/more2_da2.png) ，然後按一 **[!UICONTROL Edit]**&#x200B;下。
 
@@ -158,7 +154,7 @@ ht-degree: 0%
 * 您已開始編輯資產，但未先勾選（例如只開啟資產）。
 * 您打算很快開始編輯資產，而不希望其他人編輯。
 
-完成編輯後，應用程式會顯示已變 **[!UICONTROL Edited Locally]** 更資產的狀態。 所有儲存至資產的變更都僅限本機，直到您將變更上傳至AEM為止。 若要逐一上傳個別或少數資產，請從資產 **[!UICONTROL Upload Changes]** 的選項按一下。 它會在AEM中建立資產版本。 使用AEM Assets的Web介面，您可以在時間軸檢視中查看資 [產歷史記錄](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html)。
+完成編輯後，應用程式會顯示已變 **[!UICONTROL Edited Locally]** 更資產的狀態。 儲存至資產的所有變更都僅限本機，直到您將變更上傳至Experience Manager。 若要逐一上傳個別或少數資產，請從資產 **[!UICONTROL Upload Changes]** 的選項按一下。 它會在Experience Manager中建立資產版本。 使用的Web介面 [!DNL Assets]，您可在時間軸檢視中查看資 [產歷史記錄](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html)。
 
 ![應用程式中的上傳變更選](assets/upload_changes_single1_da2.png "項應用程式中的上傳變更選項")
 
@@ -168,15 +164,15 @@ ht-degree: 0%
 
 在下列情況下，您可能會想要放棄對本機資產所做的變更和編輯。 按一下 **[!UICONTROL Discard Changes]**.
 
-* 如果您不想在AEM中儲存本機變更。
+* 如果您不想在Experience Manager中儲存本機變更。
 * 儲存部分變更後，開始對原始資產進行變更。
 * 不再需要編輯資產時，請停止編輯。
 
 如有必要，請切換結帳。 更新的資產會從本機快取資料夾中移除，當您編輯或開啟時，會再次下載。
 
-## 上傳並新增資產至AEM {#upload-and-add-new-assets-to-aem}
+## 上傳新資產並新增至Experience Manager {#upload-and-add-new-assets-to-aem}
 
-使用者可以新增資產至DAM儲存庫。 例如，您可能是廣告公司的攝影師或承包商，想要將大量像片從像片拍攝新增至AEM存放庫。 若要新增新內容至AEM，請按一 ![下應用程式頂端列中的](assets/do-not-localize/upload_to_cloud_da2.png) 「上傳至雲端」圖示。 瀏覽至本機檔案系統中的資產檔案，然後按一下 **[!UICONTROL Select]**。 應用程式會開始上傳資產，如果資產上傳的時間較長，就會在底部顯示進度列。 建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱「在AEM Assets中建立 [檔案夾」中的字元清單](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)。
+使用者可以新增資產至DAM儲存庫。 例如，您可能是廣告公司攝影師或承包商，想要將大量像片從像片拍攝新增至Experience Manager儲存庫。 若要新增新內容至Experience Manager，請按一 ![下應用程式頂端列中的](assets/do-not-localize/upload_to_cloud_da2.png) 「上傳至雲端」圖示。 瀏覽至本機檔案系統中的資產檔案，然後按一下 **[!UICONTROL Select]**。 應用程式會開始上傳資產，如果資產上傳的時間較長，就會在底部顯示進度列。 建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱中建立資料夾 [的字元清單 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)。
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -195,7 +191,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果檔案無法上傳，而且您要連線至AEM 6.5.1或更新版本的部署，請參閱此疑難排 [解資訊](troubleshoot.md#upload-fails)。
+>如果檔案無法上傳，且您要連線至Experience Manager 6.5.1或更新版本的部署，請參閱此疑難排 [解資訊](troubleshoot.md#upload-fails)。
 
 ## 使用多個資產 {#work-with-multiple-assets}
 
@@ -223,23 +219,23 @@ ht-degree: 0%
 
 ### 大量上傳資產 {#bulk-upload-assets}
 
-使用者或組織（例如攝影師或創意廣告公司）可以在情境中建立許多本機資產，例如像片拍攝、潤飾或從AEM以外的較大集合中選取。 他們可以直接從案頭應用程式將這些大型的本機資料夾上傳至AEM Assets。 資料夾階層會保留，並上傳所有巢狀子資料夾和包含的資產。 上傳的資產也可立即供相同伺服器的其他使用者使用。 資產會在背景上傳，因此作業不會系結至網頁瀏覽器作業。
+使用者或組織（例如攝影師或創意廣告公司）可以在情境中建立許多本機資產，例如像片拍攝、潤飾或從Experience Manager以外的較大集合中選取。 他們可以直接從案頭應用程式將這些 [!DNL Assets] 大型的本機資料夾上傳至。 資料夾階層會保留，並上傳所有巢狀子資料夾和包含的資產。 上傳的資產也可立即供相同伺服器的其他使用者使用。 資產會在背景上傳，因此作業不會系結至網頁瀏覽器作業。
 
-![從案頭大量上傳多個本機檔案夾至](assets/upload_local_folders_da2.png "AEMulk從案頭上傳多個本機檔案夾至AEM")
+![將多個本機資料夾從案頭大量上傳至Experience](assets/upload_local_folders_da2.png "Manager將多個本機資料夾從案頭大量上傳至Experience Manager")
 
 上傳後，如果預期的變更未反映在應用程式中，請按一下重新整理圖示「重新整理」 ![圖示](assets/do-not-localize/refresh.png)。
 
 >[!NOTE]
 >
->請勿使用上傳功能來跨兩個AEM部署移轉資產。 請參閱移轉 [指南](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html)。
+>請勿使用上傳功能來跨兩個Experience Manager部署移轉資產。 請參閱移轉 [指南](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html)。
 
 ### 轉讓資產清單 {#list-of-transferred-assets}
 
-若要檢視指定作業中傳輸的資產清單，請參閱「 [上傳資產至AEM](#upload-and-add-new-assets-to-aem)」。
+若要檢視指定作業中轉移的資產清單，請參閱 [上傳資產至Experience Manager](#upload-and-add-new-assets-to-aem)。
 
-## 進階工作流程：從AEM Assets網頁介面開始 {#adv-workflow-start-from-aem-ui}
+## 進階工作流程：從網頁介 [!DNL Assets] 面開始 {#adv-workflow-start-from-aem-ui}
 
-如有必要，從AEM Assets網頁介面開始您的工作流程。 案頭應用程式已與AEM整合，以便在使用Desktop Actions提出要求時接管。
+如有必要，請從「資產」網頁介面啟動您的工作流程。 案頭應用程式已與Experience Manager整合，可在要求時使用Desktop Actions接管。
 
 從Web介面啟動工作流程的特殊案例是資產發現。 資產使用者介面中的Omnisearch列提供豐富而進階的搜尋體驗。 您可能想要先在Web上找到所需的資產，然後使用啟動應用程式中的工作流程 [!UICONTROL Desktop Actions]。 有些範例包括使用Facet篩選搜尋結果、尋找從Adobe Stock授權的特定資產，或由您的組織實作的自訂，讓您從網頁介面進行更好的探索。
 
@@ -251,7 +247,7 @@ ht-degree: 0%
 
 例如，適用於在應用程式中籤出的資產的網頁介面動作 [!UICONTROL Open]有 [!UICONTROL Reveal]、和 [!UICONTROL Check-in]。
 
-![AEM網頁介面中的案頭動](assets/assets_web_actions_da2.png "作AEM網頁介面中的案頭動作")
+![Experience Manager網頁介面中的案頭動作Experience Manager](assets/assets_web_actions_da2.png "網頁介面中的案頭動作")
 
 >[!NOTE]
 >
@@ -261,7 +257,7 @@ ht-degree: 0%
 
 * 在本機編輯的檔案。
 * 發生編輯衝突的檔案，以及解決衝突的方法。
-* 將本機變更上傳至AEM。
+* 將本機變更上傳至Experience Manager。
 * 本機可用檔案的各種狀態。
 
 相反地，您可以從案頭應用程式開始，使用動作，在網頁介面中開啟資 **[!UICONTROL Open In Web]** 產。
@@ -278,7 +274,7 @@ ht-degree: 0%
 
 ![編輯衝突狀](assets/edits_conflicts_status_da2.png "態編輯衝突狀態")
 
-如果AEM伺服器上已更新本機下載的資產，應用程式會顯示 **[!UICONTROL Modified remotely]** 狀態。 您可以分別按一下或，移除本機復本或重新整理本 [!UICONTROL Remove] 機 [!UICONTROL Update] 復本。 對話框上的連結允許您查看資產的兩個版本。
+如果Experience Manager伺服器上更新了本機下載的資產，應用程式會顯示 **[!UICONTROL Modified remotely]** 狀態。 您可以分別按一下或，移除本機復本或重新整理本 [!UICONTROL Remove] 機 [!UICONTROL Update] 復本。 對話框上的連結允許您查看資產的兩個版本。
 
 ![遠程修改資產時解決衝突的選](assets/modified_remotely_dialog_da2.png "項遠程修改資產時解決衝突的選項")
 
@@ -288,9 +284,9 @@ ht-degree: 0%
 
 ## 進階工作流程：置入和連結InDesign檔案中的資產 {#adv-workflow-place-assets-indesign}
 
-當您使用AEM案頭應用程式開啟包含連結資產的檔案時，資產會預先下載並顯示在原生應用程式中。 若要讓此工作流程運作，您的原生應用程式必須支援放置本機資產的連結，而AEM必須支援解析二進位檔案中的這些連結至伺服器端參照。
+當您使用Experience Manager案頭應用程式開啟包含連結資產的檔案時，資產會預先下載並顯示在原生應用程式中。 若要使此工作流程運作，您的原生應用程式必須支援放置本機資產的連結，而Experience Manager必須支援解析二進位檔案中的這些連結至伺服器端參考。
 
-AEM案頭應用程式支援此工作流程，只需使用幾種精選的Adobe Creative Cloud案頭應用程式和檔案格式- Adobe InDesign、Adobe Illustrator和Adobe Photoshop。 此工作流程可讓您有效率地使用支援的Creative Cloud檔案。 因此，如果使用者A將一些資產放入InDesign檔案並將其簽入AEM，使用者B會在InDesign檔案中看到資產，即使這些資產不在檔案中。 這些資產會在使用者B的機器上本機下載。
+Experience Manager案頭應用程式支援此工作流程，其中包含幾種精選的Adobe Creative Cloud案頭應用程式和檔案格式- Adobe InDesign、Adobe Illustrator和Adobe Photoshop。 此工作流程可讓您有效率地使用支援的Creative Cloud檔案。 因此，如果使用者A將一些資產放入InDesign檔案並將其簽入Experience Manager，使用者B會在InDesign檔案中看到資產，即使這些資產不在檔案中。 這些資產會在使用者B的機器上本機下載。
 
 >[!NOTE]
 >
@@ -300,16 +296,16 @@ AEM案頭應用程式支援此工作流程，只需使用幾種精選的Adobe Cr
 
 若要使用此工作流程與影像資產和InDesign搭配使用，請依照下列步驟進行：
 
-1. 在AEM中使用已置入的資產，讓INDD檔案保持便利。 要瞭解如何建立此類INDD檔案，請參 [閱放置圖形](https://helpx.adobe.com/indesign/using/placing-graphics.html)。
-1. 在案頭應用程式中， **[!UICONTROL Edit]** 在AEM中包含已置入資產的INDD檔案。
+1. 在Experience Manager中使用已置入的資產，讓INDD檔案保持方便。 要瞭解如何建立此類INDD檔案，請參 [閱放置圖形](https://helpx.adobe.com/indesign/using/placing-graphics.html)。
+1. 在案頭應用程式中， **[!UICONTROL Edit]** 在Experience Manager中使用置入資產的INDD檔案。
 1. 應用程式會同時下載InDesign檔案和連結的資產。 當InDesign開啟檔案時，會解析連結、下載資產，並在InDesign檔案中顯示資產。
 1. 若要在InDesign檔案中置入新圖形，請對 **[!UICONTROL Reveal File]** 資產使用動作。 此動作會在本機下載資產，並在Windows檔案總管或Mac Finder中開啟本機網路共用位置。
 1. 將顯示的資產放入InDesign檔案中。 這會在文檔中建立連結。
-1. 在您完成InDesign檔案中的編輯後，請儲存它，然後使用案頭應用程式將它上傳至AEM。
+1. 在InDesign檔案中完成編輯後，請儲存並使用案頭應用程式將它上傳至Experience Manager。
 
 ## 進階工作流程：本機下載資產 {#adv-workflow-download-assets-locally}
 
-應用程式會在許多情況下，從您檔案系統的本機AEM伺服器下載資產。 下載會佔用頻寬和磁碟空間。 瞭解這些案例有助於您最佳化等待下載完成的時間。
+應用程式會在許多情況下，從您的檔案系統本機下載Experience Manager伺服器的資產。 下載會佔用頻寬和磁碟空間。 瞭解這些案例有助於您最佳化等待下載完成的時間。
 
 您可以隨選從應用程式內下載資產。 請參閱 [下載資產](#download-assets)。
 
@@ -317,6 +313,6 @@ AEM案頭應用程式支援此工作流程，只需使用幾種精選的Adobe Cr
 
 當您從應用程式中揭示資產或資料夾的位置時，資產或資料夾會先在本機下載，然後在本機網路共用的電腦上開啟。 請參閱 [開啟資產](#openondesktop-v2)。
 
-當您使用動作 [!UICONTROL Edit] 在原生案頭應用程式中編輯資產時，資產會在本機下載（如果本機尚未提供）。 請參 [閱編輯資產並將更新的資產上傳至AEM](#edit-assets-upload-updated-assets)。
+當您使用動作 [!UICONTROL Edit] 在原生案頭應用程式中編輯資產時，資產會在本機下載（如果本機尚未提供）。 請參 [閱編輯資產並將更新的資產上傳至Experience Manager](#edit-assets-upload-updated-assets)。
 
-如果應用程式已安裝並獲准使用，它會在您從AEM網頁介面使用時完 [!UICONTROL Desktop Actions] 成動作。 應用程式會先下載資產，然後完成動作。
+如果應用程式已安裝並獲准，當您從Experience Manager網頁介面使用時，應用程式 [!UICONTROL Desktop Actions] 就會完成動作。 應用程式會先下載資產，然後完成動作。
