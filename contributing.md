@@ -1,8 +1,8 @@
 ---
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '529'
 ht-degree: 2%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 2%
 
 ## Adobe開放原始碼行為准則
 
-本專案已採用 [Adobe開放原始碼行為准則](code-of-conduct.md)。 只要提供AEM檔案，即表示您同意遵守本行為准則。 Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+本專案已採用 [Adobe開放原始碼行為准則](code-of-conduct.md)。 提供檔案 [!DNL Adobe Experience Manager] 即表示您同意遵守本行為准則。 Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## 貢獻准則
 
-雖然我們歡迎任何改善AEM檔案的貢獻，但我們確實要求盡可能遵守特定准則和標準。 請參閱「 [Guidelines for Compitting to AEM Documentation](guidelines.md) 」（AEM檔案貢獻指南），以取得詳細資訊。
+雖然我們歡迎為改善檔案 [!DNL Experience Manager] 所做的任何貢獻，但我們確實要求盡可能遵守某些准則和標準。 如需詳細資 [訊，請參 [!DNL Experience Manager] 閱檔案](guidelines.md) 的指引。
 
 ## Contribute的方式
 
@@ -37,11 +37,11 @@ ht-degree: 2%
 
 您是否有建議、對目前檔案的觀察，或對描述內容的方式提出疑問？ 然後請建立問題。 如果您有需要貢獻的內容，但不習慣編輯檔案或自行提出拉式要求，問題也會非常嚴重。
 
-問題可讓您輕鬆描述您對檔案進行改進的想法，讓AEM Docs團隊成員可以檢閱。 只要按一下任 **何頁面右側導覽面板頂端的「記錄問題** 」連結，即可建立問題。
+問題可讓您輕鬆描述您改善檔案的想法，讓 [!DNL Experience Manager] Docs團隊成員審核。 只要按一下任 **何頁面右側導覽面板頂端的「記錄問題** 」連結，即可建立問題。
 
 ### 建立提取請求 {#create-a-pull-request}
 
-如果您發現問題並確切知道如何修正，請考慮建立提取請求。 提取請求可讓您對檔案進行自己的編輯，然後由AEM Docs團隊成員審核檔案以納入。 只要按一下任 **何頁面右側導覽面板頂端的「編輯此頁面** 」連結，即可進行建議的變更並建立提取請求。
+如果您發現問題並確切知道如何修正，請考慮建立提取請求。 提取請求可讓您對檔案進行自己的編輯，然後由 [!DNL Experience Manager] Docs團隊成員審閱檔案以納入。 只要按一下任 **何頁面右側導覽面板頂端的「編輯此頁面** 」連結，即可進行建議的變更並建立提取請求。
 
 所有提取要求都必須附上簽署的投稿人 [授權合約或CLA。](https://opensource.adobe.com/cla.html)這可授予 Adobe 在專案中重新使用您稿件的權限。您只需提交一次Adobe CLA，因此，如果您先前已提交過CLA，您就可以了！
 
