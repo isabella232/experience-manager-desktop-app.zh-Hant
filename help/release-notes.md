@@ -18,11 +18,11 @@ ht-degree: 33%
 ---
 
 
-# Adobe Experience Manager案頭應用程式版本注意事項 {#release-notes-v2}
+# Adobe Experience Manager案頭應用程式版本注意事項{#release-notes-v2}
 
 | 產品 | Adobe Experience manager 桌面應用程式 |
 |--- |--- |
-| 應用程式版本（修訂版） | 2.0 (2.0.3.2) |
+| 應用程式版本（修訂版） | 2.0(2.0.3.2) |
 | 支援的Experience Manager版本 | Experience Manager即雲端服務；Experience Manager 6.5;Experience Manager 6.4;Experience Manager 6.3（含相容性套件） |
 | 類型 | 次要版本 |
 | 發行日期 | 2020年8月27日（Mac和Win） |
@@ -44,20 +44,20 @@ Adobe Experience Manager案頭應用程式與下列作業系統相容：
 
 * [Experience Manager即雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
 
-* [Experience Manager 6.5.0或更新版本](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) 。
+* [Experience Manager 6.5.0或更](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) 新版本。
 
-* [Experience Manager 6.4.4或更新版本](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) 。
+* [Experience Manager 6.4.4或更](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) 新版本。
 
-* Experience Manager 6.4.0 - 6.4.3及相容 [套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。
+* Experience Manager 6.4.0 - 6.4.3 with [ compatibility package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support).
 
 >[!NOTE]
 >
 >Experience Manager 6.3案頭應用程式支援已過時。 Adobe建議升級至較新且支援的Adobe Experience Manager版本。
->安裝相容性套件後，Experience Manager 6.3.3.1或更新版本可與案頭應用程 [式搭配使用](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。 Experience Manager 6.3沒有此類套件，因為計畫中 [沒有Service Pack](https://helpx.adobe.com/tw/experience-manager/maintenance-releases-roadmap.html)。
+>在安裝[相容性套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)後，Experience Manager 6.3.3.1或更新版本可與案頭應用程式搭配使用。 Experience Manager 6.3中沒有此類軟體包，因為計畫中沒有[服務包。](https://helpx.adobe.com/tw/experience-manager/maintenance-releases-roadmap.html)
 
 您打算在本機電腦上安裝的應用程式版本，需要搭配特定的 Adobe Experience Manager 伺服器版本／其他伺服器端元件（服務套件、修補程式或功能套件）。請連絡您的Adobe Experience Manager管理員以取得協助。
 
-### Support for different assets and file types {#support-for-file-types}
+### 支援不同的資產和檔案類型{#support-for-file-types}
 
 應用程式支援儲存在Adobe Experience Manager中的資產，這些資產代表二進位檔案的基本作業。 在原生桌面應用程式中開啟檔案時，需透過作業系統內的特定應用程式（例如 Mac Preview 或 Adobe Photoshop），以特定檔案類型（例如 PNG 或 JPG）開啟。
 
@@ -69,7 +69,7 @@ Adobe Experience Manager案頭應用程式與下列作業系統相容：
 
 上述應用程式的Adobe Creative Cloud 2018和Adobe Creative Cloud 2019版本都支援此功能。 應用程式會使用啟發式、最佳比對方法，將連結資產的本機案頭路徑對應至Experience Manager伺服器上的URL。 依賴的假設如下：
 
-* Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
+* 原生應用程式中置入檔案的路徑使用全域案頭路徑（從本機網路共用置入，顯示[!UICONTROL Reveal]選項）。
 
 * 透過原生應用程式，將路徑儲存在檔案的 XMP 記錄中.
 
@@ -79,41 +79,41 @@ Adobe Experience Manager案頭應用程式與下列作業系統相容：
 
 ## 新增功能和功能改善 {#whats-new-added}
 
-To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
+如需詳細資訊，請參閱[v2.0](introduction.md#whats-new-v2)的新增功能。
 
 **應用程式2.0.3版中的更新**
 
 目前版本中修正的錯誤為：
 
-* 修正Windows使用者嘗試使用應用程式存取 [!DNL Adobe Experience Manager] 6.5.5.0例項上的DAM儲存庫時所面臨的登入問題。
+* 修正Windows使用者嘗試使用應用程式存取[!DNL Adobe Experience Manager] 6.5.5.0例項上的DAM儲存庫時所面臨的登入問題。
 
 **應用程式2.0.2版中的更新**
 
 錯誤修正和更新包括：
 
-* 若要改善上傳效能，請在中增加上傳加速 [!UICONTROL Preferences]。 當此設定開啟時，應用程式會使用更多本機CPU執行緒，而且會耗用更多資源。
+* 若要改善上傳效能，請在[!UICONTROL Preferences]中增加上傳加速。 當此設定開啟時，應用程式會使用更多本機CPU執行緒，而且會耗用更多資源。
 
-* 修正檔案名稱或路徑包含特定GB18030字元時，資產上傳的問題。 <!-- CQ-4283494 -->
+* 修正檔案名稱或路徑包含特定GB18030字元時，資產上傳的問題。<!-- CQ-4283494 -->
 
-* 切換至搜尋結果中的其他排序類型後，即可使用依關聯性排序選項。 <!-- CQ-4286874 -->
+* 切換至搜尋結果中的其他排序類型後，即可使用依關聯性排序選項。<!-- CQ-4286874 -->
 
-* 案頭應用程式現在會列出子資料夾，而不需要明確重新整理。 <!-- CQ-4285711 -->
+* 案頭應用程式現在會列出子資料夾，而不需要明確重新整理。<!-- CQ-4285711 -->
 
-* (Windows)已修正某些Windows電腦上罕見的無法使用應用程式介面問題。 使用者無法按一下應用程式介面，因為當介面元素的點按區域出現扭曲時，會側移。 <!-- CQ-4280785 -->
+* (Windows)已修正某些Windows電腦上罕見的無法使用應用程式介面問題。 使用者無法按一下應用程式介面，因為當介面元素的點按區域出現扭曲時，會側移。<!-- CQ-4280785 -->
 
 **應用程式2.0.1版中的更新**
 
 錯誤修正和更新包括：
 
-* 允許選項配置目 `%Temp%` 錄以匹配路 `%APPDATA%` 徑。 <!-- CQ-4282665 -->
+* 允許選項配置`%Temp%`目錄以匹配`%APPDATA%`路徑。<!-- CQ-4282665 -->
 
-* 允許使用者透過Okta SAML驗證登入Experience Manager作者。 <!-- CQ-4278134 -->
+* 允許使用者透過Okta SAML驗證登入Experience Manager作者。<!-- CQ-4278134 -->
 
 ## 安裝指示 {#installation-instructions-v2}
 
-To know how to install and configure the app, see [Install Experience Manager desktop app](install-upgrade.md).
+如要瞭解如何安裝和設定應用程式，請參閱[安裝Experience Manager案頭應用程式](install-upgrade.md)。
 
-If you are upgrading from a previous Experience Manager desktop app, you must follow these best practices for transitioning that are listed at [upgrade from previous version](install-upgrade.md#upgrade-from-previous-version).
+如果您要從舊版Experience Manager案頭應用程式升級，則必須依照下列最佳實務進行轉換，這些最佳實務會列在從舊版[升級中。](install-upgrade.md#upgrade-from-previous-version)
 
 ## 應用程式運作方式的重要附註 {#how-app-works}
 
@@ -123,7 +123,7 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
    * 如果想要在桌面使用資產，您需要明確地「開啟」、「編輯」或「下載」資產至桌面，並可使用個別檔案、資料夾或多個檔案選取的方式進行上述操作。
 
-   * If you want to get local changes to assets uploaded to Experience Manager, you need to select [!UICONTROL Upload Changes], either individually or via multi-selection.
+   * 如果您想要對上傳至Experience Manager的資產進行本機變更，您必須個別選取或透過多選取來選取[!UICONTROL Upload Changes]。
 
    * 應用程式不是同步案頭和Experience Manager資產的「同步用戶端」。
 
@@ -145,9 +145,9 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 **使用者介面問題：**
 
-* 有時，案頭應用程式的介面可能會變成空白。 Right-click and click [!UICONTROL Refresh] to re-load the application. 進行此類刷新後，您將從DAM儲存庫的根目錄開始。 資產的更新或狀態會保留。 <!-- CQ-4270267 -->
+* 有時，案頭應用程式的介面可能會變成空白。 按一下右鍵，然後按一下[!UICONTROL Refresh]重新載入應用程式。 進行此類刷新後，您將從DAM儲存庫的根目錄開始。 資產的更新或狀態會保留。<!-- CQ-4270267 -->
 
-* 在沒有追蹤板或滑鼠指標的情況下，很難導覽資料夾／搜尋結果。 The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
+* 在沒有追蹤板或滑鼠指標的情況下，很難導覽資料夾／搜尋結果。 沒有滑鼠滾輪的滑鼠裝置可能無法顯示捲軸。<!-- CQ-4269947 -->
 
 * 少數情況下，當上傳的資產變更時，進度列可能無法顯示正確的進度。
 
@@ -159,7 +159,7 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 * 若應用程式嘗試上傳包含無效字元的檔案，可能會導致伺服器端上傳失敗。<!-- CQ-4273652 -->
 
-* 當上傳含備注的變更至資產時，備注會與資產一起儲存在Experience Manager中，但不會顯示為版本修訂備注。 Experience Manager 6.4.5和Experience Manager 6.5.1已解決此問題。Adobe強烈建議安裝最新的Service Pack。 <!-- CQ-4268990 -->
+* 當上傳含備注的變更至資產時，備注會與資產一起儲存在Experience Manager中，但不會顯示為版本修訂備注。 Experience Manager 6.4.5和Experience Manager 6.5.1已解決此問題。Adobe強烈建議安裝最新的Service Pack。<!-- CQ-4268990 -->
 
 * 使用者無法取消資產傳輸。如果您不小心觸發了非預期的大量傳輸，請退出應用程式並重新啟動。<!-- CQ-4278940 -->
 
