@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Experience Manager案頭應用程式指南
+user-guide-title: Experience Manager 桌面應用程式指南
 breadcrumb-title: 桌面應用程式指南
-user-guide-description: 瞭解如何使用Experience Manager案頭應用程式來連接資料庫和案頭應用程式，以更快速地存取資源並簡化工作流程。
+user-guide-description: 了解如何使用 Experience Manager 桌面應用程式來連結儲存庫和桌面應用程式，以更快存取資源並簡化工作流程。
 solution-title: AEM Assets
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html
 getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html
@@ -14,12 +14,12 @@ translation-type: tm+mt
 source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
 source-wordcount: '85'
-ht-degree: 48%
+ht-degree: 81%
 
 ---
 
 
-# Adobe desktop app Guide {#using}
+# Adobe案頭應用程式指南{#using}
 
 + [概覽](introduction.md)
 + [發行說明](release-notes.md)
