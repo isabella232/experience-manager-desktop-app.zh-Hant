@@ -17,53 +17,53 @@ ht-degree: 0%
 ---
 
 
-# Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
+# 疑難排解Adobe Experience Manager案頭應用程式{#troubleshoot-v2}
 
 Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager部署的數位資產管理(DAM)儲存庫。 應用程式會擷取儲存庫資訊並在您的電腦上搜尋結果、下載和上傳檔案和檔案夾，並包含管理與「資產」使用者介面衝突的功能。
 
 閱讀以疑難排解應用程式、瞭解最佳實務，並瞭解限制。
 
-## Best practices {#best-practices-to-prevent-troubles}
+## 最佳做法{#best-practices-to-prevent-troubles}
 
 遵守下列最佳實務，以防止出現一些常見問題和疑難排解。
 
-* **瞭解案頭應用程式的運作方式**:在開始使用應用程式之前，請花些時間瞭解應用程式的運作方式。 瞭解Experience Manager網頁介面與案頭之間的連結、儲存庫對應、資產快取、本機儲存及在背景上傳。 了 [解運作方式](release-notes.md#how-app-works)。
+* **瞭解案頭應用程式的運作方式**:在開始使用應用程式之前，請花些時間瞭解應用程式的運作方式。瞭解Experience Manager網頁介面與案頭之間的連結、儲存庫對應、資產快取、本機儲存及在背景上傳。 請參閱[其運作方式](release-notes.md#how-app-works)。
 
-* **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱Experience Manager Assets中建立 [資料夾的字元清單](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)。 有些Adobe Experience Manager使用案例可能會受到檔案夾名稱中不支援的字元影響。
+* **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空格和無效字元。請參閱[Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中建立資料夾的字元清單。 有些Adobe Experience Manager使用案例可能會受到檔案夾名稱中不支援的字元影響。
 
 * **避免衝突的最佳實務**:若要避免在協作多個資產時產生潛在衝突，請參 [閱避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* **對大型、階層式資料夾使用資料夾上傳**:使用Experience Manager案頭應用程式來上傳大型資料夾，而不是使用「資產」網頁介面或其他方法。 應用程式會透過記錄和監控在背景上傳資產。 請參閱 [大量上傳資產](using.md#bulk-upload-assets)。
+* **對大型、階層式資料夾使用資料夾上傳**:使用Experience Manager案頭應用程式來上傳大型資料夾，而不是使用「資產」網頁介面或其他方法。應用程式會透過記錄和監控在背景上傳資產。 請參閱[大量上傳資產](using.md#bulk-upload-assets)。
 
-* **使用最新版本**:使用最新的應用程式版本，在安裝新應用程式版本或升級至較新的Adobe Experience Manager版本之前，請務必先檢查相容性。 請參閱 [發行說明](release-notes.md)。
+* **使用最新版本**:使用最新的應用程式版本，在安裝新應用程式版本或升級至較新的Adobe Experience Manager版本之前，請務必先檢查相容性。請參閱[發行說明](release-notes.md)。
 
-* **使用相同的驅動器號**:在組織內使用相同的驅動器號來對應至Adobe Experience Manager DAM。 若要查看其他使用者置入的資產，路徑必須相同。 使用相同的驅動器盤符可確保DAM資產的常態路徑。 即使不同的用戶使用不同的驅動器號，這些資產仍會保持放置狀態且不會被移除。
+* **使用相同的驅動器號**:在組織內使用相同的驅動器號來對應至Adobe Experience Manager DAM。若要查看其他使用者置入的資產，路徑必須相同。 使用相同的驅動器盤符可確保DAM資產的常態路徑。 即使不同的用戶使用不同的驅動器號，這些資產仍會保持放置狀態且不會被移除。
 
-* **注意網路**:網路效能是Experience Manager案頭應用程式效能的關鍵。 如果您遇到檔案傳輸或大量作業的回應速度變慢，請關閉可能導致大量網路流量的功能或應用程式。
+* **注意網路**:網路效能是Experience Manager案頭應用程式效能的關鍵。如果您遇到檔案傳輸或大量作業的回應速度變慢，請關閉可能導致大量網路流量的功能或應用程式。
 
 * **案頭應用程式不支援的使用案例**:請勿將應用程式用於資產移轉（它需要規劃和其他工具）;執行繁重的DAM作業（例如移動大型資料夾、大型上傳、使用進階中繼資料搜尋尋找檔案）;同步用戶端(設計原則和使用模式與同步用戶端（例如Microsoft OneDrive或Adobe Creative Cloud案頭同步）不同。
 
-* **逾時**:目前，案頭應用程式沒有可設定的逾時值，此值會在固定時間間隔後中斷Experience Manager伺服器與案頭應用程式之間的連線。 上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，重新嘗試上傳資產幾次。 不建議使用任何方法來變更預設逾時設定。
+* **逾時**:目前，案頭應用程式沒有可設定的逾時值，此值會在固定時間間隔後中斷Experience Manager伺服器與案頭應用程式之間的連線。上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，重新嘗試上傳資產幾次。 不建議使用任何方法來變更預設逾時設定。
 
-## 如何疑難排解 {#troubleshooting-prep}
+## 如何疑難排解{#troubleshooting-prep}
 
 若要疑難排解案頭應用程式問題，請注意下列資訊。 此外，如果您選擇尋求支援，它可讓您更妥善地將問題傳達給Adobe客戶服務。
 
-### 日誌檔案的位置 {#check-log-files-v2}
+### 日誌檔案{#check-log-files-v2}的位置
 
 [!DNL Experience Manager] 案頭應用程式會根據作業系統，將其記錄檔儲存在下列位置：
 
-在Windows上： `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+在Windows上：`%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
-在Mac上： `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+在Mac上：`~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
 
-上傳許多資產時，如果有些檔案無法上傳，請參 `backend.log` 閱檔案以識別失敗的上傳。
+上傳許多資產時，如果有些檔案無法上傳，請參閱`backend.log`檔案以識別失敗的上傳。
 
 >[!NOTE]
 >
->在支援要求或票證上與Adobe客戶服務合作時，可能會要求您共用記錄檔，以協助客戶服務團隊瞭解問題。 封存整個資 `Logs` 料夾，並與您的客戶服務聯絡人共用。
+>在支援要求或票證上與Adobe客戶服務合作時，可能會要求您共用記錄檔，以協助客戶服務團隊瞭解問題。 封存整個`Logs`資料夾，並與您的客戶服務聯絡人共用。
 
-### 變更記錄檔中的詳細資訊層級 {#level-of-details-in-log}
+### 更改日誌檔案{#level-of-details-in-log}中的詳細資訊級別
 
 要更改日誌檔案中的詳細資訊級別：
 
@@ -73,7 +73,7 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
    1. 開啟命令窗口。
 
-   1. 執行 [!DNL Adobe Experience Manager] 命令以啟動案頭應用程式：
+   1. 運行命令啟動[!DNL Adobe Experience Manager]案頭應用程式：
 
    ```shell
    set AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe
@@ -83,7 +83,7 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
    1. 開啟終端窗口。
 
-   1. 執行 [!DNL Adobe Experience Manager] 命令以啟動案頭應用程式：
+   1. 運行命令啟動[!DNL Adobe Experience Manager]案頭應用程式：
 
    ```shell
    AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app
@@ -91,7 +91,7 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
 有效的日誌級別為DEBUG、INFO、WARN或ERROR。 在DEBUG中，日誌的詳細程度最高，在ERROR中則最低。
 
-### 啟用除錯模式 {#enable-debug-mode}
+### 啟用調試模式{#enable-debug-mode}
 
 若要疑難排解，您可以啟用除錯模式，並在記錄檔中取得更多資訊。
 
@@ -103,7 +103,7 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
 1. 開啟終端窗口或命令提示符。
 
-1. 執行下列 [!DNL Experience Manager] 命令以啟動案頭應用程式：
+1. 執行下列命令以啟動[!DNL Experience Manager]案頭應用程式：
 
    `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`。
 
@@ -111,7 +111,7 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
 1. 開啟命令窗口。
 
-1. 執行 [!DNL Experience Manager] 下列命令以啟動案頭應用程式：
+1. 執行下列命令以啟動[!DNL Experience Manager]案頭應用程式：
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`。
 
@@ -121,41 +121,41 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
 1. 啟動應用程式並連接Experience Manager例項。
 
-1. 按一下右上角的橢圓並選擇以開啟應用程式的首選項 [!UICONTROL Preferences]。
+1. 按一下右上角的橢圓並選擇[!UICONTROL Preferences]以開啟應用程式的首選項。
 
-1. 找到顯示的條目 [!UICONTROL Current Cache Size]。 按一下此元素旁的垃圾桶圖示。
+1. 找到顯示[!UICONTROL Current Cache Size]的條目。 按一下此元素旁的垃圾桶圖示。
 
 要手動清除快取，請繼續以下步驟。
 
 >[!CAUTION]
 >
->這是一項具有潛在破壞性的操作。 如果有未上傳到的本機檔案變更， [!DNL Adobe Experience Manager]則這些變更將因繼續而遺失。
+>這是一項具有潛在破壞性的操作。 如果有未上傳至[!DNL Adobe Experience Manager]的本機檔案變更，則這些變更將因繼續而遺失。
 
 通過刪除應用程式的快取目錄（在應用程式的首選項中）來清除快取。
 
 1. 啟動應用程式。
 
-1. 通過選擇右上角的橢圓並選擇來開啟應用程式的首選項 [!UICONTROL Preferences]。
+1. 通過選擇右上角的橢圓並選擇[!UICONTROL Preferences]來開啟應用程式的首選項。
 
-1. 記下 [!UICONTROL Cache Directory] 值。
+1. 請注意[!UICONTROL Cache Directory]值。
 
-   在此目錄中，有以「編碼端點」命名的子 [!DNL Adobe Experience Manager] 目錄。 名稱是目標URL的編碼版 [!DNL Adobe Experience Manager] 本。 例如，如果應用程式正在定位， `localhost:4502` 則目錄名稱將會是 `localhost_4502`。
+   在此目錄中，有以「編碼[!DNL Adobe Experience Manager]端點」命名的子目錄。 名稱是目標[!DNL Adobe Experience Manager] URL的編碼版本。 例如，如果應用程式鎖定`localhost:4502`，則目錄名稱將為`localhost_4502`。
 
-要清除快取，請刪除所需的編碼端 [!DNL Adobe Experience Manager] 點目錄。 或者，刪除首選項中指定的整個目錄將清除應用程式已使用的所有實例的快取。
+要清除快取，請刪除所需的編碼[!DNL Adobe Experience Manager]端點目錄。 或者，刪除首選項中指定的整個目錄將清除應用程式已使用的所有實例的快取。
 
-清除桌 [!DNL Adobe Experience Manager] 面應用程式的快取是一項初步的疑難排解工作，可解決數個問題。 從應用程式偏好設定中清除快取。 請參 [閱設定首選項](install-upgrade.md#set-preferences)。 快取資料夾的預設位置為：
+清除[!DNL Adobe Experience Manager]案頭應用程式的快取是一項初步的疑難排解工作，可解決數個問題。 從應用程式偏好設定中清除快取。 請參閱[設定首選項](install-upgrade.md#set-preferences)。 快取資料夾的預設位置為：
 
-### 瞭解案頭應 [!DNL Adobe Experience Manager] 用程式版本 {#know-app-version-v2}
+### 瞭解[!DNL Adobe Experience Manager]案頭應用程式版本{#know-app-version-v2}
 
 要查看版本號：
 
 1. 啟動應用程式。
 
-1. 按一下右上角的橢圓，將滑鼠指標暫留在上方 [!UICONTROL Help]，然後按一下 [!UICONTROL About]。
+1. 按一下右上角的橢圓，將滑鼠指標暫留在[!UICONTROL Help]上，然後按一下[!UICONTROL About]。
 
    此畫面上會列出版本號碼。
 
-### 看不到置入的資產 {#placed-assets-missing}
+### 無法看到置入的資產{#placed-assets-missing}
 
 如果您或其他創意專業人員無法在支援檔案（例如INDD檔案）中看到所放置的資產，請勾選下列項目：
 
@@ -167,15 +167,15 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
 * 權限. 若要檢查您是否擁有擷取已置入資產的權限，請連絡您的Experience Manager管理員。
 
-### 案頭應用程式使用者介面上的檔案編輯無法立即反映在 [!DNL Adobe Experience Manager] {#changes-on-da-not-visible-on-aem}
+### 案頭應用程式使用者介面上檔案的編輯無法立即反映在[!DNL Adobe Experience Manager]中{#changes-on-da-not-visible-on-aem}
 
-[!DNL Adobe Experience Manager] 案頭應用程式讓使用者自行決定檔案的所有編輯何時完成。 根據檔案的大小和複雜性，將新版本檔案傳輸回檔案需要相當長的時間 [!DNL Adobe Experience Manager]。 應用程式的設計要求將檔案來回傳輸的次數減到最少，而不是猜測檔案編輯完成並自動上傳的時間。 建議使用者選擇上傳檔案的變更， [!DNL Adobe Experience Manager] 以開始將檔案傳回。
+[!DNL Adobe Experience Manager] 案頭應用程式讓使用者自行決定檔案的所有編輯何時完成。根據檔案的大小和複雜性，將新版本的檔案傳輸回[!DNL Adobe Experience Manager]需要大量時間。 應用程式的設計要求將檔案來回傳輸的次數減到最少，而不是猜測檔案編輯完成並自動上傳的時間。 建議用戶通過選擇上傳檔案的更改來啟動檔案傳回[!DNL Adobe Experience Manager]。
 
-### 在macOS上升級時的問題 {#issues-when-upgrading-on-macos}
+### 在macOS上升級時的問題{#issues-when-upgrading-on-macos}
 
 在macOS上升級Experience Manager案頭應用程式時，偶爾會發生問題。 這是由於Experience Manager案頭應用程式的舊系統資料夾導致無法正確載入新版Experience Manager案頭應用程式。 要解決此問題，可以手動刪除以下資料夾和檔案。
 
-在執行下列步驟之前，請將應用程 `Adobe Experience Manager Desktop` 式從macOS Applications檔案夾拖曳至「垃圾筒」。 然後開啟終端機，執行下列命令，並在出現提示時提供您的密碼。
+在執行下列步驟之前，請將`Adobe Experience Manager Desktop`應用程式從macOS Applications檔案夾拖曳至「垃圾筒」。 然後開啟終端機，執行下列命令，並在出現提示時提供您的密碼。
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
@@ -186,58 +186,58 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-### 無法上傳檔案 {#upload-fails}
+### 無法上傳檔案{#upload-fails}
 
-如果您正在搭配Experience Manager 6.5.1或更新版本使用案頭應用程式，請將S3或Azure連接器升級至1.10.4或更新版本。 它可解決與 [OAK-8599相關的檔案上傳失敗問題](https://issues.apache.org/jira/browse/OAK-8599)。 請參閱 [安裝指示](install-upgrade.md#install-v2)。
+如果您正在搭配Experience Manager 6.5.1或更新版本使用案頭應用程式，請將S3或Azure連接器升級至1.10.4或更新版本。 它可解決與[OAK-8599](https://issues.apache.org/jira/browse/OAK-8599)相關的檔案上傳失敗問題。 請參閱[安裝說明](install-upgrade.md#install-v2)。
 
-### [!DNL Experience Manager] 案頭應用程式連線問題 {#connection-issues}
+### [!DNL Experience Manager] 案頭應用程式連線問題  {#connection-issues}
 
-如果您遇到一般的連線問題，請以下提供一些方式，以取得有關案頭應用程式 [!DNL Experience Manager] 所執行動作的詳細資訊。
+如果您遇到一般連接問題，請以下提供一些方法，以取得有關[!DNL Experience Manager]案頭應用程式所執行動作的詳細資訊。
 
 **檢查請求記錄**
 
 [!DNL Experience Manager] 案頭應用程式會將其傳送的所有請求，以及每個請求的回應代碼記錄在專用的記錄檔中。
 
-1. 在應 `request.log` 用程式的記錄目錄中開啟，以檢視這些請求。
+1. 在應用程式的日誌目錄中開啟`request.log`以查看這些請求。
 
-1. 記錄中的每一行代表請求或回應。 請求後面會 `>` 有一個字元，後面接有請求的URL。 回應後面會 `<` 有一個字元，後面接著回應程式碼和請求的URL。 請求和回應可使用每行的GUID進行比對。
+1. 記錄中的每一行代表請求或回應。 請求後面會有`>`字元，後面會有請求的URL。 回應後面會有`<`字元，後面接著回應程式碼和請求的URL。 請求和回應可使用每行的GUID進行比對。
 
 **檢查應用程式的內嵌瀏覽器載入的請求**
 
 大部分應用程式的請求都位於請求記錄中。 不過，如果沒有有用的資訊，則查看應用程式的內嵌瀏覽器所傳送的要求會很有用。
-如需如 [何檢視這些請求的指示](#da-connection-issue-with-saml-aem) ，請參閱SAML區段。
+如需如何檢視這些請求的指示，請參閱[SAML章節](#da-connection-issue-with-saml-aem)。
 
-#### SAML登入驗證無法運作 {#da-connection-issue-with-saml-aem}
+#### SAML登入驗證無法運作{#da-connection-issue-with-saml-aem}
 
-如果 [!DNL Experience Manager] 案頭應用程式未連線至您啟用SSO(SAML)的例項 [!DNL Adobe Experience Manager] ，請閱讀本節以疑難排解。 SSO程式各異，有時複雜，而應用程式的設計則盡量配合這些連線類型。 不過，有些設定需要額外的疑難排解。
+如果[!DNL Experience Manager]案頭應用程式未連線至您啟用SSO(SAML)[!DNL Adobe Experience Manager]實例，請閱讀本節以疑難排解。 SSO程式各異，有時複雜，而應用程式的設計則盡量配合這些連線類型。 不過，有些設定需要額外的疑難排解。
 
-有時SAML程式不會重新導向回原本要求的路徑，或最終的重新導向是與案頭應用程式中設定的主機不 [!DNL Adobe Experience Manager] 同。 要確認情況並非如此：
+有時SAML程式不會重新導向回原本要求的路徑，或最終的重新導向是與[!DNL Adobe Experience Manager]案頭應用程式中設定的主機不同。 要確認情況並非如此：
 
-1. 開啟網頁瀏覽器。 存取 `https://[aem_server]:[port]/content/dam.json` URL。
+1. 開啟網頁瀏覽器。 存取`https://[aem_server]:[port]/content/dam.json` URL。
 
-1. 登入部 [!DNL Adobe Experience Manager] 署。
+1. 登入[!DNL Adobe Experience Manager]部署。
 
 1. 登入完成後，請在位址列中查看瀏覽器的目前位址。 它應完全符合最初輸入的URL。
 
-1. 此外，也請確認所有項目 `/content/dam.json` 在符合案頭應 [!DNL Adobe Experience Manager] 用程式設定 [!DNL Adobe Experience Manager] 中設定的目標值之前。
+1. 此外，請確認`/content/dam.json`之前的所有項目都符合[!DNL Adobe Experience Manager]案頭應用程式設定中設定的目標[!DNL Adobe Experience Manager]值。
 
 **登入SAML程式可依照上述步驟正常運作，但使用者仍無法登入**
 
-案頭應用 [!DNL Adobe Experience Manager] 程式中顯示登入程式的視窗只是顯示目標執行個體Web使 [!DNL Adobe Experience Manager] 用者介面的網頁瀏覽器：
+[!DNL Adobe Experience Manager]案頭應用程式中顯示登入程式的視窗，只是顯示目標[!DNL Adobe Experience Manager]例項Web使用者介面的Web瀏覽器：
 
-* Mac版本使用 [WebView](https://developer.apple.com/documentation/webkit/webview)。
+* Mac版本使用[WebView](https://developer.apple.com/documentation/webkit/webview)。
 
-* Windows版本使用Chromium架構的 [CefSharp](https://cefsharp.github.io/)。
+* Windows版本使用基於Chromium的[CefSharp](https://cefsharp.github.io/)。
 
 請確定SAML程式支援這些瀏覽器。
 
 若要進一步疑難排解，可檢視瀏覽器正嘗試載入的確切URL。 要查看此資訊，請執行以下操作：
 
-1. 請遵循在除錯模式中啟動應用程式 [的指示](#enable-debug-mode)。
+1. 按照[debug mode](#enable-debug-mode)中啟動應用程式的指示操作。
 
 1. 重制登錄嘗試。
 
-1. 導覽至應 [用程式的記](#check-log-files-v2) 錄目錄
+1. 導覽至應用程式的[log directory](#check-log-files-v2)
 
 1. 針對Windows:
 
@@ -247,28 +247,28 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
    針對Mac:
 
-   1. `com.adobe.aem.desktop-nnnnnnnn-nnnnnn.log`，其中 **n** 由最新檔案名中的數字替換。
+   1. `com.adobe.aem.desktop-nnnnnnnn-nnnnnn.log`，其中 **** n將由最新檔案名稱中的任何數字取代。
 
    1. 搜尋以「載入影格」開頭的訊息。 這些項目也包含應用程式載入的URL。
 
 
 查看正在載入的URL順序有助於在SAML結尾疑難排解，以判斷出錯之處。
 
-#### SSL設定問題 {#ssl-config-v2}
+#### SSL配置問題{#ssl-config-v2}
 
-Experience Manager案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有時，連線可能會使用瀏覽器成功，但使用Experience Manager案頭應用程式失敗。 若要正確設定SSL，請在Apache中安裝遺失的中間憑證。 請參 [閱如何在Apache中安裝Intemider CA憑證](https://access.redhat.com/solutions/43575)。
+Experience Manager案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有時，連線可能會使用瀏覽器成功，但使用Experience Manager案頭應用程式失敗。 若要正確設定SSL，請在Apache中安裝遺失的中間憑證。 請參閱[如何在Apache](https://access.redhat.com/solutions/43575)中安裝Intemider CA憑證。
 
-Experience Manager Desktop用於HTTP通訊的程式庫採用嚴格的SSL強制。 因此，有時SSL連線會透過瀏覽器失敗，而案頭應用程式會 [!DNL Adobe Experience Manager] 失敗。 這很好，因為它可促進正確配置SSL並提高安全性，但當應用程式無法連線時，可能會令人沮喪。
+Experience Manager Desktop用於HTTP通訊的程式庫採用嚴格的SSL強制。 因此，在[!DNL Adobe Experience Manager]案頭應用程式中，有些例項會讓透過瀏覽器成功的SSL連線失敗。 這很好，因為它可促進正確配置SSL並提高安全性，但當應用程式無法連線時，可能會令人沮喪。
 
 在這種情況下，建議的方法是使用工具來分析伺服器的SSL憑證並識別問題，以便加以修正。 有些網站會在提供伺服器URL時檢查伺服器的憑證。
 
-作為一項臨時措施，您可以停用案頭應用程式中嚴格的SSL [!DNL Adobe Experience Manager] 強制執行。 這不是建議的長期解決方案，因為它會隱藏錯誤設定SSL的根本原因，以降低安全性。 要禁用嚴格強制，請執行以下操作：
+作為一項臨時措施，您可以在[!DNL Adobe Experience Manager]案頭應用程式中停用嚴格的SSL強制。 這不是建議的長期解決方案，因為它會隱藏錯誤設定SSL的根本原因，以降低安全性。 要禁用嚴格強制，請執行以下操作：
 
 1. 使用您選擇的編輯器編輯應用程式的JavaScript設定檔案，依預設會在下列位置（視作業系統而定）找到這些檔案：
 
-   在Mac上： `/Applications/Adobe Experience Manager Desktop.app/Contents/Resources/javascript/lib-smb/config.json`
+   在Mac上：`/Applications/Adobe Experience Manager Desktop.app/Contents/Resources/javascript/lib-smb/config.json`
 
-   在Windows上： `C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop\javascript\config.json`
+   在Windows上：`C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop\javascript\config.json`
 
 1. 在檔案中找到下列章節：
 
@@ -279,7 +279,7 @@ Experience Manager Desktop用於HTTP通訊的程式庫採用嚴格的SSL強制�
    ...
    ```
 
-1. 通過添加以下內容來修改 `"strictSSL": false` 該部分：
+1. 按如下方式添加`"strictSSL": false`以修改該部分：
 
    ```shell
    ...
@@ -289,13 +289,13 @@ Experience Manager Desktop用於HTTP通訊的程式庫採用嚴格的SSL強制�
    ...
    ```
 
-1. 儲存檔案並重新啟動案頭應 [!DNL Adobe Experience Manager] 用程式。
+1. 儲存檔案並重新啟動[!DNL Adobe Experience Manager]案頭應用程式。
 
-### 應用程式沒有回應 {#unresponsive}
+### 應用程式沒有回應{#unresponsive}
 
 應用程式很少會停止回應、只顯示白色畫面，或在介面底部顯示錯誤，而介面上沒有任何選項。 請依順序嘗試下列項目：
 
-* 在應用程式介面上按一下滑鼠右鍵，然後按一下 **[!UICONTROL Refresh]**。
+* 按一下右鍵應用程式介面，然後按一下&#x200B;**[!UICONTROL Refresh]**。
 * 退出應用程式並再次開啟。
 
 在這兩種方法中，應用程式都會從根DAM檔案夾開始。
