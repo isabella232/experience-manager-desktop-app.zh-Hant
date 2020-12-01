@@ -14,7 +14,7 @@ ht-degree: 67%
 ---
 
 
-# Adobe Experience Manager desktop app overview {#overview-v2}
+# Adobe Experience Manager案頭應用程式概觀{#overview-v2}
 
 Adobe 在解決方案中提供緊密相連的工作流程，讓您的業務線使用者和創意內容專業人員擁有更高的生產力。Adobe Experience manager 桌面應用程式可連接資料庫和桌面應用程式，包括 Adobe 和協力廠商應用程式，讓您更快速地存取資源並簡化工作流程。如此一來，透過桌面工作流程運用 Adobe Experience Manager 資產的使用者不僅節省時間，且事半功倍。
 
