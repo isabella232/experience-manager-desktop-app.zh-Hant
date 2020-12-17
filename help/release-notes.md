@@ -10,9 +10,9 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: 41625c59df00b82ceda8a566b35341bc51c2a30f
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1432'
 ht-degree: 33%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 33%
 
 | 產品 | Adobe Experience manager 桌面應用程式 |
 |--- |--- |
-| 應用程式版本（修訂版） | 2.0(2.0.3.2) |
-| 支援的Experience Manager版本 | Experience Manager即雲端服務；Experience Manager 6.5;Experience Manager 6.4;Experience Manager 6.3（含相容性套件） |
+| 應用程式版本（修訂版） | 2.1(2.1.0.0) |
+| 支援的[!DNL Adobe Experience Manager]版本 | [!DNL Experience Manager] 作為 [!DNL Cloud Service]; [!DNL Experience Manager] 6.5; [!DNL Experience Manager] 6.4; [!DNL Experience Manager] 6.3（含相容套件） |
 | 類型 | 次要版本 |
 | 發行日期 | 2020年8月27日（Mac和Win） |
-| 下載 URL | [macOS 64位元](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg); [Windows 64位元](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe); [Windows 32位元](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
+| 下載 URL | [macOS 64位元](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg); [Windows 64位元](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe); [Windows 32位元](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
 
 ## 系統需求和先決條件 {#system-requirements-and-prerequisites-v2}
 
@@ -42,18 +42,18 @@ Adobe Experience Manager案頭應用程式與下列作業系統相容：
 
 此應用程式可與下列Experience Manager版本搭配使用，不論部署為雲端服務、部署在Adobe Managed Services(AMS)或內部部署：
 
-* [Experience Manager即雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
+* [[!DNL Experience Manager] 是的 [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
 
-* [Experience Manager 6.5.0或更](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) 新版本。
+* [[!DNL Experience Manager] 6.5.0或更](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) 新版本。
 
-* [Experience Manager 6.4.4或更](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) 新版本。
+* [[!DNL Experience Manager] 6.4.4或更](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) 新版本。
 
-* Experience Manager 6.4.0 - 6.4.3 with [ compatibility package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support).
+* [!DNL Experience Manager] 6.4.0 - 6.4.3和相容 [軟體包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。
 
 >[!NOTE]
 >
->Experience Manager 6.3案頭應用程式支援已過時。 Adobe建議升級至較新且支援的Adobe Experience Manager版本。
->在安裝[相容性套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)後，Experience Manager 6.3.3.1或更新版本可與案頭應用程式搭配使用。 Experience Manager 6.3中沒有此類軟體包，因為計畫中沒有[服務包。](https://helpx.adobe.com/tw/experience-manager/maintenance-releases-roadmap.html)
+>[!DNL Experience Manager] 6.3的案頭應用程式支援已過時。 Adobe建議升級至較新且支援的[!DNL Adobe Experience Manager]版本。
+>[!DNL Experience Manager] 6.3.3.1或更新版本可在安裝[相容性套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)後與案頭應用程式搭配使用。 Experience Manager 6.3中沒有此類軟體包，因為計畫中沒有[服務包。](https://helpx.adobe.com/tw/experience-manager/maintenance-releases-roadmap.html)
 
 您打算在本機電腦上安裝的應用程式版本，需要搭配特定的 Adobe Experience Manager 伺服器版本／其他伺服器端元件（服務套件、修補程式或功能套件）。請連絡您的Adobe Experience Manager管理員以取得協助。
 
@@ -80,6 +80,10 @@ Adobe Experience Manager案頭應用程式與下列作業系統相容：
 ## 新增功能和功能改善 {#whats-new-added}
 
 如需詳細資訊，請參閱[v2.0](introduction.md#whats-new-v2)的新增功能。
+
+**應用程式2.1.0.0版中的更新**
+
+* 若要上傳資產，使用者現在可以直接從Windows檔案總管或Mac Finder，拖曳應用程式介面上的檔案或檔案夾。 除了應用程式中先前提供的上傳選項外，這個功能還可運作。
 
 **應用程式2.0.3版中的更新**
 
