@@ -3,9 +3,9 @@ title: 使用Adobe Experience Manager案頭應用程式
 description: 瞭解如何安裝和使用Adobe Experience Manager案頭應用程式，直接從Win或Mac案頭處理Adobe Experience Manager DAM資產。 瞭解最佳實務和疑難排解資訊。
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: 41625c59df00b82ceda8a566b35341bc51c2a30f
 workflow-type: tm+mt
-source-wordcount: '4022'
+source-wordcount: '4028'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ ht-degree: 0%
 
 ## 上傳新資產並新增至Experience Manager {#upload-and-add-new-assets-to-aem}
 
-使用者可以新增資產至DAM儲存庫。 例如，您可能是廣告公司攝影師或承包商，想要將大量像片從像片拍攝新增至Experience Manager儲存庫。 若要新增新內容至Experience Manager，請按一下應用程式頂端列中的「上傳至雲端」圖示](assets/do-not-localize/upload_to_cloud_da2.png)。 ![瀏覽至本機檔案系統中的資產檔案，然後按一下&#x200B;**[!UICONTROL Select]**。 應用程式會開始上傳資產，如果資產上傳的時間較長，就會在底部顯示進度列。 建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱[ [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中的「建立資料夾」中的字元清單。
+使用者可以新增資產至DAM儲存庫。 例如，您可能是廣告公司攝影師或承包商，想要將大量像片從像片拍攝新增至[!DNL Experience Manager]儲存庫。 若要新增內容至[!DNL Experience Manager]，請在應用程式頂端列中選取![上傳至雲端選項](assets/do-not-localize/upload_to_cloud_da2.png)。 瀏覽至本機檔案系統中的資產檔案，然後按一下&#x200B;**[!UICONTROL Select]**。 或者，在應用程式介面上拖動檔案或資料夾。 應用程式會開始上傳資產。 如果上傳時間較長，應用程式會在底部顯示進度列。 建立或上傳檔案夾時，請勿使用空格和無效字元。 請參閱[ [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中建立資料夾的允許字元清單。
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
