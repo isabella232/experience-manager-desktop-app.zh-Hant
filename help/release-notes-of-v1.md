@@ -1,27 +1,20 @@
 ---
 title: AEM案頭應用程式1.x版發行說明
 description: AEM案頭應用程式1.x版的發行詳細資訊、增強功能、新功能、相容性和下載連結。
-uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '3920'
+source-wordcount: '3906'
 ht-degree: 1%
 
 ---
 
 
-# AEM案頭應用程式v1.x版本注意事項{#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] 案頭應用程式v1.x版本注意事項  {#aem-desktop-app-release-notes}
 
 對於案頭應用程式v1.x版本，以下是下載連結和AEM相容性資訊。
 
-| 產品 | Adobe Experience Manager (AEM) 桌面應用程式 |
+| 產品 | [!DNL Adobe Experience Manager] 案頭應用程式 |
 |--- |--- |
 | 版本 | 1.10（Mac為1.10.0.6,Windows為1.10.0.3） |
 | 類型 | 次要版本 |
@@ -75,7 +68,7 @@ AEM案頭應用程式1.10著重在改善大型上傳的使用者體驗、背景�
 
 ## 舊版{#enhancements-in-the-previous-versions}的增強功能
 
-此版本可延伸並取代舊版Experience Manager案頭應用程式，後者提供下列主要增強功能：
+此版本可擴充並取代舊版[!DNL Experience Manager]案頭應用程式，後者提供下列重要增強功能：
 
 * **1.9/1.9.1版**:可恢復的上傳、改良的狀態視窗、指示應用程式／連線狀態的應用程式圖示、InDesign檔案的連結資產預取。
 
@@ -93,7 +86,7 @@ AEM案頭應用程式1.10著重在改善大型上傳的使用者體驗、背景�
 
 ### 自AEM案頭應用程式1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}以來的增強功能
 
-Adobe Experience Manager(AEM)案頭應用程式1.9.1是一個修補程式版本，可解決有關資產結帳和將檔案從網路共用複製到本機目錄的幾項重要客戶問題。
+[!DNL Adobe Experience Manager] 案頭應用程式1.9.1是修補程式版本，可解決資產結帳和從網路共用複製檔案至本機目錄等幾個重要客戶問題。
 
 * 一個使用者簽出的資產不應可供其他使用者修改(CQ-4246009)
 
@@ -135,7 +128,7 @@ AEM案頭應用程式1.9著重於改善大型上傳的使用者體驗、背景�
 
 * 頁尾顯示下載的檔案總數和平均傳輸率。
 
-* 如果使用者選擇從Experience Manager Assets Web UI開啟或編輯多個檔案，則會將檔案分組在一起。 例如，myasset.jpeg和4個以上的檔案。
+* 如果用戶選擇從[!DNL Experience Manager Assets] Web介面開啟或編輯多個檔案，則這些檔案將分組在一起。 例如，myasset.jpeg和4個以上的檔案。
 
 * 當下載InDesign檔案（包括儲存在AEM Assets中的連結資產）時，案頭應用程式會先下載所有連結的資產，然後再開啟[!UICONTROL Adobe InDesign]檔案並指出連結資產的下載。 例如，24個中的5個。
 
