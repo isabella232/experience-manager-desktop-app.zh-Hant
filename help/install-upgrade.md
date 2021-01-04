@@ -1,35 +1,28 @@
 ---
-title: 安裝和設定Adobe Experience Manager案頭應用程式
-description: 安裝並設定Adobe Experience Manager案頭應用程式，以便與Adobe Experience Manager Assets伺服器搭配運作，並下載您本機檔案系統上的資產。
-uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f6365302-1690-4719-9b8c-035719422740
-index: y
-internal: n
-snippet: y
+title: 安裝和配置 [!DNL Adobe Experience Manager] 案頭應用程式
+description: 安裝並設定 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 伺服器，並下載您本機檔案系統上的資產。
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1162'
 ht-degree: 1%
 
 ---
 
 
-# 安裝Adobe Experience Manager案頭應用程式{#install-app-v2}
+# 安裝[!DNL Adobe Experience Manager]案頭應用程式{#install-app-v2}
 
-使用Adobe Experience Manager案頭應用程式，Experience Manager中的資產可輕鬆在您的本機案頭上使用，並可用於任何原生案頭應用程式。 資產可以預覽、在原生案頭應用程式中開啟、在Mac Finder或Windows檔案總管中透露，以放入其他檔案，並在本機變更——當您上傳時，變更會儲存回Experience Manager，並在儲存庫中建立新版本。
+使用[!DNL Adobe Experience Manager]案頭應用程式，[!DNL Experience Manager]中的資產可輕鬆在您的本機案頭上使用，並可用於任何原生案頭應用程式。 資產可以預覽、在原生案頭應用程式中開啟、在Mac Finder或Windows檔案總管中透露，以放入其他檔案，並在本機變更——當您上傳時，變更會儲存回[!DNL Experience Manager]，並在儲存庫中建立新版本。
 
 這樣的整合允許組織中的各種角色，
 
-* 在Experience Manager Assets中集中管理資產。
+* 在[!DNL Experience Manager Assets]集中管理資產。
 
 * 在任何原生案頭應用程式（包括協力廠商應用程式）和Adobe Creative Cloud中存取資產。 同時，使用者可輕鬆符合各種標準，包括品牌。
 
-若要使用Experience Manager案頭應用程式，
+若要使用[!DNL Experience Manager]案頭應用程式，
 
-* 確保Experience Manager案頭應用程式支援您的Experience Manager版本。 請參閱下面的[系統要求](release-notes.md#system-requirements-and-prerequisites-v2)。
+* 請確定您的[!DNL Experience Manager]版本受[!DNL Experience Manager]案頭應用程式支援。 請參閱下面的[系統要求](release-notes.md#system-requirements-and-prerequisites-v2)。
 
 * 下載並安裝應用程式。 請參閱下面的[安裝案頭應用程式](#install-v2)。
 
@@ -37,7 +30,7 @@ ht-degree: 1%
 
 ## 系統需求、先決條件和下載連結{#tech-specs-v2}
 
-如需詳細資訊，請參閱[Experience Manager案頭應用程式版本注意事項](release-notes.md)。
+如需詳細資訊，請參閱[[!DNL Experience Manager] 案頭應用程式版本注意事項](release-notes.md)。
 
 ## 從舊版{#upgrade-from-previous-version}升級
 
@@ -49,7 +42,7 @@ ht-degree: 1%
 
 若要從舊版應用程式升級，請依照下列指示進行：
 
-1. 在升級之前，請同步您的所有資產，並將變更上傳至Experience Manager。 這是為了避免在解除安裝應用程式時遺失任何編輯。
+1. 在升級之前，請同步您的所有資產，並將變更上傳至[!DNL Experience Manager]。 這是為了避免在解除安裝應用程式時遺失任何編輯。
 
 1. 解除安裝舊版應用程式。 卸載時，選擇清除快取的選項。
 
@@ -59,15 +52,15 @@ ht-degree: 1%
 
 ## 安裝 {#install-v2}
 
-若要安裝案頭應用程式，請依照下列步驟進行。 在安裝最新應用程式之前，請先解除安裝任何現有的Adobe Experience Manager案頭應用程式v1.x。 如需詳細資訊，請參閱上文。
+若要安裝案頭應用程式，請依照下列步驟進行。 在安裝最新應用程式之前，請先解除安裝任何現有的Adobe [!DNL Experience Manager]案頭應用程式v1.x。 如需詳細資訊，請參閱上文。
 
 1. 從[版本注意事項](release-notes.md)頁面下載最新的安裝程式。
 
-1. 讓Experience Manager部署的URL和認證隨時隨手可得。
+1. 讓[!DNL Experience Manager]部署的URL和認證隨手可得。
 
 1. 如果您要從其他應用程式版本升級，請參閱[升級案頭應用程式](#upgrade-from-previous-version)。
 
-1. 如果您使用Experience Manager做為Cloud服務、Experience Manager 6.4.4或更新版本，或Experience Manager 6.5.0或更新版本，請略過此步驟。 請確定您的Experience Manager設定符合[發行說明](release-notes.md)中提及的相容性要求。 如有必要，請下載適用的[相容性套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)，然後以Experience Manager Package Manager管理員的身分安裝它。 要安裝軟體包，請參見[如何使用軟體包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
+1. 如果您使用[!DNL Experience Manager]做為[!DNL Cloud Service]、[!DNL Experience Manager] 6.4.4或更新版本，或[!DNL Experience Manager] 6.5.0或更新版本，請略過此步驟。 確保您的[!DNL Experience Manager]設定符合[發行說明](release-notes.md)中提及的相容性要求。 如有必要，請下載適用的[相容性軟體包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)，並使用[!DNL Experience Manager]軟體包管理器作為[!DNL Experience Manager]管理員進行安裝。 要安裝軟體包，請參見[如何使用軟體包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
 1. 執行安裝程式二進位檔，並依照螢幕上的指示進行安裝。
 
@@ -93,7 +86,7 @@ ht-degree: 1%
 
    *圖：應用程式在登入後會顯示DAM內容*
 
-1. （Experience Manager 6.5.1或更新版本）如果您正在使用含Experience Manager 6.5.1或更新版本的案頭應用程式，請將S3或Azure連接器升級至1.10.4或更新版本。 請參閱[Azure連接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store)或[S3連接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store)。
+1. （[!DNL Experience Manager] 6.5.1或更新版本）如果您使用含[!DNL Experience Manager] 6.5.1或更新版本的案頭應用程式，請將S3或Azure連接器升級至1.10.4或更新版本。 請參閱[Azure連接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store)或[S3連接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store)。
 
    如果您是Adobe Managed Services(AMS)客戶，請聯絡Adobe客戶服務。
 
