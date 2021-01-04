@@ -1,25 +1,18 @@
 ---
-title: Adobe Experience Manager案頭應用程式的最佳實務和疑難排解
+title: '案頭應用程式的最佳實務與疑難排解 [!DNL Adobe Experience Manager] '
 description: 遵循最佳實務並進行疑難排解，以解決與安裝、升級、設定等相關的偶發問題。
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2120'
 ht-degree: 0%
 
 ---
 
 
-# 疑難排解Adobe Experience Manager案頭應用程式{#troubleshoot-v2}
+# 疑難排解[!DNL Adobe Experience Manager]案頭應用程式{#troubleshoot-v2}
 
-Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager部署的數位資產管理(DAM)儲存庫。 應用程式會擷取儲存庫資訊並在您的電腦上搜尋結果、下載和上傳檔案和檔案夾，並包含管理與「資產」使用者介面衝突的功能。
+[!DNL Adobe Experience Manager] 案頭應用程式會連 [!DNL Experience Manager] 線至部署的數位資產管理(DAM)儲存庫。應用程式會擷取儲存庫資訊並在您的電腦上搜尋結果、下載和上傳檔案和檔案夾，並包含管理與「資產」使用者介面衝突的功能。
 
 閱讀以疑難排解應用程式、瞭解最佳實務，並瞭解限制。
 
@@ -27,23 +20,23 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
 遵守下列最佳實務，以防止出現一些常見問題和疑難排解。
 
-* **瞭解案頭應用程式的運作方式**:在開始使用應用程式之前，請花些時間瞭解應用程式的運作方式。瞭解Experience Manager網頁介面與案頭之間的連結、儲存庫對應、資產快取、本機儲存及在背景上傳。 請參閱[其運作方式](release-notes.md#how-app-works)。
+* **瞭解案頭應用程式的運作方式**:在開始使用應用程式之前，請花些時間瞭解應用程式的運作方式。瞭解[!DNL Experience Manager]網頁介面與案頭、資料庫對應、資產快取、本機儲存與背景上傳之間的連結。 請參閱[其運作方式](release-notes.md#how-app-works)。
 
-* **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空格和無效字元。請參閱[Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中建立資料夾的字元清單。 有些Adobe Experience Manager使用案例可能會受到檔案夾名稱中不支援的字元影響。
+* **避免資料夾名稱中不支援的字元**:建立或上傳檔案夾時，請勿使用空格和無效字元。請參閱[ [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中的「建立資料夾」中的字元清單。 某些[!DNL Experience Manager]使用案例可能會受到資料夾名稱中不支援的字元影響。
 
 * **避免衝突的最佳實務**:若要避免在協作多個資產時產生潛在衝突，請參 [閱避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* **對大型、階層式資料夾使用資料夾上傳**:使用Experience Manager案頭應用程式來上傳大型資料夾，而不是使用「資產」網頁介面或其他方法。應用程式會透過記錄和監控在背景上傳資產。 請參閱[大量上傳資產](using.md#bulk-upload-assets)。
+* **對大型、階層式資料夾使用資料夾上傳**:使用案頭應用程式來上傳大型資料夾，而不是使用「資產」 [!DNL Experience Manager] 網頁介面或其他方法。應用程式會透過記錄和監控在背景上傳資產。 請參閱[大量上傳資產](using.md#bulk-upload-assets)。
 
-* **使用最新版本**:使用最新的應用程式版本，在安裝新應用程式版本或升級至較新的Adobe Experience Manager版本之前，請務必先檢查相容性。請參閱[發行說明](release-notes.md)。
+* **使用最新版本**:使用最新的應用程式版本，在安裝新應用程式版本或升級至較新版本之前，請務必先檢查相容 [!DNL Experience Manager] 性。請參閱[發行說明](release-notes.md)。
 
-* **使用相同的驅動器號**:在組織內使用相同的驅動器號來對應至Adobe Experience Manager DAM。若要查看其他使用者置入的資產，路徑必須相同。 使用相同的驅動器盤符可確保DAM資產的常態路徑。 即使不同的用戶使用不同的驅動器號，這些資產仍會保持放置狀態且不會被移除。
+* **使用相同的驅動器號**:在組織內使用相同的驅動器盤符來映射 [!DNL Experience Manager] DAM。若要查看其他使用者置入的資產，路徑必須相同。 使用相同的驅動器盤符可確保DAM資產的常態路徑。 即使不同的用戶使用不同的驅動器號，這些資產仍會保持放置狀態且不會被移除。
 
-* **注意網路**:網路效能是Experience Manager案頭應用程式效能的關鍵。如果您遇到檔案傳輸或大量作業的回應速度變慢，請關閉可能導致大量網路流量的功能或應用程式。
+* **注意網路**:網路效能是案頭應 [!DNL Experience Manager] 用程式效能的關鍵。如果您遇到檔案傳輸或大量作業的回應速度變慢，請關閉可能導致大量網路流量的功能或應用程式。
 
 * **案頭應用程式不支援的使用案例**:請勿將應用程式用於資產移轉（它需要規劃和其他工具）;執行繁重的DAM作業（例如移動大型資料夾、大型上傳、使用進階中繼資料搜尋尋找檔案）;同步用戶端(設計原則和使用模式與同步用戶端（例如Microsoft OneDrive或Adobe Creative Cloud案頭同步）不同。
 
-* **逾時**:目前，案頭應用程式沒有可設定的逾時值，此值會在固定時間間隔後中斷Experience Manager伺服器與案頭應用程式之間的連線。上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，重新嘗試上傳資產幾次。 不建議使用任何方法來變更預設逾時設定。
+* **逾時**:目前，案頭應用程式沒有可設定的逾時值，在固定時間間隔後，會 [!DNL Experience Manager] 中斷伺服器與案頭應用程式之間的連線。上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，重新嘗試上傳資產幾次。 不建議使用任何方法來變更預設逾時設定。
 
 ## 如何疑難排解{#troubleshooting-prep}
 
@@ -119,7 +112,7 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
 執行以下步驟：
 
-1. 啟動應用程式並連接Experience Manager例項。
+1. 啟動應用程式並連接[!DNL Experience Manager]實例。
 
 1. 按一下右上角的橢圓並選擇[!UICONTROL Preferences]以開啟應用程式的首選項。
 
@@ -129,7 +122,7 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
 >[!CAUTION]
 >
->這是一項具有潛在破壞性的操作。 如果有未上傳至[!DNL Adobe Experience Manager]的本機檔案變更，則這些變更將因繼續而遺失。
+>這是一項具有潛在破壞性的操作。 如果有未上傳至[!DNL Adobe Experience Manager]的本機檔案變更，則這些變更將因繼續作業而遺失。
 
 通過刪除應用程式的快取目錄（在應用程式的首選項中）來清除快取。
 
@@ -163,9 +156,9 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
 * 檔案大小。 大型資產下載和展示的時間較長。
 
-* 驅動器號的一致性。 如果您或其他合作夥伴在將Experience Manager DAM對應至不同的驅動器盤符時置入資產，則不會顯示置入的資產。
+* 驅動器號的一致性。 如果您或其他合作夥伴在將[!DNL Experience Manager] DAM對應至不同的驅動器盤符時置入資產，則不會顯示置入的資產。
 
-* 權限. 若要檢查您是否擁有擷取已置入資產的權限，請連絡您的Experience Manager管理員。
+* 權限. 若要檢查您是否擁有擷取置入資產的權限，請連絡您的[!DNL Experience Manager]管理員。
 
 ### 案頭應用程式使用者介面上檔案的編輯無法立即反映在[!DNL Adobe Experience Manager]中{#changes-on-da-not-visible-on-aem}
 
@@ -173,7 +166,7 @@ Adobe Experience Manager案頭應用程式可連接至遠端Experience Manager�
 
 ### 在macOS上升級時的問題{#issues-when-upgrading-on-macos}
 
-在macOS上升級Experience Manager案頭應用程式時，偶爾會發生問題。 這是由於Experience Manager案頭應用程式的舊系統資料夾導致無法正確載入新版Experience Manager案頭應用程式。 要解決此問題，可以手動刪除以下資料夾和檔案。
+在macOS上升級[!DNL Experience Manager]案頭應用程式時，偶爾會發生問題。 這是由於[!DNL Experience Manager]案頭應用程式的舊系統資料夾導致無法正確載入新版[!DNL Experience Manager]案頭應用程式。 要解決此問題，可以手動刪除以下資料夾和檔案。
 
 在執行下列步驟之前，請將`Adobe Experience Manager Desktop`應用程式從macOS Applications檔案夾拖曳至「垃圾筒」。 然後開啟終端機，執行下列命令，並在出現提示時提供您的密碼。
 
@@ -188,7 +181,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ### 無法上傳檔案{#upload-fails}
 
-如果您正在搭配Experience Manager 6.5.1或更新版本使用案頭應用程式，請將S3或Azure連接器升級至1.10.4或更新版本。 它可解決與[OAK-8599](https://issues.apache.org/jira/browse/OAK-8599)相關的檔案上傳失敗問題。 請參閱[安裝說明](install-upgrade.md#install-v2)。
+如果您使用的案頭應用程式與[!DNL Experience Manager] 6.5.1或更新版本相同，請將S3或Azure連接器升級至1.10.4或更新版本。 它可解決與[OAK-8599](https://issues.apache.org/jira/browse/OAK-8599)相關的檔案上傳失敗問題。 請參閱[安裝說明](install-upgrade.md#install-v2)。
 
 ### [!DNL Experience Manager] 案頭應用程式連線問題  {#connection-issues}
 
@@ -256,9 +249,9 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 #### SSL配置問題{#ssl-config-v2}
 
-Experience Manager案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有時，連線可能會使用瀏覽器成功，但使用Experience Manager案頭應用程式失敗。 若要正確設定SSL，請在Apache中安裝遺失的中間憑證。 請參閱[如何在Apache](https://access.redhat.com/solutions/43575)中安裝Intemider CA憑證。
+[!DNL Experience Manager]案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有時，連線可能會使用瀏覽器成功，但使用[!DNL Experience Manager]案頭應用程式失敗。 若要正確設定SSL，請在Apache中安裝遺失的中間憑證。 請參閱[如何在Apache](https://access.redhat.com/solutions/43575)中安裝Intemider CA憑證。
 
-Experience Manager Desktop用於HTTP通訊的程式庫採用嚴格的SSL強制。 因此，在[!DNL Adobe Experience Manager]案頭應用程式中，有些例項會讓透過瀏覽器成功的SSL連線失敗。 這很好，因為它可促進正確配置SSL並提高安全性，但當應用程式無法連線時，可能會令人沮喪。
+[!DNL Experience Manager]案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 因此，在[!DNL Adobe Experience Manager]案頭應用程式中，有些例項會讓透過瀏覽器成功的SSL連線失敗。 這很好，因為它可促進正確配置SSL並提高安全性，但當應用程式無法連線時，可能會令人沮喪。
 
 在這種情況下，建議的方法是使用工具來分析伺服器的SSL憑證並識別問題，以便加以修正。 有些網站會在提供伺服器URL時檢查伺服器的憑證。
 
