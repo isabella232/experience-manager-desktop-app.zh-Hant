@@ -1,9 +1,8 @@
 ---
 title: 使用 [!DNL Experience Manager] 案頭應用程式1.x版。
 description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.x版，並最佳化您在案頭上使用資產的工作。
-contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
 source-wordcount: '2379'
 ht-degree: 0%
