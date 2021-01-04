@@ -1,10 +1,10 @@
 ---
-title: AEM案頭應用程式1.x版最佳實務
-description: Adobe Experience Manager案頭應用程式1.x版的主要功能和建議使用。
+title: '[!DNL Adobe Experience Manager] 案頭應用程式1.x版最佳實務'
+description: 主要功能和建議使用 [!DNL Adobe Experience Manager] 案頭應用程式1.x版。
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## 概覽 {#overview}
 
-Adobe Experience Manager(AEM)案頭應用程式會將您的數位資產管理(DAM)解決方案連結至您的案頭，讓您可以直接在案頭上開啟AEM網頁UI中可用的檔案。 如果您從案頭儲存資產，資產會上傳至AEM的適當位置。
+[!DNL Adobe Experience Manager] 案頭應用程式會將您的數位資產管理(DAM)解決方案與您的案頭連結，讓您可以直接在案頭上開啟AEM網頁UI中的檔案。如果您從案頭儲存資產，資產會上傳至AEM的適當位置。
 
 AEM案頭應用程式讓您不必在AEM中更新不正確的本機副本或更新錯誤資產。 案頭應用程式的簡單好用工作流程，是使用案頭作業系統提供的網路共用技術來啟用的。
 
