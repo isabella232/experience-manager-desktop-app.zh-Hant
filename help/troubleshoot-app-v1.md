@@ -1,27 +1,20 @@
 ---
-title: 疑難排解AEM案頭應用程式1.x版
-description: 疑難排解AEM案頭應用程式1.x版，以解決與安裝、升級、設定等相關的偶發性問題。
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
+title: 疑難排解 [!DNL Adobe Experience Manager] 案頭應用程式1.x版
+description: 疑難排解 [!DNL Adobe Experience Manager] 案頭應用程式1.x版，以解決與安裝、升級和設定相關的偶發性問題。
 translation-type: tm+mt
-source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '3379'
+source-wordcount: '3366'
 ht-degree: 1%
 
 ---
 
 
-# 疑難排解AEM案頭應用程式v1.x {#troubleshoot-aem-desktop-app}
+# 疑難排解[!DNL Adobe Experience Manager]案頭應用程式v1.x {#troubleshoot-aem-desktop-app}
 
 疑難排解AEM案頭應用程式，以解決與安裝、升級、設定等相關的偶發性問題。
 
-Adobe Experience Manager(AEM)案頭應用程式包含公用程式，可協助您將AEM Assets存放庫對應為案頭上的網路共用（Mac OS上的SMB共用）。 網路共用是一種作業系統技術，它使遠程源被視為電腦本地檔案系統的一部分。 在案頭應用程式中，遠端AEM例項的數位資產管理(DAM)儲存庫結構會定位為遠端檔案來源。 下圖說明案頭應用程式拓撲：
+[!DNL Adobe Experience Manager] 案頭應用程式包含可協助您將AEM Assets存放庫對應為案頭上網路共用的公用程式（Mac OS上的SMB共用）。網路共用是一種作業系統技術，它使遠程源被視為電腦本地檔案系統的一部分。 在案頭應用程式中，遠端AEM例項的數位資產管理(DAM)儲存庫結構會定位為遠端檔案來源。 下圖說明案頭應用程式拓撲：
 
 ![案頭應用程式圖示](assets/aem-desktopapp-architecture.png)
 
@@ -70,7 +63,7 @@ AEM Desktop不適合執行密集的檔案系統控制，包括但不限於：
 
 由於作業系統的限制，Windows的檔案大小限制為4,294,967,295位元組（約4.29 GB）。 這是由於註冊表設定，它定義了網路共用上的檔案的大小。 註冊表設定的值是DWORD，其最大大小等於引用的數字。
 
-Experience Manager案頭應用程式沒有可設定的逾時值，此值會在固定時間間隔後中斷Experience Manager伺服器與案頭應用程式之間的連線。 上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，重新嘗試上傳資產幾次。 不建議使用任何方法來變更預設逾時設定。
+[!DNL Experience Manager] 案頭應用程式沒有可設定的逾時值，此值會在固定時間間隔後 [!DNL Experience Manager] 中斷伺服器與案頭應用程式之間的連線。上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，重新嘗試上傳資產幾次。 不建議使用任何方法來變更預設逾時設定。
 
 ## 快取與AEM {#caching-and-communication-with-aem}通訊
 
