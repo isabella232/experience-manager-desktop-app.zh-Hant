@@ -1,8 +1,8 @@
 ---
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18cebce065f9b55259bf96d14cb50cf5bc6c8ec6
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 2%
 
 ### Adobe員工的貢獻
 
-如果您是Adobe員工並有貢獻，我們要求您在公司Git中使用`AdobeDocs`組織。 您可以在GitHub.com上提供此公共儲存庫，但在公司回購協定上可以更輕鬆地處理這些貢獻。 請確定任何專有或未發佈的資訊只會在公司回購協定中討論。
+如果您是Adobe員工並有貢獻，我們要求您在公司Git中使用`AdobeDocs`組織。 您可以在GitHub.com上提供此公共儲存庫，但在公司回購協定上可以更輕鬆地處理這些貢獻。 請確定任何專有或未發佈的資訊只會在公司回購協定中討論。 Adobe員工不需簽署CLA。
 
 ## 關於Adobe的GitHub製作平台和Markdown
 
