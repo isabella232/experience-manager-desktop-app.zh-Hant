@@ -2,9 +2,9 @@
 title: '[!DNL Adobe Experience Manager] 案頭應用程式1.x版最佳實務'
 description: 主要功能和建議使用 [!DNL Adobe Experience Manager] 案頭應用程式1.x版。
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ AEM案頭應用程式提供對整個DAM存放庫的虛擬存取權——而且�
 
 >[!NOTE]
 >
->若要關閉圖示預覽，請在Finder中移至「檢視」，選取「檢視選項」，然後取消勾選「顯示圖示預覽」選項。 這隻適用於目前的資料夾——若要將它設為預設值，請按一下同一視窗中的「使用為預設值」按鈕。
+>若要關閉圖示預覽，請在Finder中移至[!UICONTROL View]，選取[!UICONTROL View Options]，然後取消勾選[!UICONTROL Show icon preview]選項。 這僅適用於當前資料夾——要使其成為預設資料夾，請按一下同一對話框中的[!UICONTROL Use as default]選項。
 
 ### 優化伺服器效能{#optimizing-server-performance}
 
