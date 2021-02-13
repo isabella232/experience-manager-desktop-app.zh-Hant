@@ -1,16 +1,16 @@
 ---
-title: 安裝並設定 [!DNL Experience Manager] 案頭應用程式1.x版
-description: 安裝並配置 [!DNL Experience Manager] desktop app version 1.x to work with [!DNL Assets] 伺服器，並將資產映射為在案頭上作為驅動器裝載。
+title: 安裝和設定案頭應用程式v1.10
+description: 安裝並配置 [!DNL Experience Manager] desktop app version 1.10 to work with [!DNL Assets] 伺服器，並將資產映射為在案頭上作為驅動器裝載。
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
 
 
-# 安裝並配置[!DNL Experience Manager]案頭應用程式v1.x {#install-and-configure-aem-desktop-app}
+# 安裝並配置[!DNL Experience Manager]案頭應用程式v1.10 {#install-and-configure-aem-desktop-app}
 
 使用[!DNL Experience Manager]案頭應用程式，您就可輕鬆存取[!DNL Experience Manager]中的資產，並可用於任何案頭應用程式。 資產可在Mac Finder或Windows檔案總管中輕鬆顯示、在案頭應用程式中開啟，並在本機變更——當您上傳時，變更會儲存回[!DNL Experience Manager]，並在儲存庫中建立新版本。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 * X-深度
 * X覆寫
 
-[!DNL Experience Manager] 案頭會使 [!DNL Experience Manager] 用包含預設連接埠的URL連線至。因此，調度器配置中的`virtualhosts`設定應包含預設埠號。 有關`virtualhosts`配置的詳細資訊，請參見[ identify virtual hosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
+[!DNL Experience Manager] 案頭會使 [!DNL Experience Manager] 用包含預設連接埠的URL連線至。因此，調度器配置中的`virtualhosts`設定應包含預設埠號。 有關`virtualhosts`配置的詳細資訊，請參見[標識虛擬主機](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
 
 有關配置調度程式以通過這些附加標頭的其他資訊，請參見[指定HTTP標頭](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)。
 
