@@ -1,10 +1,10 @@
 ---
-title: 疑難排解 [!DNL Adobe Experience Manager] 案頭應用程式1.x版
-description: 疑難排解 [!DNL Adobe Experience Manager] 案頭應用程式1.x版，以解決與安裝、升級和設定相關的偶發性問題。
+title: 疑難排解案頭應用程式1.10版。
+description: 疑難排解 [!DNL Adobe Experience Manager] 案頭應用程式1.10版，以解決與安裝、升級和設定相關的偶發性問題。
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3364'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ![案頭應用程式圖示](assets/aem-desktopapp-architecture.png)
 
-使用此架構，案頭應用程式會截取檔案系統呼叫（開啟、關閉、讀取、寫入等）至已載入的網路共用，並將它們轉譯為AEM伺服器的原生AEM HTTP呼叫。 檔案會快取至本機。 如需詳細資訊，請參閱「使用AEM案頭應用程式v1.x[」。](use-app-v1.md)
+使用此架構，案頭應用程式會截取檔案系統呼叫（開啟、關閉、讀取、寫入等）至已載入的網路共用，並將它們轉譯為AEM伺服器的原生AEM HTTP呼叫。 檔案會快取至本機。 如需詳細資訊，請參閱「使用AEM案頭應用程式v1.x](use-app-v1.md)」。[
 
 ## AEM案頭應用程式元件概觀{#desktop-app-component-overview}
 
@@ -101,7 +101,7 @@ Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，�
 
 如果您在Windows上執行AEM，可以設定Windows以增強WebDAV用戶端的效能。 如需詳細資訊，請前往[https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570)。
 
-在Windows 7中，修改IE設定可改善WebDAV的效能。 如需詳細資訊，請參閱如何在Windows 7[中修正緩慢的WebDAV效能。](https://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/)
+在Windows 7中，修改IE設定可改善WebDAV的效能。 如需詳細資訊，請參閱如何在Windows 7](https://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/)中修正緩慢的WebDAV效能。[
 
 ## 併發操作{#concurrent-operations}
 
