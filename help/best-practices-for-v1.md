@@ -1,16 +1,16 @@
 ---
-title: '[!DNL Adobe Experience Manager] 案頭應用程式1.x版最佳實務'
-description: 主要功能和建議使用 [!DNL Adobe Experience Manager] 案頭應用程式1.x版。
+title: 案頭應用程式v1.10最佳實務
+description: 主要功能，並建議使用 [!DNL Adobe Experience Manager] 案頭應用程式1.10版。
 translation-type: tm+mt
-source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1674'
 ht-degree: 0%
 
 ---
 
 
-# AEM案頭應用程式v1.x最佳實務{#aem-desktop-app-best-practices}
+# AEM案頭應用程式v1.10最佳範例{#aem-desktop-app-best-practices}
 
 ## 概覽 {#overview}
 
