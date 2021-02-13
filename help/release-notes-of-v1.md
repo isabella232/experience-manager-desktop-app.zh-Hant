@@ -2,9 +2,9 @@
 title: AEM案頭應用程式1.x版發行說明
 description: AEM案頭應用程式1.x版的發行詳細資訊、增強功能、新功能、相容性和下載連結。
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3904'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 對於案頭應用程式v1.x版本，以下是下載連結和AEM相容性資訊。
 
-| 產品 | [!DNL Adobe Experience Manager] 案頭應用程式 |
+| 產品 | [!DNL Adobe Experience Manager] 桌面應用程式 |
 |--- |--- |
 | 版本 | 1.10（Mac為1.10.0.6,Windows為1.10.0.3） |
 | 類型 | 次要版本 |
@@ -60,11 +60,11 @@ AEM案頭應用程式1.10著重在改善大型上傳的使用者體驗、背景�
 
 **更新衝突通知**。當應用程式在嘗試更新資產時偵測到衝突時，會顯示通知，讓使用者不必監視狀態視窗即可檢視。 當應用程式啟動時，會檢查所有衝突，讓使用者可以解決這些衝突。
 
-**更好地處理連接損失**。如果連線中斷，則會暫停大量上傳，而使用者稍後將可繼續。 「重試」按鈕可用於重試個別檔案的上傳失敗。
+**更好地處理連接損失**。如果連線中斷，則會暫停大量上傳，而使用者稍後將可繼續。 [!UICONTROL Retry]選項可用於重試單個檔案的上載失敗。
 
 ## 安裝指示 {#installation-instructions}
 
-如需詳細指示，請參閱「安裝及設定AEM案頭應用程式[」。](install-configure-app-v1.md)
+如需詳細指示，請參閱「安裝及設定AEM案頭應用程式](install-configure-app-v1.md)」。[
 
 ## 舊版{#enhancements-in-the-previous-versions}的增強功能
 
@@ -399,7 +399,7 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
 * 一般:
    * 伺服器URL必須指向伺服器，而無路徑(例如`http://server`、`https://server`、`http://server:port`或`https://server:port`)。 不支援/content/dam以外的上下文路徑和子資料夾(CQ-89343、CQ-87272)
 * 檔案名稱／本地化：
-   * 未正確處理具有保留字元的檔案和資料夾名稱。 請確定使用符合AEM需求的檔案和檔案夾名稱(CQ-93361、CQ-93308、CQ-89276、CQ-4217183)
+   * 未正確處理具有保留字元的檔案和檔案夾名稱。 請確定使用符合AEM需求的檔案和檔案夾名稱(CQ-93361、CQ-93308、CQ-89276、CQ-4217183)
    * 有些應用程式（例如Adobe Illustrator）可能會建立名稱在AEM中不受支援的檔案。 例如，在轉換檔案後新增`Converted`，如此會停止上傳檔案(CQ-4216985)
    * 具有國際名稱的資產可能每隔幾秒鐘就會出現並消失
 * 登入和登出：
@@ -417,7 +417,7 @@ AEM案頭應用程式1.8.1快速追蹤版本新增了從AEM UI一次開啟多個
 * Windows:
    * 只有NTFS完全支援具有備用資料流(ADS)的檔案。 將這些檔案複製至案頭應用程式提供的WebDAV共用檔案時，會出現警告對話方塊，警告使用者檔案的屬性無法複製到新位置。 這通常不錯，因為屬性僅與使用者案頭上的特定應用程式相關，與實際檔案內容(CQ-103770)(Win)無關
    * Windows版案頭應用程式需要由使用者安裝(CQ-4216389)(win)
-   * 在中斷連線後，在某些情況下，當在失敗的上傳上按一下「重試」按鈕後，應用程式可能會當機(CQ-4251884)(Win)
+   * 在中斷連線後，在特定情況下選取失敗上傳的[!UICONTROL Retry]選項後，應用程式可能會當機(CQ-4251884)(Win)
 
 ## 實用資源 {#helpful-resources}
 
@@ -434,4 +434,4 @@ AEM案頭應用程式可搭配各種AEM版本運作。 請參閱支援版本的�
 | 1.10 | 1.10.0.3（Mac和Win） | 2018年8月31日 | AEM 6.5;AEM 6.4 SP1;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 | 1.9 | 1.9.1.1（Mac和Win） | 2018年6月21日 | AEM 6.4;AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 | 1.8 | 1.8.1.0（Mac和Win） | 2018年3月28日 | AEM 6.4;AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
-| 1.7 | 1.7.0.3（Mac和Win） | 2018年1月10日 | AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
+| 1.7 | 1.7.0.3（Mac和Win） | 2018 年 1 月 10 日 | AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
