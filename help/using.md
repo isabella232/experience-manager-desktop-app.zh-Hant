@@ -1,9 +1,9 @@
 ---
-title: 使用 [!DNL Adobe Experience Manager] 案頭應用程式
+title: 使用 [!DNL Experience Manager] 案頭應用程式
 description: 直接從Win或Mac案頭使用 [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM資產，並用於其他應用程式。
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 0%
@@ -132,7 +132,7 @@ ht-degree: 0%
 
 ![資產的「顯現檔案」動](assets/revealfile_action_da2.png "作資產的「顯現檔案」動作")
 
-按一下資料夾上的&#x200B;**[!UICONTROL Reveal File]**&#x200B;或&#x200B;**[!UICONTROL Reveal Folder]** ，開啟Windows資源管理器或Mac Finder，並在本地電腦上預選檔案或資料夾。 此選項對於將[!DNL Experience Manager]檔案放置在支援放置或連結本機檔案的原生應用程式中非常有用。 若要瞭解如何在Adobe InDesign中置入檔案，請參閱[置入圖形](https://helpx.adobe.com/indesign/using/placing-graphics.html)。
+按一下資料夾上的&#x200B;**[!UICONTROL Reveal File]**&#x200B;或&#x200B;**[!UICONTROL Reveal Folder]**，開啟Windows資源管理器或Mac Finder，並在本地電腦上預選檔案或資料夾。 此選項對於將[!DNL Experience Manager]檔案放置在支援放置或連結本機檔案的原生應用程式中非常有用。 若要瞭解如何在Adobe InDesign中置入檔案，請參閱[置入圖形](https://helpx.adobe.com/indesign/using/placing-graphics.html)。
 
 **[!UICONTROL Reveal File]**&#x200B;動作會開啟本機網路共用，僅顯示本機可用的資產，亦即顯示使用應用程式揭露、下載或開啟／編輯的資產。 本地網路共用不會將任何更改上載到[!DNL Experience Manager]。 若要上傳變更，請在應用程式中明確使用&#x200B;**[!UICONTROL Upload Changes]**&#x200B;或&#x200B;**[!UICONTROL Upload]**&#x200B;動作。
 
@@ -220,7 +220,7 @@ ht-degree: 0%
 
 ### 大量上傳資產{#bulk-upload-assets}
 
-使用者或組織（例如攝影師或創意廣告公司）可在場景中建立許多本機資產，例如像片拍攝、潤飾或從[!DNL Experience Manager]以外的較大集合中選取。 他們可以直接從案頭應用程式將這些大型的本機資料夾上傳至[!DNL Assets]。 資料夾階層會保留，並上傳所有巢狀子資料夾和包含的資產。 上傳的資產也可立即供相同伺服器的其他使用者使用。 資產會在背景上傳，因此作業不會系結至網頁瀏覽器作業。
+使用者或組織（例如攝影師或創意廣告公司）可在場景中建立許多本機資產，例如像片拍攝、潤飾或從[!DNL Experience Manager]以外的較大集合中選取。 他們可以直接從案頭應用程式將這些大型的本機資料夾上傳至[!DNL Assets]。 資料夾階層會保留，而且會上傳所有巢狀子資料夾和包含的資產。 上傳的資產也可立即供相同伺服器的其他使用者使用。 資產會在背景上傳，因此作業不會系結至網頁瀏覽器作業。
 
 ![從案頭大量上傳多個本機資料夾至 [!DNL Experience Manager]](assets/upload_local_folders_da2.png "從案頭大量上傳多個本機資料夾至Experience Manager")
 
