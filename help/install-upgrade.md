@@ -1,8 +1,8 @@
 ---
-title: 安裝和配置 [!DNL Adobe Experience Manager] 案頭應用程式
+title: 安裝和設定案頭應用程式
 description: 安裝並設定 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 伺服器，並下載您本機檔案系統上的資產。
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 1%
@@ -110,7 +110,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Maximum number of downloads]**:首次下載資產時（透過「顯現」、「開啟」、「編輯」、「下載」或類似選項），只有在批次包含的資產少於此數目時，才會下載資產。預設值為 50。如果您不確定，請勿變更。 增加值可能會延長等候時間，而降低值可能不允許您一次下載必要的資產或檔案夾。
 
-* **[!UICONTROL Upload Acceleration]**:上傳資產時，應用程式可使用並行上傳來改善上傳速度。您可以將滑桿向右移動，以增加上傳的並行性。 遠端左側的滑桿表示沒有並行（單執行緒上傳），中間位置對應10個並行執行緒，遠端右側的上限則對應20個並行執行緒。 較高的併發限制要求本機處理器的資源消耗更多。
+* **[!UICONTROL Upload Acceleration]**:上傳資產時，應用程式可使用並行上傳來改善上傳速度。您可以將滑桿向右移動，以增加上傳的並行性。 遠端左側的滑桿表示沒有並行（單執行緒上傳），中間位置對應10個並行執行緒，而遠端右側的上限則對應20個並行執行緒。 較高的併發限制要求本機處理器的資源消耗更多。
 
 要更新不可用的首選項，請註銷[!DNL Experience Manager]伺服器。 更新首選項後，按一下「保存首選項」![保存更改。](assets/do-not-localize/save_preferences_da2.png)
 
