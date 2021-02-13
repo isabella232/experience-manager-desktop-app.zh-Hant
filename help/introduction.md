@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager] 案頭應用程式簡介'
+title: ' [!DNL Experience Manager] 案頭應用程式簡介'
 description: 瞭解如何直接從案頭使用 [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] 。
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 67%
+source-wordcount: '619'
+ht-degree: 63%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe 在解決方案中提供緊密相連的工作流程，讓您的業務線�
 
 >[!NOTE]
 >
->[!DNL Adobe Experience Manager] 案頭應用程式是在 [!DNL Adobe Experience Manager] 6.1版中推出的，先前稱為「配 [!DNL Adobe Experience Manager Assets] 套應用程式」。如需應用程式 1.x 版的說明，請參閱左側邊欄中的 TOC。Adobe 建議您升級至最新版本 2。
+>此應用程式已在[!DNL Adobe Experience Manager] 6.1版本中推出，先前稱為[!DNL Adobe Experience Manager Assets]配套應用程式。 如需應用程式1.x版的說明，請參閱左側資訊板中的目錄。 Adobe 建議您升級至最新版本.
 
 桌面應用程式的檔案包括下列使用者角色和使用案例的資訊。
 
@@ -33,7 +33,7 @@ Adobe 在解決方案中提供緊密相連的工作流程，讓您的業務線�
 | 瞭解如何瀏覽、探索、編輯、上傳、解決衝突、執行大量作業等。 | [使用桌 [!DNL Experience Manager] 面應用程式](using.md) |
 | 遇到問題了嗎？需要協助進行疑難排解嗎？ | [ [!DNL Experience Manager]  桌面應用程式疑難排解](troubleshoot.md) |
 
-## 應用程式的新增功能 {#whats-new-v2}
+## 應用程式{#whats-new-v2}的新增功能
 
 應用程式 2.0 版從原點出發，提供比舊版更多改良功能。新版應用程式更容易上手，並提供專屬的桌面使用體驗，以及全新的應用程式使用者介面。使用者可以透過搜尋或瀏覽、開啟、編輯和上傳變更，以及上傳新資產來發現資產——而不需要使用者使用[!DNL Experience Manager]介面。 此版本還支援從[!DNL Experience Manager]介面開啟檔案。
 
