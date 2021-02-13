@@ -1,16 +1,16 @@
 ---
-title: AEM案頭應用程式1.x版發行說明
-description: AEM案頭應用程式1.x版的發行詳細資訊、增強功能、新功能、相容性和下載連結。
+title: 案頭應用程式v1.10的發行說明
+description: AEM案頭應用程式1.10版的發行詳細資訊、增強功能、新功能、相容性和下載連結。
 translation-type: tm+mt
-source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '3904'
+source-wordcount: '3901'
 ht-degree: 1%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] 案頭應用程式v1.x版本注意事項  {#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] 案頭應用程式v1.10版本注意事項  {#aem-desktop-app-release-notes}
 
 對於案頭應用程式v1.x版本，以下是下載連結和AEM相容性資訊。
 
@@ -44,7 +44,7 @@ Adobe強烈建議使用最新版AEM案頭應用程式，以取得最新功能、
 
 請參閱本文檔末尾的[詳細相容性矩陣](#compatibilitymatrix)，以評估您設定的先決條件。
 
-## AEM案頭應用程式1.10的新增功能{#what-s-new-in-aem-desktop-app}
+## 案頭應用程式v1.10的新增功能{#what-s-new-in-aem-desktop-app}
 
 AEM案頭應用程式1.10著重在改善大型上傳的使用者體驗、背景作業的相關資訊，以及在使用連結檔案（例如InDesign）開啟資產時的最佳化體驗。
 
