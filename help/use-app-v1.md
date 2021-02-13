@@ -1,16 +1,16 @@
 ---
-title: 使用 [!DNL Experience Manager] 案頭應用程式1.x版。
-description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.x版，並最佳化您在案頭上使用資產的工作。
+title: 使用 [!DNL Experience Manager] 案頭應用程式1.10版。
+description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.10版，並最佳化您在案頭上使用資產的作品。
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2377'
 ht-degree: 0%
 
 ---
 
 
-# 使用[!DNL Experience Manager]案頭應用程式v1.x {#use-aem-desktop-app-v1x}
+# 使用[!DNL Experience Manager]案頭應用程式v1.10 {#use-aem-desktop-app-v1x}
 
 使用應用程式，您可輕鬆在本機案頭上存取[!DNL Experience Manager]中的資產，並可用於任何案頭應用程式。 資產可在Mac Finder或Windows檔案總管中輕鬆顯示、在案頭應用程式中開啟並在本機變更——這些變更會儲存回[!DNL Experience Manager]，並在儲存庫中建立新版本。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Experience Manager] 案頭應用程式已在 [!DNL Experience Manager] 6.1版本中推出，稱為 [!DNL Experience Manager Assets Companion App]。
+>案頭應用程式已在[!DNL Experience Manager] 6.1版本中推出，稱為[!DNL Experience Manager Assets Companion App]。
 
 ## [!DNL Experience Manager] 創意工作流程中的案頭應用程式觸點  {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 當您按一下「**開啟**」以在本機電腦上開啟資產時，應用程式會將資產下載至其內部快取。 應用程式會啟動與已下載資產的檔案類型相關聯的原生案頭應用程式。
 
-在Mac上，從內容選單選擇「**開啟**」，以透過[!DNL Experience Manager]案頭應用程式開啟資產。 在Windows上，從上下文選單選擇「在Web上開啟」以開啟資產。 在「資產狀態」視窗中，按一下／點選「在案頭上開啟」圖示![以開啟資產。](assets/do-not-localize/aemassets_icon_openondesktop.png)
+在Mac上，從內容選單選擇「**開啟**」，以透過[!DNL Experience Manager]案頭應用程式開啟資產。 在Windows上，從上下文選單選擇「在Web上開啟」以開啟資產。 在「資產狀態」視窗中，按一下／點選「在案頭上開啟」圖示](assets/do-not-localize/aemassets_icon_openondesktop.png)以開啟資產。![
 
 對於Adobe InDesign(INDD)檔案，請從內容選單中選取&#x200B;**[!UICONTROL Open]**。 當您按一下此選項時，應用程式會將連結的資產下載到您的本機檔案系統，然後在Adobe InDesign中開啟INDD檔案。 此方法可確保在編輯INDD檔案時，必要的資產可在本機使用。
 
@@ -140,7 +140,7 @@ ht-degree: 0%
 
    當您在選取資產後，或從資產頁面的工具列按一下工具列中的&#x200B;**案頭動作**&#x200B;選項時，這些案頭動作也可供使用。
 
-1. 若要在案頭應用程式中開啟與特定副檔名相關聯的資產，請按一下「在案頭上開啟」快速動作「在案頭上開啟」圖示&#x200B;**。](assets/do-not-localize/aemassets_icon_openondesktop.png)**![
+1. 若要在案頭應用程式中開啟與特定副檔名相關聯的資產，請按一下「在案頭上開啟」快速動作「在案頭上開啟」圖示&#x200B;**。**![](assets/do-not-localize/aemassets_icon_openondesktop.png)
 
    或者，從工具欄的&#x200B;**案頭操作**&#x200B;菜單中選擇&#x200B;**開啟**。
 
