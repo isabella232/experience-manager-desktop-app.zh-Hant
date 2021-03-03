@@ -1,10 +1,10 @@
 ---
 title: 使用 [!DNL Experience Manager] 案頭應用程式1.10版。
-description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.10版，並最佳化您在案頭上使用資產的作品。
+description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.10版，並最佳化您在桌上型電腦上使用資產的作品。
 translation-type: tm+mt
-source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
+source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2373'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 使用應用程式，您可輕鬆在本機案頭上存取[!DNL Experience Manager]中的資產，並可用於任何案頭應用程式。 資產可在Mac Finder或Windows檔案總管中輕鬆顯示、在案頭應用程式中開啟並在本機變更——這些變更會儲存回[!DNL Experience Manager]，並在儲存庫中建立新版本。
 
-此類整合可讓組織中的不同角色集中管理資產，並在Creative Cloud和其他應用程式中存取資產，同時輕鬆符合包括品牌在內的各種標準。
+這種整合可讓組織中的不同角色集中管理資產，並在Creative Cloud和其他應用程式中存取資產，同時讓您輕鬆符合包括品牌在內的各種標準。
 
 您使用[!DNL Experience Manager]案頭應用程式v1執行的主要工作包括：
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 根據您的網路和系統首選項，可能需要進行詳細配置。 如需詳細資訊，請參閱[安裝及設定 [!DNL Experience Manager] 案頭應用程式](install-configure-app-v1.md)。
 
-1. 前往[[!DNL Experience Manager] 案頭應用程式下載頁面](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html)並下載適合您作業系統的二進位檔。
+1. 前往[[!DNL Experience Manager] 案頭應用程式v1.10下載頁面](/help/release-notes-of-v1.md)並下載適合您作業系統的二進位檔。
 1. 啟動下載的安裝檔案，並依照螢幕上的指示安裝應用程式。
 
    >[!NOTE]
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 在Mac上，從內容選單選擇「**開啟**」，以透過[!DNL Experience Manager]案頭應用程式開啟資產。 在Windows上，從上下文選單選擇「在Web上開啟」以開啟資產。 在「資產狀態」視窗中，按一下／點選「在案頭上開啟」圖示](assets/do-not-localize/aemassets_icon_openondesktop.png)以開啟資產。![
 
-對於Adobe InDesign(INDD)檔案，請從內容選單中選取&#x200B;**[!UICONTROL Open]**。 當您按一下此選項時，應用程式會將連結的資產下載到您的本機檔案系統，然後在Adobe InDesign中開啟INDD檔案。 此方法可確保在編輯INDD檔案時，必要的資產可在本機使用。
+對於Adobe InDesign(INDD)檔案，從上下文菜單中選擇&#x200B;**[!UICONTROL Open]**。 當您按一下此選項時，應用程式會將連結的資產下載至您的本機檔案系統，然後在Adobe InDesign開啟INDD檔案。 此方法可確保在編輯INDD檔案時，必要的資產可在本機使用。
 
 ![使用案頭應用程式存取和開啟資產的內容選 [!DNL Experience Manager] 單選項](assets/aem_desktopapp_mac_context_menu.png)
 
@@ -124,9 +124,12 @@ ht-degree: 0%
 >
 >在Windows上，[預設的Windows 7設定](https://support.microsoft.com/en-us/kb/2668751)會防止[!DNL Experience Manager]案頭應用程式處理大於50 MB的資產。
 
+<!-- TBD: The above note is for Windows 7 which is not supported by the app anymore. Remove it later.
+-->
+
 >[!NOTE]
 >
->Adobe建議您前往Mac上的Finder檢視選項，並停用已載入[!DNL Assets]資料夾的選項&#x200B;**「顯示項目資訊**」、「顯示項目預覽&#x200B;**」和「顯示預覽欄**」。 ****&#x200B;它改善了效能。
+>Adobe建議您前往Mac上的「Finder檢視選項」並停用已載入[!DNL Assets]檔案夾的「顯示項目資訊&#x200B;**」、「顯示項目預覽**」和「顯示預覽欄&#x200B;**」選項。******&#x200B;它改善了效能。
 
 ### [!DNL Experience Manager]介面{#additional-options-in-aem-assets}中的其他選項
 
@@ -176,7 +179,7 @@ ht-degree: 0%
    >
    >當您編輯剛開啟且未勾選的檔案時，其他使用者無法得知您正在更新資產。
 
-1. 若要在Adobe Creative Cloud應用程式中開啟資產以進行編輯，請按一下／點選「編輯案頭快速動作![編輯案頭」圖示](assets/do-not-localize/aemassets_icon_editdesktop.png)。 此外，也會檢查資產以進行編輯。 編輯完成後，請簽入資產以更新[!DNL Assets]中的更改。
+1. 若要在Adobe Creative Cloud應用程式中開啟資產以進行編輯，請按一下／點選「編輯案頭快速動作![編輯案頭圖示](assets/do-not-localize/aemassets_icon_editdesktop.png)」。 此外，也會檢查資產以進行編輯。 編輯完成後，請簽入資產以更新[!DNL Assets]中的更改。
 
    或者，從工具列的「案頭動作」選單中選擇「編輯」。
 
@@ -187,7 +190,7 @@ ht-degree: 0%
 
 應用程式可讓您取出資產檔案，以防止其他使用者修改您正在處理的檔案。
 
-1. 從Mac內容選單中，選取「開啟AEM資產檔案夾」選項以開啟Finder。
+1. 從Mac內容選單中，選取「開啟AEM Assets資料夾」選項以開啟Finder。
 
    ![使用案頭應用程式存取和開啟資產的內容選 [!DNL Experience Manager] 單選項](assets/aem_desktopapp_mac_context_menu.png)
 
@@ -246,7 +249,7 @@ ht-degree: 0%
 
 1. 上傳資料夾後，請關閉對話方塊並導覽至「資產」UI。 上傳的資料夾會顯示在網頁介面中。
 
-Adobe不建議從本機檔案系統複製貼上或將大量檔案或巢狀檔案夾拖曳至網路共用區。 由於技術限制，應用程式無法控制上傳程式，而且效能不佳。
+Adobe不建議從本地檔案系統複製貼上或將大量檔案或嵌套資料夾拖到網路共用區。 由於技術限制，應用程式無法控制上傳程式，而且效能不佳。
 
 或者，在Finder或檔案總管中選取您要上傳至[!DNL Experience Manager]的檔案／檔案夾、將檔案複製至系統剪貼簿、導覽至網路共用區中的目標檔案夾，並從[!DNL Experience Manager]案頭應用程式內容選單中選取「貼上資產」**。**&#x200B;這樣，[!DNL Experience Manager]案頭應用程式就會開始上傳貼上的資產，類似[!DNL Experience Manager]網頁介面中的「上傳資料夾」選項。****
 
