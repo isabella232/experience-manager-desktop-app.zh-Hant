@@ -2,9 +2,9 @@
 title: 安裝和設定案頭應用程式
 description: 安裝並設定 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 伺服器，並下載您本機檔案系統上的資產。
 translation-type: tm+mt
-source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
+source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1300'
 ht-degree: 1%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 1%
 
 * 在[!DNL Experience Manager Assets]集中管理資產。
 
-* 在任何原生案頭應用程式（包括協力廠商應用程式）和Adobe Creative Cloud中存取資產。 同時，使用者可輕鬆符合各種標準，包括品牌。
+* 在任何原生案頭應用程式中存取資產，包括協力廠商應用程式和Adobe Creative Cloud。 同時，使用者可輕鬆符合各種標準，包括品牌。
 
 若要使用[!DNL Experience Manager]案頭應用程式，
 
-* 請確定您的[!DNL Experience Manager]版本受[!DNL Experience Manager]案頭應用程式支援。 請參閱下面的[系統要求](release-notes.md#system-requirements-and-prerequisites-v2)。
+* 請確定您的[!DNL Experience Manager]版本受[!DNL Experience Manager]案頭應用程式支援。 請參閱[系統需求](release-notes.md)。
 
 * 下載並安裝應用程式。 請參閱下面的[安裝案頭應用程式](#install-v2)。
 
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 ## 安裝 {#install-v2}
 
-若要安裝案頭應用程式，請依照下列步驟進行。 在安裝最新應用程式之前，請先解除安裝任何現有的Adobe [!DNL Experience Manager]案頭應用程式v1.x。 如需詳細資訊，請參閱上文。
+若要安裝案頭應用程式，請依照下列步驟進行。 在安裝最新應用程式之前，請先解除安裝任何現有的Adobe[!DNL Experience Manager]案頭應用程式v1.x。 如需詳細資訊，請參閱上文。
 
 1. 從[版本注意事項](release-notes.md)頁面下載最新的安裝程式。
 
@@ -108,11 +108,15 @@ ht-degree: 1%
 
 * **[!UICONTROL Automatically download linked assets]**:如果您下載原始檔案，則會自動擷取置於支援原生Creative Cloud應用程式中的資產。
 
-* **[!UICONTROL Maximum number of downloads]**:首次下載資產時（透過「顯現」、「開啟」、「編輯」、「下載」或類似選項），只有在批次包含的資產少於此數目時，才會下載資產。預設值為 50。如果您不確定，請勿變更。 增加值可能會延長等候時間，而降低值可能不允許您一次下載必要的資產或檔案夾。
+* **[!UICONTROL Maximum number of downloads]**: ![警告](assets/do-not-localize/caution-icon.png) 圖示請謹慎變更。首次下載資產時（透過「顯現」、「開啟」、「編輯」、「下載」或類似選項），只有在批次包含的資產少於此數目時，才會下載資產。 預設值為 50。如果您不確定，請勿變更。 增加值可能會延長等候時間，而降低值可能不允許您一次下載必要的資產或檔案夾。
 
-* **[!UICONTROL Upload Acceleration]**:上傳資產時，應用程式可使用並行上傳來改善上傳速度。您可以將滑桿向右移動，以增加上傳的並行性。 遠端左側的滑桿表示沒有並行（單執行緒上傳），中間位置對應10個並行執行緒，而遠端右側的上限則對應20個並行執行緒。 較高的併發限制要求本機處理器的資源消耗更多。
+* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**: ![警告](assets/do-not-localize/caution-icon.png) 圖示請謹慎變更。此設定可讓應用程式在上傳檔案夾時模擬v1.10應用程式行為。 在v1.10中，在儲存庫中建立的節點名稱會使用用戶提供的資料夾名稱的空格和外框。 不過，在應用程式的v2.1中，檔案夾名稱中的額外空格會轉換為破折號。 例如，如果未選擇該選項並保留了v2.1中的預設行為，則上載`New Folder`或`new   folder`將在儲存庫中建立相同的節點。 如果選取此選項，則會在儲存庫中為上述兩個檔案夾建立不同的節點，並符合v1.10應用程式的行為。
 
-要更新不可用的首選項，請註銷[!DNL Experience Manager]伺服器。 更新首選項後，按一下「保存首選項」![保存更改。](assets/do-not-localize/save_preferences_da2.png)
+   v2.1的預設行為仍然保持不變，即，將資料夾名稱中的多個空格替換為儲存庫節點名稱中的破折號，並轉換為小寫節點名稱。
+
+* **[!UICONTROL Upload Acceleration]**: ![警告](assets/do-not-localize/caution-icon.png) 圖示請謹慎變更。上傳資產時，應用程式可使用並行上傳來改善上傳速度。 您可以將滑桿向右移動，以增加上傳的並行性。 遠端左側的滑桿表示沒有並行（單執行緒上傳），中間位置對應10個並行執行緒，而遠端右側的上限則對應20個並行執行緒。 更高的併發限制會佔用更多資源。
+
+若要更新不可用的偏好設定，請登出[!DNL Experience Manager]伺服器，然後進行更新。 更新首選項後，按一下「保存首選項」![](assets/do-not-localize/save_preferences_da2.png)。
 
 ![案頭應用程式偏好設定和設定](assets/preferences_da2.png)
 
