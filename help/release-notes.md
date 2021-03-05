@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 案頭應用程式版本注意事項'
 description: ' [!DNL Adobe Experience Manager] 案頭應用程式的發行詳細資訊、增強功能、新功能、相容性和下載連結。'
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4288c77036ba992c37ceafc158e0503244a1e600
+source-git-commit: 784ffb2468d856589fbf29b10b965b3c3d919a2f
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 28%
@@ -12,8 +12,6 @@ ht-degree: 28%
 
 
 # [!DNL Adobe Experience Manager] 案頭應用程式版本注意事項  {#release-notes-v2}
-
-<!-- TBD: Update 6 links and 1 date below. -->
 
 最新案頭應用程式2.1版(2.1.1.0)的發行資訊如下。 發行日期為2021年3月5日。 它是具有增強功能的次要版本。
 
