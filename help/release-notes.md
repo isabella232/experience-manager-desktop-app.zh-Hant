@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 案頭應用程式版本注意事項'
 description: ' [!DNL Adobe Experience Manager] 案頭應用程式的發行詳細資訊、增強功能、新功能、相容性和下載連結。'
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 784ffb2468d856589fbf29b10b965b3c3d919a2f
+source-git-commit: 06ce2dc1c47bc1ba71b4fd1d053131d9dbdb08ba
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 28%
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 最新案頭應用程式2.1版(2.1.1.0)的發行資訊如下。 發行日期為2021年3月5日。 它是具有增強功能的次要版本。
 
-支援的[!DNL Experience Manager]版本包括：
+**支援的[!DNL Experience Manager]版本**&#x200B;為：
 
 * [!DNL Experience Manager] as a [!DNL Cloud Service]. 請參閱[發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
 * [!DNL Experience Manager] 6.5.0或更新版本，位於Adobe Managed Services(AMS)或內部部署。請參閱[Service Pack發行說明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)。
@@ -24,12 +24,12 @@ ht-degree: 28%
 * [!DNL Experience Manager] 6.3（含相容套件）
 * [!DNL Experience Manager] 6.3.3.1或更新版本，並安裝相容 [性套](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 件。[!DNL Experience Manager] 6.3.3.0或舊版不支援案頭應用程式。
 
-[!DNL Adobe Experience Manager] 案頭應用程式適用於下列作業系統：
+[!DNL Adobe Experience Manager] 案頭應用程式適用於下列 **作業系統**:
 
 * macOS X 10.14或更新版本，以及最新的錯誤修正。
 * Windows 10含有最新的Service Pack和錯誤修正。
 
-支援作業系統的下載URL包括：
+支援作業系統的&#x200B;**下載URL**&#x200B;包括：
 
 | 作業系統 | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
