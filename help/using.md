@@ -3,7 +3,7 @@ title: 使用 [!DNL Experience Manager] 案頭應用程式
 description: 直接從Win或Mac案頭使用 [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM資產，並用於其他應用程式。
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
+source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 0%
@@ -50,11 +50,11 @@ ht-degree: 0%
 
 * **[!UICONTROL Download]** 動作：將資產下載至您的本機電腦。您現在可以下載資產，稍後再進行編輯；離線工作，稍後再上傳變更。 資產會下載在檔案系統的快取資料夾中。
 
-* **[!UICONTROL Reveal File]** 或動 **[!UICONTROL Reveal Folder]** 作：當資產下載至本機快取檔案夾時，應用程式會模擬本機網路磁碟機，並為每個資產提供本機路徑。若要瞭解此路徑，請在應用程式中使用適當的顯現選項。 在Creative Cloud應用程式中放置資產時，需要顯示動作。 請參閱[置入資產](using.md#place-assets-in-native-documents)。
+* **[!UICONTROL Reveal File]** 或動 **[!UICONTROL Reveal Folder]** 作：當資產下載至本機快取檔案夾時，應用程式會模擬本機網路磁碟機，並為每個資產提供本機路徑。若要瞭解此路徑，請在應用程式中使用適當的顯現選項。 在Creative Cloud應用程式中放置資產時，必須顯示動作。 請參閱[置入資產](using.md#place-assets-in-native-documents)。
 
 * **[!UICONTROL Open In Web]** 動作：若要在Web介面中檢 [!DNL Experience Manager] 視資產，請在Web中開啟它。您可以從[!DNL Experience Manager]介面啟動更多工作流程，例如更新中繼資料或資產搜尋。
 
-* **[!UICONTROL Delete]** 動作：從 [!DNL Experience Manager] DAM儲存庫刪除資產。此動作會刪除Experience Manager伺服器上資產的原始副本。 如果只想放棄對本地資產的修改，請參閱[放棄更改](using.md#edit-assets-upload-updated-assets)。
+* **[!UICONTROL Delete]** 動作：從 [!DNL Experience Manager] DAM儲存庫刪除資產。動作會刪除Experience Manager伺服器上資產的原始副本。 如果只想放棄對本地資產的修改，請參閱[放棄更改](using.md#edit-assets-upload-updated-assets)。
 
 * **[!UICONTROL Upload Changes]**:案頭應用程式只會在您明確上傳至伺服器時，才會上傳更新 [!DNL Experience Manager] 的資產。當您儲存編輯時，變更只會儲存在本機電腦上。 上傳時，資產會自動登入，並移除鎖定圖示。 請參閱[編輯資產](using.md#edit-assets-upload-updated-assets)。
 
@@ -132,7 +132,7 @@ ht-degree: 0%
 
 ![資產的「顯現檔案」動](assets/revealfile_action_da2.png "作資產的「顯現檔案」動作")
 
-按一下資料夾上的&#x200B;**[!UICONTROL Reveal File]**&#x200B;或&#x200B;**[!UICONTROL Reveal Folder]**，開啟Windows資源管理器或Mac Finder，並在本地電腦上預選檔案或資料夾。 此選項對於將[!DNL Experience Manager]檔案放置在支援放置或連結本機檔案的原生應用程式中非常有用。 若要瞭解如何在Adobe InDesign中置入檔案，請參閱[置入圖形](https://helpx.adobe.com/indesign/using/placing-graphics.html)。
+按一下資料夾上的&#x200B;**[!UICONTROL Reveal File]**&#x200B;或&#x200B;**[!UICONTROL Reveal Folder]**，開啟Windows資源管理器或Mac Finder，並在本地電腦上預選檔案或資料夾。 此選項對於將[!DNL Experience Manager]檔案放置在支援放置或連結本機檔案的原生應用程式中非常有用。 要瞭解如何在Adobe InDesign放置檔案，請參閱[放置圖形](https://helpx.adobe.com/indesign/using/placing-graphics.html)。
 
 **[!UICONTROL Reveal File]**&#x200B;動作會開啟本機網路共用，僅顯示本機可用的資產，亦即顯示使用應用程式揭露、下載或開啟／編輯的資產。 本地網路共用不會將任何更改上載到[!DNL Experience Manager]。 若要上傳變更，請在應用程式中明確使用&#x200B;**[!UICONTROL Upload Changes]**&#x200B;或&#x200B;**[!UICONTROL Upload]**&#x200B;動作。
 
@@ -238,7 +238,7 @@ ht-degree: 0%
 
 如有必要，請從「資產」網頁介面啟動您的工作流程。 案頭應用程式已與[!DNL Experience Manager]整合，以在使用Desktop Actions提出要求時接管。
 
-從Web介面啟動工作流程的特殊案例是資產發現。 資產使用者介面中的Omnisearch列提供豐富而進階的搜尋體驗。 您可能想先在Web上找到所需的資產，然後使用[!UICONTROL Desktop Actions]啟動應用程式中的工作流程。 有些範例包括使用Facet篩選搜尋結果、尋找從Adobe Stock授權的特定資產，或由您的組織實作的自訂，讓您從網頁介面進行更好的探索。
+從Web介面啟動工作流程的特殊案例是資產發現。 資產使用者介面中的Omnisearch列提供豐富而進階的搜尋體驗。 您可能想先在Web上找到所需的資產，然後使用[!UICONTROL Desktop Actions]啟動應用程式中的工作流程。 有些範例包括使用Facet篩選搜尋結果、尋找從Adobe Stock取得授權的特定資產，或由您的組織實作的自訂，讓您從Web介面進行更好的搜尋。
 
 當您嘗試在「資產」網頁介面上執行下列動作時，會使用案頭應用程式功能：
 
@@ -283,26 +283,26 @@ ht-degree: 0%
 
 ![解決編輯衝突的選](assets/editing_conflict_dialog_da2.png "項解決編輯衝突的選項")
 
-## 進階工作流程：置入和連結資產至InDesign檔案{#adv-workflow-place-assets-indesign}
+## 進階工作流程：放置和連結資產至InDesign檔案{#adv-workflow-place-assets-indesign}
 
 當您使用[!DNL Experience Manager]案頭應用程式開啟包含連結資產的檔案時，資產會預先下載並顯示在原生應用程式中。 要使此工作流程正常運作，您的原生應用程式必須支援放置本機資產的連結，而[!DNL Experience Manager]必須支援將二進位檔案中的這些連結解析為伺服器端參照。
 
-[!DNL Experience Manager] 案頭應用程式支援此工作流程，只需使用幾種精選的Adobe Creative Cloud案頭應用程式和檔案格式- Adobe InDesign、Adobe Illustrator和Adobe Photoshop。此工作流程可讓您有效率地使用支援的Creative Cloud檔案。 因此，如果使用者A將一些資產放入InDesign檔案並將其簽入[!DNL Experience Manager]，使用者B會在InDesign檔案中看到資產，即使這些資產不在檔案中。 這些資產會在使用者B的機器上本機下載。
+[!DNL Experience Manager] 案頭應用程式支援此工作流程，其中包含幾種精選的Adobe Creative Cloud案頭應用程式和檔案格式-Adobe InDesign、Adobe Illustrator和Adobe Photoshop。工作流程可讓您有效率地處理支援的Creative Cloud檔案。 因此，如果使用者A將一些資產放入InDesign檔案並將其簽入[!DNL Experience Manager]，使用者B會在InDesign檔案中看到資產，即使這些資產不在檔案中。 這些資產會在使用者B的機器上本機下載。
 
 >[!NOTE]
 >
 >案頭應用程式可以對應至Windows上的任何磁碟機。 但是，對於平滑操作，請勿更改預設驅動器盤符。 如果同一組織的使用者使用不同的磁碟盤符，則無法看到其他人放置的資產。 路徑變更時，不會擷取置入的資產。 置入的資產會繼續置入二進位檔案（例如INDD）中，且不會移除。
 
-要瞭解此工作流程的限制，請參閱[系統需求和支援的版本](release-notes.md#system-requirements-and-prerequisites-v2)。
+要瞭解此工作流程的限制，請參閱[系統需求和支援的版本](release-notes.md)。
 
-若要使用此工作流程與影像資產和InDesign搭配使用，請依照下列步驟進行：
+若要使用此工作流程搭配影像資產和InDesign，請依照下列步驟進行：
 
 1. 使用[!DNL Experience Manager]中已置入資產的INDD檔案，讓您隨時都能使用。 要瞭解如何建立此類INDD檔案，請參閱[放置圖形](https://helpx.adobe.com/indesign/using/placing-graphics.html)。
 1. 在案頭應用程式中，**[!UICONTROL Edit]**&#x200B;包含已置入資產的INDD檔案位於[!DNL Experience Manager]。
-1. 應用程式會同時下載InDesign檔案和連結的資產。 當InDesign開啟檔案時，會解析連結、下載資產，並在InDesign檔案中顯示資產。
-1. 若要在InDesign檔案中置入新圖形，請對資產使用&#x200B;**[!UICONTROL Reveal File]**&#x200B;動作。 此動作會在本機下載資產，並在Windows檔案總管或Mac Finder中開啟本機網路共用位置。
-1. 將顯示的資產放入InDesign檔案中。 這會在文檔中建立連結。
-1. 在InDesign檔案中完成編輯後，請儲存並使用案頭應用程式將它上傳至[!DNL Experience Manager]。
+1. 應用程式會同時下載InDesign檔案和連結的資產。 InDesign開啟檔案時，會解析連結、下載資產，並在InDesign檔案中顯示資產。
+1. 要在InDesign檔案中放置新圖形，請對資產使用&#x200B;**[!UICONTROL Reveal File]**&#x200B;操作。 此動作會在本機下載資產，並在Windows檔案總管或Mac Finder中開啟本機網路共用位置。
+1. 將顯示的資產放入InDesign文檔中。 這會在文檔中建立連結。
+1. 在您完成InDesign檔案中的編輯後，請加以儲存，然後使用案頭應用程式將其上傳至[!DNL Experience Manager]。
 
 ## 進階工作流程：本機下載資產{#adv-workflow-download-assets-locally}
 
