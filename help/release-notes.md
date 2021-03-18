@@ -2,11 +2,12 @@
 title: '[!DNL Adobe Experience Manager] 案頭應用程式版本注意事項'
 description: ' [!DNL Adobe Experience Manager] 案頭應用程式的發行詳細資訊、增強功能、新功能、相容性和下載連結。'
 mini-toc-levels: 1
+feature: Experience Manager案頭應用程式，發行資訊
 translation-type: tm+mt
-source-git-commit: 06ce2dc1c47bc1ba71b4fd1d053131d9dbdb08ba
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 28%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
