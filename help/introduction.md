@@ -1,10 +1,11 @@
 ---
 title: ' [!DNL Experience Manager] 案頭應用程式簡介'
 description: 瞭解如何直接從案頭使用 [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] 。
+role: 業務從業人員、管理員、領導者
 translation-type: tm+mt
-source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
+source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '623'
 ht-degree: 63%
 
 ---
@@ -12,7 +13,7 @@ ht-degree: 63%
 
 # [!DNL Adobe Experience Manager] 案頭應用程式概觀  {#overview-v2}
 
-Adobe 在解決方案中提供緊密相連的工作流程，讓您的業務線使用者和創意內容專業人員擁有更高的生產力。[!DNL Adobe Experience Manager]案頭應用程式可連接資料庫和案頭應用程式，包括Adobe和協力廠商應用程式，讓您更快速地存取資源並簡化工作流程。 如此節省時間並減少工作量，可提高使用者的效率，讓他們在案頭工作流程中使用[!DNL Adobe Experience Manager]中的資產。
+Adobe 在解決方案中提供緊密相連的工作流程，讓您的業務線使用者和創意內容專業人員擁有更高的生產力。[!DNL Adobe Experience Manager]案頭應用程式可連接儲存庫和案頭應用程式，包括Adobe和協力廠商應用程式，以便更快速地存取資源並簡化工作流程。 如此節省時間並減少工作量，可提高使用者的效率，讓他們在案頭工作流程中使用[!DNL Adobe Experience Manager]中的資產。
 
 使用應用程式，您可輕鬆在本機案頭上存取[!DNL Experience Manager Assets]中的資產，並可用於任何案頭應用程式。 您可以在自己選擇的桌面應用程式中開啟和編輯資產。只有當您選擇上傳變更時，才會在[!DNL Experience Manager]中以新版資產的形式提供本機編輯，如此，您才能在桌上型電腦上有效率地處理進行中的資產編輯。 應用程式支援將資產和巢狀資料夾上傳至[!DNL Experience Manager]，以簡化將新內容新增至儲存庫的程式。
 
