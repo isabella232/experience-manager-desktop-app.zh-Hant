@@ -1,10 +1,11 @@
 ---
 title: 使用 [!DNL Experience Manager] 案頭應用程式1.10版。
 description: 瞭解如何使用Adobe Experience Manager案頭應用程式1.10版，並最佳化您在桌上型電腦上使用資產的作品。
+feature: Experience Manager案頭應用程式，資產管理
 translation-type: tm+mt
-source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
+source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2379'
 ht-degree: 0%
 
 ---
