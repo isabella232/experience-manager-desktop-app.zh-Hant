@@ -3,9 +3,9 @@ title: 安裝和設定案頭應用程式
 description: 安裝並設定 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 伺服器，並下載您本機檔案系統上的資產。
 feature: Experience Manager案頭應用程式，發行資訊
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: f9d982d3039d04abf53e10b78e0e7a89e673ca04
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1405'
 ht-degree: 1%
 
 ---
@@ -122,6 +122,14 @@ ht-degree: 1%
 ![案頭應用程式偏好設定和設定](assets/preferences_da2.png)
 
 *圖：案頭應用程式偏好設定。*
+
+### 代理支援{#proxy-support}
+
+[!DNL Experience Manager] 案頭應用程式使用系統預先定義的代理，透過HTTPS連線至網際網路。應用程式只能使用不需要額外驗證的網路代理進行連線。
+
+如果您為Windows配置或修改代理伺服器設定（「Internet選項」>「LAN設定」），請重新啟動[!DNL Experience Manager]案頭應用程式以使更改生效。 當您啟動案頭應用程式時，會套用代理設定。 關閉並重新啟動應用程式，讓任何變更生效。
+
+如果您的代理需要驗證，IT團隊可以允許代理伺服器設定中的[!DNL Experience Manager Assets] URL，以允許應用程式通信通過。
 
 ## 解除安裝應用程式{#uninstall-the-app}
 
