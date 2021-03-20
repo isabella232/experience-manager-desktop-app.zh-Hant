@@ -3,7 +3,7 @@ title: 安裝和設定案頭應用程式
 description: 安裝並設定 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 伺服器，並下載您本機檔案系統上的資產。
 feature: Experience Manager案頭應用程式，發行資訊
 translation-type: tm+mt
-source-git-commit: f9d982d3039d04abf53e10b78e0e7a89e673ca04
+source-git-commit: 3804d684a3a7e78eda7692969f312ef023965ffd
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->電腦上無法共存兩個版本的案頭應用程式。 在安裝版本之前，請先解除安裝其他版本。
+>兩個版本的案頭應用程式無法在機器上共存。 在安裝版本之前，請先解除安裝其他版本。
 
 若要從舊版應用程式升級，請依照下列指示進行：
 
