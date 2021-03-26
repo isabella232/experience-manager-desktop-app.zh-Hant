@@ -2,9 +2,9 @@
 title: '案頭應用程式的最佳實務與疑難排解 [!DNL Adobe Experience Manager] '
 description: 遵循最佳實務並進行疑難排解，以解決與安裝、升級、設定等相關的偶發問題。
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 9d90bdcab79604e03d1ad3f30ed2aca2eb03e1c5
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2110'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 * **注意網路**:網路效能是案頭應 [!DNL Experience Manager] 用程式效能的關鍵。如果您遇到檔案傳輸或大量作業的回應速度變慢，請關閉可能導致大量網路流量的功能或應用程式。
 
-* **案頭應用程式不支援的使用案例**:請勿將應用程式用於資產移轉（它需要規劃和其他工具）;執行繁重的DAM作業（例如移動大型資料夾、大型上傳、使用進階中繼資料搜尋尋找檔案）;同步用戶端(設計原則和使用模式與同步用戶端（例如Microsoft OneDrive或Adobe Creative Cloud案頭同步）不同。
+* **案頭應用程式不支援的使用案例**:請勿將應用程式用於資產移轉（它需要規劃和其他工具）;執行繁重的DAM作業（例如移動大型資料夾、大型上傳、使用進階中繼資料搜尋尋找檔案）;同步客戶端(設計原則和使用模式與同步客戶端(如Microsoft OneDrive或Adobe Creative Cloud案頭同步)不同。
 
 * **逾時**:目前，案頭應用程式沒有可設定的逾時值，在固定時間間隔後，會 [!DNL Experience Manager] 中斷伺服器與案頭應用程式之間的連線。上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，重新嘗試上傳資產幾次。 不建議使用任何方法來變更預設逾時設定。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在支援要求或票證上與Adobe客戶服務合作時，可能會要求您共用記錄檔，以協助客戶服務團隊瞭解問題。 封存整個`Logs`資料夾，並與您的客戶服務聯絡人共用。
+>與Adobe客戶服務合作時，若需支援請求或票證，您會被要求共用記錄檔，以協助客戶服務團隊瞭解問題。 封存整個`Logs`資料夾，並與您的客戶服務聯絡人共用。
 
 ### 更改日誌檔案{#level-of-details-in-log}中的詳細資訊級別
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->這是一項具有潛在破壞性的操作。 如果有未上傳至[!DNL Adobe Experience Manager]的本機檔案變更，則這些變更將因繼續作業而遺失。
+>這是一項具有潛在破壞性的操作。 如果有未上傳至[!DNL Adobe Experience Manager]的本機檔案變更，則這些變更將因繼續而遺失。
 
 通過刪除應用程式的快取目錄（在應用程式的首選項中）來清除快取。
 
@@ -202,7 +202,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 #### SAML登入驗證無法運作{#da-connection-issue-with-saml-aem}
 
-如果[!DNL Experience Manager]案頭應用程式未連線至您啟用SSO(SAML)[!DNL Adobe Experience Manager]實例，請閱讀本節以疑難排解。 SSO程式各異，有時複雜，而應用程式的設計則盡量配合這些連線類型。 不過，有些設定需要額外的疑難排解。
+[!DNL Experience Manager] 案頭應用程式可能無法連線至您啟用SSO(SAML)的部 [!DNL Adobe Experience Manager] 署。應用程式的設計嘗試因應SSO連線和程式的不同和複雜性。 不過，設定可能需要進行其他疑難排解。
 
 有時SAML程式不會重新導向回原本要求的路徑，或最終的重新導向是與[!DNL Adobe Experience Manager]案頭應用程式中設定的主機不同。 要確認情況並非如此：
 
