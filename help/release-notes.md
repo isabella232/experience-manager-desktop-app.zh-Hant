@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 案頭應用程式的發行詳細
 mini-toc-levels: 1
 feature: Experience Manager案頭應用程式，發行資訊
 translation-type: tm+mt
-source-git-commit: e8a299c7357faf2c19c11a56f2868f6679c15ac1
+source-git-commit: 861f2e8994ae7eb9b35c78036479fe47dc793cf3
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1512'
 ht-degree: 27%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 27%
 
 **在應用程式v2.1.2.0中更新**
 
-* 應用程式的主功能表會新增[!UICONTROL Clear Cookies]選項。 它有助於解決潛在的登入問題，例如將伺服器間的連線變更為其他伺服器時。
+* 應用程式的主功能表會新增[!UICONTROL Clear Cookies]選項。 它有助於解決潛在的登入問題，例如將伺服器間的連線變更為其他伺服器時。 請參閱[在連線](/help/troubleshoot.md#cannot-login-cookies-issue)之前清除Cookie。
 
 **在應用程式v2.1.1.0中更新**
 
