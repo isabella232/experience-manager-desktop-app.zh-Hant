@@ -4,9 +4,9 @@ description: 直接從Win或Mac案頭使用 [!DNL Adobe Experience Manager] desk
 mini-toc-levels: 1
 feature: Experience Manager案頭應用程式，資產管理
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: d345a0f0ac6826cf623f6e8bbbcc132481ea557c
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: '3907'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,17 @@ ht-degree: 0%
 
 ## 在[!DNL Experience Manager]網頁介面{#desktopactions-v2}中啟用案頭動作
 
-在瀏覽器的「資產」使用者介面中，您可以探索資產位置或結帳並開啟資產，以便在案頭應用程式中編輯。 這些選項稱為[!UICONTROL Desktop Actions]，預設為未啟用。 若要啟用它，請依照下列步驟進行。
+從瀏覽器的[!DNL Assets]使用者介面，您可以探索資產位置或結帳並開啟資產，以便在案頭應用程式中進行編輯。 這些選項稱為[!UICONTROL Desktop Actions]，預設為未啟用。 若要啟用它，請依照下列步驟進行。
 
-1. 在「資產」主控台中，按一下／點選工具列中的&#x200B;**[!UICONTROL User]**&#x200B;圖示。
-1. 按一下／點選&#x200B;**[!UICONTROL My Preferences]**&#x200B;以顯示&#x200B;**[!UICONTROL Preferences]**&#x200B;對話方塊。
-1. 在「用戶首選項」對話框中，選擇&#x200B;**[!UICONTROL Show Desktop Actions For Assets]**。 按一下／點選&#x200B;**[!UICONTROL Accept]**。
+1. 在[!DNL Assets]控制台中，按一下工具欄中的&#x200B;**[!UICONTROL User]**&#x200B;表徵圖。
+1. 按一下&#x200B;**[!UICONTROL My Preferences]**&#x200B;以顯示&#x200B;**[!UICONTROL Preferences]**&#x200B;對話框。
 
-   ![勾選「顯示資產的案頭動作」以啟用案頭動作](assets/enable_desktop_actions.png)
+1. 在「用戶首選項」對話框中，選擇&#x200B;**[!UICONTROL Show Desktop Actions For Assets]**。 按一下 **[!UICONTROL Accept]**.
 
-   選中[!UICONTROL Show Desktop Actions For Assets]以啟用案頭操作
+
+   ![選擇「顯示資產的案頭動作」以啟用案頭動作](assets/enable_desktop_actions.png)
+
+   *圖：選擇 [!UICONTROL Show Desktop Actions For Assets] 以啟用案頭操作。*
 
 ## 瀏覽、搜尋及預覽資產{#browse-search-preview-assets}
 
