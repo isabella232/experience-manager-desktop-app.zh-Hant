@@ -1,14 +1,14 @@
 ---
 title: '案頭應用程式的最佳實務與疑難排解 [!DNL Adobe Experience Manager] '
 description: 遵循最佳實務並進行疑難排解，以解決與安裝、升級、設定等相關的偶發問題。
+exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
 translation-type: tm+mt
-source-git-commit: a766855c0670e9f291b8020ee6ab7addc50689a4
+source-git-commit: b893ad24d360ed382cab50771413219ea7bda09e
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2261'
 ht-degree: 0%
 
 ---
-
 
 # 疑難排解[!DNL Adobe Experience Manager]案頭應用程式{#troubleshoot-v2}
 
@@ -298,6 +298,13 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 * 退出應用程式並再次開啟。
 
 在這兩種方法中，應用程式都會從根DAM檔案夾開始。
+
+## 隱藏過期的資產{#hide-expired-assets}
+
+從[!DNL Experience Manager]使用者介面瀏覽資產時，不會顯示過期的資產。 若要防止在從案頭應用程式和資產連結瀏覽資產時檢視、搜尋及擷取過期資產，管理員可執行下列設定。 此設定適用於所有使用者，不論管理員權限為何。
+
+* [在Experience Manager6.5中設定以隱藏過期資產](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api)。
+* [以Experience Manager設定為Cloud Service，以隱藏過期資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api)。
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
