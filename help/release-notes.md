@@ -5,9 +5,9 @@ mini-toc-levels: 1
 feature: 案頭應用程式，發行資訊
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
 translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1523'
 ht-degree: 27%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 27%
 
 [!DNL Adobe Experience Manager] 案頭應用程式適用於下列 **作業系統**:
 
-* macOS X 10.14或更新版本，以及最新的錯誤修正。
+* macOS X 10.14或更新版本，以及最新的錯誤修正。 [目前尚未支援使](https://support.apple.com/en-us/HT211814) 用Apple Silicon的Mac電腦。
 * Windows 10含有最新的Service Pack和錯誤修正。
 
 支援作業系統的&#x200B;**下載URL**&#x200B;包括：
