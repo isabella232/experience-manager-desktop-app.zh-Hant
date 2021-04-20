@@ -1,7 +1,7 @@
 ---
 title: ' [!DNL Experience Manager] 案頭應用程式簡介'
 description: 瞭解如何直接從案頭使用 [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] 。
-role: 業務從業人員、管理員、領導者
+role: Business Practitioner, Administrator, Leader
 translation-type: tm+mt
 source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
 workflow-type: tm+mt

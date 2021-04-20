@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Experience Manager] 案頭應用程式版本注意事項'
 description: ' [!DNL Adobe Experience Manager] 案頭應用程式的發行詳細資訊、增強功能、新功能、相容性和下載連結。'
 mini-toc-levels: 1
-feature: 案頭應用程式，發行資訊
+feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
 translation-type: tm+mt
 source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867

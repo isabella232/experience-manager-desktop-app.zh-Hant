@@ -1,7 +1,7 @@
 ---
 cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets
-type: 文件
+type: Documentation
 mini-toc-levels: 1
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-desktop-app.zh-Hant
 index: y

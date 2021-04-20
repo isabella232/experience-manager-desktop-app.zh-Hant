@@ -1,7 +1,7 @@
 ---
 title: 安裝和設定案頭應用程式
 description: 安裝並設定 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 伺服器，並下載您本機檔案系統上的資產。
-feature: 案頭應用程式，發行資訊
+feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
 translation-type: tm+mt
 source-git-commit: 4616934e8923693106401da008e2510310d0742a
