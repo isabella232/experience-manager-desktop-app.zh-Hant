@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 案頭應用程式的發行詳細
 mini-toc-levels: 1
 feature: 案頭應用程式，發行資訊
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
+source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1525'
 ht-degree: 27%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 27%
 
 **應用程式2.1.0.0版中的更新**
 
-* 若要上傳資產，使用者現在可以直接從Windows檔案總管或Mac Finder，拖曳應用程式介面上的檔案或資料夾。 除了應用程式中先前可用的上傳選項外，這個選項也適用。<!-- CQ-4309527 -->
+* 若要上傳資產，使用者現在可以直接從Windows檔案總管或Mac Finder，拖曳應用程式介面上的檔案或資料夾。 除了應用程式中可用的上傳選項外，這個選項也有效。 請參閱[上傳資產](/help/using.md#upload-and-add-new-assets-to-aem) <!-- CQ-4309527 -->
 
 **應用程式v2.0.3中的更新**
 
