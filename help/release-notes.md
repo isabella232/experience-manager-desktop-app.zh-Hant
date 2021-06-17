@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] 案頭應用程式的發行詳細
 mini-toc-levels: 1
 feature: 案頭應用程式，發行資訊
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
+source-git-commit: d642a33c8e8c2f771a6f996a76167b7f6e42c1ce
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 24%
@@ -70,10 +70,6 @@ ht-degree: 24%
 
 **應用程式v2.1.3.1中的更新**
 
-* 新增選項，讓應用程式（若已選取）可上傳資料夾和檔案，使其在[!DNL Adobe Experience Manager]中建立的節點名稱與本機檔案和資料夾名稱相同。
-
-   此行為類似於第1版案頭應用程式中的預設行為。 而在目前版本中，如果未啟用選項，資料夾名稱中的空格和字元`% ; # , + ? ^ { } "`會以資料夾路徑中的破折號取代。 此外，資料夾路徑中的大小寫字元也會轉換為小寫。 但在檔案名中，字元`# % { } ? &`被破折號取代；但空間和外殼都留著。 如需詳細資訊，請參閱[應用程式偏好設定](/help/install-upgrade.md#set-preferences)和[上傳並新增資產](/help/using.md#upload-and-add-new-assets-to-aem)。
-
 目前版本修正的錯誤為：
 
 * 即使使用大型資產，資產上傳和下載速度也有所改善。 修正上傳大型檔案時，[!DNL desktop app]資產上傳失敗的問題。
@@ -81,6 +77,10 @@ ht-degree: 24%
 **應用程式2.1.2.0版中的更新**
 
 * 應用程式的主功能表中新增了[!UICONTROL Clear Cookies]的新選項。 例如從伺服器變更連線至其他伺服器時，這有助於解決潛在的登入問題。 請參閱[在連接](/help/troubleshoot.md#cannot-login-cookies-issue)之前清除Cookie。
+
+* 新增選項，讓應用程式（若已選取）可上傳資料夾和檔案，使其在[!DNL Adobe Experience Manager]中建立的節點名稱與本機檔案和資料夾名稱相同。
+
+   此行為類似於第1版案頭應用程式中的預設行為。 而在目前版本中，如果未啟用選項，資料夾名稱中的空格和字元`% ; # , + ? ^ { } "`會以資料夾路徑中的破折號取代。 此外，資料夾路徑中的大小寫字元也會轉換為小寫。 但在檔案名中，字元`# % { } ? &`被破折號取代；但空間和外殼都留著。 如需詳細資訊，請參閱[應用程式偏好設定](/help/install-upgrade.md#set-preferences)和[上傳並新增資產](/help/using.md#upload-and-add-new-assets-to-aem)。
 
 **應用程式2.1.1.0版中的更新**
 
