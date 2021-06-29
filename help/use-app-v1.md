@@ -3,9 +3,9 @@ title: 使用 [!DNL Experience Manager] 案頭應用程式1.10版。
 description: 了解如何使用Adobe Experience Manager案頭應用程式1.10版，並透過案頭上的資產最佳化您的工作。
 feature: 案頭應用程式，資產管理
 exl-id: 2fdc1c8d-b822-4cca-ad06-bd875a00aa6d
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: dcd29d0bbb32004d970d334c256e659f4a4c39e1
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2371'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 >
 >案頭應用程式於[!DNL Experience Manager] 6.1版本中推出，稱為[!DNL Experience Manager Assets Companion App]。
 
-## [!DNL Experience Manager] 創意工作流程中的案頭應用程式接觸點  {#aem-desktop-app-touch-points-in-the-creative-workflow}
+## [!DNL Experience Manager] 創意工作流程中的案頭應用程式接觸點 {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
 [!DNL Experience Manager] 案頭應用程式與 [!DNL Assets]整合至您的創意工作流程，並提供下列接觸點。
 
@@ -102,11 +102,11 @@ ht-degree: 0%
 
    ![[!DNL Experience Manager] 用戶首選項介面](assets/aem_ui_user_preferences.png)
 
-1. 在「用戶首選項」對話框中，選擇&#x200B;**[!UICONTROL Show Desktop Actions For Assets]**。 按一下 **[!UICONTROL Accept]**.
+1. 在[!UICONTROL User Preferences]對話方塊中，選取&#x200B;**[!UICONTROL Show Desktop Actions For Assets]**，然後按一下&#x200B;**[!UICONTROL Accept]**。
 
    ![檢查 [!UICONTROL Show Desktop Actions For Assets] 以啟用案頭操作](assets/enable_desktop_actions.png)
 
-   *圖：勾選「顯示資產的案頭動作」以啟用案頭動作。*
+   *圖：核取 [!UICONTROL Show Desktop Actions For Assets] 以啟用案頭動作。*
 
 ## 在案頭上存取和開啟資產 {#openondesktop}
 
@@ -131,7 +131,7 @@ ht-degree: 0%
 >
 >Adobe建議您前往Mac上的「尋找器檢視選項」，並停用已裝入[!DNL Assets]資料夾的選項&#x200B;**顯示項目資訊**、**顯示項目預覽**&#x200B;和&#x200B;**顯示預覽欄**。 它提高了效能。
 
-### [!DNL Experience Manager]介面{#additional-options-in-aem-assets}中的其他選項
+### [!DNL Experience Manager]介面中的其他選項 {#additional-options-in-aem-assets}
 
 將[!DNL Assets]存放庫對應至本機磁碟後，您可以啟用其他圖示，並啟用「資料夾上傳」功能，以針對對應的資產和資料夾顯示。
 
@@ -149,7 +149,7 @@ ht-degree: 0%
 
 若要在您的本機檔案系統上找出特定資產，請按一下「**Reveal**&#x200B;快速動作![Reveal圖示](assets/do-not-localize/aemassets_reveal_icon.png)」。 或者，從工具欄的&#x200B;**案頭操作**&#x200B;菜單中選擇&#x200B;**顯示**。
 
-## 了解資產狀態{#understand-the-asset-statuses}
+## 了解資產狀態 {#understand-the-asset-statuses}
 
 | ![Windows預設應用表徵圖](assets/do-not-localize/win_default.png) | 應用程式已連線至伺服器，且所有資產皆已同步。 |
 --- |--- |
@@ -159,7 +159,7 @@ ht-degree: 0%
 
 ## 使用您的資產 {#workonassets}
 
-### 從[!DNL Experience Manager]網頁介面{#check-out-assets-from-the-aem-web-interface}簽出資產
+### 從[!DNL Experience Manager]網頁介面查看資產 {#check-out-assets-from-the-aem-web-interface}
 
 [!DNL Assets] 可讓您簽出要編輯的資產，並在完成變更後重新簽入。結帳資產後，只有您可以編輯、注釋、發佈、移動或刪除資產。 簽出資產會鎖定資產，並防止其他使用者執行任何這些操作。 若要簽出/登入資產，您需要這些資產的寫入存取權。
 
@@ -186,7 +186,7 @@ ht-degree: 0%
 1. 選取「開啟」功能表選項。 選取的資產會以預覽模式開啟。
 1. 若要編輯資產，請選取「編輯」選項。 資產會以編輯模式開啟。
 
-### 從Mac OS上的Finder簽出資產{#check-out-assets-on-mac}
+### 從Mac OS上的Finder簽出資產 {#check-out-assets-on-mac}
 
 應用程式可讓您簽出資產檔案，以防止其他使用者修改您正在使用的檔案。
 
@@ -204,7 +204,7 @@ ht-degree: 0%
 
 1. 若要簽入資產以供其他使用者使用，請按一下/點選「資產資訊」對話方塊中的簽入圖示。
 
-### 查看Windows {#check-out-assets-on-windows}上的資產
+### 在Windows上查看資產 {#check-out-assets-on-windows}
 
 應用程式可讓您簽出資產檔案，以防止其他使用者修改您正在使用的檔案。
 
@@ -223,7 +223,7 @@ ht-degree: 0%
 
 1. 若要簽入資產以供其他使用者使用，請按一下/點選&#x200B;**資產資訊**&#x200B;對話方塊中的簽入圖示。
 
-### 使用Finder或Explorer並使用Web介面{#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}簽入資產
+### 使用Finder或Explorer並使用Web介面簽入資產 {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
 完成資產編輯後，將資產儲存在案頭應用程式中。 從上下文菜單中，選擇&#x200B;**更多資產資訊**&#x200B;並按一下簽入。
 
