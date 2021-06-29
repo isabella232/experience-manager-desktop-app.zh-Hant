@@ -2,20 +2,20 @@
 title: ' [!DNL Adobe Experience Manager] 案頭應用程式的最佳作法和疑難排解'
 description: 請依照最佳實務和疑難排解，解決與安裝、升級、設定等相關的偶發問題。
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-source-git-commit: b893ad24d360ed382cab50771413219ea7bda09e
+source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
 workflow-type: tm+mt
-source-wordcount: '2261'
+source-wordcount: '2260'
 ht-degree: 0%
 
 ---
 
-# 疑難排解[!DNL Adobe Experience Manager]案頭應用程式{#troubleshoot-v2}
+# 疑難排解[!DNL Adobe Experience Manager]案頭應用程式 {#troubleshoot-v2}
 
 [!DNL Adobe Experience Manager] 案頭應用程式會連 [!DNL Experience Manager] 線至部署的數位資產管理(DAM)存放庫。應用程式會擷取電腦上的存放庫資訊和搜尋結果、下載及上傳檔案和資料夾，並包含管理與Assets使用者介面衝突的功能。
 
 閱讀以疑難排解應用程式、了解最佳實務，並了解限制。
 
-## 最佳實務{#best-practices-to-prevent-troubles}
+## 最佳實務 {#best-practices-to-prevent-troubles}
 
 請遵循下列最佳實務，以防止發生一些常見問題和疑難排解。
 
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 * **逾時**:目前，案頭應用程式沒有可設定的逾時值，該逾時值會在固定時間間隔後 [!DNL Experience Manager] 中斷伺服器與案頭應用程式之間的連線。上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，以重試幾次來上傳資產。 建議不要變更預設逾時設定。
 
-## 如何進行{#troubleshooting-prep}疑難排解
+## 疑難排解 {#troubleshooting-prep}
 
 若要疑難排解案頭應用程式問題，請注意下列資訊。 此外，如果您選擇尋求支援，還能讓您更妥善地向Adobe客戶服務傳達問題。
 
-### 日誌檔案{#check-log-files-v2}的位置
+### 日誌檔案的位置 {#check-log-files-v2}
 
 [!DNL Experience Manager] 案頭應用程式會根據作業系統將其記錄檔儲存在下列位置：
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 >
 >在處理支援請求或票證時，系統會要求您共用記錄檔，以協助Adobe服務團隊了解問題。 封存整個`Logs`資料夾，並與您的客戶服務連絡人共用。
 
-### 更改日誌檔案{#level-of-details-in-log}中的詳細資訊級別
+### 更改日誌檔案中的詳細資訊級別 {#level-of-details-in-log}
 
 要更改日誌檔案中的詳細資訊級別：
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 有效的日誌級別為「調試」、「資訊」、「警告」或「錯誤」。 在DEBUG中記錄的詳細程度最高，在ERROR中最低。
 
-### 啟用調試模式{#enable-debug-mode}
+### 啟用偵錯模式 {#enable-debug-mode}
 
 若要進行疑難排解，您可以啟用除錯模式，並在記錄檔中取得詳細資訊。
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`。
 
-### 了解[!DNL Adobe Experience Manager]案頭應用程式版本{#know-app-version-v2}
+### 了解[!DNL Adobe Experience Manager]案頭應用程式版本 {#know-app-version-v2}
 
 若要查看版本號碼：
 
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 清除[!DNL Adobe Experience Manager]案頭應用程式的快取是一項初步的疑難排解任務，可解決數個問題。 從應用程式偏好設定中清除快取。 請參閱[設定偏好設定](install-upgrade.md#set-preferences)。 快取資料夾的預設位置為：
 
-## 看不到已放置的資產{#placed-assets-missing}
+## 看不到已放置的資產 {#placed-assets-missing}
 
 如果您看不到支援檔案（如INDD檔案）中放置的資產，請檢查以下內容：
 
@@ -159,11 +159,11 @@ ht-degree: 0%
 
 * 權限. 若要檢查您是否擁有擷取已放置資產的權限，請聯絡您的[!DNL Experience Manager]管理員。
 
-### 案頭應用程式使用者介面上的檔案編輯作業不會立即反映在[!DNL Adobe Experience Manager]中{#changes-on-da-not-visible-on-aem}
+### 對案頭應用程式用戶介面上檔案的編輯不會立即反映在[!DNL Adobe Experience Manager]中 {#changes-on-da-not-visible-on-aem}
 
 [!DNL Adobe Experience Manager] 案頭應用程式讓使用者自行決定檔案的所有編輯作業何時完成。根據檔案的大小和複雜性，將新版本的檔案傳回[!DNL Adobe Experience Manager]需要相當長的時間。 應用程式的設計要求將檔案往返傳輸的次數減到最少，而不是猜測檔案編輯完成並自動上傳的時間。 建議用戶通過選擇上傳檔案的更改來開始將檔案傳回[!DNL Adobe Experience Manager]。
 
-### 在macOS上升級時發生問題{#issues-when-upgrading-on-macos}
+### 在macOS上升級時發生問題 {#issues-when-upgrading-on-macos}
 
 在macOS上升級[!DNL Experience Manager]案頭應用程式時，偶爾會發生問題。 這是由於[!DNL Experience Manager]案頭應用程式的舊系統資料夾導致新版本的[!DNL Experience Manager]案頭應用程式無法正確載入所致。 若要解決此問題，可以手動移除下列資料夾和檔案。
 
@@ -178,11 +178,11 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-## 無法上載檔案{#upload-fails}
+## 無法上載檔案 {#upload-fails}
 
 如果您使用的案頭應用程式搭配[!DNL Experience Manager] 6.5.1或更新版本，請將S3或Azure連接器升級至1.10.4或更新版本。 它可解決與[OAK-8599](https://issues.apache.org/jira/browse/OAK-8599)相關的檔案上傳失敗問題。 請參閱[安裝指示](install-upgrade.md#install-v2)。
 
-## [!DNL Experience Manager] 案頭應用程式連線問題  {#connection-issues}
+## [!DNL Experience Manager] 案頭應用程式連線問題 {#connection-issues}
 
 如果您遇到一般連接問題，以下提供一些方法，以取得有關[!DNL Experience Manager]案頭應用程式正在執行的操作的詳細資訊。
 
@@ -199,7 +199,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 大部分應用程式的要求都可在要求記錄中找到。 不過，如果其中沒有實用的資訊，則查看應用程式的內嵌瀏覽器所傳送的請求會很有幫助。
 如需如何檢視這些要求的指示，請參閱[SAML區段](#da-connection-issue-with-saml-aem)。
 
-### {#da-connection-issue-with-saml-aem}無法使用SAML登入驗證
+### SAML登入驗證無法運作 {#da-connection-issue-with-saml-aem}
 
 [!DNL Experience Manager] 案頭應用程式可能無法連線至您啟用SSO(SAML)的部 [!DNL Adobe Experience Manager] 署。應用程式的設計嘗試適應SSO連接和過程的變化和複雜性。 不過，設定可能需要進行其他疑難排解。
 
@@ -246,7 +246,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 查看正在載入的URL序列，有助於在SAML結尾進行疑難排解，以判斷錯誤。
 
-### SSL配置問題{#ssl-config-v2}
+### SSL設定問題 {#ssl-config-v2}
 
 [!DNL Experience Manager]案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有時，連線可能使用瀏覽器成功，但使用[!DNL Experience Manager]案頭應用程式失敗。 若要適當設定SSL，請在Apache中安裝遺漏的中繼憑證。 請參閱[如何在Apache](https://access.redhat.com/solutions/43575)中安裝中繼CA憑證。
 
@@ -283,7 +283,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 1. 保存檔案並重新啟動[!DNL Adobe Experience Manager]案頭應用。
 
-### 切換至其他伺服器{#cannot-login-cookies-issue}時出現登入問題
+### 切換至其他伺服器時發生登入問題 {#cannot-login-cookies-issue}
 
 使用[!DNL Experience Manager]伺服器後，當您嘗試變更與其他伺服器的連線時，可能會遇到登入問題。 這是因為舊Cookie干擾新驗證。 主功能表中的[!UICONTROL Clear Cookies]選項有幫助。 登出應用程式中的當前會話，然後選擇[!UICONTROL Clear Cookies]，再繼續連接。
 
@@ -298,7 +298,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 在這兩種方法中，應用程式都會從根DAM資料夾啟動。
 
-## 隱藏過期的資產{#hide-expired-assets}
+## 隱藏過期的資產 {#hide-expired-assets}
 
 從[!DNL Experience Manager]使用者介面內瀏覽資產時，不會顯示過期的資產。 若要防止從案頭應用程式和「資產連結」瀏覽資產時檢視、搜尋及擷取過期的資產，管理員可以執行下列設定。 此配置適用於所有用戶，而不考慮管理員權限。
 
