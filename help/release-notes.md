@@ -4,14 +4,14 @@ description: ' [!DNL Adobe Experience Manager] 案頭應用程式的發行詳細
 mini-toc-levels: 1
 feature: 案頭應用程式，發行資訊
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: d642a33c8e8c2f771a6f996a76167b7f6e42c1ce
+source-git-commit: 32aff5d66f2cb67ab4bb440d7ace747a5cf1dd26
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1648'
 ht-degree: 24%
 
 ---
 
-# [!DNL Adobe Experience Manager] 案頭應用程式發行說明  {#release-notes-v2}
+# [!DNL Adobe Experience Manager] 案頭應用程式發行說明 {#release-notes-v2}
 
 最新案頭應用程式2.1版(2.1.3.1)的發行資訊如下。 發行日期為2021年6月08日。
 
@@ -33,7 +33,7 @@ ht-degree: 24%
 
 | 作業系統 | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
-| macOS 64位元 | [下載連結](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.1.dmg) | [下載連結](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.1.dmg) |
+| macOS | [下載連結](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) | [下載連結](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) |
 | Windows 64位 | [下載連結](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.1.exe) | [下載連結](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.3.1.exe) |
 | Windows 32位 | [下載連結](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) | [下載連結](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) |
 
@@ -44,7 +44,7 @@ ht-degree: 24%
 <!-- The version of the app you plan to install on your local machine requires a specific [!DNL Adobe Experience Manager] server version/additional server-side components (service packs, hot fixes, or feature packs). Contact your [!DNL Experience Manager] administrator for help.
 -->
 
-## 支援不同的資產和檔案類型{#support-for-file-types}
+## 支援不同的資產和檔案類型 {#support-for-file-types}
 
 應用程式支援儲存在[!DNL Experience Manager]中的資產，這些資產表示二進位檔案的基本操作。 在原生桌面應用程式中開啟檔案時，需透過作業系統內的特定應用程式（例如 Mac Preview 或 Adobe Photoshop），以特定檔案類型（例如 PNG 或 JPG）開啟。
 
@@ -64,7 +64,7 @@ ht-degree: 24%
 
 * 路徑可以與[!DNL Experience Manager]中的資產匹配，即放置的檔案也位於[!DNL Experience Manager]中的匹配路徑下。
 
-## 新功能、增強功能和錯誤修正{#what-is-new}
+## 新功能、增強功能和錯誤修正 {#what-is-new}
 
 要了解詳細資訊，請參閱[v2.0](introduction.md#whats-new-v2)中的新功能。
 
