@@ -2,9 +2,9 @@
 title: 案頭應用程式1.10版疑難排解。
 description: 疑難排解 [!DNL Adobe Experience Manager] 案頭應用程式1.10版，以解決與安裝、升級和配置相關的偶發性問題。
 exl-id: 1e1409c2-bf5e-4e2d-a5aa-3dd74166862c
-source-git-commit: 78f18e68178f711d925d7e308822c657087d009a
+source-git-commit: 32aff5d66f2cb67ab4bb440d7ace747a5cf1dd26
 workflow-type: tm+mt
-source-wordcount: '3363'
+source-wordcount: '3350'
 ht-degree: 1%
 
 ---
@@ -19,15 +19,15 @@ ht-degree: 1%
 
 透過此架構，案頭應用程式會截取檔案系統呼叫（開啟、關閉、讀取、寫入等）至已載入的網路共用，並將這些呼叫轉譯為對AEM伺服器的原生AEM HTTP呼叫。 檔案會快取到本機。 如需詳細資訊，請參閱[使用AEM案頭應用程式v1.x](use-app-v1.md)。
 
-## AEM案頭應用程式元件概述{#desktop-app-component-overview}
+## AEM案頭應用程式元件概觀 {#desktop-app-component-overview}
 
 案頭應用程式包含下列元件：
 
-* **案頭應用程式**:應用程式會將DAM裝載或卸載為遠程檔案系統，並在本地裝載的網路共用與它所連接的遠程AEM實例之間轉換檔案系統調用。
+* **案頭應用程式**:應用程式會裝載或卸載DAM作為遠程檔案系統，並在本地裝載的網路共用與它所連接的遠程AEM實例之間轉換檔案系統調用。
 * **作業系統WebDAV/SMB客戶端**:處理Windows資源管理器/查找器和案頭應用程式之間的通信。如果檢索、建立、修改、刪除、移動或複製檔案，作業系統(OS)WebDAV/SMB客戶端會將此操作與案頭應用程式通信。 收到通訊後，案頭應用程式會將其轉譯為原生AEM遠端API呼叫。 例如，如果使用者在已載入的目錄中建立檔案，WebDAV/SMB用戶端會起始請求，案頭應用程式會將此請求轉譯為在DAM中建立檔案的HTTP請求。 WebDAV/SMB客戶端是作業系統的內置元件。 它與案頭應用程式、AEM或Adobe皆無關聯。
 * **Adobe Experience Manager例項**:可存取儲存在AEM Assets DAM存放庫中的資產。此外，它代表與掛載的網路共用交互的本地案頭應用程式執行案頭應用請求的操作。 目標AEM例項應執行AEM 6.1版或更新版本。 執行舊版AEM的AEM執行個體可能需要安裝額外的功能套件和Hotfix，才能正常運作。
 
-## AEM案頭應用程式{#intended-use-cases-for-aem-desktop-app}的預期使用案例
+## AEM案頭應用程式的預期使用案例 {#intended-use-cases-for-aem-desktop-app}
 
 AEM案頭應用程式使用網路共用技術將遠端AEM存放庫對應至本機案頭。 但是，這並非取代網路共用持有資產，因為使用者直接從本機案頭執行數位資產管理操作。 這包括移動或複製多個檔案，或直接在Finder/Explorer中將大型資料夾結構拖曳至AEM Assets網路共用。
 
@@ -64,7 +64,7 @@ AEM Desktop不適合執行密集的檔案系統操作，包括但不限於：
 
 [!DNL Experience Manager] 案頭應用程式沒有可設定的逾時值，該逾時值會在固定時間 [!DNL Experience Manager] 間隔後中斷伺服器與案頭應用程式之間的連線。上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，以重試幾次來上傳資產。 建議不要變更預設逾時設定。
 
-## 快取與AEM {#caching-and-communication-with-aem}通訊
+## 快取與AEM通訊 {#caching-and-communication-with-aem}
 
 AEM案頭應用程式提供內部快取和背景上傳功能，以改善一般使用者體驗。 儲存大型檔案時，會先將其儲存在本機，以便您繼續運作。 在某個時間（目前為30秒）之後，會將檔案傳送至背景的AEM伺服器。
 
@@ -86,17 +86,17 @@ AEM案頭應用程式提供內部快取和背景上傳功能，以改善一般�
 * 對資料夾的任何操作，例如建立、刪除等
 * 1.4 版中加入的「檔案夾上傳」功能可上傳本機檔案夾階層，而不需在本機快取檔案
 
-## 個別操作{#individual-operations}
+## 個別操作 {#individual-operations}
 
 針對個別使用者的次最佳化效能進行疑難排解時，請先檢閱[應用程式限制](#limitations)。 後續章節包含改善個別使用者效能的建議。
 
-## 頻寬建議{#bandwidth-recommendations}
+## 頻寬建議 {#bandwidth-recommendations}
 
 單個用戶可用的頻寬在WebDAV/SMB客戶端的效能中起著關鍵作用。
 
 Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，頻寬通常在多個用戶之間共用。 如果多個用戶同時執行消耗網路頻寬的任務，則效能可能會進一步降低。 若要避免這類問題，請使用有線連線。
 
-## Windows特定配置{#windows-specific-configurations}
+## 特定於Windows的配置 {#windows-specific-configurations}
 
 如果在Windows上使用Experience Manager，則可以配置Windows以增強WebDAV客戶端的效能。 如需詳細資訊，請前往[https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570)。
 
@@ -105,7 +105,7 @@ Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，�
 <!-- TBD: The above performance tip is for Windows 7 which is not supported by the app anymore. Remove it later.
 -->
 
-## 併發操作{#concurrent-operations}
+## 併發操作 {#concurrent-operations}
 
 當您在本機與檔案互動時，AEM Desktop會檢查AEM中是否有較新版本的檔案可用。 如果有新版本可用，應用程式會將檔案的最新副本下載到本機快取。 不過，如果已修改AEM Desktop，則不會覆寫本機快取的檔案。 此功能可防止無意中覆寫您的工作。
 
@@ -121,15 +121,15 @@ Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，�
 * 目標AEM例項之前是否存在Dispatcher
 * 目標AEM例項上的目前載入
 
-## 其他AEM配置{#additional-aem-configurations}
+## 其他AEM設定 {#additional-aem-configurations}
 
 如果多個用戶同時工作時， WebDAV/SMB的效能會顯著降低，您可以在AEM中配置一些內容，這將有助於提高效能。
 
-## 更新資產暫時性工作流程{#update-asset-transient-workflows}
+## 更新資產暫時性工作流程 {#update-asset-transient-workflows}
 
 您可以為「DAM更新資產」工作流程啟用暫時性工作流程，以改善AEM端的效能。 啟用暫時性工作流程，可在AEM中建立或修改資產時，降低更新資產所需的處理能力。
 
-1. 導覽至要設定的AEM例項中的`/miscadmin`（例如`http://[Server]:[Port]/miscadmin`）。
+1. 導覽至Experience Manager例項(`https://[aem_server]:[port]/miscadmin`)中的`/miscadmin`。
 1. 從導覽樹狀結構中，展 **開「工具** >工 **作流程** >模 **型>** dam ****」。
 1. 按兩下&#x200B;**DAM更新資產**。
 1. 從浮動工具面板，切換到&#x200B;**Page**&#x200B;頁簽，然後按一下&#x200B;**Page Properties**。
@@ -139,11 +139,11 @@ Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，�
 
 另一種改善AEM效能的方法，是為Granite暫時工作流程佇列作業設定最大平行作業的值。 建議的值大約是伺服器可用CPU數量的一半。 要調整值，請執行以下步驟：
 
-1. 導覽至要設定的AEM例項中的&#x200B;*/system/console/configMgr*（例如`http://[aem_server]:[port]/system/console/configMgr`）。
-1. 搜索&#x200B;**QueueConfiguration**，然後按一下以開啟每個作業，直到找到&#x200B;**Granite暫時工作流隊列**&#x200B;作業為止。 按一下旁邊的編輯。
-1. 更改&#x200B;**最大並行作業數**&#x200B;值，然後按一下&#x200B;**保存**。
+1. 導覽至要設定的AEM例項中的`/system/console/configMgr`（例如`https://[aem_server]:[port]/system/console/configMgr`）。
+1. 搜索`QueueConfiguration`，然後按一下以開啟每個作業，直到找到&#x200B;**Granite暫時工作流隊列**&#x200B;作業，然後按一下&#x200B;**Edit**。
+1. 更改`Maximum Parallel Jobs`值，然後按一下&#x200B;**Save**。
 
-## AWS配置{#aws-configuration}
+## AWS配置 {#aws-configuration}
 
 由於網路頻寬限制，當多個用戶同時工作時， WebDAV/SMB的效能可能會降低。 Adobe建議增加在AWS上運行的目標AEM實例的AWS實例的大小，以增強WebDAV/SMB的效能。
 
@@ -153,7 +153,7 @@ Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，�
 * 對大型客戶端進行故障排除時，Adobe將其AEM實例的大小配置為c4.8xlarge，主要是針對它提供的4000 Mbps專用頻寬。
 * 如果AEM例項前面有Dispatcher，請確定其大小適當。 如果AEM執行個體提供4000 Mbps，但Dispatcher僅提供500 Mbps，則有效頻寬僅為500 Mbps。 這是因為Dispatcher會造成網路瓶頸。
 
-## 簽出檔案限制{#checked-out-file-limitations}
+## 簽出檔案限制 {#checked-out-file-limitations}
 
 通過Explorer/Finder與簽出檔案交互的方式有一些已知限制。 如果已簽出檔案，則除已簽出該檔案的用戶外，該檔案應為所有人只讀。 在AEM中實施WebDAV/SMB1協定可強制執行此規則。 但是，OS WebDAV/SMB客戶端通常不能與簽出的檔案正常交互。 以下介紹一些怪異之處。
 
@@ -171,7 +171,7 @@ Adobe建議個別使用者的上傳速度接近10 Mbps。 對於無線連接，�
 
 取代檔案不會顯示警告或錯誤，但在AEM中勾選資產會顯示資產維持不變。 在AEM中重新整理或勾選資產，以確認資產未修改。
 
-## 案頭應用程式圖示問題疑難排解(Mac OS X){#troubleshooting-desktop-app-icon-issues-mac-os-x}
+## 案頭應用程式圖示問題疑難排解(Mac OS X) {#troubleshooting-desktop-app-icon-issues-mac-os-x}
 
 安裝案頭應用程式後，案頭應用程式功能表圖示會出現在功能表列中。 如果未顯示圖示，請執行下列步驟以解決問題：
 
@@ -212,7 +212,7 @@ AEM Desktop會嘗試同步任何指定檔案三次。 如果第三次嘗試後�
 
 解決此情況的最簡單方法是開啟衝突的檔案並再次保存。 它會強制AEM Desktop嘗試另外三次同步。 如果檔案仍無法同步，請參閱下方各節以取得更多說明。
 
-## 清除AEM案頭快取{#clearing-aem-desktop-cache}
+## 清除AEM案頭快取 {#clearing-aem-desktop-cache}
 
 清除AEM Desktop的快取是可解決數個AEM Desktop問題的初步疑難排解工作。
 
@@ -233,13 +233,13 @@ AEM Desktop會嘗試同步任何指定檔案三次。 如果第三次嘗試後�
 >
 >從AEM案頭應用程式1.5版開始，案頭應用程式UI中會提供清除快取的選項。
 
-## 查找AEM案頭版本{#finding-the-aem-desktop-version}
+## 尋找AEM案頭版本 {#finding-the-aem-desktop-version}
 
 Windows和Mac OS中確定AEM案頭版本的過程相同。
 
 按一下AEM案頭表徵圖，然後選擇&#x200B;**關於**。 版本號碼會顯示在畫面上。
 
-## 在macOS {#upgrading-aem-desktop-app-on-macos}上升級AEM案頭應用程式
+## 在macOS上升級AEM案頭應用程式 {#upgrading-aem-desktop-app-on-macos}
 
 在macOS上升級AEM案頭應用程式時，偶爾會發生問題。 這是因為AEM案頭應用程式的舊版系統資料夾無法正確載入新版本的AEM Desktop所造成。 若要解決此問題，可以手動移除下列資料夾和檔案。
 
@@ -254,7 +254,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-## 保存其他人簽出的檔案{#saving-a-file-checked-out-by-others}
+## 保存其他人簽出的檔案 {#saving-a-file-checked-out-by-others}
 
 作業系統的技術限制會防止使用者在嘗試覆寫其他人簽出的檔案時，有一致的體驗。 體驗會因用來編輯已簽出檔案的應用程式而異。 有時，應用程式會顯示錯誤消息，指示磁碟寫入失敗，或顯示看似不相關或一般的錯誤。 在其他情況下，不會顯示錯誤訊息，且操作似乎成功。
 
@@ -262,32 +262,32 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 無論採取何種行為，當您簽入時，檔案都會維持不變。 即使顯示不同版本的檔案，變更也不會同步至AEM。
 
-## 移動檔案{#troubleshooting-problems-around-moving-files}的相關問題疑難解答
+## 疑難排解移動檔案的相關問題 {#troubleshooting-problems-around-moving-files}
 
 伺服器API需要傳遞其他標頭X-Destination、X-Depth和X-Overwrite，移動和複製操作才能運作。 Dispatcher預設不會傳遞這些標題，而會導致這些操作失敗。 如需詳細資訊，請參閱[連線至Dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)後面的AEM 。
 
-## 疑難排解AEM案頭連線問題{#troubleshooting-aem-desktop-connection-issues}
+## 疑難排解AEM案頭連線問題 {#troubleshooting-aem-desktop-connection-issues}
 
-### SAML重新導向問題{#saml-redirect-issue}
+### SAML重新導向問題 {#saml-redirect-issue}
 
 AEM Desktop連線至您啟用SSO(SAML)AEM例項時，最常見的原因是SAML程式不會重新導向回原本請求的路徑。 或者，可將連接重定向到未在AEM案頭中配置的主機。 執行下列步驟以驗證登入程式：
 
 1. 開啟網頁瀏覽器。
 1. 在網址列中指定URL `/content/dam.json`。
-1. 將URL取代為目標AEM例項，例如`http://localhost:4502/content/dam.json`。
+1. 將URL取代為目標AEM例項，例如`https://localhost:4502/content/dam.json`。
 1. 登入AEM。
 1. 登入後，在位址列中檢查瀏覽器的目前位址。 它應符合您最初輸入的URL。
 1. 確認`/content/dam.json`之前的所有項目都符合AEM Desktop中設定的目標AEM值。
 
-### SSL配置問題{#ssl-configuration-issue}
+### SSL設定問題 {#ssl-configuration-issue}
 
 AEM案頭應用程式用於HTTP通訊的程式庫採用嚴格的SSL強制。 有時，連線可能使用瀏覽器成功，但使用AEM案頭應用程式失敗。 若要適當設定SSL，請在Apache中安裝遺漏的中繼憑證。 請參閱[如何在Apache](https://access.redhat.com/solutions/43575)中安裝中繼CA憑證。
 
-## 使用AEM Desktop搭配Dispatcher {#using-aem-desktop-with-dispatcher}
+## 搭配使用AEM Desktop與Dispatcher {#using-aem-desktop-with-dispatcher}
 
 AEM Desktop可搭配AEM部署在Dispatcher後面使用，這是AEM伺服器的預設且建議的設定。 AEM製作環境前的AEM dispatcher通常會設定為略過快取DAM資產。 因此，從AEM Desktop的觀點來看，Dispatcher不提供其他快取。 請確定Dispatcher設定已調整為適用於AEM Desktop。 如需其他詳細資訊，請參閱[連線至Dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)背後的AEM。
 
-## 正在檢查日誌檔案{#checking-for-log-files}
+## 正在檢查日誌檔案 {#checking-for-log-files}
 
 根據您的作業系統，您可以在以下位置找到AEM Desktop的日誌檔案：
 
