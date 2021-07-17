@@ -2,14 +2,14 @@
 title: 案頭應用程式1.10版發行說明
 description: AEM案頭應用程式1.10版的發行詳細資訊、增強功能、新功能、相容性和下載連結。
 exl-id: 886864e0-016a-4a17-b3ba-4b18a514214a
-source-git-commit: 78f18e68178f711d925d7e308822c657087d009a
+source-git-commit: 32aff5d66f2cb67ab4bb440d7ace747a5cf1dd26
 workflow-type: tm+mt
-source-wordcount: '3897'
+source-wordcount: '3898'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager] 案頭應用程式v1.10發行說明  {#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] 案頭應用程式v1.10發行說明 {#aem-desktop-app-release-notes}
 
 若為案頭應用程式v1.x版，以下為下載連結和AEM相容性資訊。
 
@@ -43,7 +43,7 @@ Adobe強烈建議使用最新版本的AEM案頭應用程式，以取得最新功
 
 請參閱本檔案結尾的[詳細的相容性矩陣](#compatibilitymatrix)，以評估設定的必要條件。
 
-## 案頭應用程式v1.10的新增功能{#what-s-new-in-aem-desktop-app}
+## 案頭應用程式v1.10的新增功能 {#what-s-new-in-aem-desktop-app}
 
 AEM案頭應用程式1.10著重於改善使用者在大型上傳、背景操作的相關資訊以及開啟具有連結檔案的資產時的最佳化體驗(例如InDesign)。
 
@@ -65,7 +65,7 @@ AEM案頭應用程式1.10著重於改善使用者在大型上傳、背景操作�
 
 如需詳細指示，請參閱[安裝及設定AEM案頭應用程式](install-configure-app-v1.md)。
 
-## 舊版{#enhancements-in-the-previous-versions}中的增強功能
+## 舊版中的增強功能 {#enhancements-in-the-previous-versions}
 
 此版本延伸並取代[!DNL Experience Manager]案頭應用程式的舊版本，其提供下列重要增強功能：
 
@@ -83,7 +83,7 @@ AEM案頭應用程式1.10著重於改善使用者在大型上傳、背景操作�
 
 * **版本1.3**:存取檔案和儲存對AEM的變更的效能增強和穩定性，尤其是透過Creative Cloud案頭應用程式(例如InDesign、Illustrator或Photoshop)。它旨在為用戶在處理檔案時提供更本地的類似案頭的體驗，同時在後台處理網路資料傳輸操作。
 
-### 自AEM案頭應用程式1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}以來提供的增強功能
+### 自AEM案頭應用程式1.9以來提供的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
 [!DNL Adobe Experience Manager] 案頭應用程式1.9.1是修補程式版本，可解決客戶在資產結帳和將檔案從網路共用複製到本機目錄方面的幾項重要問題。
 
@@ -152,7 +152,7 @@ AEM案頭應用程式1.9著重於改善使用者在大型上傳內容、背景�
 為了改善使用InDesign檔案(包含AEM中儲存的連結資產)時的使用體驗，案頭應用程式會嘗試在下載和開啟InDesign檔案前，將這些連結檔案預先擷取至本機快取。 如此一來，使用者就可在本機取得連結的檔案，而且在InDesign中存取這些檔案時（在「連結」面板中），不必再等候。
 請注意，預先擷取作業只有在AEM辨識到伺服器端的連結時才有效。 具有已識別連結的資產會在InDesign資產的「屬性」檢視中列出「參考」清單。
 
-### 自AEM案頭應用程式1.8.x {#enhancements-available-since-aem-desktop-app-18x}以來提供的增強功能
+### 自AEM案頭應用程式1.8.x以來提供的增強功能 {#enhancements-available-since-aem-desktop-app-18x}
 
 AEM案頭應用程式1.8.1快速後續版本已新增從AEM UI一次開啟多個檔案至1.8版(CQ-4237747、CQ-4238780)的改善功能。 AEM案頭應用程式1.8中的增強功能包括：
 
@@ -182,7 +182,7 @@ AEM案頭應用程式1.8.1快速後續版本已新增從AEM UI一次開啟多個
 
    * (Win)現在從AEM Assets UI還原為舊版之後，可同步檔案(CQ-4216411)。
 
-### 自AEM案頭應用程式1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}以來提供的增強功能
+### 自AEM案頭應用程式1.7起提供的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
 * 穩定性：
 
@@ -214,7 +214,7 @@ AEM案頭應用程式1.8.1快速後續版本已新增從AEM UI一次開啟多個
 >
 >AEM案頭應用程式1.7測試版載入中發現的問題（1.6版中未出現的問題未在發行說明中回報）。
 
-### 自AEM案頭應用程式1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}以來提供的增強功能
+### 自AEM案頭應用程式1.6起提供的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
 * 檔案：新[v1.x app](/help/best-practices-for-v1.md)檔案的最佳作法。
 
@@ -258,7 +258,7 @@ AEM案頭應用程式1.8.1快速後續版本已新增從AEM UI一次開啟多個
 
    * 上傳至AEM時拖放檔案產生錯誤(CQ-4217006)。
 
-### 自AEM案頭應用程式1.5 {#Enhancements-Available-Since-AEM-Desktop-App-15}以來提供的增強功能
+### 自AEM案頭應用程式1.5起提供的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-15}
 
 **適用於Mac OS X的1.5.1.5版：**  1.5.1.5版提供下列優點：
 
@@ -319,7 +319,7 @@ AEM案頭應用程式1.8.1快速後續版本已新增從AEM UI一次開啟多個
 
    * 在偏好設定中更妥善處理AEM Assets URL(CQ-97388)。
 
-### 自AEM案頭應用程式1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}以來提供的增強功能
+### 自AEM案頭應用程式1.4起提供的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
 * 透過觸控式UI中新的「建立>上傳資料夾」動作，簡化階層資料夾的上傳。
    * 動作會起始案頭應用程式執行的資料夾上傳操作
@@ -331,7 +331,7 @@ AEM案頭應用程式1.8.1快速後續版本已新增從AEM UI一次開啟多個
 * 改善與最新作業系統版本的相容性
 * 客戶回報的修正
 
-### 自AEM案頭應用程式1.3 {#Enhancements-Available-Since-AEM-Desktop-App-13}以來提供的增強功能
+### 自AEM案頭應用程式1.3起提供的增強功能 {#Enhancements-Available-Since-AEM-Desktop-App-13}
 
 * 提高效率。 用戶等待網路操作完成的時間更少。
 * 改善搜尋器整合，提供更穩定的存取功能，例如縮圖。
@@ -343,9 +343,9 @@ AEM案頭應用程式1.8.1快速後續版本已新增從AEM UI一次開啟多個
 * 更妥善處理使用中間檔案操作來儲存檔案的案頭應用程式（部分儲存和臨時檔案），這可讓AEM資產時間軸顯示正確的版本和資產上傳資訊。
 * 提供用於追蹤背景上傳任務狀態的對話方塊。
 
-## 更改清單{#list-of-changes}
+## 變更清單 {#list-of-changes}
 
-### Mac上的掛接點{#mount-point-on-mac}
+### Mac上的掛接點 {#mount-point-on-mac}
 
 自MacOS 10.12(Sierra)以來，Apple已將用於裝載網路驅動器和設備的/Volumes資料夾的權限更加嚴格。 在此處建立新的掛載點需要管理權限。 此問題已在MacOS 10.12.5中修正。
 
@@ -353,7 +353,7 @@ AEM案頭應用程式1.8.1快速後續版本已新增從AEM UI一次開啟多個
 
 由於/Volumes資料夾不再需要管理權限，此變更在1.5.1中已還原。這也可讓您在MacOS使用者之間共用放置AEM資產的InDesign檔案。
 
-### 協定更改（自v1.3以來）{#protocol-change-since}
+### 協定更改（自1.3版起） {#protocol-change-since}
 
 * Mac OS X:
    * 用於OS X案頭整合的本地網路驅動器協定從WebDAV更改為SMB1。
@@ -367,7 +367,7 @@ AEM案頭應用程式1.8.1快速後續版本已新增從AEM UI一次開啟多個
 >
 >在Mac OS X上，本地網路驅動器協定從WebDAV更改為SMB1會導致儲存庫中同一資產的不同本地路徑。 這可能會影響透過「Place」命令放置至Adobe Creative Cloud應用程式中之檔案的連結。 如需詳細資訊，請參閱[使用AEM案頭應用程式](use-app-v1.md) 。
 
-### 檔案處理（自1.3起）{#file-handling-since}
+### 檔案處理（自1.3起） {#file-handling-since}
 
 * 資料夾會在預先定義的延遲（目前為30秒）後自動更新。
 * 其他用戶簽出的檔案被標籤為只讀。
@@ -375,7 +375,7 @@ AEM案頭應用程式1.8.1快速後續版本已新增從AEM UI一次開啟多個
 * 在第一階段中，檔案會儲存在本機。 這樣，儲存檔案的使用者就不需要等待檔案完全傳輸至AEM，而且只要儲存檔案即可繼續運作。
 * 在第二階段中，案頭應用程式會在預先定義的延遲（例如30秒）後，將更新的檔案上傳至AEM伺服器。 此操作在後台進行。 使用&#x200B;**顯示背景檔案同步狀態**&#x200B;選項查看上載操作的狀態。
 
-## 重要注意事項{#important-notices}
+## 重要通知 {#important-notices}
 
 **資料夾上傳。** 建議您使用新的「資料夾上傳」功能，將大型的階層式資料夾上傳至AEM，而不要使用從Finder/Explorer層級的複製/拖放至已裝載的AEM存放庫。使用資料夾上傳功能時，案頭應用程式會直接與AEM通訊，因此更能掌控整體程式。
 
@@ -396,7 +396,7 @@ AEM案頭應用程式1.8.1快速後續版本已新增從AEM UI一次開啟多個
 ## 已知問題 {#known-issues}
 
 * 一般:
-   * 若要指向沒有路徑的伺服器(例如`http://server`、`https://server`、`http://server:port`或`https://server:port`)。 不支援/content/dam以外的內容路徑和子資料夾(CQ-89343、CQ-87272)
+   * 伺服器URL必須指向沒有路徑的伺服器（例如`http://server`、`https://server`、`http://server:port`或`https://server:port`）。 不支援/content/dam以外的內容路徑和子資料夾(CQ-89343、CQ-87272)
 * 檔案名/本地化：
    * 未正確處理包含保留字元的檔案和資料夾名稱。 請務必使用符合AEM要求的檔案和資料夾名稱(CQ-93361、CQ-93308、CQ-89276、CQ-4217183)
    * 有些應用程式(如Adobe Illustrator)可能會建立名稱在AEM中不受支援的檔案。 例如，在轉換檔案後新增`Converted`，會阻止其上傳(CQ-4216985)
