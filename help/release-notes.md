@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] 案頭應用程式的發行詳細
 mini-toc-levels: 1
 feature: 案頭應用程式，發行資訊
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: d83f04fb4757bb8025489da7866d36a51ddfe374
+source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 24%
+source-wordcount: '1675'
+ht-degree: 23%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 24%
 * [!DNL Experience Manager] 6.4.4或更新版本，位於Adobe Managed Services(AMS)或內部部署。請參閱[Service Pack發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html)。
 * [!DNL Experience Manager] 6.4.0 - 6.4.3，並安裝在Adobe Managed Services( [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) AMS)或內部部署上的相容性套件。
 * [!DNL Experience Manager] 6.3（包含相容性套件）
-* [!DNL Experience Manager] 6.3.3.1或更新版本，並安裝相容 [性套](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 件。[!DNL Experience Manager] 6.3.3.0或舊版不支援案頭應用程式。
+* [!DNL Experience Manager] 6.3.3.1或更新版本，並安裝相容 [性套](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 件。[!DNL Experience Manager] 6.3.3.0或舊版不支援案頭應用程式。
 
 [!DNL Adobe Experience Manager] 案頭應用程式適用於下列 **作業系統**:
 
