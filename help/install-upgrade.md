@@ -3,14 +3,14 @@ title: 安裝和配置案頭應用
 description: 安裝並配置 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 伺服器，並下載本地檔案系統上的資產。
 feature: 案頭應用程式，發行資訊
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 1%
+source-wordcount: '1410'
+ht-degree: 0%
 
 ---
 
-# 安裝[!DNL Adobe Experience Manager]案頭應用{#install-app-v2}
+# 安裝[!DNL Adobe Experience Manager]案頭應用程式 {#install-app-v2}
 
 使用[!DNL Adobe Experience Manager]案頭應用程式時，您可輕鬆在本機案頭上取得[!DNL Experience Manager]中的資產，並可用於任何原生案頭應用程式。 資產可以預覽、在原生案頭應用程式中開啟、顯示在Mac Finder或Windows Explorer中以放置在其他檔案中，並可在本機變更 — 當您上傳且在存放庫中建立新版本時，變更會儲存回[!DNL Experience Manager]。
 
@@ -28,11 +28,11 @@ ht-degree: 1%
 
 * 使用一些資產來測試連線。 請參閱[如何瀏覽及搜尋資產](using.md#browse-search-preview-assets)。
 
-## 系統要求、先決條件和下載連結{#tech-specs-v2}
+## 系統需求、必要條件和下載連結 {#tech-specs-v2}
 
 如需詳細資訊，請參閱[[!DNL Experience Manager] 案頭應用程式發行說明](release-notes.md)。
 
-## 從舊版{#upgrade-from-previous-version}升級
+## 從舊版升級 {#upgrade-from-previous-version}
 
 如果您是案頭應用程式v1.x的使用者，請了解應用程式先前版本與最新版本之間的差異與相似性。 請參閱[案頭應用程式的新增功能](introduction.md#whats-new-v2)和[應用程式的運作方式](release-notes.md#how-app-works)
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 1. 如果您要從其他版本的應用程式升級，請參閱[升級案頭應用程式](#upgrade-from-previous-version)。
 
-1. 如果您使用[!DNL Experience Manager]作為[!DNL Cloud Service]、[!DNL Experience Manager] 6.4.4或更新版本，或[!DNL Experience Manager] 6.5.0或更新版本，請跳過此步驟。 確保您的[!DNL Experience Manager]設定符合[發行說明](release-notes.md)中提及的相容性要求。 如有必要，請下載適用的[相容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)，並使用[!DNL Experience Manager]包管理器作為[!DNL Experience Manager]管理員進行安裝。 要安裝軟體包，請參閱[如何使用軟體包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
+1. 如果您使用[!DNL Experience Manager]作為[!DNL Cloud Service]、[!DNL Experience Manager] 6.4.4或更新版本，或[!DNL Experience Manager] 6.5.0或更新版本，請跳過此步驟。 確保您的[!DNL Experience Manager]設定符合[發行說明](release-notes.md)中提及的相容性要求。 如有必要，請下載適用的[相容性包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)，並使用[!DNL Experience Manager]包管理器作為[!DNL Experience Manager]管理員進行安裝。 要安裝軟體包，請參閱[如何使用軟體包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
 1. 執行安裝程式二進位檔，並依照螢幕上的指示進行安裝。
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
    如果您是Adobe Managed Services(AMS)客戶，請聯絡Adobe客戶服務。
 
-## 設定首選項{#set-preferences}
+## 設定偏好設定 {#set-preferences}
 
 要更改首選項，請按一下![更多選項表徵圖](assets/do-not-localize/more_options_da2.png)和&#x200B;**[!UICONTROL Preference]** ![首選項表徵圖](assets/do-not-localize/preferences_icon_da2.png)。 在&#x200B;**[!UICONTROL Preferences]**&#x200B;窗口中，調整以下值：
 
@@ -122,7 +122,7 @@ ht-degree: 1%
 
 *圖：案頭應用程式偏好設定。*
 
-### 代理支援{#proxy-support}
+### 代理支援 {#proxy-support}
 
 [!DNL Experience Manager] 案頭應用程式使用系統的預先定義代理，透過HTTPS連線至網際網路。應用程式只能使用不需要額外驗證的網路代理進行連接。
 
@@ -130,7 +130,7 @@ ht-degree: 1%
 
 如果您的代理需要身份驗證，則IT團隊可以允許代理伺服器設定中的[!DNL Experience Manager Assets] URL，以允許應用程式流量通過。
 
-## 卸載應用{#uninstall-the-app}
+## 解除安裝應用程式 {#uninstall-the-app}
 
 要在Windows上卸載應用程式，請執行以下步驟：
 
