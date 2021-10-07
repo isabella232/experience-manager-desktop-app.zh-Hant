@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] 案頭應用程式的最佳作法和疑難排解'
 description: 請依照最佳實務和疑難排解，解決與安裝、升級、設定等相關的偶發問題。
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
 source-wordcount: '2260'
 ht-degree: 0%
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 * **留意網路**:網路效能對案頭應 [!DNL Experience Manager] 用的效能至關重要。如果您面臨檔案傳輸或批量操作響應速度慢的問題，請關閉可能導致大量網路流量的功能或應用。
 
-* **案頭應用程式不支援的使用案例**:請勿將應用程式用於資產移轉（需要規劃和其他工具）;（例如移動大型資料夾、大型上傳、使用進階中繼資料搜尋尋找檔案）;和作為同步客戶端(設計原則和使用模式與同步客戶端(如Microsoft OneDrive或Adobe Creative Cloud案頭同步)不同。
+* **案頭應用程式不支援的使用案例**:請勿將應用程式用於資產移轉（需要規劃和其他工具）;（例如移動大型資料夾、大型上傳、使用進階中繼資料搜尋尋找檔案）;作為同步客戶端(設計原則和使用模式與同步客戶端(如Microsoft OneDrive或Adobe Creative Cloud案頭同步)不同。
 
 * **逾時**:目前，案頭應用程式沒有可設定的逾時值，該逾時值會在固定時間間隔後 [!DNL Experience Manager] 中斷伺服器與案頭應用程式之間的連線。上傳大型資產時，如果連線在一段時間後逾時，應用程式會增加上傳逾時，以重試幾次來上傳資產。 建議不要變更預設逾時設定。
 
 ## 疑難排解 {#troubleshooting-prep}
 
-若要疑難排解案頭應用程式問題，請注意下列資訊。 此外，如果您選擇尋求支援，還能讓您更妥善地向Adobe客戶服務傳達問題。
+若要疑難排解案頭應用程式問題，請注意下列資訊。 此外，如果您選擇尋求支援，還可讓您更妥善地向Adobe客戶支援傳達問題。
 
 ### 日誌檔案的位置 {#check-log-files-v2}
 
@@ -47,13 +47,13 @@ ht-degree: 0%
 
 在Windows上：`%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
-在Mac上：`~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+在Mac:`~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
 
 上傳許多資產時，如果某些檔案無法上傳，請參閱`backend.log`檔案以識別上傳失敗。
 
 >[!NOTE]
 >
->在處理支援請求或票證時，系統會要求您共用記錄檔，以協助Adobe服務團隊了解問題。 封存整個`Logs`資料夾，並與您的客戶服務連絡人共用。
+>在處理支援請求或票證上的Adobe客戶支援時，可要求您共用記錄檔，以協助客戶支援團隊了解問題。 封存整個`Logs`資料夾，並與您的客戶支援連絡人共用。
 
 ### 更改日誌檔案中的詳細資訊級別 {#level-of-details-in-log}
 
@@ -163,7 +163,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager] 案頭應用程式讓使用者自行決定檔案的所有編輯作業何時完成。根據檔案的大小和複雜性，將新版本的檔案傳回[!DNL Adobe Experience Manager]需要相當長的時間。 應用程式的設計要求將檔案往返傳輸的次數減到最少，而不是猜測檔案編輯完成並自動上傳的時間。 建議用戶通過選擇上傳檔案的更改來開始將檔案傳回[!DNL Adobe Experience Manager]。
 
-### 在macOS上升級時發生問題 {#issues-when-upgrading-on-macos}
+### 在macOS上升級時發生的問題 {#issues-when-upgrading-on-macos}
 
 在macOS上升級[!DNL Experience Manager]案頭應用程式時，偶爾會發生問題。 這是由於[!DNL Experience Manager]案頭應用程式的舊系統資料夾導致新版本的[!DNL Experience Manager]案頭應用程式無法正確載入所致。 若要解決此問題，可以手動移除下列資料夾和檔案。
 
@@ -237,7 +237,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
    1. 搜尋以「登入瀏覽器位址已變更為」開頭的訊息。 這些項目也包含應用程式載入的URL。
 
-   Mac:
+   若為Mac:
 
    1. `com.adobe.aem.desktop-nnnnnnnn-nnnnnn.log`，其中n **** 會取代為最新檔案名稱中的任何數字。
 
@@ -258,7 +258,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 1. 使用您選擇的編輯器編輯應用程式的JavaScript配置檔案，該檔案（預設情況下）位於以下位置（取決於作業系統）:
 
-   在Mac上：`/Applications/Adobe Experience Manager Desktop.app/Contents/Resources/javascript/lib-smb/config.json`
+   在Mac:`/Applications/Adobe Experience Manager Desktop.app/Contents/Resources/javascript/lib-smb/config.json`
 
    在Windows上：`C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop\javascript\config.json`
 
@@ -303,7 +303,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 從[!DNL Experience Manager]使用者介面內瀏覽資產時，不會顯示過期的資產。 若要防止從案頭應用程式和「資產連結」瀏覽資產時檢視、搜尋及擷取過期的資產，管理員可以執行下列設定。 此配置適用於所有用戶，而不考慮管理員權限。
 
 * [Experience Manager6.5中的設定，以隱藏過期的資產](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api)。
-* [以Experience Manager方式設定，以隱藏過期資產的Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api)。
+* [以Experience Manageras a Cloud Service進行設定，以隱藏過期的資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api)。
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
@@ -326,5 +326,5 @@ Create Jira ticket with the following information:
 >[!MORELIKETHIS]
 >
 >* [已知問題](release-notes.md#known-issues-v2)
-* [避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)
+>* [避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts)
 

@@ -1,18 +1,18 @@
 ---
 title: 安裝和配置案頭應用
 description: 安裝並配置 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 伺服器，並下載本地檔案系統上的資產。
-feature: 案頭應用程式，發行資訊
+feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
 
 # 安裝[!DNL Adobe Experience Manager]案頭應用程式 {#install-app-v2}
 
-使用[!DNL Adobe Experience Manager]案頭應用程式時，您可輕鬆在本機案頭上取得[!DNL Experience Manager]中的資產，並可用於任何原生案頭應用程式。 資產可以預覽、在原生案頭應用程式中開啟、顯示在Mac Finder或Windows Explorer中以放置在其他檔案中，並可在本機變更 — 當您上傳且在存放庫中建立新版本時，變更會儲存回[!DNL Experience Manager]。
+使用[!DNL Adobe Experience Manager]案頭應用程式時，您可輕鬆在本機案頭上取得[!DNL Experience Manager]中的資產，並可用於任何原生案頭應用程式。 資產可以預覽、在原生案頭應用程式中開啟、顯示在Mac Finder或Windows Explorer中以放置在其他檔案中，並在本機變更 — 當您上傳且在存放庫中建立新版本時，變更會儲存回[!DNL Experience Manager]。
 
 這種整合可讓組織中的各種角色，
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 1. （[!DNL Experience Manager] 6.5.1或更新版本）如果您使用的案頭應用程式搭配[!DNL Experience Manager] 6.5.1或更新版本，請將S3或Azure連接器升級至1.10.4或更新版本。 請參閱[Azure連接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store)或[S3連接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store)。
 
-   如果您是Adobe Managed Services(AMS)客戶，請聯絡Adobe客戶服務。
+   如果您是Adobe Managed Services(AMS)客戶，請聯絡Adobe客戶支援。
 
 ## 設定偏好設定 {#set-preferences}
 
@@ -144,7 +144,7 @@ ht-degree: 0%
 
 1. 按照螢幕上的說明操作。 完成後，重新啟動電腦。
 
-要在Mac上卸載應用程式，請執行以下步驟：
+若要解除安裝Mac上的應用程式，請執行下列步驟：
 
 1. 將所有變更上傳至[!DNL Experience Manager]，以免遺失任何編輯內容。 請參閱[編輯資產並將更新的資產上傳至 [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets)。 註銷並[!UICONTROL Exit]應用。
 
