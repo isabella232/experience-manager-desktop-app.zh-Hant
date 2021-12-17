@@ -4,9 +4,9 @@ description: 的發行詳細資訊、增強功能、新功能、相容性和下�
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 88d74bb9bff7ec5d454600d383f27dcd5dbbe775
+source-git-commit: c0a429a965d117ccd2db231c1b68f97616a3c384
 workflow-type: tm+mt
-source-wordcount: '1711'
+source-wordcount: '1710'
 ht-degree: 22%
 
 ---
