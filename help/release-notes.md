@@ -4,9 +4,9 @@ description: 的發行詳細資訊、增強功能、新功能、相容性和下�
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 1167ca53c603b94b298f702d6cbb3231e318e4cd
+source-git-commit: 2f49c1e952202e627e60fa9ad7998a4927aa817c
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2188'
 ht-degree: 16%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 16%
 
 [!DNL Adobe Experience Manager] 案頭應用程式適用於下列項目 **作業系統**:
 
-* macOS X 10.14或更新版本，以及最新的錯誤修正。 [Mac帶Apple硅的電腦](https://support.apple.com/en-us/HT211814) 尚不支援。
+* macOS X 10.14或更新版本，以及最新的錯誤修正。
 * Windows 10提供最新的Service Pack和錯誤修正。
 
 此 **下載URL** 支援的作業系統包括：
