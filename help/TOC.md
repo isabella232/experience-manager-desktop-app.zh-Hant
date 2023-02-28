@@ -6,19 +6,19 @@ user-guide-title: Experience Manager 桌面應用程式指南
 breadcrumb-title: 桌面應用程式指南
 user-guide-description: 了解如何使用 Experience Manager 桌面應用程式來連結儲存庫和桌面應用程式，以更快存取資源並簡化工作流程。
 feature-set: Experience Manager Assets,Experience Manager
-feature: 案頭應用程式
+feature: Desktop App
 role: User, Admin
 source-git-commit: b661fedb6e33599921d39c0597c7d9f8e576798b
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 90%
+source-wordcount: '63'
+ht-degree: 93%
 
 ---
 
 
 # Adobe案頭應用程式指南 {#using}
 
-+ [概覽](introduction.md)
++ [概觀](introduction.md)
 + [發行說明](release-notes.md)
 + [安裝或升級](install-upgrade.md)
 + [使用應用程式](using.md)
