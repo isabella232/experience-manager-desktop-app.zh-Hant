@@ -4,9 +4,9 @@ description: 的發行詳細資訊、增強功能、新功能、相容性和下�
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: caedeb988f1a2f4666a1ec73db390452914caf4d
+source-git-commit: 7d6de46583b0a9dd19d920f8c47a825e060b97fc
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2437'
 ht-degree: 14%
 
 ---
@@ -23,10 +23,6 @@ ht-degree: 14%
 
 * [!DNL Experience Manager] as a [!DNL Cloud Service]. 請參閱 [發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html?lang=zh-Hant).
 * [!DNL Experience Manager] 6.5.0或更新版本，位於Adobe Managed Services(AMS)或內部部署。 請參閱 [service pack發行說明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=zh-Hant).
-* [!DNL Experience Manager] 6.4.4或更新版本，位於Adobe Managed Services(AMS)或內部部署。 請參閱 [service pack發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html).
-* [!DNL Experience Manager] 6.4.0 - 6.4.3 [相容性套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 安裝於Adobe Managed Services(AMS)或內部部署。
-* [!DNL Experience Manager] 6.3（包含相容性套件）
-* [!DNL Experience Manager] 6.3.3.1或更新版本， [相容性套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 已安裝。 不支援案頭應用 [!DNL Experience Manager] 6.3.3.0或舊版。
 
 [!DNL Adobe Experience Manager] 案頭應用程式適用於下列項目 **作業系統**:
 
