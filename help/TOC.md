@@ -16,7 +16,7 @@ ht-degree: 93%
 ---
 
 
-# Adobe案頭應用指南 {#using}
+# Adobe案頭應用程式指南 {#using}
 
 + [概觀](introduction.md)
 + [發行說明](release-notes.md)
