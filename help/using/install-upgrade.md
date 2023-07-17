@@ -3,9 +3,9 @@ title: 安裝及設定案頭應用程式
 description: 安裝及設定 [!DNL Adobe Experience Manager] 可搭配使用的案頭應用程式 [!DNL Adobe Experience Manager Assets] 並下載本機檔案系統上的資產。
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 0f366e07b9d220cf04286b24e4bb45ce0b385e5c
+source-git-commit: e51547496b03ac42d13e7bee5e2e3d20e520d0ad
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 0%
    >
    >請確定在的位址之前或之後，沒有開頭和結尾的空格 [!DNL Experience Manager] 伺服器。 否則應用程式無法連線至 [!DNL Experience Manager] 伺服器。
 
-1. 按一下 **[!UICONTROL I want to connect a different way]** 並按一下 **[!UICONTROL Adobe login]** 以使用AdobeExperience Manager Assets服務(IMS)登入Identity Management伺服器。 IMS登入可讓案頭應用程式自動執行存取權杖重新整理，讓使用者最多可保持登入狀態14天。 按一下 **[!UICONTROL Direct login]** 以登入 [!DNL Experience Manager] 使用認證的伺服器。
+1. [可選] 按一下 **[!UICONTROL I want to connect a different way]** 並按一下 **[!UICONTROL Adobe login]** 以使用AdobeExperience Manager Assets服務(IMS)登入Identity Management伺服器。 IMS登入可讓案頭應用程式自動執行存取權杖重新整理，讓使用者最多可保持登入狀態14天。 按一下 **[!UICONTROL Direct login]** 執行標準登入 [!DNL Experience Manager] 使用使用者認證的伺服器。
 
    ![Adobe登入](assets/adobe-login.png)
 
