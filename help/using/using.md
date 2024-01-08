@@ -4,9 +4,9 @@ description: 使用 [!DNL Adobe Experience Manager] 案頭應用程式，搭配�
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 98e99ee48d835cea0098c4acfe49f6b247ccf658
+source-git-commit: 1139b3359042a134d86900e3b7b7f03d8d920cdc
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4032'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 如需合作編輯的最佳實務，請參閱 [進階工作流程：在相同檔案上共同作業並避免編輯衝突](#adv-workflow-collaborate-avoid-conflicts).
 
-在下列情況下，您可能會想要捨棄本機資產的變更和編輯。 按一下 **[!UICONTROL Discard Changes]**.
+在下列情況下，您可能會想要捨棄本機資產的變更和編輯。 按一下「**[!UICONTROL Discard Changes]**」。
 
 * 如果您不想將本機變更儲存在 [!DNL Experience Manager].
 * 儲存部分變更後，開始變更原始資產。
@@ -215,13 +215,13 @@ ht-degree: 0%
 | Folder name | Uppercase characters | Disabled | Replaced with a `-` (hyphen) | tbd |
 -->
 
-| 字元數 ‡ | 應用程式中的舊版偏好設定 | 當出現在檔案名稱中 | 當出現在資料夾名稱中時 | 範例 |
+| 字元‡ | 應用程式中的舊版偏好設定 | 當出現在檔案名稱中 | 當出現在資料夾名稱中時 | 範例 |
 |---|---|---|---|---|
-| `. / : [ ] | *` | 啟用或停用 | 已取代為 `-` （連字型大小）。 A `.` 副檔名中的（點）會維持原狀。 | 已取代為 `-` （連字型大小）。 | `myimage.jpg` 維持原狀，且 `my.image.jpg` 變更為 `my-image.jpg`. |
+| `. / : [ ] \| *` | 啟用或停用 | 已取代為 `-` （連字型大小）。 A `.` 副檔名中的（點）會維持原狀。 | 已取代為 `-` （連字型大小）。 | `myimage.jpg` 維持原狀，且 `my.image.jpg` 變更為 `my-image.jpg`. |
 | `% ; # , + ? ^ { } "` 和空格 | ![取消選取圖示](assets/do-not-localize/deselect-icon.png) 已停用 | 保留空格 | 已取代為 `-` （連字型大小）。 | `My Folder.` 變更為 `my-folder-`. |
-| `# % { } ? & .` | ![取消選取圖示](assets/do-not-localize/deselect-icon.png) 已停用 | 已取代為 `-` （連字型大小）。 | 不適用. | `#My New File.` 變更為 `-My New File-`. |
+| `# % { } ? & .` | ![取消選取圖示](assets/do-not-localize/deselect-icon.png) 已停用 | 已取代為 `-` （連字型大小）。 | 不適用 | `#My New File.` 變更為 `-My New File-`. |
 | 大寫字 | ![取消選取圖示](assets/do-not-localize/deselect-icon.png) 已停用 | 大小寫維持原狀。 | 變更為小寫字元。 | `My New Folder` 變更為 `my-new-folder`. |
-| 大寫字 | ![選取範圍核取圖示](assets/do-not-localize/selection-checked-icon.png) 已啟用 | 大小寫維持原狀。 | 大小寫維持原狀。 | 不適用. |
+| 大寫字 | ![選取範圍核取圖示](assets/do-not-localize/selection-checked-icon.png) 已啟用 | 大小寫維持原狀。 | 大小寫維持原狀。 | 不適用 |
 
 ‡字元清單是以空格分隔的清單。
 
